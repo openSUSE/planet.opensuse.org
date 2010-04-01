@@ -1,4 +1,11 @@
 #!/usr/bin/perl
+# script to convert the config.ini from PlanetPlanet to
+# the rawdog feed format
+#
+# Pascal Bleser <pascal.bleser@opensuse.org>
+# This script is licensed under the GPL v2.
+#
+
 use strict;
 use warnings;
 
@@ -21,8 +28,6 @@ while (<>) {
     }
 }
 push(@feeds, $cf) if $cf;
-
-#print scalar(@feeds), " feeds", "\n";
 
 foreach my $f (@feeds) {
     my $face = undef;
