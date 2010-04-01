@@ -1,0 +1,76 @@
+#feedlist-header {
+    /* only display in text mode browsers */
+    display: none;
+}
+
+#feedlist .feed {
+    padding-left: 48px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    /*clear: both;*/
+    border-top: 1px dotted #888888;
+}
+
+#feedlist .feed {
+    width: 25%;
+    float: left;
+}
+#feedlist .feed-wrap {
+    clear: both;
+}
+#feedlist .feed-top {
+    border-top: none !important;
+}
+
+#feedlist img.feed-author-face {
+    width: 40px;
+    float: left;
+    margin-left: -48px;
+    text-align: right;
+}
+
+#feedlist a.feed-author {
+    font-size: 1.5em;
+}
+
+#feedlist a.feed-irc,
+#feedlist span.feed-irc {
+    font-size: 0.8em;
+}
+#feedlist a.feed-irc {
+    color: #888888;
+}
+#feedlist a.feed-irc:hover {
+    color: #3399cc;
+    text-decoration: underline;
+}
+#feedlist a.feed-irc:before {
+    content: "#";
+    padding: 0px;
+    color: #888888;
+    font-weight: bold;
+}
+
+#feedlist a.feed-url {
+    /*margin-left: 0.5em;*/
+    padding: 1px 2px 1px 2px;
+    background: #888888;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: -1px;
+}
+
+#feedlist a.feed-url:hover {
+    background: orange;
+}
+
+#feedlist .feed ul.feed-feeds {
+    list-style-type: square;
+    color: #888888;
+    margin-left: 0;
+}
+#feedlist .feed li.feed-feed {
+    padding-left: 1px;
+}
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="All" charset="utf-8" />
+  <link rel="stylesheet" href="css_local/feedlist.css" type="text/css" media="screen" title="All" charset="utf-8" />
+
+  <title>Planet openSUSE Feed List</title>
+</head>
+<body>
+  <!-- Start: Header -->
+  <div id="header">
+    <div id="header-content">
+      <a id="header-logo" href="#home"><img src="images/header-logo.png" width="46" height="26" alt="Header Logo" /></a>
+      <ul id="global-navigation">
+        <li><a href="#">Downloads</a></li>
+        <li><a href="index_support.html">Support</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Development</a></li>
+        <li id="global-favorites"><a href="#">Favorites</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- End: Header -->
+
+  <div id="main">
+
+  <div id="intro">
+    <h3>Welcome to Planet openSUSE</h3>
+    <p>
+        This page contains the list of all the <a href="http://www.opensuse.org">openSUSE</a> contributors
+        who are aggregated on <a href="index.html">Planet openSUSE</a>.
+    </p>
+    <h4 id="actions-header">Actions:</h4>
+    <ul id="actions-menu">
+      <li><a href="index.html">Back to Planet openSUSE</a></li>
+    </ul>
+  </div> <!-- #intro -->
+
+  <!-- Start: Main Content Area -->
+  <div id="content" class="ui-oo-content-wrapper">
+    <h4 id="feedlist-header">Aggregated feeds:</h4>
+    <div id="feedlist">
+      __feeds__
+    </div>
+  </div>
+  <!-- End: Main Content Area -->
+
+  </div>  <!-- #main -->
+
+  <!-- Note: this clears floating, set in previous elements -->
+  <div class="clear"></div>
+  <!-- Start: Footer -->
+  <div id="footer">
+    <div id="footer-content" class="clear-block">
+    </div>
+    <div id="footer-legal" class="ui-oo-border-top">
+      <p>
+        &copy; 2010 Pascal Bleser and the openSUSE Community.
+      </p>
+      <p>
+        This site is not an official openSUSE website, and is not in any way affiliated with or endorsed by SUSE Linux GmbH or Novell.
+      </p>
+      <p>
+        openSUSE and SUSE are trademarks of Novell, Inc. in the United States and other countries.
+      </p>
+    </div>
+  </div>
+  <!-- End: Footer -->
+</body>
+</html>
+<!-- vim: set sw=2 ts=2 et ai:
+-->

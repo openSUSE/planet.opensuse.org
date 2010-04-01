@@ -1,0 +1,12 @@
+<div class="feed__if_wrap__ feed-wrap__endif____if_top__ feed-top__endif__">
+__if_face__
+    <img class="feed-author-face" src="__face__" alt="[Face]"/>
+__else__
+    <img class="feed-author-face feed-author-face-default" src="hackergotchi/geekogotchi.png" alt="[Face]"/>
+__endif__
+    <span class="feed-author">__name__</span>
+__if_irc__<span class="feed-irc">(<a class="feed-irc" href="irc://irc.freenode.net/__irc__,isnick">__irc__</a>)</span>__endif__
+<ul class="feed-feeds">
+__feeds__
+</ul>
+</div> <!-- .feed -->

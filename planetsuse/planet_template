@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="All" charset="utf-8" />
+  <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/jquery.scrollTo.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/navigation.js" type="text/javascript" charset="utf-8"></script>
+  <!-- <script src="js/script.js" type="text/javascript" charset="utf-8"></script> -->
+
+  <title>Planet openSUSE</title>
+  <link rel="alternate" type="application/rss+xml" title="Planet openSUSE" href="rss20.xml" />
+</head>
+<body>
+  <!-- Start: Header -->
+  <div id="header">
+    <div id="header-content">
+      <a id="header-logo" href="#home"><img src="images/header-logo.png" width="46" height="26" alt="Header Logo" /></a>
+      <ul id="global-navigation">
+        <li><a href="#">Downloads</a></li>
+        <li><a href="index_support.html">Support</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Development</a></li>
+        <li id="global-favorites"><a href="#">Favorites</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- End: Header -->
+
+  <div id="help" style="display: none;">
+    <h4>Keyboard shortcuts:</h4>
+    <dl>
+      <dt>j</dt><dd>next post</dd>
+      <dt>k</dt><dd>previous post</dd>
+      <dt>t</dt><dd>go to top</dd>
+      <dt>esc</dt><dd>cancel</dd>
+    </dl>
+  </div> <!-- #help -->
+
+  <div id="main">
+
+  <div id="intro">
+    <h3>Welcome to Planet openSUSE</h3>
+    <p>
+        This is a feed aggregator that collects what <a href="http://www.opensuse.org">openSUSE</a> contributors are writing in their
+        respective blogs.
+    </p>
+    <h4 id="actions-header">Actions:</h4>
+    <ul id="actions-menu">
+      <li><a href="#" id="help-trigger">Keyboard shortcuts</a></li>
+      <li><a href="feedlist.html" id=="feeds-trigger">Feed list</a></li>
+    </ul>
+  </div> <!-- #intro -->
+
+  <!-- Start: Main Content Area -->
+  <div id="content" class="ui-oo-content-wrapper">
+    __items__
+  </div>
+  <!-- End: Main Content Area -->
+
+  </div>  <!-- #main -->
+
+  <!-- Note: this clears floating, set in previous elements -->
+  <div class="clear"></div>
+  <!-- Start: Footer -->
+  <div id="footer">
+    <div id="footer-content" class="clear-block">
+    </div>
+    <div id="footer-legal" class="ui-oo-border-top">
+      <p>
+        &copy; 2010 Pascal Bleser and the openSUSE Community.
+      </p>
+      <p>
+        This site is not an official openSUSE website, and is not in any way affiliated with or endorsed by SUSE Linux GmbH or Novell.
+      </p>
+      <p>
+        openSUSE and SUSE are trademarks of Novell, Inc. in the United States and other countries.
+      </p>
+    </div>
+  </div>
+  <!-- End: Footer -->
+</body>
+</html>
+<!-- vim: set sw=2 ts=2 et ai:
+-->
