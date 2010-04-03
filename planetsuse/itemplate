@@ -1,5 +1,5 @@
 <hr class="textonly"/>
-<div class="entrygroup item feed-__feed_hash__ feed-__feed-id__ ui-oo-box-shadow clearfix" id="item-__hash__">
+<div class="entrygroup item feed-__feed_hash__ feed-__feed-id__ box-shadow clearfix" id="item-__hash__">
   <div class="box-header">
     <div class="post-header">
       <h3><a class="blogurl" href="__blogurl__">__name__</a>: <a class="posttitle" href="__url__">__title_no_link__</a></h3>

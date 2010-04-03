@@ -45,7 +45,7 @@
   </div> <!-- #intro -->
 
   <!-- Start: Main Content Area -->
-  <div id="content" class="ui-oo-content-wrapper">
+  <div id="content" class="content-wrapper">
     <h4 id="feedlist-header">Aggregated feeds:</h4>
     <div id="feedlist">
       __feeds__
@@ -61,7 +61,7 @@
   <div id="footer">
     <div id="footer-content" class="clear-block">
     </div>
-    <div id="footer-legal" class="ui-oo-border-top">
+    <div id="footer-legal" class="border-top">
       <p>
         &copy; 2010 Pascal Bleser and the openSUSE Community.
       </p>
