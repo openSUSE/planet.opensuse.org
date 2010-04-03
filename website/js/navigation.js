@@ -28,7 +28,7 @@ $(function($) {
 			element = element.parentNode;
 		}
 
-		if (e.ctrlKey == true || e.altKey == true || e.metaKey == true) {
+		if (e.ctrlKey == true || e.metaKey == true) {
 			return;
 		}
 
