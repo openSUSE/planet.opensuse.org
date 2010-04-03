@@ -248,28 +248,53 @@ html {
     margin-bottom: 0.5em;
 }
 
-#actions-header {
+.menu-header {
     margin: 0.1em 1em 0.1em 0;
     float: left;
+    clear: left;
 }
-ul#actions-menu {
+ul.menu {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-#actions-menu li {
+.menu li {
     display: inline;
     padding: 0;
     margin: 0;
 }
-#actions-menu li:before {
+.menu li:before {
     content: "\2022\00A0";
 }
-#actions-menu li:first-child:before {
+.menu li:first-child:before {
     content: "";
 }
-#actions-menu li a {
+.menu li a {
     padding: 0;
     margin: 0;
 }
+
+.lang-en,
+.lang-de,
+.lang-fr,
+.lang-es,
+.lang-pt,
+.lang-pl,
+.lang-cz,
+.lang-sk,
+.lang-ru,
+.lang {
+    padding-left: 20px !important;
+    background: url(../images/lang/en.png) no-repeat 0% 50%;
+}
+
+.lang-en { background-image: url(../images/lang/en.png); }
+.lang-de { background-image: url(../images/lang/de.png); }
+.lang-fr { background-image: url(../images/lang/fr.png); }
+.lang-es { background-image: url(../images/lang/es.png); }
+.lang-pt { background-image: url(../images/lang/pt.png); }
+.lang-pl { background-image: url(../images/lang/pl.png); }
+.lang-cz { background-image: url(../images/lang/cz.png); }
+.lang-sk { background-image: url(../images/lang/sk.png); }
+.lang-ru { background-image: url(../images/lang/ru.png); }
 

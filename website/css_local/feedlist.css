@@ -51,14 +51,24 @@
     font-weight: bold;
 }
 
-#feedlist a.feed-url {
-    /*margin-left: 0.5em;*/
+#feedlist a.feed-url,
+#feedlist .feed-member,
+#feedlist a.feed-connect {
     padding: 1px 2px 1px 2px;
-    background: #888888;
     color: #ffffff;
     text-decoration: none;
     text-transform: lowercase;
     letter-spacing: -1px;
+    margin-right: 0.5ex;
+}
+#feedlist a.feed-url {
+    background: #888888;
+}
+#feedlist .feed-member {
+    background: #669900;
+}
+#feedlist a.feed-connect {
+    background: #444444;
 }
 
 #feedlist a.feed-url:hover {
@@ -66,11 +76,13 @@
 }
 
 #feedlist .feed ul.feed-feeds {
-    list-style-type: square;
+    list-style-type: none;
     color: #888888;
     margin-left: 0;
 }
+/*
 #feedlist .feed li.feed-feed {
     padding-left: 1px;
 }
+*/
 

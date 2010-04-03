@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css_local/feedlist.css" type="text/css" media="screen" title="All" charset="utf-8" />
 
   <title>Planet openSUSE Feed List</title>
+  <link rel="meta" type="application/rdf+xml" title="FOAF" href="foaf.xml" />
+  <link rel="subscriptions" type="text/x-opml" title="Subscriptions" href="opml.xml" />
 </head>
 <body>
   <!-- Start: Header -->
@@ -33,8 +35,8 @@
         This page contains the list of all the <a href="http://www.opensuse.org">openSUSE</a> contributors
         who are aggregated on <a href="index.html">Planet openSUSE</a>.
     </p>
-    <h4 id="actions-header">Actions:</h4>
-    <ul id="actions-menu">
+    <h4 id="actions-header" class="menu-header">Actions:</h4>
+    <ul id="actions-menu" class="menu">
       <li><a href="index.html">Back to Planet openSUSE</a></li>
     </ul>
   </div> <!-- #intro -->

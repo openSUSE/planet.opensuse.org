@@ -21,6 +21,8 @@ class Feed_List:
             self.out_file = 'feedlist.html'
 
     def output_write(self, rawdog, config, articles):
+		if config.no_feed_list:
+			return True
 		# prep map
 		feedmap = {}
 		feedbyname = {}
@@ -29,10 +31,18 @@ class Feed_List:
 			url = feed[0]
 			name = feed[2]['define_name']
 			item['name'] = name
-			if 'define_irc' in feed[2]:
-				item['irc'] = feed[2]['define_irc']
-			if 'define_face' in feed[2]:
-				item['face'] = feed[2]['define_face']
+			for d in (config['feeddefaults'], feed[2]):
+				for k in filter(lambda x: x.startswith('define_'), d.iterkeys()):
+					nk = re.sub(r'^define_', '', k)
+					item[nk] = d[k]
+					pass
+				pass
+			if 'face' in item:
+				if not '/' in item['face']:
+					item['face'] = 'hackergotchi/' + item['face']
+				if not '.' in item['face']:
+					item['face'] = item['face'] + '.png'
+
 			item['feeds'] = []
 			feedmap[url] = item
 			if not name in feedbyname:
@@ -44,8 +54,17 @@ class Feed_List:
 
 		for feed in rawdog.feeds.values():
 			itembits = {}
+			itembits['lang'] = feed.lang
+			for d in ('member', 'connect'):
+				if 'define_'+d in feed.args:
+					itembits[d] = feed.args['define_'+d]
+
 			itembits['url'] = cgi.escape(feed.url)
-			itembits['title'] = feed.get_html_name(config) #feed_info['title_detail']
+			title = feed.get_html_name(config)
+			lizards_match = re.match(ur'^openSUSE\s+Lizards\s+\S+\s+(.+)$', title)
+			if lizards_match:
+				title = lizards_match.group(1) + ' @ Lizards'
+			itembits['title'] = title
 			if 'link' in feed.feed_info:
 				link = feed.feed_info['link']
 				lm = re.match(r'^(http://lizards\.opensuse\.org)/?$', link)
@@ -74,7 +93,6 @@ class Feed_List:
 				feedbyname[name]['feeds'].append(itembits)
 			else:
 				print "WARNING: no name match found in feedbyname for "+name
-
 			pass
 
 		all_names = feedbyname.keys()
@@ -93,14 +111,11 @@ class Feed_List:
 				for k, v in feed.iteritems():
 					feed_vars[k] = v
 				feed_f.write(fill_template(feed_template, feed_vars))
-			
 			author_vars = data
 			if i % columns == 0:
 				author_vars['wrap'] = True
 			if i < columns:
 				author_vars['top'] = True
-			#elif 'wrap' in author_vars:
-			#	del author_vars['wrap']
 			i += 1
 			feed_f.flush()
 			author_vars['feeds'] = feed_f.getvalue()

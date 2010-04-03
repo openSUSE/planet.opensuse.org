@@ -26,6 +26,7 @@ import os, time, hashlib, getopt, sys, re, cgi, socket, urllib2, calendar
 import string, locale
 from StringIO import StringIO
 import types
+import copy
 
 try:
 	import threading
@@ -282,7 +283,7 @@ non_alphanumeric_re = re.compile(r'<[^>]*>|\&[^\;]*\;|[^a-z0-9]')
 class Feed:
 	"""An RSS feed."""
 
-	def __init__(self, url):
+	def __init__(self, url, lang):
 		self.url = url
 		self.period = 30 * 60
 		self.args = {}
@@ -290,6 +291,7 @@ class Feed:
 		self.modified = None
 		self.last_update = 0
 		self.feed_info = {}
+		self.lang = lang
 
 	def needs_update(self, now):
 		"""Return 1 if it's time to update this feed, or 0 if its
@@ -402,16 +404,23 @@ class Feed:
 
 		self.feed_info = p["feed"]
 		feed = self.url
+		feed_obj = rawdog.feeds[feed]
+		if 'language' in feed_obj.feed_info and feed_obj.lang != feed_obj.feed_info['language'][0:2]:
+			print >>sys.stderr, "Feed:        " + feed
+			print >>sys.stderr, "\tlanguage mismatch: feed says %s, config says %s\n" % (feed_obj.feed_info['language'], feed_obj.lang)
+			if not non_fatal:
+				return False
+
 		articles = rawdog.articles
 
 		seen = {}
 		sequence = 0
 		for entry_info in p["entries"]:
 			article = Article(feed, entry_info, now, sequence)
-                        for feedconfig in config["feedslist"]:
-                            if feedconfig[0] == feed:
-                                if feedconfig[2].has_key("define_microblog") and feedconfig[2]["define_microblog"] == "true":
-                                    article.twitter = True
+	   		for feedconfig in config["feedslist"]:
+				if feedconfig[0] == feed:
+					if feedconfig[2].has_key("define_microblog") and feedconfig[2]["define_microblog"] == "true":
+						article.twitter = True
 			ignore = plugins.Box(False)
 			plugins.call_hook("article_seen", rawdog, config, article, ignore)
 			if ignore.value:
@@ -487,8 +496,8 @@ class Article:
 		self.feed = feed
 		self.entry_info = entry_info
 		self.sequence = sequence
-                self.twitter = False
-
+		self.twitter = False
+		
 		modified = entry_info.get("modified_parsed")
 		self.date = None
 		if modified is not None:
@@ -633,6 +642,8 @@ class Config:
 		if have_threading:
 			self.loglock = threading.Lock()
 		self.reset()
+		self.lang = ''
+		self.no_feed_list = False
 
 	def reset(self):
 		self.config = {
@@ -703,6 +714,30 @@ class Config:
 				self.load_line(line, arglines)
 			except ValueError:
 				raise ConfigError("Bad value in config: " + line)
+
+	def resolve(self):
+		placeholder_dict = copy.copy(self.config)
+		placeholder_dict['lang'] = self.lang
+
+		# fix up placeholders
+		has_placeholder = True
+		while has_placeholder:
+			for k, v in self.config.iteritems():
+				if not isinstance(v, str):
+					continue
+				#print "* k="+k+" v="+v
+				m = re.match(r'^.*\${(.+?)}.*$', v)
+				if m:
+					#print "** match: " + m.group(1)
+					placeholder = r'\$\{'+m.group(1)+r'\}'
+					replacement = placeholder_dict[m.group(1)]
+					replaced = (re.subn(placeholder, replacement, v))[0]
+					self[k] = replaced
+					#print "*** placeholder="+placeholder+" replacement="+replacement+" replaced="+replaced
+					has_placeholder = True
+				else:
+					has_placeholder = False
+		pass
 
 	def load_line(self, line, arglines):
 		"""Process a configuration directive."""
@@ -1003,10 +1038,14 @@ class Rawdog(Persistable):
 		configuration."""
 		seenfeeds = {}
 		for (url, period, args) in config["feedslist"]:
+			if 'define_lang' in args:
+				lang = args['define_lang']
+			else:
+				lang = config['feeddefaults']['define_lang']
 			seenfeeds[url] = 1
 			if not self.feeds.has_key(url):
 				config.log("Adding new feed: ", url)
-				self.feeds[url] = Feed(url)
+				self.feeds[url] = Feed(url, lang)
 				self.modified()
 			feed = self.feeds[url]
 			if feed.period != period:
@@ -1353,7 +1392,8 @@ __description__
 
 		return bits
 
-	def write_output_file(self, articles, twitterArticles, article_dates, config, old=False):
+	#def write_output_file(self, articles, twitterArticles, article_dates, config, old=False):
+	def write_output_file(self, articles, article_dates, config, old=False):
 		"""Write a regular rawdog HTML output file."""
 		f = StringIO()
 		dw = DayWriter(f, config)
@@ -1367,24 +1407,24 @@ __description__
 
 		dw.close()
 		plugins.call_hook("output_items_end", self, config, f)
-                if not old:
-                    f.write('<p style="text-align: right; margin-right: 2ex;"><a href="old.html">Older blog entries</a></p>')
+		if not old:
+			f.write('<p class="old-entries"><a href="'+config["outputfileold"]+'">Older blog entries</a></p>')
 
 		bits = self.get_main_template_bits(config)
 		bits["items"] = f.getvalue()
 		bits["num_items"] = str(len(self.articles))
 
-                #TWITTER
-		f = StringIO()
-		dw = DayWriter(f, config)
-
-		for article in twitterArticles:
-			self.write_article(f, article, config)
-
-		dw.close()
-
-		bits["twitter"] = f.getvalue()
-                #end of TWITTER
+		#TWITTER
+		#f = StringIO()
+		#dw = DayWriter(f, config)
+		#
+		#for article in twitterArticles:
+		#	self.write_article(f, article, config)
+		#
+		#dw.close()
+		#
+		#bits["twitter"] = f.getvalue()
+		#end of TWITTER
 
 		plugins.call_hook("output_bits", self, config, bits)
 		s = fill_template(self.get_template(config), bits)
@@ -1409,11 +1449,17 @@ __description__
 
 		article_dates = {}
 		articlesAll = self.articles.values()
-                #Added jriddell 2008-09-15, we don't want to show articles with no date
-                articles = []
-                for article in articlesAll:
-                    if article.date is not None:
-                        articles.append(article)
+		#Added jriddell 2008-09-15, we don't want to show articles with no date
+		articles = []
+		for article in articlesAll:
+			article_feed = self.feeds[article.feed]
+			if config.lang and article_feed.lang != config.lang:
+				#print "SKIPPED article: config.lang=%s feed.lang=%s" % (config.lang, article_feed.lang)
+				continue
+			if article.date is None:
+				print "SKIPPED article: article.date is None"
+				continue
+			articles.append(article)
 		for a in articles:
 			if config["sortbyfeeddate"]:
 				article_dates[a] = a.date or a.added
@@ -1440,7 +1486,7 @@ __description__
 		plugins.call_hook("output_sort", self, config, articles)
 
 		twitterArticles = []
-                normalArticles = []
+		normalArticles = []
 		for article in articles:
 			if 'twitter' in dir(article) and article.twitter == True:
 				twitterArticles.append(article)
@@ -1464,12 +1510,14 @@ __description__
 		config.log("Selected ", len(articles), " of ", numarticles, " articles to write; ignored ", dup_count, " duplicates")
 
 		if not plugins.call_hook("output_write_files", self, config, articles, article_dates):
-			self.write_output_file(articles, twitterArticles, article_dates, config)
+			#self.write_output_file(articles, twitterArticles, article_dates, config)
+			self.write_output_file(articles, article_dates, config)
 
-		self.write_output_file(articlesOlder, [], article_dates, config, True)
+		#self.write_output_file(articlesOlder, [], article_dates, config, True)
+		self.write_output_file(articlesOlder, article_dates, config, True)
 
-		config["outputfile"] = "../website/twitter.html"
-		self.write_output_file(twitterArticles, [], article_dates, config)
+		#config["outputfile"] = "../website/twitter.html"
+		#self.write_output_file(twitterArticles, [], article_dates, config)
 
 		config.log("Finished write")
 
@@ -1480,6 +1528,7 @@ Usage: rawdog [OPTION]...
 
 General options (use only once):
 -d|--dir DIR                 Use DIR instead of ~/.rawdog
+-l|--lang LANG               language filter
 -v, --verbose                Print more detailed status information
 -N, --no-locking             Do not lock the state file
 --help                       Display this help and exit
@@ -1508,7 +1557,7 @@ def main(argv):
 	locale.setlocale(locale.LC_ALL, "")
 
 	try:
-		(optlist, args) = getopt.getopt(argv, "ulwf:c:tTd:va:r:N", ["update", "list", "write", "update-feed=", "help", "config=", "show-template", "dir=", "show-itemtemplate", "verbose", "upgrade", "add=", "remove=", "no-locking"])
+		(optlist, args) = getopt.getopt(argv, "ulwf:c:tTd:va:r:No:O:", ["update", "list", "write", "update-feed=", "help", "config=", "show-template", "dir=", "show-itemtemplate", "verbose", "upgrade", "add=", "remove=", "no-locking", "lang=", "output-file=", "old-output-file=", "no-feed-list"])
 	except getopt.GetoptError, s:
 		print s
 		usage()
@@ -1579,15 +1628,22 @@ def main(argv):
 
 	plugins.call_hook("startup", rawdog, config)
 
+	op = None
 	for o, a in optlist:
 		if o in ("-u", "--update"):
-			rawdog.update(config)
+			op = "update"
+			#rawdog.update(config)
 		elif o in ("-f", "--update-feed"):
 			rawdog.update(config, a)
 		elif o in ("-l", "--list"):
 			rawdog.list(config)
 		elif o in ("-w", "--write"):
-			rawdog.write(config)
+			op = "write"
+			#rawdog.write(config)
+		elif o in ("-l", "--lang"):
+			config.lang = a
+		elif o in ("--no-feed-list"):
+			config.no_feed_list = True
 		elif o in ("-c", "--config"):
 			try:
 				config.load(a)
@@ -1595,6 +1651,10 @@ def main(argv):
 				print >>sys.stderr, "In " + a + ":"
 				print >>sys.stderr, err
 				return 1
+		elif o in ("-o", "--output-file"):
+			config["outputfile"] = a
+		elif o in ("-O", "--old-output-file"):
+			config["outputfileold"] = a
 		elif o in ("-t", "--show-template"):
 			rawdog.show_template(config)
 		elif o in ("-T", "--show-itemtemplate"):
@@ -1607,6 +1667,15 @@ def main(argv):
 			remove_feed("config", a, config)
 			config.reload()
 			rawdog.sync_from_config(config)
+
+	config.resolve()
+	if op == "write":
+		rawdog.write(config)
+	elif op == "update":
+		rawdog.update(config)
+	else:
+		print >>sys.stderr, "ERROR: no operation given"
+		sys.exit(1)
 
 	plugins.call_hook("shutdown", rawdog, config)
 

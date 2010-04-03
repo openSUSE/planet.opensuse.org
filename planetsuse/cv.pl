@@ -8,6 +8,12 @@
 
 use strict;
 use warnings;
+use Getopt::Long;
+
+my $lang = undef;
+GetOptions(
+    "lang=s" => \$lang,
+) || die "ERROR: $!";
 
 my @feeds = ();
 my $cf = undef;
@@ -42,5 +48,6 @@ foreach my $f (@feeds) {
     print "\tdefine_name ",$f->{name},"\n";
     print "\tdefine_face ",$face,"\n" if $face;
     print "\tdefine_irc  ",$f->{irc},"\n" if exists $f->{irc};
+    print "\tdefine_lang ",$lang,"\n" if defined $lang;
     print "\n";
 }

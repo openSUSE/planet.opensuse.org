@@ -8,10 +8,11 @@
   <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/jquery.scrollTo.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/navigation.js" type="text/javascript" charset="utf-8"></script>
-  <!-- <script src="js/script.js" type="text/javascript" charset="utf-8"></script> -->
 
   <title>Planet openSUSE</title>
   <link rel="alternate" type="application/rss+xml" title="Planet openSUSE" href="rss20.xml" />
+  <link rel="meta" type="application/rdf+xml" title="FOAF" href="foaf.xml" />
+  <link rel="subscriptions" type="text/x-opml" title="Subscriptions" href="opml.xml" />
 </head>
 <body>
   <!-- Start: Header -->
@@ -47,10 +48,19 @@
         This is a feed aggregator that collects what <a href="http://www.opensuse.org">openSUSE</a> contributors are writing in their
         respective blogs.
     </p>
-    <h4 id="actions-header">Actions:</h4>
-    <ul id="actions-menu">
+    <h4 id="lang-header" class="menu-header">Languages:</h4>
+    <ul id="lang-menu" class="menu">
+      <li><a href="index.html" id="lang-menu-en" class="lang-en">English</a></li>
+      <li><a href="de.html"    id="lang-menu-de" class="lang-de">German</a></li>
+      <li><a href="es.html"    id="lang-menu-es" class="lang-es">Spanish</a></li>
+      <li><a href="pt.html"    id="lang-menu-pt" class="lang-pt">Portuguese</a></li>
+      <li><a href="pl.html"    id="lang-menu-pl" class="lang-pl">Polish</a></li>
+    </ul>
+
+    <h4 id="actions-header" class="menu-header">Actions:</h4>
+    <ul id="actions-menu" class="menu">
       <li><a href="#" id="help-trigger">Keyboard shortcuts</a></li>
-      <li><a href="feedlist.html" id=="feeds-trigger">Feed list</a></li>
+      <li><a href="feedlist.html" id="feeds-trigger">Feed list</a></li>
     </ul>
   </div> <!-- #intro -->
 

@@ -7,7 +7,7 @@
     </div>
   </div>
   <div class="entry">
-    <div class="author"><img alt="face" class="face" __if_face__ src="__face__" __else__ src="hackergotchi/geekogotchi.png" __endif__ /></div>
+    __if_face__<div class="author"><img alt="face" class="face" src="__face__"/></div>__endif__
     <div class="blogcontent">
       __description__
     </div>

@@ -105,9 +105,11 @@ itemtemplate itemplate
 # directory. Specify this as "-" to write the HTML to stdout.
 # (You will probably want to make this an absolute path, else rawdog will write
 # to a file in your ~/.rawdog directory.)
-#outputfile output.html
-outputfile ../website/index.html
-outputfileold ../website/old.html
+#outputfile ../website/index.html
+#outputfileold ../website/old.html
+
+outputfile ../website/index.${lang}.html
+outputfileold ../website/old.${lang}.html
 
 define outputxml ../website/rss20.xml
 define outputfoaf ../website/foafroll.xml
@@ -235,6 +237,9 @@ changeconfig false
 #feed 3h http://proxyfeed.example.com/proxied.rss http_proxy=http://localhost:1234/
 #feed 3h http://dupsfeed.example.com/duplicated.rss allowduplicates=true
 
+feeddefaults
+    define_lang en
+    define_face geekogotchi.png
+
 include feeds
-#include testfeeds
 
