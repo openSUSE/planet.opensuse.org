@@ -943,7 +943,7 @@ feed 15m http://infragments.blogspot.com/feeds/posts/default
 
 feed 15m http://feeds.feedburner.com/Karl-tux-stadtOpensuse
 	define_name Sirko Kemter
-	define_face kemter.png
+	define_face hackergotchi/kemter.png
     define_irc  gnokii
     define_member 1
 

@@ -239,7 +239,7 @@ changeconfig false
 
 feeddefaults
     define_lang en
-    define_face geekogotchi.png
+    define_face hackergotchi/geekogotchi.png
 
 include feeds
 

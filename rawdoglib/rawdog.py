@@ -630,6 +630,16 @@ def parse_feed_args(argparams, arglines):
 		args[asplit[0]] = asplit[1]
 	if "maxage" in args:
 		args["maxage"] = parse_time(args["maxage"])
+	# post-process args
+	if "face" in args:
+		face = args["face"]
+		if not '/' in face:
+			face = "hackergotchi/" + face
+		if not '.' in face:
+			face = face + ".png"
+		args["face"] = face
+		pass
+
 	return args
 
 class ConfigError(Exception): pass
