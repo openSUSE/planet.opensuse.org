@@ -970,7 +970,6 @@ feed 15m http://blog.coly.li/?feed=rss2
 
 feed 15m http://www.andreas-demmer.de/newsfeeds/weblog.rdf?category=Linux
     define_name Andreas Demmer
-    define_face andreas_demmer.jpg
     define_lang de
 
 feed 15m http://www.kde4.de/?feed=rss2
