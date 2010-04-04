@@ -405,11 +405,11 @@ class Feed:
 		self.feed_info = p["feed"]
 		feed = self.url
 		feed_obj = rawdog.feeds[feed]
-		if 'language' in feed_obj.feed_info and feed_obj.lang != feed_obj.feed_info['language'][0:2]:
-			print >>sys.stderr, "Feed:        " + feed
-			print >>sys.stderr, "\tlanguage mismatch: feed says %s, config says %s\n" % (feed_obj.feed_info['language'], feed_obj.lang)
-			if not non_fatal:
-				return False
+		#if 'language' in feed_obj.feed_info and feed_obj.lang != feed_obj.feed_info['language'][0:2]:
+		#	print >>sys.stderr, "Feed:        " + feed
+		#	print >>sys.stderr, "\tlanguage mismatch: feed says %s, config says %s\n" % (feed_obj.feed_info['language'], feed_obj.lang)
+		#	if not non_fatal:
+		#		return False
 
 		articles = rawdog.articles
 
