@@ -252,9 +252,10 @@ html {
     margin: 0.1em 1em 0.1em 0;
     float: left;
     clear: left;
+    font-size: 1em;
 }
 ul.menu {
-    margin: 0;
+    margin: 0.1em 1em 0.1em 0;
     padding: 0;
     list-style: none;
 }
