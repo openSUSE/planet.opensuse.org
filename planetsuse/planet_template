@@ -79,7 +79,7 @@
   <div class="clear"></div>
 
   <!-- Start: Main Content Area -->
-  <div id="content" class="content-wrapper">
+  <div id="content" class="ui-oo-content-wrapper">
     __items__
   </div>
   <!-- End: Main Content Area -->
