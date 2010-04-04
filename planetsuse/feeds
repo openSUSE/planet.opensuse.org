@@ -887,11 +887,6 @@ feed 15m http://lizards.opensuse.org/author/javierllorente/feed/
 feed 15m http://lizards.opensuse.org/author/fabiomux/feed/
 	define_name Fabio Mucciante
 
-feed 15m http://saigkill.wordpress.com/category/computer/opensuse/feed/atom/
-	define_name Sascha Manns
-	define_face hackergotchi/sascha.png
-    define_member 1
-
 feed 15m http://lizards.opensuse.org/author/ealin/feed/
 	define_name Alin M Elena
 	define_irc  alin
@@ -965,10 +960,7 @@ feed 15m http://lizards.opensuse.org/author/saigkill/feed/
     define_member 1
 
 feed 15m http://saigkill.wordpress.com/category/computer/opensuse/feed/
-	define_name Sascha Manns (wp)
-	define_face hackergotchi/sascha.png
-	define_irc  saigkill
-    define_member 1
+	define_name Sascha Manns
 
 feed 15m http://blog.coly.li/?feed=rss2
 	define_name Coly Li
