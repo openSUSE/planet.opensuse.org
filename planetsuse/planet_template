@@ -51,6 +51,9 @@
         This is a feed aggregator that collects what <a href="http://www.opensuse.org">openSUSE</a> contributors are writing in their
         respective blogs.
     </p>
+    <p>
+        To have your blog added to this aggregator, please read <a href="http://en.opensuse.org/PlanetSUSE">the instructions</a>.
+    </p>
     <h4 id="lang-header" class="menu-header">Languages:</h4>
     <ul id="lang-menu" class="menu">
       <li><a href="index.html" id="lang-menu-en" class="lang-en">English</a></li>

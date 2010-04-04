@@ -39,6 +39,9 @@
         This page contains the list of all the <a href="http://www.opensuse.org">openSUSE</a> contributors
         who are aggregated on <a href="index.html">Planet openSUSE</a>.
     </p>
+    <p>
+        To have your blog added to this aggregator, please read <a href="http://en.opensuse.org/PlanetSUSE">the instructions</a>.
+    </p>
     <h4 id="actions-header" class="menu-header">Actions:</h4>
     <ul id="actions-menu" class="menu">
       <li><a href="index.html">Back to Planet openSUSE</a></li>
