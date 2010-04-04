@@ -706,8 +706,13 @@ feed 15m http://lizards.opensuse.org/author/haass/feed/
 feed 15m http://holger123.wordpress.com/feed/atom/
 	define_name Holger Hetterich
 
+feed 15m http://ungaman.wordpress.com/feed/atom/
+    define_name Julio Vannini
+    define_lang es
+
 feed 15m http://lizards.opensuse.org/author/UngaMan/feed/
 	define_name Julio Vannini
+    define_lang en
 
 feed 15m http://lizards.opensuse.org/author/eri_zaq/feed/
 	define_name Dinar Valeev
@@ -972,7 +977,7 @@ feed 15m http://blog.coly.li/?feed=rss2
 	define_irc  coly
     define_member 1
 
-feed 15m http://www.andreas-demmer.de/newsfeeds/weblog.rdf?category=Linux
+feed 15m http://www.andreas-demmer.de/category/linux/feed/
     define_name Andreas Demmer
     define_lang de
 
@@ -997,7 +1002,7 @@ feed 15m http://blog.binaridev.es/feeds/posts/default
     define_name Ángel Llosa
     define_lang es
 
-feed 15m http://emtorres.com.ar/blog/feed/atom
+feed 15m http://emtorres.com.ar/blog/feed/atom/
     define_name Martin Torres
     define_lang es
 
@@ -1005,11 +1010,7 @@ feed 15m http://gnuowned.tumblr.com/rss
     define_name Miguel Angel Barajas
     define_lang es
 
-feed 15m http://ungaman.wordpress.com/feed/atom
-    define_name Julio Vannini
-    define_lang es
-
-feed 15m http://hippie.wordpress.com/feed/atom
+feed 15m http://hippie.wordpress.com/feed/atom/
     define_name Juan Faúndez
     define_lang es
     define_irc  hippiesus
@@ -1023,7 +1024,7 @@ feed 15m http://pangrys.blogspot.com/feeds/posts/default
     define_name Maciej Piotr Szczepański
     define_lang pl
 
-feed 15m http://www.rogozinski.org/feed/atom
+feed 15m http://www.rogozinski.org/feed/atom/
     define_name Mirosław Rogoziński
     define_lang pl
 
@@ -1031,7 +1032,7 @@ feed 15m http://my.opera.com/dragonzone/xml/atom/blog/
     define_name Piotr Krakowiak
     define_lang pl
 
-feed 15m http://elchevive68.wordpress.com/feed/atom
+feed 15m http://elchevive68.wordpress.com/feed/atom/
 	define_name Luiz Fernando Ranghetti
 	define_irc  elchevive1968
 	define_lang pt
@@ -1040,7 +1041,7 @@ feed 15m http://dionatamartins.blogspot.com/feeds/posts/default
 	define_name Dionata Martins
 	define_lang pt
 
-feed 15m http://mirandamaster.blogspot.com/feeds/posts/default
+feed 15m http://www.mirandamaster.com/feeds/posts/default
 	define_name Márcio Miranda
 	define_lang pt
 
@@ -1053,15 +1054,15 @@ feed 15m http://usuariolinux.blogspot.com/feeds/posts/default
 	define_name Marcelo Segura
 	define_lang pt
 
-feed 15m http://ninjitisu.wordpress.com/feed/atom
+feed 15m http://ninjitisu.wordpress.com/feed/atom/
 	define_name Agail Sanches
 	define_lang pt
 
-feed 15m http://neofenix.wordpress.com/feed/atom
+feed 15m http://neofenix.wordpress.com/feed/atom/
 	define_name Fabio Lima
 	define_lang pt
 
-feed 15m http://blog.marcolino.com.br/wordpress/tags/opensuse/feed
+feed 15m http://blog.marcolino.com.br/wordpress/tags/opensuse/feed/
 	define_name Alexandre Marcolino
 	define_lang pt
 
