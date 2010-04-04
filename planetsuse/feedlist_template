@@ -12,7 +12,8 @@
   <script src="http://static.opensuse.org/themes/bento/js/global-navigation.js" type="text/javascript" charset="utf-8"></script>
 
   <title>Planet openSUSE Feed List</title>
-  <link rel="meta" type="application/rdf+xml" title="FOAF" href="foaf.xml" />
+  <link rel="alternate" type="application/rss+xml" title="Planet openSUSE" href="rss20.xml" />
+  <link rel="meta" type="application/rdf+xml" title="FOAF" href="foafroll.xml" />
   <link rel="subscriptions" type="text/x-opml" title="Subscriptions" href="opml.xml" />
 </head>
 <body>
@@ -41,6 +42,12 @@
     <h4 id="actions-header" class="menu-header">Actions:</h4>
     <ul id="actions-menu" class="menu">
       <li><a href="index.html">Back to Planet openSUSE</a></li>
+    </ul>
+    <h4 id="xml-header" class="menu-header">Metadata:</h4>
+    <ul id="xml-menu" class="menu">
+      <li><a href="rss20.xml"    type="application/rss+xml" rel="alternate">RSS</a></li>
+      <li><a href="opml.xml"     type="text/x-opml"         rel="meta">OPML</a></li>
+      <li><a href="foafroll.xml" type="application/rdf+xml" rel="subscriptions">FOAF</a></li>
     </ul>
   </div> <!-- #intro -->
 
