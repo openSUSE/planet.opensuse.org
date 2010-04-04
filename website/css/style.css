@@ -249,15 +249,18 @@ html {
 }
 
 .menu-header {
+    font-size: 100% !important;
     margin: 0.1em 1em 0.1em 0;
     float: left;
-    clear: left;
-    font-size: 1em;
+    clear: both;
+    width: 15%;
+    text-align: right;
 }
 ul.menu {
     margin: 0.1em 1em 0.1em 0;
     padding: 0;
     list-style: none;
+    float: left;
 }
 .menu li {
     display: inline;

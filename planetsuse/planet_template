@@ -15,7 +15,7 @@
 
   <title>Planet openSUSE</title>
   <link rel="alternate" type="application/rss+xml" title="Planet openSUSE" href="rss20.xml" />
-  <link rel="meta" type="application/rdf+xml" title="FOAF" href="foaf.xml" />
+  <link rel="meta" type="application/rdf+xml" title="FOAF" href="foafroll.xml" />
   <link rel="subscriptions" type="text/x-opml" title="Subscriptions" href="opml.xml" />
 </head>
 <body>
@@ -65,7 +65,15 @@
       <li><a href="#" id="help-trigger">Keyboard shortcuts</a></li>
       <li><a href="feedlist.html" id="feeds-trigger">Feed list</a></li>
     </ul>
+
+    <h4 id="xml-header" class="menu-header">Metadata:</h4>
+    <ul id="xml-menu" class="menu">
+      <li><a href="rss20.xml"    type="application/rss+xml" rel="alternate">RSS</a></li>
+      <li><a href="opml.xml"     type="text/x-opml"         rel="meta">OPML</a></li>
+      <li><a href="foafroll.xml" type="application/rdf+xml" rel="subscriptions">FOAF</a></li>
+    </ul>
   </div> <!-- #intro -->
+  <div class="clear"></div>
 
   <!-- Start: Main Content Area -->
   <div id="content" class="content-wrapper">
