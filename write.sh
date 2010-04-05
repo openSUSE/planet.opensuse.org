@@ -8,6 +8,7 @@ basedir="${0%/*}"
     --lang "en" \
     --output-file ../website/index.html \
     --old-output-file ../website/old.html \
+    --old-output-link old.html \
     --write
 
 for lang in de es pl pt jp; do
@@ -15,6 +16,7 @@ for lang in de es pl pt jp; do
         --lang "$lang" \
         --output-file ../website/"$lang".html \
         --old-output-file ../website/"$lang"-old.html \
+        --old-output-link "$lang"-old.html \
         --no-feed-list \
         --write
 done

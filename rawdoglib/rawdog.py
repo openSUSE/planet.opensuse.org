@@ -662,6 +662,7 @@ class Config:
 			"defines" : {},
 			"outputfile" : "output.html",
 			"outputfileold" : "old.html",
+			"linkold" : "old.html",
 			"maxarticles" : 200,
 			"maxage" : 0,
 			"expireage" : 24 * 60 * 60,
@@ -1418,7 +1419,7 @@ __description__
 		dw.close()
 		plugins.call_hook("output_items_end", self, config, f)
 		if not old:
-			f.write('<p class="old-entries"><a href="'+config["outputfileold"]+'">Older blog entries</a></p>')
+			f.write('<p class="old-entries"><a href="'+config["linkold"]+'">Older blog entries</a></p>')
 
 		bits = self.get_main_template_bits(config)
 		bits["items"] = f.getvalue()
@@ -1567,7 +1568,7 @@ def main(argv):
 	locale.setlocale(locale.LC_ALL, "")
 
 	try:
-		(optlist, args) = getopt.getopt(argv, "ulwf:c:tTd:va:r:No:O:", ["update", "list", "write", "update-feed=", "help", "config=", "show-template", "dir=", "show-itemtemplate", "verbose", "upgrade", "add=", "remove=", "no-locking", "lang=", "output-file=", "old-output-file=", "no-feed-list"])
+		(optlist, args) = getopt.getopt(argv, "ulwf:c:tTd:va:r:No:O:", ["update", "list", "write", "update-feed=", "help", "config=", "show-template", "dir=", "show-itemtemplate", "verbose", "upgrade", "add=", "remove=", "no-locking", "lang=", "output-file=", "old-output-file=", "no-feed-list", "old-output-link="])
 	except getopt.GetoptError, s:
 		print s
 		usage()
@@ -1665,6 +1666,10 @@ def main(argv):
 			config["outputfile"] = a
 		elif o in ("-O", "--old-output-file"):
 			config["outputfileold"] = a
+			if not "linkold" in config.config:
+				config["linkold"] = a
+		elif o in ("--old-output-link"):
+			config["linkold"] = a
 		elif o in ("-t", "--show-template"):
 			rawdog.show_template(config)
 		elif o in ("-T", "--show-itemtemplate"):
