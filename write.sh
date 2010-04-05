@@ -10,7 +10,7 @@ basedir="${0%/*}"
     --old-output-file ../website/old.html \
     --write
 
-for lang in de es pl pt; do
+for lang in de es pl pt jp; do
     ./rawdog -d planetsuse/ \
         --lang "$lang" \
         --output-file ../website/"$lang".html \

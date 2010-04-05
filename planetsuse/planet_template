@@ -61,6 +61,7 @@
       <li><a href="es.html"    id="lang-menu-es" class="lang-es">Spanish</a></li>
       <li><a href="pt.html"    id="lang-menu-pt" class="lang-pt">Portuguese</a></li>
       <li><a href="pl.html"    id="lang-menu-pl" class="lang-pl">Polish</a></li>
+      <li><a href="jp.html"    id="lang-menu-jp" class="lang-jp">Japanese</a></li>
     </ul>
 
     <h4 id="actions-header" class="menu-header">Actions:</h4>

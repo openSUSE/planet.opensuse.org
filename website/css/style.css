@@ -287,6 +287,7 @@ ul.menu {
 .lang-cz,
 .lang-sk,
 .lang-ru,
+.lang-jp,
 .lang {
     padding-left: 20px !important;
     background: url(../images/lang/en.png) no-repeat 0% 50%;
@@ -301,4 +302,5 @@ ul.menu {
 .lang-cz { background-image: url(../images/lang/cz.png); }
 .lang-sk { background-image: url(../images/lang/sk.png); }
 .lang-ru { background-image: url(../images/lang/ru.png); }
+.lang-jp { background-image: url(../images/lang/jp.png); }
 
