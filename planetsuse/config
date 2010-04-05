@@ -165,7 +165,7 @@ blocklevelhtml true
 # article causing formatting problems for the rest of the page.
 # If this option is turned on, you must have the mx.Tidy Python module
 # installed.
-tidyhtml true
+tidyhtml false
 
 # Whether the articles displayed should be sorted first by the date
 # provided in the feed (useful for "planet" pages, where you're
