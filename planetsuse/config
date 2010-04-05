@@ -137,7 +137,7 @@ showfeeds true
 # the same time.  If you have a lot of feeds, setting this to be 20 or
 # so will significantly speed up updates. If this is set to 0, rawdog
 # will not use threads at all.
-numthreads 3
+numthreads 10
 
 # The time that rawdog will wait before considering a feed unreachable
 # when trying to connect. If you're getting lots of timeout errors and
