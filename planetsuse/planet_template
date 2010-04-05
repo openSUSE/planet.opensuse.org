@@ -38,6 +38,8 @@
     <dl>
       <dt>j</dt><dd>next post</dd>
       <dt>k</dt><dd>previous post</dd>
+      <dt>d</dt><dd>next day</dd>
+      <dt>u</dt><dd>previous day</dd>
       <dt>t</dt><dd>go to top</dd>
       <dt>esc</dt><dd>cancel</dd>
     </dl>
