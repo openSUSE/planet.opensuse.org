@@ -12,7 +12,6 @@ info "* global"
 mkdir -p website/global
 ./rawdog -d planetsuse/ \
     --output-dir=website/global \
-    --xml-site-link=http://planet.opensuse.org/ \
     --write
 
 for lang in en de es pl pt jp; do
@@ -21,6 +20,5 @@ for lang in en de es pl pt jp; do
     ./rawdog -d planetsuse/ \
         --lang="$lang" \
         --output-dir=website/"$lang" \
-        --xml-site-link=http://planet.opensuse.org/"$lang"/ \
         --write
 done

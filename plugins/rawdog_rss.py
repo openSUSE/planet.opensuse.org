@@ -16,6 +16,7 @@ from time import gmtime, strftime
 
 class RSS_Feed:
     def __init__(self, rawdog, config):
+        self.write = False
         if config['defines'].has_key('outputxml'):
             self.out_file = config['defines']['outputxml']
         else:
@@ -144,6 +145,7 @@ class RSS_Feed:
         self.doc.freeDoc()
 
     def output_write(self, rawdog, config, articles):
+        self.write = True
         for article in articles:
             if article.date is not None:
                 article_feed = rawdog.feeds[article.feed]
@@ -156,10 +158,13 @@ class RSS_Feed:
         return True
 
     def shutdown(self, rawdog, config):
+        if not self.write:
+            return True
+
         for feed in config["feedslist"]:
             member = self.foaf_articles.newChild(None, 'foaf:member', None)
             agent = member.newChild(None, 'foaf:Agent', None)
-            agent.newChild(None, 'foaf:name', feed[2]['define_name'])
+            agent.newChild(None, 'foaf:name', feed[2]['define_name'].encode('utf8'))
             weblog = agent.newChild(None, 'foaf:weblog', None)
             document = weblog.newChild(None, 'foaf:Document', None)
             document.setProp('rdf:about', feed[0])
@@ -168,7 +173,7 @@ class RSS_Feed:
             channel.setProp('rdf:about', '')
 
             outline = self.opml_articles.newChild(None, 'outline', None)
-            outline.setProp('text', feed[2]['define_name'])
+            outline.setProp('text', feed[2]['define_name'].encode('utf8'))
             outline.setProp('xmlUrl', feed[0])
 
         self.foafdoc.saveFormatFile(self.foaf_file, 1)
@@ -176,23 +181,10 @@ class RSS_Feed:
 
         self.opmldoc.saveFormatFile(self.opml_file, 1)
         self.opmldoc.freeDoc()
-
-    def add_args(self, parser):
-        parser.add_option('--xml-output-file', action='store', type='string', dest='xml_output_file')
-        parser.add_option('--xml-output-link', action='store', type='string', dest='xml_output_link')
-        parser.add_option('--xml-site-link', action='store', type='string', dest='xml_site_link')
-        return True
-
-    def process_args(self, options, args, config):
-        config['outputxml'] = options.xml_output_file
-        config['linkxml'] = options.xml_output_link
-        config['sitexml'] = options.xml_site_link
         return True
 
 def startup(rawdog, config):
     rss_feed = RSS_Feed(rawdog, config)
-    rawdoglib.plugins.attach_hook("add_args", rss_feed.add_args)
-    rawdoglib.plugins.attach_hook("process_args", rss_feed.process_args)
     rawdoglib.plugins.attach_hook("output_write", rss_feed.output_write)
     rawdoglib.plugins.attach_hook("shutdown", rss_feed.shutdown)
     return True

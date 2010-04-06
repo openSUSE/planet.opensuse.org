@@ -208,15 +208,9 @@ def load_file(name, config):
 		f.close()
 	return file_cache[name]
 
-def write_ascii(f, s, config):
-	"""Write the string s, which should only contain ASCII characters, to
-	file f; if it isn't encodable in ASCII, then print a warning message
-	and write UTF-8."""
-	try:
-		f.write(s)
-	except UnicodeEncodeError, e:
-		config.bug("Error encoding output as ASCII; UTF-8 has been written instead.\n", e)
-		f.write(s.encode("UTF-8"))
+def write_utf8(f, s, config):
+	f.write(s.encode("UTF-8"))
+	pass
 
 def short_hash(s):
 	"""Return a human-manipulatable 'short hash' of a string."""
@@ -381,10 +375,6 @@ class Feed:
 		sequence = 0
 		for entry_info in p["entries"]:
 			article = Article(feed, entry_info, now, sequence)
-	   		for feedconfig in config["feedslist"]:
-				if feedconfig[0] == feed:
-					if feedconfig[2].has_key("define_microblog") and feedconfig[2]["define_microblog"] == "true":
-						article.twitter = True
 			ignore = plugins.Box(False)
 			plugins.call_hook("article_seen", rawdog, config, article, ignore)
 			if ignore.value:
@@ -460,7 +450,6 @@ class Article:
 		self.feed = feed
 		self.entry_info = entry_info
 		self.sequence = sequence
-		self.twitter = False
 		
 		modified = entry_info.get("modified_parsed")
 		self.date = None
@@ -1199,20 +1188,7 @@ __description__
 			else:
 				title = "Link"
 
-		if 'twitter' in dir(article) and article.twitter:
-			split = title.split(":", 1)
-			text = split[0] + "</a>"
-			split[1] = split[1].lstrip()
-			if split[1].startswith("@"):
-				atSplit = split[1].split(" ", 1)
-				twitterLink = atSplit[0].lstrip("@")
-				twitterLink = twitterLink.rstrip(":")
-				text = text + " <a href='http://twitter.com/"+ twitterLink + "'>" + atSplit[0] + "</a>" + " " + atSplit[1]
-			else:
-				text = text + " " + split[1]
-			itembits["title_no_link"] = text
-		else:
-			itembits["title_no_link"] = title
+		itembits["title_no_link"] = title
 		if link is not None:
 			itembits["url"] = string_to_html(link, config)
 		else:
@@ -1272,10 +1248,7 @@ __description__
 		itembits["time"] = time.strftime("%H:%M", tim)
 
 		plugins.call_hook("output_item_bits", self, config, feed, article, itembits)
-		if 'twitter' in dir(article) and article.twitter:
-			itemtemplate = load_file("microblogitemtemplate", config)
-		else:
-			itemtemplate = self.get_itemtemplate(config)
+		itemtemplate = self.get_itemtemplate(config)
 
 		f.write(fill_template(itemtemplate, itembits))
 
@@ -1343,7 +1316,6 @@ __description__
 
 		return bits
 
-	#def write_output_file(self, articles, twitterArticles, article_dates, config, old=False):
 	def write_output_file(self, articles, article_dates, config, old=False):
 		"""Write a regular rawdog HTML output file."""
 		plugins.call_hook("output_items_begin", self, config)
@@ -1495,11 +1467,11 @@ __description__
 		else:
 			outputfile = config["outputfile"]
 		if outputfile == "-":
-			write_ascii(sys.stdout, s, config)
+			write_utf8(sys.stdout, s, config)
 		else:
 			config.log("Writing output file: ", outputfile)
 			f = open(outputfile + ".new", "w")
-			write_ascii(f, s, config)
+			write_utf8(f, s, config)
 			f.close()
 			os.rename(outputfile + ".new", outputfile)
 
@@ -1547,20 +1519,10 @@ __description__
 		articles.sort(compare)
 		plugins.call_hook("output_sort", self, config, articles)
 
-		twitterArticles = []
-		normalArticles = []
-		for article in articles:
-			if 'twitter' in dir(article) and article.twitter == True:
-				twitterArticles.append(article)
-			else:
-				normalArticles.append(article)
-		articles = normalArticles
-
 		if config["maxarticles"] != 0:
-                        maxarticles = config["maxarticles"]
+			maxarticles = config["maxarticles"]
 			articlesOlder = articles[maxarticles:maxarticles*2]
 			articles = articles[:maxarticles]
-			twitterArticles = twitterArticles[:maxarticles]
 
 		plugins.call_hook("output_write", self, config, articles)
 
@@ -1572,14 +1534,9 @@ __description__
 		config.log("Selected ", len(articles), " of ", numarticles, " articles to write; ignored ", dup_count, " duplicates")
 
 		if not plugins.call_hook("output_write_files", self, config, articles, article_dates):
-			#self.write_output_file(articles, twitterArticles, article_dates, config)
 			self.write_output_file(articles, article_dates, config)
 
-		#self.write_output_file(articlesOlder, [], article_dates, config, True)
 		self.write_output_file(articlesOlder, article_dates, config, True)
-
-		#config["outputfile"] = "../website/twitter.html"
-		#self.write_output_file(twitterArticles, [], article_dates, config)
 
 		config.log("Finished write")
 
