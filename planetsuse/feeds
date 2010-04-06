@@ -239,15 +239,11 @@ feed 15m http://mvidner.blogspot.com/feeds/posts/default
     define_member 1
     define_connect 77
 
-feed 15m http://www.hennevogel.de/feed/
+feed 15m http://blog.hennevogel.de/feed/
 	define_name Henne Vogelsang
 	define_irc  henne
     define_face hackergotchi/henne.png
     define_member 1
-
-feed 15m http://lizards.opensuse.org/author/hennevogel/feed/
-	define_name Henne Vogelsang
-    define_face hackergotchi/henne.png
 
 feed 15m http://snorp.net/posts.atom
 	define_name James Willcox
