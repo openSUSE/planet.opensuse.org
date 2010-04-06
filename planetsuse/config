@@ -244,5 +244,5 @@ feeddefaults
     define_face _
 
 #include feeds
-include testfeeds
+include feeds
 
