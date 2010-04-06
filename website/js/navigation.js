@@ -2,6 +2,18 @@
 var currentPost = 0;
 var currentDay = 0;
 
+function toggle_overview() {
+	var o = $("#overview");
+	o.toggle();
+	var e = $("#planet");
+	if (e.hasClass("main-collapsed")) {
+		e.removeClass("main-collapsed");
+	} else {
+		e.addClass("main-collapsed");
+		$("#overview-day-first").focus();
+	}
+}
+
 $(function($) {
 
 	$("#help-trigger").click(function() {
@@ -19,6 +31,11 @@ $(function($) {
 
 	$('.day').each(function(i) {
 		$(this).prepend('<a id="day-item-'+(i+1)+'" class="day-item-anchor" name="day-item-'+(i+1)+'"></a>');
+	});
+
+	$("#overview-trigger").click(function() {
+		toggle_overview();
+		return false;
 	});
 
     document.onkeydown = function(_e) {
@@ -113,12 +130,21 @@ $(function($) {
 				$.scrollTo('#header', 0);
 				currentPost = 0;
 				break;
+		
+			// "o" key
+			case 79:
+				toggle_overview();
+				break;
+
+			// "h" key
+			case 72:
+				$("#help").toggle();
+				break;
 
 			// "esc" key
 			case 27:
-				if ($("#help:visible").length > 0) {
-					$('#help').toggle();
-				}
+				if ($("#help:visible").length > 0) { $('#help').toggle(); }
+				if ($("#overview:visible").length > 0) { toggle_overview(); }
 				break;
 				
 		}

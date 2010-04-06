@@ -38,6 +38,8 @@ daysections true
 # %Y-%m-%d            2004-01-21 (ISO 8601 format)
 dayformat <span class="day-day">%A</span><br/><span class="day-date">%B %d, %Y</span>
 
+overview_dayformat %A %B %d, %Y
+
 # Whether to divide the articles up by time, writing a "timeformat" heading
 # before each set.
 timesections false
