@@ -366,9 +366,14 @@ ul.menu {
 .lang-sk,
 .lang-ru,
 .lang-jp,
+.lang-all,
 .lang {
     padding-left: 20px !important;
     background: url(../images/lang/en.png) no-repeat 0% 50%;
+}
+
+.post-header h3.lang a.blogurl {
+    padding-left: 20px !important;
 }
 
 .lang-en { background-image: url(../images/lang/en.png); }
@@ -381,4 +386,8 @@ ul.menu {
 .lang-sk { background-image: url(../images/lang/sk.png); }
 .lang-ru { background-image: url(../images/lang/ru.png); }
 .lang-jp { background-image: url(../images/lang/jp.png); }
+.lang-all { background-image: url(../images/lang/_.png); }
+
+#current-entries:before { content: "\21E6\00A0"; }
+#old-entries:after      { content: "\00A0\21E8"; }
 

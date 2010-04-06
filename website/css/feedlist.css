@@ -59,7 +59,7 @@
     text-decoration: none;
     text-transform: lowercase;
     letter-spacing: -1px;
-    margin-right: 0.5ex;
+    margin-left: 0.5ex;
 }
 #feedlist a.feed-url {
     background: #888888;

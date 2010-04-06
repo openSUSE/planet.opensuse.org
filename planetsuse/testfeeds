@@ -1,0 +1,41 @@
+feed 15m http://jamesthevicar.com/blog/?feed=rss2
+	define_name James Ogley
+	define_face james12
+	define_irc  Riggwelter
+    define_member 1
+
+feed 15m http://dev-loki.blogspot.com/feeds/posts/default?alt=rss
+	define_name Pascal Bleser
+	define_face yaloki
+	define_irc  yaloki
+    define_connect 102
+    define_member 1
+
+feed 15m http://www.kdedevelopers.org/blog/280/feed
+	define_name Lubos Lunak
+	define_irc  Seli
+    define_member 1
+
+feed 15m http://jimmac.musichall.cz/log/?feed=rss2
+	define_name Jakub Steiner
+	define_face http://planet.gnome.org/heads/jimmac.png
+	define_irc  jimmac
+    define_member 1
+    define_connect 7
+
+feed 15m http://duncan.mac-vicar.com/blog/archives/tag/suse/feed
+	define_name Duncan Mac-Vicar
+	define_face dmv
+	define_irc  duncanmv
+    define_member 1
+
+feed 15m http://blog.cboltz.de/feeds/categories/6-english.rss
+	define_name Christian Boltz
+	define_irc  cboltz
+    define_member 1
+    define_lang en
+
+feed 15m http://blog.cboltz.de/rss.xml
+	define_name Christian Boltz
+    define_lang de
+

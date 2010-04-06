@@ -11,7 +11,7 @@ maxage 0
 # The age after which articles will be discarded if they do not appear
 # in a feed. Set this to a larger value if you want your rawdog output
 # to cover more than a day's worth of articles.
-expireage 1d
+expireage 3d
 
 # The minimum number of articles from each feed to keep around in the history.
 # Set this to 0 to only keep articles that were returned the last time the feed
@@ -38,7 +38,7 @@ daysections true
 # %Y-%m-%d            2004-01-21 (ISO 8601 format)
 dayformat <span class="day-day">%A</span><br/><span class="day-date">%B %d, %Y</span>
 
-overview_dayformat %A %B %d, %Y
+#overview_dayformat %A %B %d, %Y
 
 # Whether to divide the articles up by time, writing a "timeformat" heading
 # before each set.
@@ -67,7 +67,7 @@ datetimeformat %H:%M
 # You can define additional strings using "define" in this config file; for
 # example, if you say "define myname Adam Sampson", then "__myname__" will be
 # replaced by "Adam Sampson" in the output.
-template planet_template
+template planet_template.html
 
 # Similarly, the template used for each item shown. Use "rawdog -T" to
 # show the template currently in use as a starting-point for
@@ -110,14 +110,14 @@ itemtemplate itemplate
 #outputfile ../website/index.html
 #outputfileold ../website/old.html
 
-outputfile ../website/index.${lang}.html
-outputfileold ../website/old.${lang}.html
+outputfile index.html
+outputfileold old.html
 
-define outputxml ../website/rss20.xml
-define outputfoaf ../website/foafroll.xml
-define outputopml ../website/opml.xml
+define outputxml rss20.xml
+define outputfoaf foafroll.xml
+define outputopml opml.xml
 
-define outputfeedlist ../website/feedlist.html
+define outputfeedlist feedlist.html
 
 # Whether to use a <meta http-equiv="Refresh" ...> tag in the generated
 # HTML to indicate that the page should be refreshed automatically. If
@@ -241,7 +241,8 @@ changeconfig false
 
 feeddefaults
     define_lang en
-    define_face hackergotchi/_.png
+    define_face _
 
-include feeds
+#include feeds
+include testfeeds
 

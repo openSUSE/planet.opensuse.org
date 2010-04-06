@@ -6,19 +6,21 @@ basedir="${0%/*}"
 
 [ -n "$basedir" -a "$basedir" != "." ] && cd "$basedir"
 
+function info { [ -n "$VERBOSE" ] && echo "INFO: $*" || :; }
+
+info "* global"
+mkdir -p website/global
 ./rawdog -d planetsuse/ \
-    --lang "en" \
-    --output-file ../website/index.html \
-    --old-output-file ../website/old.html \
-    --old-output-link old.html \
+    --output-dir=website/global \
+    --xml-site-link=http://planet.opensuse.org/ \
     --write
 
-for lang in de es pl pt jp; do
+for lang in en de es pl pt jp; do
+    info "* $lang"
+    mkdir -p website/"$lang"
     ./rawdog -d planetsuse/ \
-        --lang "$lang" \
-        --output-file ../website/"$lang".html \
-        --old-output-file ../website/"$lang"-old.html \
-        --old-output-link "$lang"-old.html \
-        --no-feed-list \
+        --lang="$lang" \
+        --output-dir=website/"$lang" \
+        --xml-site-link=http://planet.opensuse.org/"$lang"/ \
         --write
 done

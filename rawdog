@@ -17,11 +17,12 @@
 # Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 # MA 02110-1301, USA, or see http://www.gnu.org/.
 
-from rawdoglib.rawdog import main
 import sys, os
+sys.path.insert(0, os.path.join(os.path.abspath(os.curdir), "libs", "jinja"))
+#for lib in ('lib', 'lib64'):
+#	sys.path.insert(0, os.path.join(os.path.abspath(os.curdir), "libs", lib, "python%s.%s" % (sys.version_info[:2]), "site-packages"))
 
-for lib in ('lib', 'lib64'):
-	sys.path.insert(0, os.path.join(os.path.abspath(os.curdir), "libs", lib, "python%s.%s" % (sys.version_info[:2]), "site-packages"))
+from rawdoglib.rawdog import main
 
 def launch():
 	sys.exit(main(sys.argv[1:]))

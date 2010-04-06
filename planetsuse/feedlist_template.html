@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" {% if lang %}xml:lang="{{ lang }}" lang="{{ lang }}" {% else %}xml:lang="en" lang="en"{% endif %}>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+{% if lang -%}
+  <meta http-equiv="content-language" content="{{ lang }}"/>
+{% endif -%}
+  <meta name="description" content="Aggregation of the blogs of openSUSE contributors"/>
+  <meta name="keywords" content="opensuse, linux"/>
+  <link rel="stylesheet" href="http://static.opensuse.org/themes/bento/css/style.css" type="text/css" media="screen" title="All" charset="utf-8" />
+  <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" title="All" charset="utf-8" />
+  <link rel="stylesheet" href="../css/feedlist.css" type="text/css" media="screen" title="All" charset="utf-8" />
+  <script src="http://static.opensuse.org/themes/bento/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://static.opensuse.org/themes/bento/js/l10n/global-navigation-data-en_US.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://static.opensuse.org/themes/bento/js/global-navigation.js" type="text/javascript" charset="utf-8"></script>
+
+  <title>Planet openSUSE Feed List{% if lang %} ({{ lang }}){% endif %}</title>
+{% if lang -%}
+  <link rel="alternate"     type="application/rss+xml" title="Planet openSUSE ({{ lang }})" href="rss20.xml" />
+  <link rel="alternate"     type="application/rss+xml" title="Planet openSUSE (all languages)" href="../global/rss20.xml" />
+  <link rel="meta"          type="application/rdf+xml" title="FOAF ({{ lang }})" href="foafroll.xml" />
+  <link rel="meta"          type="application/rdf+xml" title="FOAF (all languages)" href="../global/foafroll.xml" />
+  <link rel="subscriptions" type="text/x-opml"         title="Subscriptions ({{ lang }})" href="opml.xml" />
+  <link rel="subscriptions" type="text/x-opml"         title="Subscriptions (all languages)" href="../global/opml.xml" />
+{% else -%}
+  <link rel="alternate"     type="application/rss+xml" title="Planet openSUSE (all languages)" href="rss20.xml" />
+  <link rel="meta"          type="application/rdf+xml" title="FOAF (all languages)" href="foafroll.xml" />
+  <link rel="subscriptions" type="text/x-opml"         title="Subscriptions" href="opml.xml" />
+{% endif -%}
+</head>
+<body>
+  <!-- Start: Header -->
+  <div id="header">
+    <div id="header-content" class="container_12">
+      <a id="header-logo" href="#home"><img src="../images/header-logo.png" width="46" height="26" alt="Header Logo" /></a>
+      <ul id="global-navigation">
+        <li id="item-downloads"><a href="http://opensuse.org/sitemap#downloads">Downloads</a></li>
+        <li id="item-support"><a href="http://opensuse.org/sitemap#support">Support</a></li>
+        <li id="item-community"><a href="http://opensuse.org/sitemap#community">Community</a></li>
+        <li id="item-development"><a href="http://opensuse.org/sitemap#development">Development</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- End: Header -->
+
+  <div id="main">
+
+  <div id="intro">
+    <h3>Welcome to Planet openSUSE</h3>
+    <p>
+        This page contains the list of all the <a href="http://www.opensuse.org">openSUSE</a> contributors
+        who are aggregated on <a href="./">Planet openSUSE</a>.
+    </p>
+    <p>
+        To have your blog added to this aggregator, please read <a href="http://en.opensuse.org/PlanetSUSE">the instructions</a>.
+    </p>
+    <h4 id="actions-header" class="menu-header">Actions:</h4>
+    <ul id="actions-menu" class="menu">
+      <li><a href="./">Back to Planet openSUSE</a></li>
+{% if lang -%}
+      <li><a href="../global/feedlist.html">Show all feeds</a></li>
+{% endif -%}
+    </ul>
+    <h4 id="xml-header" class="menu-header">Metadata:</h4>
+    <ul id="xml-menu" class="menu">
+      <li><a href="rss20.xml"    type="application/rss+xml" rel="alternate">RSS{% if lang %} ({{ lang }}){% endif %}</a></li>
+      <li><a href="opml.xml"     type="text/x-opml"         rel="meta">OPML{% if lang %} ({{ lang }}){% endif %}</a></li>
+      <li><a href="foafroll.xml" type="application/rdf+xml" rel="subscriptions">FOAF{% if lang %} ({{ lang }}){% endif %}</a></li>
+    </ul>
+  </div> <!-- #intro -->
+
+  <!-- Start: Main Content Area -->
+  <div id="content" class="content-wrapper">
+    <h4 id="feedlist-header">Aggregated feeds:</h4>
+    <div id="feedlist">
+      {% for a in feeds %}
+      <div class="feed{% if a.wrap %} feed-wrap{% endif %}{% if a.top %} feed-top{% endif %}">
+        {% if a.face %}<img class="feed-author-face" src="{{ a.face }}" alt="[Face]"/>{% endif %}
+        <span class="feed-author">{{ a.name }}</span>
+        {% if a.irc %}<span class="feed-irc">(<a class="feed-irc" href="irc://irc.freenode.net/{{ a.irc }},isnick">{{ a.irc }}</a>)</span>{% endif %}
+        {% if a.member %}<span class="feed-member">member</span>{% endif %}
+        {% if a.connect %}<a class="feed-connect" href="http://connect.opensuse.org/profiles/{{ a.connect }}">profile</a>{% endif %}
+        <ul class="feed-feeds">
+          {% for f in a.feeds %}
+          <li class="feed-feed{% if f.lang %} lang lang-{{ f.lang }}{% endif %}">
+          {%- if f.link -%}
+            <a class="feed-feed-link" href="{{ f.link }}">{{ f.title }}</a>
+          {%- elif f.title -%}
+            <span class="feed-feed-link">{{ f.title }}</span>
+          {%- endif -%}
+          {%- if f.url -%}
+            <span class="textonly">-&gt;&nbsp;</span><a href="{{ f.url }}" class="feed-url">feed</a>
+          {%- endif -%}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <!-- End: Main Content Area -->
+
+  </div>  <!-- #main -->
+
+  <!-- Note: this clears floating, set in previous elements -->
+  <div class="clear"></div>
+  <!-- Start: Footer -->
+  <div id="footer">
+    <div id="footer-content" class="clear-block">
+    </div>
+    <div id="footer-legal" class="border-top">
+      <p>
+        &copy; 2010 Pascal Bleser and the openSUSE Community.
+      </p>
+      <p>
+        This site is not an official openSUSE website, and is not in any way affiliated with or endorsed by SUSE Linux GmbH or Novell.
+      </p>
+      <p>
+        openSUSE and SUSE are trademarks of Novell, Inc. in the United States and other countries.
+      </p>
+    </div>
+  </div>
+  <!-- End: Footer -->
+</body>
+</html>
+<!-- vim: set sw=2 ts=2 et ai:
+-->

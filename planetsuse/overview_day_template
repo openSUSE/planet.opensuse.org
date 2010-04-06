@@ -1,1 +1,0 @@
-<li class="overview-day"><a __if_first__ id="overview-day-first" __endif__ href="#day-item-__i__">__day__</a></li>

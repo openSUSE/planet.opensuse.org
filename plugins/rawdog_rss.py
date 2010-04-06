@@ -25,11 +25,22 @@ class RSS_Feed:
         self.xml_articles = self.xml.xpathEval('/rss/channel')[0]
 
         self.xml_articles.newChild(None, 'title', "Planet openSUSE")
-        self.xml_articles.newChild(None, 'link', "http://planet.opensuse.org/")
-        self.xml_articles.newChild(None, 'language', "en")
-        self.xml_articles.newChild(None, 'description', "Planet openSUSE - http://planet.opensuse.org/")
+
+        if 'linksite' in config.config:
+            link = config['linksite']
+        else:
+            link = 'http://planet.opensuse.org'
+        self.xml_articles.newChild(None, 'link', link)
+        if config.lang:
+            self.xml_articles.newChild(None, 'language', config.lang)
+        self.xml_articles.newChild(None, 'description', "Planet openSUSE - " + link)
         atomLink = self.xml_articles.newChild(None, 'atom:link', None)
-        atomLink.setProp('href', 'http://plane.opensuse.org/rss20.xml')
+
+        if 'linkxml' in config.config:
+            href = config['linkxml']
+        else:
+            href = self.out_file
+        atomLink.setProp('href', href)
         atomLink.setProp('rel', 'self')
         atomLink.setProp('type', 'application/rss+xml')
 
@@ -40,7 +51,7 @@ class RSS_Feed:
 
         self.foaf_articles = self.foafdoc_open()
         self.foaf_articles.newChild(None, 'foaf:name', "Planet openSUSE")
-        self.foaf_articles.newChild(None, 'foaf:homepage', "http://planet.opensuse.org/")
+        self.foaf_articles.newChild(None, 'foaf:homepage', link)
         seeAlso = self.foaf_articles.newChild(None, 'rdfs:seeAlso', None)
         seeAlso.setProp('rdf:resource', '')
 
@@ -103,14 +114,14 @@ class RSS_Feed:
             guid = xml_article.newChild(None, 'guid', article.hash)
         guid.setProp('isPermaLink', 'false')
         try:
-            title = entry_info['title_raw'].encode('utf8', 'ignore')
+            title = unicode(entry_info['title_raw'].encode('utf8'), 'utf8') #, 'ignore')
         except KeyError:
             print "KeyError on title"
             return
         for feed in config["feedslist"]:
             if feed[0] == article.feed:
-                title = feed[2]["define_name"] + ": " + title
-        xml_article.newChild(None, 'title', title)
+                title = feed[2]["define_name"] + u": " + title
+        xml_article.newChild(None, 'title', title.encode('utf8'))
         date = strftime("%a, %d %b %Y %H:%M:%S", gmtime(article.date)) + " +0000"
         xml_article.newChild(None, 'pubDate', date)
         if entry_info.has_key('link'):
@@ -135,6 +146,9 @@ class RSS_Feed:
     def output_write(self, rawdog, config, articles):
         for article in articles:
             if article.date is not None:
+                article_feed = rawdog.feeds[article.feed]
+                if config.lang and article_feed.lang != config.lang:
+                    continue
                 xml_article = self.xml_articles.newChild(None, 'item', None)
                 self.__article_sync(xml_article, rawdog, config, article)
 
@@ -163,9 +177,24 @@ class RSS_Feed:
         self.opmldoc.saveFormatFile(self.opml_file, 1)
         self.opmldoc.freeDoc()
 
+    def add_args(self, parser):
+        parser.add_option('--xml-output-file', action='store', type='string', dest='xml_output_file')
+        parser.add_option('--xml-output-link', action='store', type='string', dest='xml_output_link')
+        parser.add_option('--xml-site-link', action='store', type='string', dest='xml_site_link')
+        return True
+
+    def process_args(self, options, args, config):
+        config['outputxml'] = options.xml_output_file
+        config['linkxml'] = options.xml_output_link
+        config['sitexml'] = options.xml_site_link
+        return True
+
 def startup(rawdog, config):
     rss_feed = RSS_Feed(rawdog, config)
+    rawdoglib.plugins.attach_hook("add_args", rss_feed.add_args)
+    rawdoglib.plugins.attach_hook("process_args", rss_feed.process_args)
     rawdoglib.plugins.attach_hook("output_write", rss_feed.output_write)
     rawdoglib.plugins.attach_hook("shutdown", rss_feed.shutdown)
     return True
+
 rawdoglib.plugins.attach_hook("startup", startup)

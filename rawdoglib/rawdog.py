@@ -1,4 +1,5 @@
 # vim: sw=4 ts=4 noet ai:
+# -*- coding: utf-8 -*-
 # rawdog: RSS aggregator without delusions of grandeur.
 # Copyright 2003, 2004, 2005, 2006 Adam Sampson <ats@offog.org>
 #
@@ -27,6 +28,9 @@ import string, locale
 from StringIO import StringIO
 import types
 import copy
+import codecs
+
+from jinja2 import Template
 
 try:
 	import threading
@@ -189,57 +193,17 @@ def string_to_html(s, config):
 	"""Convert a string to HTML."""
 	return sanitise_html(cgi.escape(s), "", True, config)
 
-template_re = re.compile(r'(__.*?__)')
 def fill_template(template, bits):
-	"""Expand a template, replacing __x__ with bits["x"], and only
-	including sections bracketed by __if_x__ .. [__else__ ..]
-	__endif__ if bits["x"] is not "". If not bits.has_key("x"),
-	__x__ expands to ""."""
-	result = plugins.Box()
-	plugins.call_hook("fill_template", template, bits, result)
-	if result.value is not None:
-		return result.value
-
-	try:
-		# This doesn't exist on Python 2.2.
-		encoding = locale.getpreferredencoding()
-	except:
-		encoding = None
-	if encoding is None:
-		encoding = "UTF-8"
-
-	f = StringIO()
-	if_stack = []
-	def write(s):
-		if not False in if_stack:
-			f.write(s)
-	for part in template_re.split(template):
-		if part.startswith("__") and part.endswith("__"):
-			key = part[2:-2]
-			if key.startswith("if_"):
-				k = key[3:]
-				if_stack.append(bits.has_key(k) and bits[k] != "")
-			elif key == "endif":
-				if if_stack != []:
-					if_stack.pop()
-			elif key == "else":
-				if if_stack != []:
-					if_stack.append(not if_stack.pop())
-			elif bits.has_key(key):
-				if type(bits[key]) == types.UnicodeType:
-					write(bits[key].encode("UTF-8"))
-				else:
-					write(bits[key])
-		else:
-			write(part)
-	return f.getvalue()
+	t = Template(template)
+	return t.render(bits)
 
 file_cache = {}
-def load_file(name):
+def load_file(name, config):
 	"""Read the contents of a file, caching the result so we don't have to
 	read the file multiple times."""
 	if not file_cache.has_key(name):
-		f = open(name)
+		f = codecs.open(os.path.join(config.basedir, name), 'rb', 'utf-8')
+		#f = open(os.path.join(config.basedir, name), 'rb')
 		file_cache[name] = f.read()
 		f.close()
 	return file_cache[name]
@@ -453,25 +417,25 @@ class Feed:
 			r = ""
 		return r
 
-        def get_blog_owner_name(self, config):
-            if self.args.has_key("define_name"):
-                r = string_to_html(self.args["define_name"], config)
-            if r is None:
-		r = ""
-	    return r
+	def get_blog_owner_name(self, config):
+		if self.args.has_key("define_name"):
+			r = string_to_html(self.args["define_name"], config)
+		if r is None:
+			r = ""
+		return r
 
 	def get_html_link(self, config):
 		s = self.get_html_name(config)
 
-                for feed in config["feedslist"]:
-                    if feed[0] == self.url:
-                        name = unicode(feed[2]["define_name"], 'utf-8')
-                        break
+		for feed in config["feedslist"]:
+			if feed[0] == self.url:
+				name = unicode(feed[2]["define_name"].encode('utf8'), 'utf8')
+				break
 
-                if name is None:
-                    name = ""
+		if name is None:
+			name = ""
 
-                if self.feed_info.has_key("link"):
+		if self.feed_info.has_key("link"):
 			return '<a href="' + string_to_html(self.feed_info["link"], config) + '">' + name + '</a>'
 		else:
 			return name
@@ -619,7 +583,7 @@ def parse_feed_args(argparams, arglines):
 	"""Parse a list of feed arguments. Raise ConfigError if the syntax is invalid."""
 	args = {}
 	for a in argparams:
-		asplit = a.split("=", 1)
+		asplit = a.split(u"=", 1)
 		if len(asplit) != 2:
 			raise ConfigError("Bad feed argument in config: " + a)
 		args[asplit[0]] = asplit[1]
@@ -631,13 +595,13 @@ def parse_feed_args(argparams, arglines):
 	if "maxage" in args:
 		args["maxage"] = parse_time(args["maxage"])
 	# post-process args
-	if "face" in args:
-		face = args["face"]
-		if not '/' in face:
-			face = "hackergotchi/" + face
+	if "define_face" in args:
+		face = args["define_face"]
 		if not '.' in face:
-			face = face + ".png"
-		args["face"] = face
+			face += u".png"
+		if not '/' in face:
+			face = u"../hackergotchi/" + face
+		args["define_face"] = face
 		pass
 
 	return args
@@ -647,46 +611,48 @@ class ConfigError(Exception): pass
 class Config:
 	"""The aggregator's configuration."""
 
-	def __init__(self):
+	def __init__(self, basedir='.', plugin_basedir='.'):
 		self.files_loaded = []
 		if have_threading:
 			self.loglock = threading.Lock()
 		self.reset()
-		self.lang = ''
+		self.lang = None
 		self.no_feed_list = False
+		self.basedir = os.path.abspath(basedir)
+		self.plugin_basedir = plugin_basedir
 
 	def reset(self):
 		self.config = {
-			"feedslist" : [],
-			"feeddefaults" : {},
-			"defines" : {},
-			"outputfile" : "output.html",
-			"outputfileold" : "old.html",
-			"linkold" : "old.html",
-			"maxarticles" : 200,
-			"maxage" : 0,
-			"expireage" : 24 * 60 * 60,
-			"keepmin" : 0,
-			"dayformat" : "%A, %d %B %Y",
-			"timeformat" : "%I:%M %p",
-			"datetimeformat" : None,
-			"userefresh" : 0,
-			"showfeeds" : 1,
-			"timeout" : 30,
-			"template" : "default",
-			"itemtemplate" : "default",
-			"verbose" : 0,
-			"ignoretimeouts" : 0,
-			"daysections" : 1,
-			"timesections" : 1,
-			"blocklevelhtml" : 1,
-			"tidyhtml" : 0,
-			"sortbyfeeddate" : 0,
-			"currentonly" : 0,
-			"hideduplicates" : "",
-			"newfeedperiod" : "3h",
-			"changeconfig": 0,
-			"numthreads": 0,
+			u"feedslist" : [],
+			u"feeddefaults" : {},
+			u"defines" : {},
+			u"outputfile" : u"output.html",
+			u"outputfileold" : u"old.html",
+			u"linkold" : u"old.html",
+			u"maxarticles" : 200,
+			u"maxage" : 0,
+			u"expireage" : 24 * 60 * 60,
+			u"keepmin" : 0,
+			u"dayformat" : u"%A, %d %B %Y",
+			u"timeformat" : u"%I:%M %p",
+			u"datetimeformat" : None,
+			u"userefresh" : 0,
+			u"showfeeds" : 1,
+			u"timeout" : 30,
+			u"template" : u"default",
+			u"itemtemplate" : u"default",
+			u"verbose" : 0,
+			u"ignoretimeouts" : 0,
+			u"daysections" : 1,
+			u"timesections" : 1,
+			u"blocklevelhtml" : 1,
+			u"tidyhtml" : 0,
+			u"sortbyfeeddate" : 0,
+			u"currentonly" : 0,
+			u"hideduplicates" : "",
+			u"newfeedperiod" : u"3h",
+			u"changeconfig": 0,
+			u"numthreads": 0,
 			}
 
 	def __getitem__(self, key): return self.config[key]
@@ -705,8 +671,8 @@ class Config:
 
 		lines = []
 		try:
-			f = open(filename, "r")
-			for line in f.xreadlines():
+			f = codecs.open(filename, "rb", encoding="utf-8")
+			for line in f.readlines():
 				stripped = line.strip()
 				if stripped == "" or stripped[0] == "#":
 					continue
@@ -725,30 +691,6 @@ class Config:
 				self.load_line(line, arglines)
 			except ValueError:
 				raise ConfigError("Bad value in config: " + line)
-
-	def resolve(self):
-		placeholder_dict = copy.copy(self.config)
-		placeholder_dict['lang'] = self.lang
-
-		# fix up placeholders
-		has_placeholder = True
-		while has_placeholder:
-			for k, v in self.config.iteritems():
-				if not isinstance(v, str):
-					continue
-				#print "* k="+k+" v="+v
-				m = re.match(r'^.*\${(.+?)}.*$', v)
-				if m:
-					#print "** match: " + m.group(1)
-					placeholder = r'\$\{'+m.group(1)+r'\}'
-					replacement = placeholder_dict[m.group(1)]
-					replaced = (re.subn(placeholder, replacement, v))[0]
-					self[k] = replaced
-					#print "*** placeholder="+placeholder+" replacement="+replacement+" replaced="+replaced
-					has_placeholder = True
-				else:
-					has_placeholder = False
-		pass
 
 	def load_line(self, line, arglines):
 		"""Process a configuration directive."""
@@ -776,7 +718,7 @@ class Config:
 			self["defines"][l[0]] = l[1]
 		elif l[0] == "plugindirs":
 			for dir in parse_list(l[1]):
-				plugins.load_plugins(dir, self)
+				plugins.load_plugins(os.path.join(self.plugin_basedir, dir), self)
 		elif l[0] == "outputfile":
 			self["outputfile"] = l[1]
 		elif l[0] == "outputfileold":
@@ -830,7 +772,7 @@ class Config:
 		elif l[0] == "numthreads":
 			self["numthreads"] = int(l[1])
 		elif l[0] == "include":
-			self.load(l[1], False)
+			self.load(os.path.join(self.basedir, l[1]), False)
 		elif plugins.call_hook("config_option_arglines", self, l[0], l[1], arglines):
 			handled_arglines = True
 		elif plugins.call_hook("config_option", self, l[0], l[1]):
@@ -1152,7 +1094,7 @@ class Rawdog(Persistable):
 	def get_template(self, config):
 		"""Get the main template."""
 		if config["template"] != "default":
-			return load_file(config["template"])
+			return load_file(config["template"], config)
 
 		template = """<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
    "http://www.w3.org/TR/html4/strict.dtd">
@@ -1195,7 +1137,7 @@ by <a href="mailto:ats@offog.org">Adam Sampson</a>.</p>
 	def get_itemtemplate(self, config):
 		"""Get the item template."""
 		if config["itemtemplate"] != "default":
-			return load_file(config["itemtemplate"])
+			return load_file(config["itemtemplate"], config)
 
 		template = """<div class="item feed-__feed_hash__ feed-__feed_id__" id="item-__hash__">
 <p class="itemheader">
@@ -1320,12 +1262,18 @@ __description__
 		else:
 			itembits["date"] = ""
 
+		if config.lang:
+			itembits['lang'] = config.lang
+			itembits['lang_'+config.lang] = True
+		else:
+			itembits['item_lang'] = itembits['lang']
+
 		tim = time.localtime(date)
 		itembits["time"] = time.strftime("%H:%M", tim)
 
 		plugins.call_hook("output_item_bits", self, config, feed, article, itembits)
 		if 'twitter' in dir(article) and article.twitter:
-			itemtemplate = load_file("microblogitemtemplate")
+			itemtemplate = load_file("microblogitemtemplate", config)
 		else:
 			itemtemplate = self.get_itemtemplate(config)
 
@@ -1381,7 +1329,10 @@ __description__
 	def get_main_template_bits(self, config):
 		"""Get the bits that are used in the default main template,
 		with the exception of items and num_items."""
-		bits = { "version" : VERSION }
+		bits = {}
+		bits["version"] = VERSION
+		for k, v in config.config.iteritems():
+			bits[k] = v
 		bits.update(config["defines"])
 
 		refresh = config["expireage"]
@@ -1390,52 +1341,152 @@ __description__
 
 		bits["refresh"] = """<meta http-equiv="Refresh" """ + 'content="' + str(refresh) + '"' + """>"""
 
-		f = StringIO()
-		print >>f, """<ul id="feeds">
-"""
-		feeds = self.feeds.values()
-		feeds.sort(lambda a, b: cmp(a.get_blog_owner_name(config).lower(), b.get_blog_owner_name(config).lower()))
-		for feed in feeds:
-			print >>f, '<li>' + feed.get_html_link(config) + ' (<a class="xmlbutton" href="' + cgi.escape(feed.url) + '">feed</a>)</li>'
-		print >>f, """</ul>"""
-		bits["feeds"] = f.getvalue()
-		bits["num_feeds"] = str(len(feeds))
-
 		return bits
 
 	#def write_output_file(self, articles, twitterArticles, article_dates, config, old=False):
 	def write_output_file(self, articles, article_dates, config, old=False):
 		"""Write a regular rawdog HTML output file."""
-		f = StringIO()
-		dw = DayWriter(f, config)
-		plugins.call_hook("output_items_begin", self, config, f)
+		plugins.call_hook("output_items_begin", self, config)
 
+		# build a multimap of articles by day
+		map = []
+		curdate = None
+		cur = None
+		i = 0
 		for article in articles:
-			if not plugins.call_hook("output_items_heading", self, config, f, article, article_dates[article]):
-				dw.time(article_dates[article])
+			d = article_dates[article]
+			tm = time.localtime(d)
+			isodate = time.strftime("%Y-%m-%d", tm)
+			if cur == None or cur["isodate"] != isodate:
+				cur = {}
+				cur["timestamp"] = d
+				cur["isodate"] = isodate
+				cur["day"] = time.strftime("%d", tm)
+				cur["month"] = time.strftime("%B", tm)
+				cur["dow"] = time.strftime("%A", tm)
+				cur["year"] = time.strftime("%Y", tm)
+				cur["articles"] = []
+				map.append(cur)
+				pass
 
-			self.write_article(f, article, config)
+			feed = self.feeds[article.feed]
+			feed_info = feed.feed_info
+			entry_info = article.entry_info
 
-		dw.close()
-		plugins.call_hook("output_items_end", self, config, f)
-		if not old:
-			f.write('<p class="old-entries"><a href="'+config["linkold"]+'">Older blog entries</a></p>')
+			link = entry_info.get("link")
+			if link == "":
+				link = None
+
+			guid = entry_info.get("id")
+			if guid == "":
+				guid = None
+
+			a = {}
+			for name, value in feed.args.items():
+				if name.startswith("define_"):
+					a[name[7:]] = value
+
+			title = detail_to_html(entry_info.get("title_detail"), True, config)
+
+			key = None
+			for k in ["content", "summary_detail"]:
+				if entry_info.has_key(k):
+					key = k
+					break
+			if key is None:
+				description = None
+			else:
+				force_preformatted = feed.args.has_key("format") and (feed.args["format"] == "text")
+				description = detail_to_html(entry_info[key], False, config, force_preformatted)
+
+			date = article.date
+			if title is None:
+				if link is None:
+					title = "Article"
+				else:
+					title = "Link"
+			a["title_no_link"] = title
+
+			if link is not None:
+				a["url"] = string_to_html(link, config)
+			else:
+				a["url"] = ""
+			if guid is not None:
+				a["guid"] = string_to_html(guid, config)
+			else:
+				a["guid"] = ""
+			if link is None:
+				a["title"] = title
+			else:
+				a["title"] = '<a href="' + string_to_html(link, config) + '">' + title + '</a>'
+
+			a["feed_title_no_link"] = detail_to_html(feed_info.get("title_detail"), True, config)
+			a["feed_title"] = feed.get_html_link(config)
+			a["feed_url"] = string_to_html(feed.url, config)
+			a["feed_hash"] = short_hash(feed.url)
+			a["feed_id"] = feed.get_id(config)
+			a["hash"] = short_hash(article.hash)
+			a["blogurl"] = ""
+			if feed_info.has_key("links"):
+				for dict in feed_info['links']:
+					if dict.has_key("href") and dict["type"] == "text/html":
+						a["blogurl"] = dict["href"]
+						break
+
+			if description is not None:
+				a["description"] = description
+			else:
+				a["description"] = ""
+
+			author = author_to_html(entry_info, feed.url, config)
+			if author is not None:
+				a["author"] = author
+			else:
+				a["author"] = ""
+
+			a["added"] = format_time(article.added, config)
+			if date is not None:
+				a["date"] = format_time(date, config)
+			else:
+				a["date"] = ""
+
+			if config.lang:
+				a['lang'] = config.lang
+				a['lang_'+config.lang] = True
+			else:
+				a['item_lang'] = a['lang']
+
+			tim = time.localtime(date)
+			a["time"] = time.strftime("%H:%M", tim)
+
+			plugins.call_hook("output_item_bits", self, config, feed, article, a)
+
+			i += 1
+			a["index"] = i
+
+			cur["articles"].append(a)
+			pass
+	
+		#for article in articles:
+			#plugins.call_hook("output_items_heading", self, config, f, article, article_dates[article])
+			#self.write_article(f, article, config)
+
+		#if not old:
+		#	f.write('<p class="old-entries"><a href="'+config["linkold"]+'">Older blog entries</a></p>')
+		#else:
+		#	f.write('<p class="current-entries"><a href="'+config["outputfile"]+'">Newest blog entries</a></p>')
 
 		bits = self.get_main_template_bits(config)
-		bits["items"] = f.getvalue()
-		bits["num_items"] = str(len(self.articles))
+		bits['items'] = map
+		bits['old'] = old
+		if old:
+			bits['linkold'] = config['linkold']
+		else:
+			bits['linkcur'] = config['outputfile']
+		bits['lang'] = config.lang
 
-		#TWITTER
-		#f = StringIO()
-		#dw = DayWriter(f, config)
-		#
-		#for article in twitterArticles:
-		#	self.write_article(f, article, config)
-		#
-		#dw.close()
-		#
-		#bits["twitter"] = f.getvalue()
-		#end of TWITTER
+		#from pprint import pprint
+		#pprint(bits, depth=10)
 
 		plugins.call_hook("output_bits", self, config, bits)
 		s = fill_template(self.get_template(config), bits)
@@ -1565,61 +1616,46 @@ Report bugs to <ats@offog.org>."""
 def main(argv):
 	"""The command-line interface to the aggregator."""
 
-	locale.setlocale(locale.LC_ALL, "")
+	locale.setlocale(locale.LC_ALL, "en_US.utf8")
 
-	try:
-		(optlist, args) = getopt.getopt(argv, "ulwf:c:tTd:va:r:No:O:", ["update", "list", "write", "update-feed=", "help", "config=", "show-template", "dir=", "show-itemtemplate", "verbose", "upgrade", "add=", "remove=", "no-locking", "lang=", "output-file=", "old-output-file=", "no-feed-list", "old-output-link="])
-	except getopt.GetoptError, s:
-		print s
-		usage()
-		return 1
-
-	for o, a in optlist:
-		if o == "--upgrade" and len(args) == 2:
-			import upgrade_1_2
-			return upgrade_1_2.upgrade(args[0], args[1])
-
-	if len(args) != 0:
-		usage()
-		return 1
-
-	if "HOME" in os.environ:
-		statedir = os.environ["HOME"] + "/.rawdog"
-	else:
-		statedir = None
 	verbose = 0
 	locking = 1
-	for o, a in optlist:
-		if o == "--help":
-			usage()
-			return 0
-		elif o in ("-d", "--dir"):
-			statedir = a
-		elif o in ("-v", "--verbose"):
-			verbose = 1
-		elif o in ("-N", "--no-locking"):
+	statedir = os.path.expanduser('~/.rawdog')
+	config_file = 'config'
+
+	i = 0
+	while i < len(argv):
+		arg = argv[i]
+		if arg in ("-d", "--dir"):
+			i += 1
+			statedir = argv[i]
+		elif arg in ("-N", "--no-locking"):
 			locking = 0
-	if statedir is None:
-		print "$HOME not set and state dir not explicitly specified; please use -d/--dir"
-		return 1
+		elif arg in ("-c", "--config"):
+			i += 1
+			config_file = argv[i]
+		elif '=' in arg:
+			(o, v) = re.split(r'=', arg)
+			if o == "--dir":
+				statedir = v
+			elif o == "--config":
+				config_file = v
+		i += 1
+		pass
 
-	try:
-		os.chdir(statedir)
-	except OSError:
-		print "No " + statedir + " directory"
-		return 1
+	config_file = os.path.join(statedir, config_file)
 
-	config = Config()
+	config = Config(basedir = statedir, plugin_basedir = '.')
 	try:
-		config.load("config")
+		config.load(config_file)
 	except ConfigError, err:
-		print >>sys.stderr, "In config:"
+		print >>sys.stderr, "In "+config_file+":"
 		print >>sys.stderr, err
 		return 1
 	if verbose:
 		config["verbose"] = True
 
-	persister = Persister("state", Rawdog, locking)
+	persister = Persister(os.path.join(statedir, "state"), Rawdog, locking)
 	try:
 		rawdog = persister.load()
 	except KeyboardInterrupt:
@@ -1639,61 +1675,50 @@ def main(argv):
 
 	plugins.call_hook("startup", rawdog, config)
 
-	op = None
-	for o, a in optlist:
-		if o in ("-u", "--update"):
-			op = "update"
-			#rawdog.update(config)
-		elif o in ("-f", "--update-feed"):
-			rawdog.update(config, a)
-		elif o in ("-l", "--list"):
-			rawdog.list(config)
-		elif o in ("-w", "--write"):
-			op = "write"
-			#rawdog.write(config)
-		elif o in ("-l", "--lang"):
-			config.lang = a
-		elif o in ("--no-feed-list"):
-			config.no_feed_list = True
-		elif o in ("-c", "--config"):
-			try:
-				config.load(a)
-			except ConfigError, err:
-				print >>sys.stderr, "In " + a + ":"
-				print >>sys.stderr, err
-				return 1
-		elif o in ("-o", "--output-file"):
-			config["outputfile"] = a
-		elif o in ("-O", "--old-output-file"):
-			config["outputfileold"] = a
-			if not "linkold" in config.config:
-				config["linkold"] = a
-		elif o in ("--old-output-link"):
-			config["linkold"] = a
-		elif o in ("-t", "--show-template"):
-			rawdog.show_template(config)
-		elif o in ("-T", "--show-itemtemplate"):
-			rawdog.show_itemtemplate(config)
-		elif o in ("-a", "--add"):
-			add_feed("config", a, config)
-			config.reload()
-			rawdog.sync_from_config(config)
-		elif o in ("-r", "--remove"):
-			remove_feed("config", a, config)
-			config.reload()
-			rawdog.sync_from_config(config)
+	from optparse import OptionParser
+	parser = OptionParser()
+	parser.version = VERSION
+	parser.add_option('-u', '--update', action='store_const', const='update', dest='op')
+	parser.add_option('-w', '--write',  action='store_const', const='write',  dest='op')
+	parser.add_option('-c', '--config', action='store', type='string', dest='configfile')
+	parser.add_option('-d', '--dir',    action='store', type='string', dest='statedir')
+	parser.add_option('-N', '--no-locking', action='store_false', dest='locking')
+	parser.add_option('-l', '--lang', action='store', type='string', dest='lang')
+	parser.add_option('--output-dir', action='store', type='string', dest='output_dir')
+	parser.add_option('-o', '--output-file', action='store', type='string', dest='output_file')
+	parser.add_option('--no-feed-list', action='store_false', dest='feedlist', default=True)
 
-	config.resolve()
-	if op == "write":
+	plugins.call_hook("add_args", parser)
+
+	(options, args) = parser.parse_args()
+
+	config.lang = options.lang
+	config.no_feed_list = not options.feedlist
+	if options.output_file:
+		config["outputfile"] = options.output_file
+
+	plugins.call_hook("process_args", options, args, config)
+
+	rundir = os.path.abspath(os.curdir)
+
+	if options.op == "write":
+		if options.output_dir:
+			try:
+				os.chdir(options.output_dir)
+			except OSError:
+				print "No output directory " + options.output_dir
+				return 1
+			pass
 		rawdog.write(config)
-	elif op == "update":
+	elif options.op == "update":
 		rawdog.update(config)
 	else:
 		print >>sys.stderr, "ERROR: no operation given"
-		sys.exit(1)
+		return 1
 
 	plugins.call_hook("shutdown", rawdog, config)
 
+	os.chdir(rundir)
 	persister.save()
 
 	return 0

@@ -7,7 +7,8 @@
 import os, time, cgi, re
 from StringIO import StringIO
 import rawdoglib.plugins, rawdoglib.rawdog
-from rawdoglib.rawdog import string_to_html, fill_template, load_file
+from rawdoglib.rawdog import string_to_html, fill_template, load_file, encode_references
+import codecs
 
 from time import gmtime, strftime
 
@@ -30,7 +31,7 @@ class Feed_List:
 			item = {}
 			url = feed[0]
 			name = feed[2]['define_name']
-			item['name'] = name
+			item['name'] = name.encode('utf8')
 			for d in (config['feeddefaults'], feed[2]):
 				for k in filter(lambda x: x.startswith('define_'), d.iterkeys()):
 					nk = re.sub(r'^define_', '', k)
@@ -38,10 +39,10 @@ class Feed_List:
 					pass
 				pass
 			if 'face' in item:
-				if not '/' in item['face']:
-					item['face'] = 'hackergotchi/' + item['face']
 				if not '.' in item['face']:
-					item['face'] = item['face'] + '.png'
+					item['face'] += '.png'
+				if not '/' in item['face']:
+					item['face'] = '../hackergotchi/' + item['face']
 
 			item['feeds'] = []
 			feedmap[url] = item
@@ -97,43 +98,52 @@ class Feed_List:
 
 		all_names = feedbyname.keys()
 		all_names.sort()
-		feed_template = load_file("feedlist_feed_template")
-		author_template = load_file("feedlist_author_template")
-		author_f = StringIO()
+
+		map = []
+
 		i = 0
 		for name in all_names:
 			data = feedbyname[name]
-			feed_f = StringIO()
-			feed_vars = {}
-			for k in filter(lambda x: x != 'feeds', data.keys()):
-				feed_vars[k] = data[k]
-			for feed in data['feeds']:
-				for k, v in feed.iteritems():
-					feed_vars[k] = v
-				feed_f.write(fill_template(feed_template, feed_vars))
-			author_vars = data
-			if i % columns == 0:
-				author_vars['wrap'] = True
-			if i < columns:
-				author_vars['top'] = True
-			i += 1
-			feed_f.flush()
-			author_vars['feeds'] = feed_f.getvalue()
-			feed_f.close()
-			author_f.write(fill_template(author_template, author_vars))
 
-		feedlist_template = load_file("feedlist_template")
-		f = open(self.out_file, "w")
+			if config.lang:
+				feeds = filter(lambda x: x['lang'] == config.lang, data['feeds'])
+			else:
+				feeds = data['feeds']
+			if len(feeds) < 1:
+				continue
+
+			author = {}
+			for k in filter(lambda x: x != 'feeds', data.keys()):
+				author[k] = data[k]
+				pass
+			if i % columns == 0:
+				author['wrap'] = True
+			if i < columns:
+				author['top'] = True
+
+			i += 1
+			author['feeds'] = []
+
+			#for k in filter(lambda x: x != 'feeds', data.keys()):
+			#	feed[k] = data[k]
+			for feed in feeds:
+				author['feeds'].append(feed)
+
+			map.append(author)
+
+		feedlist_template = load_file("feedlist_template.html", config)
+		f = codecs.open(self.out_file, "wb", encoding="utf8")
 		feedlist_vars = {}
-		author_f.flush()
-		feedlist_vars['feeds'] = author_f.getvalue()
-		author_f.close()
+		if config.lang:
+			feedlist_vars['lang'] = config.lang
+			feedlist_vars['lang_'+config.lang] = True
+		feedlist_vars['feeds'] = map
 		f.write(fill_template(feedlist_template, feedlist_vars))
 		f.close()
 		return True
 
 def startup(rawdog, config):
-	feed_list = Feed_List(rawdog, config)
-	rawdoglib.plugins.attach_hook("output_write", feed_list.output_write)
+	plugin = Feed_List(rawdog, config)
+	rawdoglib.plugins.attach_hook("output_write", plugin.output_write)
 	return True
 rawdoglib.plugins.attach_hook("startup", startup)
