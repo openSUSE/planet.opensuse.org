@@ -924,6 +924,7 @@ class Rawdog(Persistable):
 		self.articles = {}
 		self.plugin_storage = {}
 		self.state_version = STATE_VERSION
+		self.re_lightsocial = re.compile(r'<\s+div\s+[^>]*class="lightsocial_container"[^>]+>.+?</\s*div\s*>', re.I+re.S+re.M)
 
 	def get_plugin_storage(self, plugin):
 		try:
@@ -1174,7 +1175,7 @@ class Rawdog(Persistable):
 			itembits["description"] = ""
 
 		# get rid of annoying stuff in blog post content
-		re.sub(r'<\s+div\s+[^>]*class="lightsocial_container"[^>]+>.+?</\s*div\s*>', '', itembits["description"])
+		re.sub(self.re_lightsocial, '', itembits["description"])
 
 		author = author_to_html(entry_info, feed.url, config)
 		if author is not None:
