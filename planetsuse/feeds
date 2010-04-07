@@ -301,6 +301,9 @@ feed 15m http://news.opensuse.org/feed/
 
 feed 15m http://psankar.blogspot.com/feeds/posts/default/-/suse
 	define_name Sankar P
+    define_irc  psankar
+    define_face psankar.jpg
+    define_member 1
 
 feed 15m http://chenthill.wordpress.com/category/suse/feed/atom/
 	define_name Chenthill P
