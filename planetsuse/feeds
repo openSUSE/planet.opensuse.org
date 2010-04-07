@@ -734,7 +734,7 @@ feed 15m http://lizards.opensuse.org/author/UngaMan/feed/
 	define_name Julio Vannini
     define_lang en
 
-feed 15m http://lizards.opensuse.org/author/eri_zaq/feed/
+feed 15m http://lizards.opensuse.org/author/k0da/feed/
 	define_name Dinar Valeev
     define_irc  k0da
     define_member 1
