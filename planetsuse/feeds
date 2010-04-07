@@ -450,10 +450,6 @@ feed 15m http://gabrielstein.org/blog/?feed=rss2
 	define_name Gabriel Stein
 	define_irc  gabrielstein
 
-feed 15m http://tumblog.altbit.org/rss
-	define_name Christopher Hobbs
-	define_irc  hobbsc
-
 feed 15m http://visnov.blogspot.com/feeds/posts/default
 	define_name Stanislav Visnovsky
     define_member 1
@@ -711,6 +707,11 @@ feed 15m http://ldn.linuxfoundation.org/blogs/ddavis/feed
 	define_name Darren Davis
 
 feed 15m http://lizards.opensuse.org/author/hobbsc/feed/
+	define_name Christopher Hobbs
+	define_irc  hobbsc
+    define_member 1
+
+feed 15m http://altbit.org/wp/?feed=rss2
 	define_name Christopher Hobbs
 	define_irc  hobbsc
 
