@@ -2,7 +2,7 @@ feed 15m http://jamesthevicar.com/blog/?feed=rss2
 	define_name James Ogley
 	define_face james12
 	define_irc  Riggwelter
-    define_member 1
+	define_member 1
 
 feed 15m http://nermal.org/feed
 	define_name Peter Prior
@@ -12,7 +12,7 @@ feed 15m http://nermal.org/feed
 feed 15m http://www.lenzg.net/blog/feeds/categories/2-Linux.rss
 	define_name LenZ Grimmer
 	define_irc  LenzGr
-    define_member 1
+	define_member 1
 
 #feed 15m http://www.palmcoder.net/wordpress/wp-rss2.php
 #	define_name Justin Davies
@@ -23,7 +23,7 @@ feed 15m http://people.gnome.org/~michael/blog/index.atom
 	define_name Michael Meeks
 	define_face http://planet.gnome.org/heads/michael2.png
 	define_irc  mmeeks
-    define_member 1
+	define_member 1
 
 feed 15m http://disruptive.org.uk/rss.xml
 	define_name Roger Whittaker
@@ -42,7 +42,7 @@ feed 15m http://people.gnome.org/~federico/rss.xml
 	define_name Federico Mena-Quintero
 	define_face http://planet.gnome.org/heads/federico2.png
 	define_irc  federico1
-    define_member 1
+	define_member 1
 
 feed 15m http://suseroot.com/blog/rss.php?ver=2
 	define_name Damian Smith
@@ -52,8 +52,8 @@ feed 15m http://andreasjaeger.blogspot.com/feeds/posts/full
 	define_name Andreas Jaeger
 	define_face aj
 	define_irc  AJaeger
-    define_member 1
-    define_connect 30
+	define_member 1
+	define_connect 30
 
 feed 15m http://lizards.opensuse.org/author/a_jaeger/feed/
 	define_name Andreas Jaeger
@@ -62,8 +62,8 @@ feed 15m http://lizards.opensuse.org/author/a_jaeger/feed/
 feed 15m http://marcusmeissner.livejournal.com/data/rss
 	define_name Marcus Meissner
 	define_irc  _Marcus_
-    define_member 1
-    define_connect 14
+	define_member 1
+	define_connect 14
 
 #feed 15m http://blog.cynapses.org/feed/
 #	define_name Andreas Schneider
@@ -74,18 +74,18 @@ feed 15m http://ct.kki.org/blog/feed/
 	define_name Christoph Thiel
 	define_face cthiel
 	define_irc  cthiel
-    define_member 1
+	define_member 1
 
 feed 15m http://www.rosenauer.org/blog/feed/
 	define_name Wolfgang Rosenauer
 	define_irc  WolfiR
-    define_member 1
+	define_member 1
 
 feed 15m http://advogato.org/person/lmb/rss.xml
 	define_name Lars Marowsky-Bree
 	define_face lmb
 	define_irc  lmb
-    define_member 1
+	define_member 1
 
 feed 15m http://sonjakrauseharder.blogspot.com/feeds/posts/full
 	define_name Sonja Krause-Harder
@@ -94,7 +94,7 @@ feed 15m http://sonjakrauseharder.blogspot.com/feeds/posts/full
 feed 15m http://blog.cornelius-schumacher.de/feeds/posts/default
 	define_name Cornelius Schumacher
 	define_irc  cornelius
-    define_member 1
+	define_member 1
 
 feed 15m http://jamesots.blogspot.com/feeds/posts/full
 	define_name James Ots
@@ -106,8 +106,8 @@ feed 15m http://dev-loki.blogspot.com/feeds/posts/default?alt=rss
 	define_name Pascal Bleser
 	define_face yaloki
 	define_irc  yaloki
-    define_connect 102
-    define_member 1
+	define_connect 102
+	define_member 1
 
 feed 15m http://metaverse.wordpress.com/feed/atom/
 	define_name Mike McCallister
@@ -115,7 +115,7 @@ feed 15m http://metaverse.wordpress.com/feed/atom/
 feed 15m http://www.kdedevelopers.org/blog/280/feed
 	define_name Lubos Lunak
 	define_irc  Seli
-    define_member 1
+	define_member 1
 
 feed 15m http://antjefaber.blogspot.com/feeds/posts/full
 	define_name Antje Faber
@@ -128,7 +128,7 @@ feed 15m http://lizards.opensuse.org/author/coolo/feed/
 	define_name Stephan Kulow
 	define_face coolo
 	define_irc  coolo
-    define_member 1
+	define_member 1
 
 feed 15m http://www.kdedevelopers.org/blog/124/feed
 	define_name Stephan Kulow
@@ -145,7 +145,7 @@ feed 15m http://dkukawka.blogspot.com/feeds/posts/default
 feed 15m http://www.homac.de/wordpress/?feed=rss2
 	define_name Holger Macht
 	define_face hmacht
-    define_member 1
+	define_member 1
 
 feed 15m http://ironman.darthgibus.net/?feed=rss2
 	define_name Fred Blaise
@@ -155,14 +155,14 @@ feed 15m http://blog.nouse.net/?feed=rss2
 	define_name Timo Hoenig
 	define_face timo
 	define_irc  thoenig
-    define_member 1
+	define_member 1
 
 feed 15m http://jimmac.musichall.cz/log/?feed=rss2
 	define_name Jakub Steiner
 	define_face http://planet.gnome.org/heads/jimmac.png
 	define_irc  jimmac
-    define_member 1
-    define_connect 7
+	define_member 1
+	define_connect 7
 
 feed 15m http://feeds.ottleys.net/jaredottley?format=xml
 	define_name Jared Ottley
@@ -178,7 +178,7 @@ feed 15m http://duncan.mac-vicar.com/blog/archives/tag/suse/feed
 	define_name Duncan Mac-Vicar
 	define_face dmv
 	define_irc  duncanmv
-    define_member 1
+	define_member 1
 
 feed 15m http://jprosevear.org/blog/?feed=rss2
 	define_name JP Rosevear
@@ -187,7 +187,7 @@ feed 15m http://jprosevear.org/blog/?feed=rss2
 
 feed 15m http://www.kroah.com/log/index.rss
 	define_name Greg Kroah-Hartman
-    define_member 1
+	define_member 1
 
 feed 15m http://lizards.opensuse.org/author/mlasars/feed/
 	define_name Martin Lasarsch
@@ -196,13 +196,13 @@ feed 15m http://lizards.opensuse.org/author/mlasars/feed/
 feed 15m http://www.kdedevelopers.org/blog/77/feed
 	define_name Will Stephenson
 	define_irc  wstephenson
-    define_member 1
-    define_face wstephenson
-    define_connect 57
+	define_member 1
+	define_face wstephenson
+	define_connect 57
 
 feed 15m http://lizards.opensuse.org/author/wstephenson/feed/
 	define_name Will Stephenson
-    define_face wstephenson
+	define_face wstephenson
 
 feed 15m http://blog.cryptomilch.de/?feed=rss2
 	define_name Daniel Gollub
@@ -219,31 +219,31 @@ feed 15m http://abock.org/feed
 feed 15m http://benjiweber.co.uk/blog/feed/
 	define_name Benjamin Weber
 	define_irc  benJIman
-    define_member 1
+	define_member 1
 
 feed 15m http://graeber-clan.de/cgi-bin/weblog_basic/index.php?feed=rss2
 	define_name Herbert Graeber
-    define_irc herby_
-    define_member 1
+	define_irc herby_
+	define_member 1
 
 feed 15m http://dev.compiz.org/~cyberorg/feed/
 	define_name Jigish Gohil
 	define_face cyberorg
 	define_irc  cyberorg
-    define_member 1
+	define_member 1
 
 feed 15m http://mvidner.blogspot.com/feeds/posts/default
 	define_name Martin Vidner
 	define_face mvidner
 	define_irc  mvidner
-    define_member 1
-    define_connect 77
+	define_member 1
+	define_connect 77
 
 feed 15m http://blog.hennevogel.de/feed/
 	define_name Henne Vogelsang
 	define_irc  henne
-    define_face henne
-    define_member 1
+	define_face henne
+	define_member 1
 
 feed 15m http://snorp.net/posts.atom
 	define_name James Willcox
@@ -280,7 +280,7 @@ feed 15m http://francis.giannaros.org/blog/category/openSUSE/feed/
 	define_name Francis Giannaros
 	define_face francis
 	define_irc  apokryphos
-    define_member 1
+	define_member 1
 
 feed 15m http://tablefor1.wordpress.com/feed/atom/
 	define_name Jonathan Ervine
@@ -297,13 +297,13 @@ feed 15m http://kkaempf.blogspot.com/feeds/posts/default
 
 feed 15m http://news.opensuse.org/feed/
 	define_name openSUSE News
-    define_face opensuse
+	define_face opensuse
 
 feed 15m http://psankar.blogspot.com/feeds/posts/default/-/suse
 	define_name Sankar P
-    define_irc  psankar
-    define_face psankar.jpg
-    define_member 1
+	define_irc  psankar
+	define_face psankar.jpg
+	define_member 1
 
 feed 15m http://chenthill.wordpress.com/category/suse/feed/atom/
 	define_name Chenthill P
@@ -330,18 +330,18 @@ feed 15m http://mschlander.wordpress.com/category/opensuse/feed/atom/
 	define_name Martin Schlander
 	define_face mschlander
 	define_irc  cb400f
-    define_member 1
+	define_member 1
 
 feed 15m http://egbert-e.livejournal.com/data/rss
 	define_name Egbert Eich
 	define_irc  egbert
-    define_member 1
+	define_member 1
 
 feed 15m http://blog.kohei.us/feed/
 	define_name Kohei Yoshida
 	define_face kohei
-    define_irc  kohei_
-    define_member 1
+	define_irc  kohei_
+	define_member 1
 
 feed 15m http://linpeifeng.blogspot.com/atom.xml
 	define_name Fong Lin
@@ -356,8 +356,8 @@ feed 15m http://www.wafaa.eu/tag/blog?output=rss
 	define_name Andrew Wafaa
 	define_face wafaa
 	define_irc  FunkyPenguin
-    define_member 1
-    define_connect 26
+	define_member 1
+	define_connect 26
 
 feed 15m http://lizards.opensuse.org/author/funkypenguin/feed/
 	define_name Andrew Wafaa
@@ -370,10 +370,10 @@ feed 15m http://feeds.feedburner.com/sontek
 
 feed 15m http://www.decriptor.com/?feed=rss2
 	define_name Stephen Shaw
-    define_face sshaw
-    define_irc  sshaw
-    define_member 1
-    define_connect 8
+	define_face sshaw
+	define_irc  sshaw
+	define_member 1
+	define_connect 8
 
 feed 15m http://hpjansson.org/blag/feed/
 	define_name Hans Petter Jansson
@@ -389,7 +389,7 @@ feed 15m http://yarpen.cz/rants/?feed=rss2
 feed 15m http://wire.dattitu.de/rss.php?category=4
 	define_name Dirk Müller
 	define_irc  dirk
-    define_member 1
+	define_member 1
 
 feed 15m http://lizards.opensuse.org/author/dirkmueller/feed/
 	define_name Dirk Müller
@@ -398,13 +398,13 @@ feed 15m http://cgoncalves.blogspot.com/feeds/posts/default
 	define_name Carlos Gonçalves
 	define_face cgoncalves
 	define_irc  cgoncalves
-    define_member 1
-    define_connect 25
+	define_member 1
+	define_connect 25
 
 feed 15m http://www.coolice.org/blog/?feed=rss2
 	define_name Magnus Boman
 	define_irc  captain_magnus
-    define_member 1
+	define_member 1
 
 #feed 15m http://debaer.org/blog/?feed=rss2
 #	define_name Jo De Baer
@@ -412,42 +412,42 @@ feed 15m http://www.coolice.org/blog/?feed=rss2
 feed 15m http://blog.cristianrodriguez.net/feeds/posts/default
 	define_name Cristian Rodríguez
 	define_irc  judas_iscariote
-    define_member 1
+	define_member 1
 
 feed 15m http://lilypond.org/blog/janneke/rss/?css=0
 	define_name Jan Nieuwenhuizen
 
 feed 15m http://spotlight.opensuse.org/feed/
 	define_name openSUSE Spotlight
-    define_face opensuse
+	define_face opensuse
 
 feed 15m http://www.bryen.com/?feed=rss2
 	define_name Bryen Yunashko
 	define_irc  suseROCKS
-    define_face bryen
-    define_member 1
+	define_face bryen
+	define_member 1
 
 feed 15m http://blogs.gnome.org/sragavan/feed/
 	define_name Srinivasa Ragavan
 
 feed 15m http://jordimassaguerpla.blogspot.com/feeds/posts/default
 	define_name Jordi Massaguer
-    define_member 1
+	define_member 1
 
 feed 15m http://blog.cboltz.de/feeds/categories/6-english.rss
 	define_name Christian Boltz
 	define_irc  cboltz
-    define_member 1
+	define_member 1
 
 feed 15m http://blog.cboltz.de/rss.xml
 	define_name Christian Boltz
-    define_lang de
+	define_lang de
 
 feed 15m http://www.vuntz.net/journal/feed/en/rss2
 	define_name Vincent Untz
 	define_face http://planet.gnome.org/heads/vuntz.png
 	define_irc  vuntz
-    define_member 1
+	define_member 1
 
 feed 15m http://gabrielstein.org/blog/?feed=rss2
 	define_name Gabriel Stein
@@ -455,7 +455,7 @@ feed 15m http://gabrielstein.org/blog/?feed=rss2
 
 feed 15m http://visnov.blogspot.com/feeds/posts/default
 	define_name Stanislav Visnovsky
-    define_member 1
+	define_member 1
 
 feed 15m http://blog.fnmueller.de/feed/atom/
 	define_name Felix-Nicolai Müller
@@ -481,11 +481,11 @@ feed 15m http://florianreuter.blogspot.com/feeds/posts/default
 feed 15m http://seife.kernalert.de/blog/feed/
 	define_name Stefan Seyfried
 	define_irc  seife
-    define_member 1
+	define_member 1
 
 feed 15m http://www.digitalflow.de/module/blog/rss.php?ver=2&num=5&sectionid=4
 	define_name Thomas Schmidt
-    define_member 1
+	define_member 1
 
 feed 15m http://jeffreystedfast.blogspot.com/feeds/posts/default
 	define_name Jeffrey Stedfast
@@ -494,7 +494,7 @@ feed 15m http://jeffreystedfast.blogspot.com/feeds/posts/default
 feed 15m http://automorphic.blogspot.com/feeds/posts/default
 	define_name Sandy Armstrong
 	define_face sandy
-    define_connect 12
+	define_connect 12
 
 #feed 15m http://munkii.wordpress.com/feed/atom
 #	define_name Dean Sawash
@@ -502,7 +502,7 @@ feed 15m http://automorphic.blogspot.com/feeds/posts/default
 
 feed 15m http://jniq.blogspot.com/feeds/posts/default
 	define_name Jan Kupec
-    define_member 1
+	define_member 1
 
 feed 15m http://cameronseader.blogspot.com/feeds/posts/default
 	define_name Cameron Seader
@@ -535,7 +535,7 @@ feed 15m http://gburt.blogspot.com/feeds/posts/default
 feed 15m http://lizards.opensuse.org/author/adriansuse/feed/
 	define_name Adrian Schröter
 	define_irc  adrianS
-    define_member 1
+	define_member 1
 
 #feed 15m http://www.m4r3k.org/feed/?cat=25
 #	define_name Marek Stopka
@@ -543,29 +543,30 @@ feed 15m http://lizards.opensuse.org/author/adriansuse/feed/
 
 feed 15m http://www.luckylemon.de/?feed=rss2
 	define_name Jan Weber
-    define_face jan_weber
-    define_member 1
-    define_irc  The_Code
-    define_connect 26
+	define_face jan_weber
+	define_member 1
+	define_irc  The_Code
+	define_connect 26
 
 feed 15m http://stick.gk2.sk/blog/tag/opensuse/feed/
 	define_name Pavol Rusnak
-    define_irc  prusnak
+	define_irc  prusnak
 	define_face http://stick.gk2.sk/head.png
-    define_member 1
-    define_connect 1
+	define_member 1
+	define_connect 1
 
 feed 15m http://lizards.opensuse.org/author/dl9pf/feed/
 	define_name Jan-Simon Möller
 
 feed 15m http://lizards.opensuse.org/author/kfreitag/feed/
 	define_name Klaas Freitag
-    define_irc  dragotin
-    define_member 1
+	define_irc  dragotin
+	define_member 1
+	define_face dragotin
 
 feed 15m http://lizards.opensuse.org/author/vavai/feed/
 	define_name Masim Sugianto
-    define_member 1
+	define_member 1
 
 feed 15m http://vavai.net/category/opensuse/feed/
 	define_name Masim Sugianto
@@ -612,34 +613,34 @@ feed 15m http://azaadsource.com/category/suse/feed/
 
 feed 15m http://lizards.opensuse.org/author/g0nz0/feed/
 	define_name Rossana Motta
-    define_irc  G0NZ0
+	define_irc  G0NZ0
 
 feed 15m http://lizards.opensuse.org/author/rhorstkoetter/feed/
 	define_name Rupert Horstkötter
-    define_irc  rhorstkoetter
-    define_face rhorstkoetter
-    define_member 1
-    define_connect 104
+	define_irc  rhorstkoetter
+	define_face rhorstkoetter
+	define_member 1
+	define_connect 104
 
 feed 15m http://lizards.opensuse.org/author/michal-m/feed/
 	define_name Michal Marek
-    define_member 1
+	define_member 1
 
 feed 15m http://lizards.opensuse.org/author/lnussel/feed/
 	define_name Ludwig Nussel
-    define_member 1
+	define_member 1
 
 feed 15m http://lizards.opensuse.org/author/schubi2/feed/
 	define_name Stefan Schubert
 
 feed 15m http://thetoms-random-thoughts.blogspot.com/feeds/posts/default
 	define_name Thomas Biege
-    define_member 1
+	define_member 1
 
 feed 15m http://lizards.opensuse.org/author/poeml/feed/
 	define_name Peter Pöml
-    define_irc ppoeml
-    define_member 1
+	define_irc ppoeml
+	define_member 1
 
 feed 15m http://lizards.opensuse.org/author/wiederda/feed/
 	define_name Hubert Mantel
@@ -655,14 +656,14 @@ feed 15m http://feeds.feedburner.com/susegeek
 
 feed 15m http://lizards.opensuse.org/author/anubisg1/feed/
 	define_name Andrea Florio
-    define_face anubisg1
-    define_irc  anubisg1
-    define_member 1
-    define_connect 27
+	define_face anubisg1
+	define_irc  anubisg1
+	define_member 1
+	define_connect 27
 
 feed 15m http://lizards.opensuse.org/author/visnov/feed/
 	define_name Stanislav Visnovsky
-    define_member 1
+	define_member 1
 
 feed 15m http://lizards.opensuse.org/author/sh-sh-sh/feed/
 	define_name Stefan Hundhammer
@@ -679,14 +680,16 @@ feed 15m http://lizards.opensuse.org/author/dmitry_serpokryl/feed/
 feed 15m http://feeds.feedburner.com/zdnet/community?format=xml
 	define_name Joe Brockmeier
 	define_irc  jbrockmeier
+	define_face zonker
 
 feed 15m http://www.dissociatedpress.net/category/opensuse/feed/
 	define_name Joe Brockmeier
+	define_faze zonker
 
 feed 15m http://lizards.opensuse.org/author/msmeissn/feed/
 	define_name Marcus Meissner
 	define_irc  _Marcus_
-    define_member 1
+	define_member 1
 
 feed 15m http://lizards.opensuse.org/author/rawang/feed/
 	define_name Ray Wang
@@ -712,7 +715,7 @@ feed 15m http://ldn.linuxfoundation.org/blogs/ddavis/feed
 feed 15m http://lizards.opensuse.org/author/hobbsc/feed/
 	define_name Christopher Hobbs
 	define_irc  hobbsc
-    define_member 1
+	define_member 1
 
 feed 15m http://altbit.org/wp/?feed=rss2
 	define_name Christopher Hobbs
@@ -731,18 +734,18 @@ feed 15m http://holger123.wordpress.com/feed/atom/
 	define_name Holger Hetterich
 
 feed 15m http://ungaman.wordpress.com/feed/atom/
-    define_name Julio Vannini
-    define_lang es
+	define_name Julio Vannini
+	define_lang es
 
 feed 15m http://lizards.opensuse.org/author/UngaMan/feed/
 	define_name Julio Vannini
-    define_lang en
+	define_lang en
 
 feed 15m http://lizards.opensuse.org/author/k0da/feed/
 	define_name Dinar Valeev
-    define_irc  k0da
-    define_member 1
-    define_connect 65
+	define_irc  k0da
+	define_member 1
+	define_connect 65
 
 feed 15m http://andrew.jorgensenfamily.us/category/opensuse/feed/
 	define_name Andrew Jorgensen
@@ -762,8 +765,8 @@ feed 15m http://hedgehogpainter.livejournal.com/data/atom
 	define_name Katarina Machalkova
 	define_face kmachalkova
 	define_irc  Bubli
-    define_member 1
-    define_connect 45
+	define_member 1
+	define_connect 45
 
 feed 15m http://lizards.opensuse.org/author/babelworx/feed/
 	define_name Ciaran Farrell
@@ -776,8 +779,8 @@ feed 15m http://lizards.opensuse.org/author/lrupp/feed/
 
 feed 15m http://johnnyjacob.wordpress.com/category/tech/suse/feed/
 	define_name Johnny Jacob
-    define_irc  jony
-    define_connect 20
+	define_irc  jony
+	define_connect 20
 
 feed 15m http://lizards.opensuse.org/author/tgoettlicher/feed/
 	define_name Thomas Göttlicher
@@ -790,15 +793,15 @@ feed 15m http://mlandres.blogspot.com/feeds/posts/default
 
 feed 15m http://lizards.opensuse.org/author/jnweiger/feed/
 	define_name Juergen Weigert
-    define_member 1
+	define_member 1
 
 feed 15m http://lizards.opensuse.org/author/mvyskocil/feed/
 	define_name Michal Vyskocil
-    define_member 1
+	define_member 1
 
 feed 15m http://bornkessel.com/kesselblog/?feed=atom&cat=3
 	define_name Daniel Bornkessel
-    define_member 1
+	define_member 1
 
 feed 15m http://lmedinas.livejournal.com/data/rss
 	define_name Luis Medinas
@@ -840,18 +843,18 @@ feed 15m http://lizards.opensuse.org/author/cyberorg/feed/
 	define_name Jigish Gohil
 	define_face cyberorg
 	define_irc  cyberorg
-    define_member 1
-    define_connect 80
+	define_member 1
+	define_connect 80
 
 feed 15m http://lizards.opensuse.org/author/marcus_h/feed/
 	define_name Marcus Hüwe
 	define_irc  }-Tux-{
-    define_member 1
+	define_member 1
 
 feed 15m http://dominique.leuenberger.net/blog/?feed=rss2
 	define_name Dominique Leuenberger
 	define_irc  DimStar
-    define_member 1
+	define_member 1
 
 feed 15m http://lizards.opensuse.org/author/jasujt/feed/
 	define_name James Tremblay
@@ -859,9 +862,9 @@ feed 15m http://lizards.opensuse.org/author/jasujt/feed/
 
 feed 15m http://blog.carrion.ws/tag/opensuse/feed/
 	define_name Mario Carrion
-    define_irc  marioc
-    define_face mario_carrion
-    define_connect 13
+	define_irc  marioc
+	define_face mario_carrion
+	define_connect 13
 
 feed 15m http://knocte.blogspot.com/feeds/posts/default/-/SoftwareLibre
 	define_name Andrés G. Aragoneses
@@ -879,8 +882,8 @@ feed 15m http://michal.hrusecky.net/data/xml/blog.Linux-openSUSE.rss
 
 feed 15m http://lizards.opensuse.org/author/ricardovarassantana/feed/
 	define_name Ricardo Varas Santana
-    define_irc  rvaras
-    define_connect 67
+	define_irc  rvaras
+	define_connect 67
 
 feed 15m http://lslezak.blogspot.com/feeds/posts/default
 	define_name Ladislav Slezak
@@ -911,18 +914,18 @@ feed 15m http://lizards.opensuse.org/author/nikanth/feed/
 feed 15m http://lizards.opensuse.org/author/michl19/feed/
 	define_name Michael Löffler
 	define_irc  michl
-    define_face michl
-    define_member 1
+	define_face michl
+	define_member 1
 
 feed 15m http://www.opensuse-education.org/rss-news.php
 	define_name openSUSE Education
-    define_face opensuse-education
+	define_face opensuse-education
 
 feed 15m http://lizards.opensuse.org/author/javierllorente/feed/
 	define_name Javier Llorente
-    define_irc  javier_
-    define_member 1
-    define_connect 28
+	define_irc  javier_
+	define_member 1
+	define_connect 28
 
 feed 15m http://lizards.opensuse.org/author/fabiomux/feed/
 	define_name Fabio Mucciante
@@ -945,9 +948,9 @@ feed 15m http://desire.sk/simple/suse_blog
 
 feed 15m http://lizards.opensuse.org/author/puzel/feed/
 	define_name Petr Uzel
-    define_face petr_uzel
+	define_face petr_uzel
 	define_irc  ptr_uzl
-    define_connect 11
+	define_connect 11
 
 feed 15m http://blog.reblochon.org/feeds/posts/default
 	define_name Stephane Delcroix
@@ -967,9 +970,9 @@ feed 15m http://lizards.opensuse.org/author/migbarajas/feed/
 
 feed 15m http://lizards.opensuse.org/author/spyhawk/feed/
 	define_name Rémy Marquis
-    define_irc  Spyhawk
-    define_member 1
-    define_connect 33
+	define_irc  Spyhawk
+	define_member 1
+	define_connect 33
 
 feed 15m http://infragments.blogspot.com/feeds/posts/default
 	define_name Lukas Lipavsky
@@ -977,13 +980,13 @@ feed 15m http://infragments.blogspot.com/feeds/posts/default
 feed 15m http://feeds.feedburner.com/Karl-tux-stadtOpensuse
 	define_name Sirko Kemter
 	define_face kemter
-    define_irc  gnokii
-    define_member 1
+	define_irc  gnokii
+	define_member 1
 
 feed 15m http://feeds.feedburner.com/karl-tux-stadt
-    define_name Sirko Kemter
+	define_name Sirko Kemter
 	define_face kemter
-    define_lang de
+	define_lang de
 
 feed 15m http://blog.reblochon.org/feeds/posts/default
 	define_name Stephane Delcroix
@@ -996,8 +999,8 @@ feed 15m http://lizards.opensuse.org/author/saigkill/feed/
 	define_name Sascha Manns
 	define_face sascha
 	define_irc  saigkill
-    define_member 1
-    define_connect 71
+	define_member 1
+	define_connect 71
 
 feed 15m http://saigkill.wordpress.com/category/computer/opensuse/feed/
 	define_name Sascha Manns
@@ -1007,72 +1010,72 @@ feed 15m http://blog.coly.li/?feed=rss2
 	define_name Coly Li
 	define_face coly_li
 	define_irc  coly
-    define_member 1
+	define_member 1
 
 feed 15m http://www.andreas-demmer.de/category/linux/feed/
-    define_name Andreas Demmer
-    define_irc  ademmer
-    define_face ademmer
-    define_connect 61
-    define_member 1
-    define_lang de
+	define_name Andreas Demmer
+	define_irc  ademmer
+	define_face ademmer
+	define_connect 61
+	define_member 1
+	define_lang de
 
 feed 15m http://www.kde4.de/?feed=rss2
-    define_name KDE4.de
-    define_face http://kde.org/media/images/top-kde.jpg
-    define_lang de
+	define_name KDE4.de
+	define_face http://kde.org/media/images/top-kde.jpg
+	define_lang de
 
 feed 15m http://www.opensuse-lernen.de/?feed=rss2
-    define_name openSUSE-lernen.de
-    define_lang de
+	define_name openSUSE-lernen.de
+	define_lang de
 
 feed 15m http://blog.bgta.net/feed/tag/opensuse/
-    define_name Raul Romero
-    define_lang es
+	define_name Raul Romero
+	define_lang es
 
 feed 15m http://mauropm.livejournal.com/data/rss
-    define_name Mauro Parra Miranda
-    define_lang es
+	define_name Mauro Parra Miranda
+	define_lang es
 
 feed 15m http://blog.binaridev.es/feeds/posts/default
-    define_name Ángel Llosa
-    define_lang es
+	define_name Ángel Llosa
+	define_lang es
 
 feed 15m http://emtorres.com.ar/blog/feed/atom/
-    define_name Martin Torres
-    define_lang es
+	define_name Martin Torres
+	define_lang es
 
 feed 15m http://gnuowned.tumblr.com/rss
-    define_name Miguel Angel Barajas
-    define_lang es
+	define_name Miguel Angel Barajas
+	define_lang es
 
 feed 15m http://hippie.wordpress.com/feed/atom/
-    define_name Juan Faúndez
-    define_lang es
-    define_irc  hippiesus
+	define_name Juan Faúndez
+	define_lang es
+	define_irc  hippiesus
 
 feed 15m http://blog.jakubrusinek.pl/feed/
-    define_name Jakub Rusinek
-    define_irc Livio
-    define_lang pl
+	define_name Jakub Rusinek
+	define_irc Livio
+	define_lang pl
 
 feed 15m http://pangrys.blogspot.com/feeds/posts/default
-    define_name Maciej Piotr Szczepański
-    define_lang pl
+	define_name Maciej Piotr Szczepański
+	define_lang pl
 
 feed 15m http://www.rogozinski.org/feed/atom/
-    define_name Mirosław Rogoziński
-    define_lang pl
+	define_name Mirosław Rogoziński
+	define_lang pl
 
 feed 15m http://my.opera.com/dragonzone/xml/atom/blog/
-    define_name Piotr Krakowiak
-    define_lang pl
+	define_name Piotr Krakowiak
+	define_lang pl
 
 feed 15m http://elchevive68.wordpress.com/feed/atom/
 	define_name Luiz Fernando Ranghetti
 	define_irc  elchevive1968
-    define_connect 100
-    define_member 1
+	define_connect 100
+	define_member 1
 	define_lang pt
 
 feed 15m http://dionatamartins.blogspot.com/feeds/posts/default
@@ -1102,9 +1105,9 @@ feed 15m http://neofenix.wordpress.com/feed/atom/
 
 feed 15m http://blog.marcolino.com.br/wordpress/tags/opensuse/feed/
 	define_name Alexandre Marcolino
-    define_face alexandre_marcolino
+	define_face alexandre_marcolino
 	define_lang pt
-    define_connect 73
+	define_connect 73
 
 #feed 15m http://sysaprendiz.wordpress.com/feed
 #	define_name Leandro Hamid
@@ -1119,7 +1122,7 @@ feed 15m http://rauhmaru.blogspot.com/feeds/posts/default
 	define_face rauhmaru
 	define_irc  rauhmaru
 	define_lang pt
-    define_connect 40
+	define_connect 40
 
 feed 15m http://mrcliq.freehostia.com/?feed=rss2
 	define_name Márcio Riccardo
@@ -1137,9 +1140,8 @@ feed 15m http://strufts.blogspot.com/feeds/posts/default
 	define_lang pt
 
 feed 15m http://blog.zaq.ne.jp/opensuse/rss/
-    define_name Satoru Matsumoto
-    define_irc  heliosreds
-    define_lang jp
-    define_member 1
-    define_eonnect 59
-
+	define_name Satoru Matsumoto
+	define_irc  heliosreds
+	define_lang jp
+	define_member 1
+	define_connect 59
