@@ -43,6 +43,23 @@ html {
     color: #888888;
     font-size: 0.8em;
     font-weight: normal;
+    margin-right: 1em;
+}
+
+.box-header .member,
+.box-header .connect {
+    padding: 0px 2px 0px 2px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: -1px;
+    margin-left: 0.5ex;
+}
+.box-header .member {
+    background: #669900;
+}
+.box-header .connect {
+    background: #444444;
 }
 
 #content > div {
@@ -94,31 +111,6 @@ html {
     color: #666666;
     font-size: 0.8em;
     margin-bottom: 2em;
-}
-
-#sidebar {
-    display: none;
-    float: right;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 5%;
-    margin-right: 3px;
-    width: 15%;
-}
-
-#sidebar, #feedlist, #feedlist a {
-    font-size: 0.8em;
-}
-
-#feedlist {
-    padding: 0;
-    margin: 0;
-}
-
-#feedlist ul {
-    list-style-type: none;
-    margin: 0.1em 0.5em 0.1em 0.5em;
-    padding: 0;
 }
 
 #content > p {
@@ -198,21 +190,6 @@ html {
 
 .day .day-day { font-size: 120%; font-weight: bold; }
 .day .day-date { font-size: 90%; }
-
-/*
-.entry > .date > a {
-    color: #669900;
-    text-decoration: none;
-}
-
-.entry > .date > a:hover {
-    text-decoration: underline;
-}
-
-.entry > .date > a:after {
-    content: "\00A0\00AB";
-}
-*/
 
 #help {
     position: fixed;
