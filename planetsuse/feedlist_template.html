@@ -8,8 +8,8 @@
   <meta name="description" content="Aggregation of the blogs of openSUSE contributors"/>
   <meta name="keywords" content="opensuse, linux"/>
   <link rel="stylesheet" href="http://static.opensuse.org/themes/bento/css/style.css" type="text/css" media="screen" title="All" charset="utf-8" />
-  <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" title="All" charset="utf-8" />
-  <link rel="stylesheet" href="../css/feedlist.css" type="text/css" media="screen" title="All" charset="utf-8" />
+  <link rel="stylesheet" href="../css/style.min.css" type="text/css" media="screen" title="All" charset="utf-8" />
+  <link rel="stylesheet" href="../css/feedlist.min.css" type="text/css" media="screen" title="All" charset="utf-8" />
   <script src="http://static.opensuse.org/themes/bento/js/jquery.js" type="text/javascript" charset="utf-8"></script>
   <script src="http://static.opensuse.org/themes/bento/js/l10n/global-navigation-data-en_US.js" type="text/javascript" charset="utf-8"></script>
   <script src="http://static.opensuse.org/themes/bento/js/global-navigation.js" type="text/javascript" charset="utf-8"></script>
@@ -46,22 +46,25 @@
   <div id="main">
 
   <div id="intro">
-    <h3>Welcome to Planet openSUSE</h3>
+    <h3>{% trans %}Welcome to Planet openSUSE{% endtrans %}</h3>
     <p>
-        This page contains the list of all the <a href="http://www.opensuse.org">openSUSE</a> contributors
-        who are aggregated on <a href="./">Planet openSUSE</a>.
+        {%- trans -%}
+        This page contains the list of all the <a href="http://www.opensuse.org">openSUSE</a> contributors who are aggregated on <a href="./">Planet openSUSE</a>.
+        {%- endtrans -%}
     </p>
     <p>
+        {%- trans -%}
         To have your blog added to this aggregator, please read <a href="http://en.opensuse.org/PlanetSUSE">the instructions</a>.
+        {%- endtrans -%}
     </p>
-    <h4 id="actions-header" class="menu-header">Actions:</h4>
+    <h4 id="actions-header" class="menu-header">{% trans %}Actions{% endtrans %}:</h4>
     <ul id="actions-menu" class="menu">
-      <li><a href="./">Back to Planet openSUSE</a></li>
-{% if lang -%}
-      <li><a href="../global/feedlist.html">Show all feeds</a></li>
-{% endif -%}
+      <li><a href="./">{% trans %}Back to Planet openSUSE{% endtrans %}</a></li>
+      {%- if lang -%}
+      <li><a href="../global/feedlist.html">{% trans %}Show all feeds{% endtrans %}</a></li>
+      {%- endif -%}
     </ul>
-    <h4 id="xml-header" class="menu-header">Metadata:</h4>
+    <h4 id="xml-header" class="menu-header">{% trans %}Metadata{% endtrans %}:</h4>
     <ul id="xml-menu" class="menu">
       <li><a href="rss20.xml"    type="application/rss+xml" rel="alternate">RSS{% if lang %} ({{ lang }}){% endif %}</a></li>
       <li><a href="opml.xml"     type="text/x-opml"         rel="meta">OPML{% if lang %} ({{ lang }}){% endif %}</a></li>
@@ -71,7 +74,7 @@
 
   <!-- Start: Main Content Area -->
   <div id="content" class="content-wrapper">
-    <h4 id="feedlist-header">Aggregated feeds:</h4>
+    <h4 id="feedlist-header">{% trans %}Aggregated feeds{% endtrans %}:</h4>
     <div id="feedlist">
       {% for a in feeds %}
       <div class="feed{% if a.wrap %} feed-wrap{% endif %}{% if a.top %} feed-top{% endif %}">
@@ -110,13 +113,17 @@
     </div>
     <div id="footer-legal" class="border-top">
       <p>
-        &copy; 2010 Pascal Bleser and the openSUSE Community.
+        &copy; 2010 {% trans %}Pascal Bleser and the openSUSE Community{% endtrans %}.
       </p>
       <p>
+        {%- trans -%}
         This site is not an official openSUSE website, and is not in any way affiliated with or endorsed by SUSE Linux GmbH or Novell.
+        {%- endtrans -%}
       </p>
       <p>
+        {%- trans -%}
         openSUSE and SUSE are trademarks of Novell, Inc. in the United States and other countries.
+        {%- endtrans -%}
       </p>
     </div>
   </div>

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2010-04-09 23:47+0200\n"
+"PO-Revision-Date: 2010-04-10 00:39+0200\n"
 "Last-Translator: Pascal Bleser <pascal.bleser@opensuse.org>\n"
 "Language-Team: FR <fr@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -49,7 +49,7 @@ msgstr ""
 msgid "Overview"
 msgstr "Aper&ccedil;u"
 
-#: planetsuse/planet_template.html:64
+#: planetsuse/planet_template.html:64 planetsuse/feedlist_template.html:49
 msgid "Welcome to Planet openSUSE"
 msgstr "Bienvenue &agrave; la plan&egrave;te openSUSE"
 
@@ -62,7 +62,7 @@ msgstr ""
 "contributeurs <a href=\"http://fr.opensuse.org\">openSUSE</a> sur leurs "
 "blogues respecifs."
 
-#: planetsuse/planet_template.html:71
+#: planetsuse/planet_template.html:71 planetsuse/feedlist_template.html:56
 msgid ""
 "To have your blog added to this aggregator, please read <a href=\"http://en."
 "opensuse.org/PlanetSUSE\">the instructions</a>."
@@ -98,7 +98,7 @@ msgstr "polonais"
 msgid "Japanese"
 msgstr "japonais"
 
-#: planetsuse/planet_template.html:86
+#: planetsuse/planet_template.html:86 planetsuse/feedlist_template.html:60
 msgid "Actions"
 msgstr "Actions"
 
@@ -110,7 +110,7 @@ msgstr "Raccourcis clavier"
 msgid "Feed list"
 msgstr "Liste de flux"
 
-#: planetsuse/planet_template.html:93
+#: planetsuse/planet_template.html:93 planetsuse/feedlist_template.html:67
 msgid "Metadata"
 msgstr "M&eacute;ta-donn&eacute;es"
 
@@ -162,23 +162,43 @@ msgstr "Articles actuels"
 msgid "Older blog entries"
 msgstr "Articles plus ancients"
 
-#: planetsuse/planet_template.html:160
+#: planetsuse/planet_template.html:160 planetsuse/feedlist_template.html:116
 msgid "Pascal Bleser and the openSUSE Community"
 msgstr "Pascal Bleser et la communaut&eacute; openSUSE"
 
-#: planetsuse/planet_template.html:163
+#: planetsuse/planet_template.html:163 planetsuse/feedlist_template.html:119
 msgid ""
 "This site is not an official openSUSE website, and is not in any way "
 "affiliated with or endorsed by SUSE Linux GmbH or Novell."
 msgstr ""
 
-#: planetsuse/planet_template.html:168
+#: planetsuse/planet_template.html:168 planetsuse/feedlist_template.html:124
 msgid ""
 "openSUSE and SUSE are trademarks of Novell, Inc. in the United States and "
 "other countries."
 msgstr ""
 "openSUSE et SUSE sont des marques enregist&eacute;es de Novell, Inc, aux "
 "&Eacute;tats-Unis et autres pays."
+
+#: planetsuse/feedlist_template.html:51
+msgid ""
+"This page contains the list of all the <a href=\"http://www.opensuse.org"
+"\">openSUSE</a> contributors who are aggregated on <a href=\"./\">Planet "
+"openSUSE</a>."
+msgstr "Cette page contient une liste de tous les contributeurs au <a href=\"http://fr.opensuse.org\">project openSUSE</a> qui ont leur blogue sur l'aggrégateur."
+
+#: planetsuse/feedlist_template.html:62
+#, fuzzy
+msgid "Back to Planet openSUSE"
+msgstr "Retour à la planète openSUSE"
+
+#: planetsuse/feedlist_template.html:64
+msgid "Show all feeds"
+msgstr "Afficher tous les flux"
+
+#: planetsuse/feedlist_template.html:77
+msgid "Aggregated feeds"
+msgstr "Liste des flux"
 
 #: planetsuse/code.html:8
 msgid "_DATE_FORMAT_"
