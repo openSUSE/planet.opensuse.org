@@ -148,5 +148,5 @@ msgstr ""
 
 #: planetsuse/code.html:8
 msgid "_DATE_FORMAT_"
-msgstr ""
+msgstr "%d %B, %Y"
 

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2010-04-08 01:47+0200\n"
+"PO-Revision-Date: 2010-04-09 23:47+0200\n"
 "Last-Translator: Pascal Bleser <pascal.bleser@opensuse.org>\n"
 "Language-Team: FR <fr@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -29,6 +29,22 @@ msgstr "Souscriptions (dans toutes les langues)"
 msgid "all languages"
 msgstr "toutes les langues"
 
+#: planetsuse/planet_template.html:38
+msgid "Downloads"
+msgstr ""
+
+#: planetsuse/planet_template.html:39
+msgid "Support"
+msgstr ""
+
+#: planetsuse/planet_template.html:40
+msgid "Community"
+msgstr ""
+
+#: planetsuse/planet_template.html:41
+msgid "Development"
+msgstr ""
+
 #: planetsuse/planet_template.html:48 planetsuse/planet_template.html:89
 msgid "Overview"
 msgstr "Aper&ccedil;u"
@@ -41,13 +57,18 @@ msgstr "Bienvenue &agrave; la plan&egrave;te openSUSE"
 msgid ""
 "This is a feed aggregator that collects what <a href=\"http://www.opensuse."
 "org\">openSUSE</a> contributors are writing in their respective blogs."
-msgstr "Ce site est un aggr&eacute;gateur d'articles post&eacute;s par les contributeurs <a href=\"http://fr.opensuse.org\">openSUSE</a> sur leurs blogues respecifs."
+msgstr ""
+"Ce site est un aggr&eacute;gateur d'articles post&eacute;s par les "
+"contributeurs <a href=\"http://fr.opensuse.org\">openSUSE</a> sur leurs "
+"blogues respecifs."
 
 #: planetsuse/planet_template.html:71
 msgid ""
 "To have your blog added to this aggregator, please read <a href=\"http://en."
 "opensuse.org/PlanetSUSE\">the instructions</a>."
-msgstr "Pour ajouter votre blogue &agrave; l'aggr&eacute;gation, veuillez suivre <a href=\"http://en.opensuse.org/PlanetSUSE\">les instructions</a>."
+msgstr ""
+"Pour ajouter votre blogue &agrave; l'aggr&eacute;gation, veuillez suivre <a "
+"href=\"http://en.opensuse.org/PlanetSUSE\">les instructions</a>."
 
 #: planetsuse/planet_template.html:75
 msgid "Languages"
@@ -129,28 +150,36 @@ msgstr "annuler"
 msgid ""
 "Note that you may use those keys with or without pressing the <span class="
 "\"key\">alt</span> key."
-msgstr "Remarquez que vous pouvez &eacute;galement utiliser ces raccourcis clavier en combinaison avec la touche <span class=\"key\">alt</span>."
+msgstr ""
+"Remarquez que vous pouvez &eacute;galement utiliser ces raccourcis clavier "
+"en combinaison avec la touche <span class=\"key\">alt</span>."
 
-#: planetsuse/planet_template.html:142
+#: planetsuse/planet_template.html:144
 msgid "Current blog entries"
 msgstr "Articles actuels"
 
-#: planetsuse/planet_template.html:144
+#: planetsuse/planet_template.html:146
 msgid "Older blog entries"
 msgstr "Articles plus ancients"
 
-#: planetsuse/planet_template.html:158
+#: planetsuse/planet_template.html:160
 msgid "Pascal Bleser and the openSUSE Community"
 msgstr "Pascal Bleser et la communaut&eacute; openSUSE"
 
-#: planetsuse/planet_template.html:161
+#: planetsuse/planet_template.html:163
 msgid ""
 "This site is not an official openSUSE website, and is not in any way "
 "affiliated with or endorsed by SUSE Linux GmbH or Novell."
 msgstr ""
 
-#: planetsuse/planet_template.html:166
+#: planetsuse/planet_template.html:168
 msgid ""
 "openSUSE and SUSE are trademarks of Novell, Inc. in the United States and "
 "other countries."
-msgstr "openSUSE et SUSE sont des marques enregist&eacute;es de Novell, Inc, aux &Eacute;tats-Unis et autres pays."
+msgstr ""
+"openSUSE et SUSE sont des marques enregist&eacute;es de Novell, Inc, aux "
+"&Eacute;tats-Unis et autres pays."
+
+#: planetsuse/code.html:8
+msgid "_DATE_FORMAT_"
+msgstr "%d %B %Y"

@@ -29,6 +29,7 @@ from StringIO import StringIO
 import types
 import copy
 import codecs
+import gettext
 
 from jinja2 import Template, Environment
 
@@ -50,6 +51,8 @@ fixes.append(r'<a\s+[^<>/]*?href="https?://feeds\.feedburner\.com/~ff/.+?".+?</\
 fixes.append(r'<img\s+[^<>/]*?src="https?://feeds\.feedburner\.com/~ff/.+?".+?>')
 
 fixes = [re.compile(x, re.I+re.S+re.M) for x in fixes]
+
+translations = None
 
 def set_socket_timeout(n):
 	"""Set the system socket timeout."""
@@ -83,7 +86,7 @@ def encode_references(s):
 
 # This list of block-level elements came from the HTML 4.01 specification.
 block_level_re = re.compile(r'^\s*<(p|h1|h2|h3|h4|h5|h6|ul|ol|pre|dl|div|noscript|blockquote|form|hr|table|fieldset|address)[^a-z]', re.I)
-def sanitise_html(html, baseurl, inline, config):
+def sanitise_html(html, baseurl, inline, config, type):
 	"""Attempt to turn arbitrary feed-provided HTML into something
 	suitable for safe inclusion into the rawdog output. The inline
 	parameter says whether to expect a fragment of inline text, or a
@@ -96,10 +99,9 @@ def sanitise_html(html, baseurl, inline, config):
 	# sgmllib handles "<br/>/" as a SHORTTAG; this workaround from
 	# feedparser.
 	html = re.sub(r'(\S)/>', r'\1 />', html)
-	html = feedparser._resolveRelativeURIs(html, baseurl, "UTF-8")
-	p = feedparser._HTMLSanitizer("UTF-8")
-	p.feed(html)
-	html = p.output()
+
+	html = feedparser._resolveRelativeURIs(html, baseurl, "UTF-8", type)
+	html = feedparser._sanitizeHTML(html, "UTF-8", type)
 
 	if not inline and config["blocklevelhtml"]:
 		# If we're after some block-level HTML and the HTML doesn't
@@ -171,7 +173,7 @@ def detail_to_html(details, inline, config, force_preformatted = False):
 	for fix in fixes:
 		html = re.sub(fix, '', html)
 
-	return sanitise_html(html, detail["base"], inline, config)
+	return sanitise_html(html, detail["base"], inline, config, detail["type"])
 
 def author_to_html(entry, feedurl, config):
 	"""Convert feedparser author information to HTML."""
@@ -203,11 +205,11 @@ def author_to_html(entry, feedurl, config):
 		html = "<a href=\"" + cgi.escape(url) + "\">" + cgi.escape(name) + "</a>"
 
 	# We shouldn't need a base URL here anyway.
-	return sanitise_html(html, feedurl, True, config)
+	return sanitise_html(html, feedurl, True, config, "text/html")
 
 def string_to_html(s, config):
 	"""Convert a string to HTML."""
-	return sanitise_html(cgi.escape(s), "", True, config)
+	return sanitise_html(cgi.escape(s), "", True, config, "text/html")
 
 def fill_template(template, bits):
 	return jinja_env.from_string(template).render(bits)
@@ -302,14 +304,17 @@ class Feed:
 			use_im = False
 
 		try:
+			#auth_creds = auth_creds,
+			#use_im = use_im
 			return feedparser.parse(self.url,
 				etag = self.etag,
 				modified = self.modified,
 				agent = "rawdog/" + VERSION,
-				handlers = handlers,
-				auth_creds = auth_creds,
-				use_im = use_im)
-		except:
+				handlers = handlers)
+		except Exception as e:
+			print type(e)
+			print e.args
+			print e
 			return None
 
 	def update(self, rawdog, now, config, p):
@@ -492,15 +497,19 @@ class Article:
 
 		add_hash(self.feed)
 		entry_info = self.entry_info
-		if entry_info.has_key("title_raw"):
-			add_hash(entry_info["title_raw"])
-		if entry_info.has_key("link"):
-			add_hash(entry_info["link"])
+		# was title_raw and link_raw
+		for k in ('title', 'link'):
+			if k in entry_info:
+				add_hash(entry_info[k])
+				pass
+			pass
 		if entry_info.has_key("content"):
 			for content in entry_info["content"]:
-				add_hash(content["value_raw"])
+				#add_hash(content["value_raw"])
+				add_hash(content["value"])
 		if entry_info.has_key("summary_detail"):
-			add_hash(entry_info["summary_detail"]["value_raw"])
+			#add_hash(entry_info["summary_detail"]["value_raw"])
+			add_hash(entry_info["summary_detail"]["value"])
 
 		return h.hexdigest()
 
@@ -1284,6 +1293,7 @@ class Rawdog(Persistable):
 		"""Write a regular rawdog HTML output file."""
 		plugins.call_hook("output_items_begin", self, config)
 
+		global translations
 		# build a multimap of articles by day
 		map = []
 		curdate = None
@@ -1297,6 +1307,7 @@ class Rawdog(Persistable):
 				cur = {}
 				cur["timestamp"] = d
 				cur["isodate"] = isodate
+				cur["when"] = time.strftime(translations.gettext('_DATE_FORMAT_')).decode("utf8")
 				cur["locale"] = time.strftime("%x", tm).decode("utf8")
 				cur["day"] = time.strftime("%d", tm).decode("utf8")
 				cur["month"] = time.strftime("%B", tm).decode("utf8")
@@ -1445,6 +1456,8 @@ class Rawdog(Persistable):
 		file."""
 		config.log("Starting write")
 		now = time.time()
+
+		#from pudb import set_trace; set_trace()
 
 		article_dates = {}
 		articlesAll = self.articles.values()
@@ -1630,14 +1643,15 @@ def main(argv):
 
 	if options.op == "write":
 		global jinja_env
-		import gettext
 		if config.lang:
 			gettext_langs = [config.lang, 'en']
 			lcall = config.lang
 		else:
 			gettext_langs = ['en']
 			lcall = 'en'
-		jinja_env.install_gettext_translations(gettext.translation('planetsuse', './locale', gettext_langs, fallback=True, codeset='UTF-8'))
+		global translations
+		translations = gettext.translation('planetsuse', './locale', gettext_langs, fallback=True, codeset='UTF-8')
+		jinja_env.install_gettext_translations(translations)
 
 		if options.output_dir:
 			try:
