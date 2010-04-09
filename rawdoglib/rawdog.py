@@ -30,13 +30,22 @@ import types
 import copy
 import codecs
 
-from jinja2 import Template
+from jinja2 import Template, Environment
 
 try:
 	import threading
 	have_threading = 1
 except:
 	have_threading = 0
+
+fixes = []
+fixes.append(re.compile(r'<div\s+[^>]*class="lightsocial_container".+</\s*div>', re.I+re.S+re.M))
+fixes.append(re.compile(r'<!--\s*BlogCounter\s+Code\s+START\s*-->.*<!--\s*BlogCounter\s+Code\s+END\s*-->', re.I+re.S+re.M))
+fixes.append(re.compile(r'<a\s+href="http.*://.*\.blogcounter\.de.*</\s*a>', re.I+re.S+re.M))
+fixes.append(re.compile(r'<img\s+class=".+"\s+src="https?://blogger\.googleusercontent\.com/tracker/.+".+height="1".*/?>', re.I+re.S+re.M))
+fixes.append(re.compile(r'<div\s+class="feedflare".*?>.+?</\s*div>', re.I+re.S+re.M))
+fixes.append(re.compile(r'<a\s+href="https?://feeds\.wordpress\.com/.*(comments|delicious|stumble|digg|reddit).*?</a>', re.I+re.S+re.M))
+fixes.append(re.compile(r'<img\s+src="https?://stats\.wordpress\.com.+?>', re.I+re.S+re.M))
 
 def set_socket_timeout(n):
 	"""Set the system socket timeout."""
@@ -155,6 +164,9 @@ def detail_to_html(details, inline, config, force_preformatted = False):
 	else:
 		html = detail["value"]
 
+	for fix in fixes:
+		html = re.sub(fix, '', html)
+
 	return sanitise_html(html, detail["base"], inline, config)
 
 def author_to_html(entry, feedurl, config):
@@ -194,8 +206,8 @@ def string_to_html(s, config):
 	return sanitise_html(cgi.escape(s), "", True, config)
 
 def fill_template(template, bits):
-	t = Template(template)
-	return t.render(bits)
+	return jinja_env.from_string(template).render(bits)
+	#return Template(template).render(bits)
 
 file_cache = {}
 def load_file(name, config):
@@ -924,7 +936,6 @@ class Rawdog(Persistable):
 		self.articles = {}
 		self.plugin_storage = {}
 		self.state_version = STATE_VERSION
-		self.re_lightsocial = re.compile(r'<\s+div\s+[^>]*class="lightsocial_container"[^>]+>.+?</\s*div\s*>', re.I+re.S+re.M)
 
 	def get_plugin_storage(self, plugin):
 		try:
@@ -1099,6 +1110,7 @@ class Rawdog(Persistable):
 
 	def write_article(self, f, article, config):
 		"""Write an article to the given file."""
+		print "write_article"
 		feed = self.feeds[article.feed]
 		feed_info = feed.feed_info
 		entry_info = article.entry_info
@@ -1174,9 +1186,6 @@ class Rawdog(Persistable):
 		else:
 			itembits["description"] = ""
 
-		# get rid of annoying stuff in blog post content
-		re.sub(self.re_lightsocial, '', itembits["description"])
-
 		author = author_to_html(entry_info, feed.url, config)
 		if author is not None:
 			itembits["author"] = author
@@ -1196,7 +1205,7 @@ class Rawdog(Persistable):
 			itembits['item_lang'] = itembits['lang']
 
 		tim = time.localtime(date)
-		itembits["time"] = time.strftime("%H:%M", tim)
+		itembits["time"] = unicode(time.strftime("%H:%M", tim).encode("utf8"), "utf8")
 
 		plugins.call_hook("output_item_bits", self, config, feed, article, itembits)
 		itemtemplate = self.get_itemtemplate(config)
@@ -1284,9 +1293,10 @@ class Rawdog(Persistable):
 				cur = {}
 				cur["timestamp"] = d
 				cur["isodate"] = isodate
-				cur["day"] = time.strftime("%d", tm)
-				cur["month"] = time.strftime("%B", tm)
-				cur["dow"] = time.strftime("%A", tm)
+				cur["locale"] = time.strftime("%x", tm).decode("utf8")
+				cur["day"] = time.strftime("%d", tm).decode("utf8")
+				cur["month"] = time.strftime("%B", tm).decode("utf8")
+				cur["dow"] = time.strftime("%A", tm).decode("utf8")
 				cur["year"] = time.strftime("%Y", tm)
 				cur["articles"] = []
 				map.append(cur)
@@ -1521,10 +1531,15 @@ Special actions (all other options are ignored if one of these is specified):
 
 Report bugs to <ats@offog.org>."""
 
+jinja_env = Environment(extensions=['jinja2.ext.i18n'])
+
 def main(argv):
 	"""The command-line interface to the aggregator."""
 
-	locale.setlocale(locale.LC_ALL, "en_US.utf8")
+	if 'LC_ALL' in os.environ:
+		locale.setlocale(locale.LC_ALL, os.environ['LC_ALL'])
+	else:
+		locale.setlocale(locale.LC_ALL, "en_US.utf8")
 
 	verbose = 0
 	locking = 1
@@ -1610,6 +1625,16 @@ def main(argv):
 	rundir = os.path.abspath(os.curdir)
 
 	if options.op == "write":
+		global jinja_env
+		import gettext
+		if config.lang:
+			gettext_langs = [config.lang, 'en']
+			lcall = config.lang
+		else:
+			gettext_langs = ['en']
+			lcall = 'en'
+		jinja_env.install_gettext_translations(gettext.translation('planetsuse', './locale', gettext_langs, fallback=True, codeset='UTF-8'))
+
 		if options.output_dir:
 			try:
 				os.chdir(options.output_dir)

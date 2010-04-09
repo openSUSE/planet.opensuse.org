@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" {% if lang %}xml:lang="{{ lang }}" lang="{{ lang }}" {% else %}xml:lang="en" lang="en"{% endif %}>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-{% if lang -%}
+  {%- if lang -%}
   <meta http-equiv="content-language" content="{{ lang }}"/>
-{% endif -%}
-  <meta name="description" content="Aggregation of the blogs of openSUSE contributors"/>
+  {%- endif -%}
+  <meta name="description" content="{% trans %}Aggregation of the blogs of openSUSE contributors{% endtrans %}"/>
   <meta name="keywords" content="opensuse, linux"/>
   <link rel="stylesheet" href="http://static.opensuse.org/themes/bento/css/style.css" type="text/css" media="screen" title="All" charset="utf-8" />
   <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" title="All" charset="utf-8" />
@@ -16,18 +16,18 @@
   <script src="../js/navigation.js"      type="text/javascript" charset="utf-8"></script>
 
   <title>Planet openSUSE{% if lang %} ({{ lang }}){% endif %}</title>
-{% if lang -%}
+  {%- if lang -%}
   <link rel="alternate"     type="application/rss+xml" title="Planet openSUSE ({{ lang }})" href="rss20.xml" />
   <link rel="alternate"     type="application/rss+xml" title="Planet openSUSE (all languages)" href="../global/rss20.xml" />
   <link rel="meta"          type="application/rdf+xml" title="FOAF ({{ lang }})" href="foafroll.xml" />
   <link rel="meta"          type="application/rdf+xml" title="FOAF (all languages)" href="../global/foafroll.xml" />
-  <link rel="subscriptions" type="text/x-opml"         title="Subscriptions ({{ lang }})" href="opml.xml" />
-  <link rel="subscriptions" type="text/x-opml"         title="Subscriptions (all languages)" href="../global/opml.xml" />
-{% else -%}
-  <link rel="alternate"     type="application/rss+xml" title="Planet openSUSE (all languages)" href="rss20.xml" />
-  <link rel="meta"          type="application/rdf+xml" title="FOAF (all languages)" href="foafroll.xml" />
-  <link rel="subscriptions" type="text/x-opml"         title="Subscriptions" href="opml.xml" />
-{% endif -%}
+  <link rel="subscriptions" type="text/x-opml"         title="{% trans %}Subscriptions{% endtrans %} ({{ lang }})" href="opml.xml" />
+  <link rel="subscriptions" type="text/x-opml"         title="{% trans %}Subscriptions (all languages){% endtrans %}" href="../global/opml.xml" />
+  {%- else -%}
+  <link rel="alternate"     type="application/rss+xml" title="Planet openSUSE ({% trans %}all languages{% endtrans %})" href="rss20.xml" />
+  <link rel="meta"          type="application/rdf+xml" title="FOAF ({% trans %}all languages{% endtrans %})" href="foafroll.xml" />
+  <link rel="subscriptions" type="text/x-opml"         title="{% trans %}Subscriptions{% endtrans %}" href="opml.xml" />
+  {%- endif -%}
 </head>
 <body>
   <!-- Start: Header -->
@@ -35,17 +35,17 @@
     <div id="header-content" class="container_12">
       <a id="header-logo" href="#home"><img src="../images/header-logo.png" width="46" height="26" alt="Header Logo" /></a>
       <ul id="global-navigation">
-        <li id="item-downloads"><a href="http://opensuse.org/sitemap#downloads">Downloads</a></li>
-        <li id="item-support"><a href="http://opensuse.org/sitemap#support">Support</a></li>
-        <li id="item-community"><a href="http://opensuse.org/sitemap#community">Community</a></li>
-        <li id="item-development"><a href="http://opensuse.org/sitemap#development">Development</a></li>
+        <li id="item-downloads"><a href="http://opensuse.org/sitemap#downloads">{% trans %}Downloads{% endtrans %}</a></li>
+        <li id="item-support"><a href="http://opensuse.org/sitemap#support">{% trans %}Support{% endtrans %}</a></li>
+        <li id="item-community"><a href="http://opensuse.org/sitemap#community">{% trans %}Community{% endtrans %}</a></li>
+        <li id="item-development"><a href="http://opensuse.org/sitemap#development">{% trans %}Development{% endtrans %}</a></li>
       </ul>
     </div>
   </div>
   <!-- End: Header -->
 
   <div id="overview" style="display: none;">
-    <h4>Overview</h4>
+    <h4>{% trans %}Overview{% endtrans %}</h4>
     <ul>
       {%- for d in items -%}
       <li class="overview-day"><a{% if loop.first %} id="overview-day-first"{% endif %} href="#day-item-{{ loop.index }}">{{ d.dow }} {{ d.month }} {{ d.day }}, {{ d.year }}</a></li>
@@ -61,33 +61,36 @@
   <div id="main">
 
   <div id="intro">
-    <h3>Welcome to Planet openSUSE</h3>
+    <h3>{% trans %}Welcome to Planet openSUSE{% endtrans %}</h3>
     <p>
-        This is a feed aggregator that collects what <a href="http://www.opensuse.org">openSUSE</a> contributors are writing in their
-        respective blogs.
+        {%- trans -%}
+        This is a feed aggregator that collects what <a href="http://www.opensuse.org">openSUSE</a> contributors are writing in their respective blogs.
+        {%- endtrans -%}
     </p>
     <p>
+        {%- trans -%}
         To have your blog added to this aggregator, please read <a href="http://en.opensuse.org/PlanetSUSE">the instructions</a>.
+        {%- endtrans -%}
     </p>
-    <h4 id="lang-header" class="menu-header">Languages:</h4>
+    <h4 id="lang-header" class="menu-header">{% trans %}Languages{% endtrans %}:</h4>
     <ul id="lang-menu" class="menu">
-      <li><a href="../en" id="lang-menu-en" class="lang-en">English</a></li>
-      <li><a href="../de" id="lang-menu-de" class="lang-de">German</a></li>
-      <li><a href="../es" id="lang-menu-es" class="lang-es">Spanish</a></li>
-      <li><a href="../pt" id="lang-menu-pt" class="lang-pt">Portuguese</a></li>
-      <li><a href="../pl" id="lang-menu-pl" class="lang-pl">Polish</a></li>
-      <li><a href="../jp" id="lang-menu-jp" class="lang-jp">Japanese</a></li>
-      <li><a href="../global" id="lang-menu-all" class="lang-all">all</a></li>
+      <li><a href="../en" id="lang-menu-en" class="lang-en">{% trans %}English{% endtrans %}</a></li>
+      <li><a href="../de" id="lang-menu-de" class="lang-de">{% trans %}German{% endtrans %}</a></li>
+      <li><a href="../es" id="lang-menu-es" class="lang-es">{% trans %}Spanish{% endtrans %}</a></li>
+      <li><a href="../pt" id="lang-menu-pt" class="lang-pt">{% trans %}Portuguese{% endtrans %}</a></li>
+      <li><a href="../pl" id="lang-menu-pl" class="lang-pl">{% trans %}Polish{% endtrans %}</a></li>
+      <li><a href="../ja" id="lang-menu-ja" class="lang-ja">{% trans %}Japanese{% endtrans %}</a></li>
+      <li><a href="../global" id="lang-menu-all" class="lang-all">{% trans %}all languages{% endtrans %}</a></li>
     </ul>
 
-    <h4 id="actions-header" class="menu-header">Actions:</h4>
+    <h4 id="actions-header" class="menu-header">{% trans %}Actions{% endtrans %}:</h4>
     <ul id="actions-menu" class="menu">
-      <li><a href="#" id="help-trigger">Keyboard shortcuts</a></li>
-      <li><a href="#" id="overview-trigger">Overview</a></li>
-      <li><a href="feedlist.html" id="feeds-trigger">Feed list</a></li>
+      <li><a href="#" id="help-trigger">{% trans %}Keyboard shortcuts{% endtrans %}</a></li>
+      <li><a href="#" id="overview-trigger">{% trans %}Overview{% endtrans %}</a></li>
+      <li><a href="feedlist.html" id="feeds-trigger">{% trans %}Feed list{% endtrans %}</a></li>
     </ul>
 
-    <h4 id="xml-header" class="menu-header">Metadata:</h4>
+    <h4 id="xml-header" class="menu-header">{% trans %}Metadata{% endtrans %}:</h4>
     <ul id="xml-menu" class="menu">
       <li><a href="rss20.xml"    type="application/rss+xml" rel="alternate">RSS</a></li>
       <li><a href="opml.xml"     type="text/x-opml"         rel="meta">OPML</a></li>
@@ -97,18 +100,18 @@
   <div class="clear"></div>
 
   <div id="help" style="display: none;">
-    <h4>Keyboard shortcuts:</h4>
+    <h4>{% trans %}Keyboard shortcuts{% endtrans %}:</h4>
     <dl>
-      <dt>o</dt><dd>toggle overview</dd>
-      <dt>h</dt><dd>toggle help (this)</dd>
-      <dt>j</dt><dd>next post</dd>
-      <dt>k</dt><dd>previous post</dd>
-      <dt>d</dt><dd>next day</dd>
-      <dt>u</dt><dd>previous day</dd>
-      <dt>t</dt><dd>go to top</dd>
-      <dt>esc</dt><dd>cancel</dd>
+      <dt>o</dt><dd>{% trans %}toggle overview{% endtrans %}</dd>
+      <dt>h</dt><dd>{% trans %}toggle help (this){% endtrans %}</dd>
+      <dt>j</dt><dd>{% trans %}next post{% endtrans %}</dd>
+      <dt>k</dt><dd>{% trans %}previous post{% endtrans %}</dd>
+      <dt>d</dt><dd>{% trans %}next day{% endtrans %}</dd>
+      <dt>u</dt><dd>{% trans %}previous day{% endtrans %}</dd>
+      <dt>t</dt><dd>{% trans %}go to top{% endtrans %}</dd>
+      <dt>esc</dt><dd>{% trans %}cancel{% endtrans %}</dd>
     </dl>
-    <p>Note that you may use those keys with or without pressing <span class="key">alt</span></p>
+    <p>{% trans %}Note that you may use those keys with or without pressing the <span class="key">alt</span> key.{% endtrans %}</p>
   </div> <!-- #help -->
 
   <!-- Start: Main Content Area -->
@@ -136,9 +139,9 @@
     {% endfor %}
 
     {%- if old -%}
-    <p id="current-entries"><span class="textonly">&lt;-&nbsp;</span><a href="./">Current blog entries</a></p>
+    <p id="current-entries"><span class="textonly">&lt;-&nbsp;</span><a href="./">{% trans %}Current blog entries{% endtrans %}</a></p>
     {%- else -%}
-    <p id="old-entries"><a href="old.html">Older blog entries</a><span class="textonly">&nbsp;-&gt;</span></p>
+    <p id="old-entries"><a href="old.html">{% trans %}Older blog entries{% endtrans %}</a><span class="textonly">&nbsp;-&gt;</span></p>
     {%- endif -%}
   </div>
   <!-- End: Main Content Area -->
@@ -152,13 +155,17 @@
     </div>
     <div id="footer-legal" class="border-top">
       <p>
-        &copy; 2010 Pascal Bleser and the openSUSE Community.
+        &copy; 2010 {% trans %}Pascal Bleser and the openSUSE Community{% endtrans %}.
       </p>
       <p>
+        {%- trans -%}
         This site is not an official openSUSE website, and is not in any way affiliated with or endorsed by SUSE Linux GmbH or Novell.
+        {%- endtrans -%}
       </p>
       <p>
+        {%- trans -%}
         openSUSE and SUSE are trademarks of Novell, Inc. in the United States and other countries.
+        {%- endtrans -%}
       </p>
     </div>
   </div>

@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"PO-Revision-Date: 2010-04-09 14:37+0200\n"
+"Last-Translator: Pascal Bleser <pascal.bleser@opensuse.org>\n"
+"Language-Team: LANGUAGE <DE@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: planetsuse/planet_template.html:8
+msgid "Aggregation of the blogs of openSUSE contributors"
+msgstr "Aggregation der Blogs der Mitwirkenden am openSUSE-Projekt"
+
+#: planetsuse/planet_template.html:24 planetsuse/planet_template.html:29
+msgid "Subscriptions"
+msgstr "Einzeichnungen"
+
+#: planetsuse/planet_template.html:25
+msgid "Subscriptions (all languages)"
+msgstr "Einzeichnungen (in allen Sprachen)"
+
+#: planetsuse/planet_template.html:27 planetsuse/planet_template.html:28
+#: planetsuse/planet_template.html:83
+msgid "all languages"
+msgstr "alle Sprachen"
+
+#: planetsuse/planet_template.html:48 planetsuse/planet_template.html:89
+msgid "Overview"
+msgstr "&Uuml;bersicht"
+
+#: planetsuse/planet_template.html:64
+msgid "Welcome to Planet openSUSE"
+msgstr "Willkommen zum openSUSE Planeten"
+
+#: planetsuse/planet_template.html:66
+msgid ""
+"This is a feed aggregator that collects what <a href=\"http://www.opensuse."
+"org\">openSUSE</a> contributors are writing in their respective blogs."
+msgstr "Dies ist eine Zusammführung der Blog-Einträge von Mitwirkenden im <a href=\"http://de.opensuse.org\">openSUSE-Projekt</a>."
+
+#: planetsuse/planet_template.html:71
+msgid ""
+"To have your blog added to this aggregator, please read <a href=\"http://en."
+"opensuse.org/PlanetSUSE\">the instructions</a>."
+msgstr "Zum Hinzufügen eines Blog-Feeds bitte <a href=\"http://en.opensuse.org/PlanetSUSE\">die Anleitung</a> lesen."
+
+#: planetsuse/planet_template.html:75
+msgid "Languages"
+msgstr "Sprachen"
+
+#: planetsuse/planet_template.html:77
+msgid "English"
+msgstr "Englisch"
+
+#: planetsuse/planet_template.html:78
+msgid "German"
+msgstr "Deutsch"
+
+#: planetsuse/planet_template.html:79
+msgid "Spanish"
+msgstr "Spanisch"
+
+#: planetsuse/planet_template.html:80
+msgid "Portuguese"
+msgstr "Portugiesisch"
+
+#: planetsuse/planet_template.html:81
+msgid "Polish"
+msgstr "Polnisch"
+
+#: planetsuse/planet_template.html:82
+msgid "Japanese"
+msgstr "Japanisch"
+
+#: planetsuse/planet_template.html:86
+msgid "Actions"
+msgstr "Aktionen"
+
+#: planetsuse/planet_template.html:88 planetsuse/planet_template.html:103
+msgid "Keyboard shortcuts"
+msgstr "Abk&uuml;rzungstasten"
+
+#: planetsuse/planet_template.html:90
+msgid "Feed list"
+msgstr "Liste der Feeds"
+
+#: planetsuse/planet_template.html:93
+msgid "Metadata"
+msgstr "Metadaten"
+
+#: planetsuse/planet_template.html:105
+msgid "toggle overview"
+msgstr "&Uuml;bersicht ein/ausschalten"
+
+#: planetsuse/planet_template.html:106
+msgid "toggle help (this)"
+msgstr "Hilfe ein/ausschalten"
+
+#: planetsuse/planet_template.html:107
+msgid "next post"
+msgstr "n&auml;chster Artikel"
+
+#: planetsuse/planet_template.html:108
+msgid "previous post"
+msgstr "vorheriger Artikel"
+
+#: planetsuse/planet_template.html:109
+msgid "next day"
+msgstr "n&auml;chster Tag"
+
+#: planetsuse/planet_template.html:110
+msgid "previous day"
+msgstr "vorheriger Tag"
+
+#: planetsuse/planet_template.html:111
+msgid "go to top"
+msgstr "zum Anfang der Seite"
+
+#: planetsuse/planet_template.html:112
+msgid "cancel"
+msgstr "abbrechen"
+
+#: planetsuse/planet_template.html:114
+msgid ""
+"Note that you may use those keys with or without pressing the <span class="
+"\"key\">alt</span> key."
+msgstr "Diese Tastaturk&uuml;rzel k&ouml;nnen auch in Verbindung mit der <span class=\"key\">alt</span>-Taste verwendet werden."
+
+#: planetsuse/planet_template.html:142
+msgid "Current blog entries"
+msgstr "Aktuelle Artikel"
+
+#: planetsuse/planet_template.html:144
+msgid "Older blog entries"
+msgstr "&Auml;ltere Artikel"
+
+#: planetsuse/planet_template.html:158
+msgid "Pascal Bleser and the openSUSE Community"
+msgstr "Pascal Bleser und die openSUSE-Community"
+
+#: planetsuse/planet_template.html:161
+msgid ""
+"This site is not an official openSUSE website, and is not in any way "
+"affiliated with or endorsed by SUSE Linux GmbH or Novell."
+msgstr ""
+
+#: planetsuse/planet_template.html:166
+msgid ""
+"openSUSE and SUSE are trademarks of Novell, Inc. in the United States and "
+"other countries."
+msgstr "openSUSE und SUSE sind eingetragene Markenzeichen von Novell, Inc., in den Vereinigten Staaten und anderen L&auml;ndern."

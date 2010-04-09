@@ -1139,7 +1139,7 @@ feed 15m http://strufts.blogspot.com/feeds/posts/default
 feed 15m http://blog.zaq.ne.jp/opensuse/rss/
     define_name Satoru Matsumoto
     define_irc  heliosreds
-    define_lang jp
+    define_lang ja
     define_member 1
     define_eonnect 59
 
