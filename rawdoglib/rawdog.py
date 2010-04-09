@@ -311,7 +311,7 @@ class Feed:
 				modified = self.modified,
 				agent = "rawdog/" + VERSION,
 				handlers = handlers)
-		except Exception as e:
+		except Exception, e:
 			print type(e)
 			print e.args
 			print e
