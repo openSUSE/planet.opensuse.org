@@ -8,7 +8,7 @@
 # Put in <configdir>/plugins/rawdog_rss.py
 # Add "define outputxml /path/to/feed.rss" to config to set file out
 
-import os, time, cgi
+import os, time, cgi, sys
 import rawdoglib.plugins, rawdoglib.rawdog
 import libxml2
 
@@ -114,11 +114,7 @@ class RSS_Feed:
         else:
             guid = xml_article.newChild(None, 'guid', article.hash)
         guid.setProp('isPermaLink', 'false')
-        try:
-            title = unicode(entry_info['title_raw'].encode('utf8'), 'utf8') #, 'ignore')
-        except KeyError:
-            print "KeyError on title"
-            return
+        title = unicode(entry_info['title'].encode('utf8'), 'utf8') #, 'ignore')
         for feed in config["feedslist"]:
             if feed[0] == article.feed:
                 title = feed[2]["define_name"] + u": " + title
