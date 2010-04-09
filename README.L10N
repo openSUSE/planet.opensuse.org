@@ -1,0 +1,78 @@
+First of all, please be aware that it only makes sense to translate the
+Planet openSUSE interface in languages that are actually aggregated on
+the site.
+
+In order to provide translations, please proceed as follows:
+
+1) Download the .pot template
+=============================
+The .pot is a plain text template file that contains all the localizable
+strings that are used by Planet openSUSE.
+
+To download that file to the current directory:
+wget http://gitorious.org/opensuse/planet-opensuse/blobs/raw/master/locale/planetsuse.pot
+
+2) Make a copy for the target language
+======================================
+For the sake of the example, let's say you would like to provide a German
+translation (German having the language code "de"):
+
+cp planetsuse.pot de.po
+
+3) Translate
+============
+Translate the localizable strings in the .po file you created/copied in the
+previous step, using either any text editor or an editor that has specialized
+PO (gettext) support, such as Emacs, gted, poedit, gtranslator, kbabel, etc...
+
+4) Submit
+=========
+Please send the resulting .po file (de.po in our example) to pascal.bleser@opensuse.org
+
+Thanks!
+
+
+UPDATING AN EXISTING TRANSLATION
+================================
+
+Note that the procedure above is to provide a previously untranslated target
+language. If there is already a .po file for the language you would like to
+translate Planet openSUSE in, but that .po file is out of sync with the latest
+localizable strings used on the site, the procedure is slightly different:
+
+1) Update the .pot template
+===========================
+Using the same URL as in step (1) above, replace your current planetsuse.pot
+file with the most recent one:
+
+rm planetsuse.pot
+wget http://gitorious.org/opensuse/planet-opensuse/blobs/raw/master/locale/planetsuse.pot
+
+2) Merge the template with the .po file
+=======================================
+If you are the original author and/or current maintainer of a translation,
+then you probably already have the latest .po file (e.g. de.po) on your host.
+
+If not, also make sure to have the latest .po file, e.g.:
+rm de.po
+wget http://gitorious.org/opensuse/planet-opensuse/blobs/raw/master/locale/de.po
+
+Now it is necessary to merge the localizable strings from the .pot template
+file with what has already been translated in the .po file.
+This process is *not* destructive, as it will both
+- retain the translations that have already been made in the .po file, at least
+  as long as they are still relevant and used by the Planet openSUSE site
+- try to automatically translate new localizable strings with existing translations
+  from the .po file, by applying some fuzzy logic (that usually doesn't work out
+  that well though)
+
+The command to perform the merge is as follows, still taking de.po as the example:
+
+msgmerge -U de.po planetsuse.pot
+
+Note that the "-U" parameter tells msgmerge to update the existing .po file
+in-place, and that the order of the files is first the .po file and then the
+.pot template file.
+
+From here on, steps (3) and (4) from above apply as well.
+
