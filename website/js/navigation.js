@@ -1,11 +1,10 @@
 // vim: set ts=4 sw=4 noet ai:
-var currentPost = 0;
-var currentDay = 0;
+var currentPost = 0, currentDay = 0;
 
 function toggle_overview() {
 	var o = $("#overview");
-	o.toggle();
 	var e = $("#planet");
+	o.toggle();
 	if (e.hasClass("main-collapsed")) {
 		e.removeClass("main-collapsed");
 	} else {
@@ -39,8 +38,7 @@ $(function($) {
 	});
 
     document.onkeydown = function(_e) {
-		var element = null;
-        var e = _e || window.event;
+		var element = null, e = _e || window.event, keyCode = null, nextPostId = null, nextDayId = null;
 		if (e.target) {
 			element = e.target;
 		} else if (e.srcElement) {
@@ -55,7 +53,7 @@ $(function($) {
 			return;
 		}
 
-		var keyCode = (e.keyCode) ? e.keyCode : e.which;
+		keyCode = (e.keyCode) ? e.keyCode : e.which;
 
 		if (keyCode && (element.tagName == 'INPUT' || element.tagName == 'TEXTAREA' && element.tagName == 'SELECT')) {
 			// don't mess around when in input or textarea
@@ -65,7 +63,7 @@ $(function($) {
 		switch(keyCode) {
 			//  "j" key
 			case 74:
-				var nextPostId = null;
+				nextPostId = null;
 				if (currentPost > 0) {
 					nextPostId = '#post-item-' + (currentPost + 1)
 				} else {
@@ -82,7 +80,7 @@ $(function($) {
                             
 			// "k" key
 			case 75:
-				var nextPostId = null;
+				nextPostId = null;
 				if (currentPost > 1) {
 					nextPostId = '#post-item-' + (currentPost - 1);
 				} else {
@@ -96,7 +94,7 @@ $(function($) {
 
 			// "d" key
 			case 68:
-				var nextDayId = null;
+				nextDayId = null;
 				if (currentDay > 0) {
 					nextDayId = '#day-item-' + (currentDay + 1)
 				} else {
@@ -113,7 +111,7 @@ $(function($) {
 
 			// "u" key
 			case 85:
-				var nextDayId = null;
+				nextDayId = null;
 				if (currentDay > 1) {
 					nextDayId = '#day-item-' + (currentDay - 1);
 				} else {
