@@ -39,13 +39,13 @@ except:
 	have_threading = 0
 
 fixes = []
-fixes.append(re.compile(r'<div\s+[^>]*class="lightsocial_container".+</\s*div>', re.I+re.S+re.M))
-fixes.append(re.compile(r'<!--\s*BlogCounter\s+Code\s+START\s*-->.*<!--\s*BlogCounter\s+Code\s+END\s*-->', re.I+re.S+re.M))
-fixes.append(re.compile(r'<a\s+href="http.*://.*\.blogcounter\.de.*</\s*a>', re.I+re.S+re.M))
-fixes.append(re.compile(r'<img\s+class=".+"\s+src="https?://blogger\.googleusercontent\.com/tracker/.+".+height="1".*/?>', re.I+re.S+re.M))
-fixes.append(re.compile(r'<div\s+class="feedflare".*?>.+?</\s*div>', re.I+re.S+re.M))
-fixes.append(re.compile(r'<a\s+href="https?://feeds\.wordpress\.com/.*(comments|delicious|stumble|digg|reddit).*?</a>', re.I+re.S+re.M))
-fixes.append(re.compile(r'<img\s+src="https?://stats\.wordpress\.com.+?>', re.I+re.S+re.M))
+fixes.append(re.compile(r'<div\s+[^<>/]+class="lightsocial_container".+</\s*div>', re.I+re.S+re.M))
+fixes.append(re.compile(r'<!--\s*BlogCounter\s+Code\s+START\s*-->.*?<!--\s*BlogCounter\s+Code\s+END\s*-->', re.I+re.S+re.M))
+fixes.append(re.compile(r'<a\s+[^<>/]+?href="http.*?://.*?\.blogcounter\.de.*?</\s*a>', re.I+re.S+re.M))
+fixes.append(re.compile(r'<img\s+[^<>/]+?src="https?://blogger\.googleusercontent\.com/tracker/.+".+height="1".*?/?\s*>', re.I+re.S+re.M))
+fixes.append(re.compile(r'<div\s+[^<>/]+?class="feedflare".*?>.+?</\s*div>', re.I+re.S+re.M))
+fixes.append(re.compile(r'<a\s+[^<>/]+?href="https?://feeds\.wordpress\.com/\d+\.\d+/.*?(gocomments|comments|delicious|stumble|digg|reddit)/.+?</\s*a>', re.I+re.S+re.M))
+fixes.append(re.compile(r'<img\s+[^<>/]+?src="https?://stats\.wordpress\.com.+?"\s*/?\s*>', re.I+re.S+re.M))
 
 def set_socket_timeout(n):
 	"""Set the system socket timeout."""
