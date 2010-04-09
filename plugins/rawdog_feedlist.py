@@ -64,7 +64,7 @@ class Feed_List:
 			title = feed.get_html_name(config)
 			lizards_match = re.match(ur'^openSUSE\s+Lizards\s+\S+\s+(.+)$', title)
 			if lizards_match:
-				title = lizards_match.group(1) + ' @ Lizards'
+				title = '@Lizards'
 			itembits['title'] = title
 			if 'link' in feed.feed_info:
 				link = feed.feed_info['link']
