@@ -1307,7 +1307,7 @@ class Rawdog(Persistable):
 				cur = {}
 				cur["timestamp"] = d
 				cur["isodate"] = isodate
-				cur["when"] = time.strftime(translations.gettext('_DATE_FORMAT_')).decode("utf8")
+				cur["when"] = time.strftime(translations.gettext('_DATE_FORMAT_'), tm).decode("utf8")
 				cur["locale"] = time.strftime("%x", tm).decode("utf8")
 				cur["day"] = time.strftime("%d", tm).decode("utf8")
 				cur["month"] = time.strftime("%B", tm).decode("utf8")
