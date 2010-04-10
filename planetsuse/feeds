@@ -546,7 +546,7 @@ feed 15m http://www.luckylemon.de/?feed=rss2
 	define_face jan_weber
 	define_member 1
 	define_irc  The_Code
-	define_connect 26
+	define_connect 58
 
 feed 15m http://stick.gk2.sk/blog/tag/opensuse/feed/
 	define_name Pavol Rusnak
@@ -907,6 +907,7 @@ feed 15m http://www.phocean.net/category/administration-systeme/linux/opensuse-l
 	define_name Jean-Christophe Baptiste
     define_face http://www.phocean.net/wp-content/uploads/2010/04/JCB100.png
     define_irc  phocean
+    define_connect 119
 
 feed 15m http://lizards.opensuse.org/author/holgisms/feed/
 	define_name Holger Sickenberg
