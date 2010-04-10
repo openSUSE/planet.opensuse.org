@@ -684,6 +684,7 @@ feed 15m http://feeds.feedburner.com/zdnet/community?format=xml
 
 feed 15m http://www.dissociatedpress.net/category/opensuse/feed/
 	define_name Joe Brockmeier
+	define_irc  jbrockmeier
 	define_faze zonker
 
 feed 15m http://lizards.opensuse.org/author/msmeissn/feed/
@@ -904,6 +905,7 @@ feed 15m http://lizards.opensuse.org/author/andreasstieger/feed/
 
 feed 15m http://www.phocean.net/category/administration-systeme/linux/opensuse-linux-administration-systeme/feed
 	define_name Jean-Christophe Baptiste
+    define_face http://www.phocean.net/wp-content/uploads/2010/04/JCB100.png
 
 feed 15m http://lizards.opensuse.org/author/holgisms/feed/
 	define_name Holger Sickenberg
@@ -1005,6 +1007,9 @@ feed 15m http://lizards.opensuse.org/author/saigkill/feed/
 feed 15m http://saigkill.wordpress.com/category/computer/opensuse/feed/
 	define_name Sascha Manns
 	define_face sascha
+	define_irc  saigkill
+	define_member 1
+	define_connect 71
 
 feed 15m http://blog.coly.li/?feed=rss2
 	define_name Coly Li
