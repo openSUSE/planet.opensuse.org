@@ -906,6 +906,7 @@ feed 15m http://lizards.opensuse.org/author/andreasstieger/feed/
 feed 15m http://www.phocean.net/category/administration-systeme/linux/opensuse-linux-administration-systeme/feed
 	define_name Jean-Christophe Baptiste
     define_face http://www.phocean.net/wp-content/uploads/2010/04/JCB100.png
+    define_irc  phocean
 
 feed 15m http://lizards.opensuse.org/author/holgisms/feed/
 	define_name Holger Sickenberg
@@ -988,6 +989,8 @@ feed 15m http://feeds.feedburner.com/Karl-tux-stadtOpensuse
 feed 15m http://feeds.feedburner.com/karl-tux-stadt
 	define_name Sirko Kemter
 	define_face kemter
+	define_irc  gnokii
+	define_member 1
 	define_lang de
 
 feed 15m http://blog.reblochon.org/feeds/posts/default
