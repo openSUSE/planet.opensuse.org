@@ -122,7 +122,7 @@
       <h2><span class="day-day">{{ day.dow }}</span><br/><span class="day-date">{{ day.when }}</span></h2>
       {% for a in day.articles %}
       <hr class="textonly"/>
-      <div id="item-{{ a.hash }}" class="entrygroup item feed-{{ a.feed_hash }} box-shadow clearfix">
+      <div id="item-{{ a.hash }}" class="entrygroup item feed-{{ a.feed_hash }} box box-shadow clearfix">
         <div class="box-header">
           <div class="post-header">
             <h3{% if a.item_lang %} class="lang-{{ a.item_lang }} lang"{% endif %}><a class="blogurl" href="{{ a.blogurl }}">{{ a.name }}</a>: <a class="posttitle" href="{{ a.url }} ">{{ a.title_no_link }}</a></h3>
