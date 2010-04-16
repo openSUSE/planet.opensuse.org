@@ -1154,3 +1154,7 @@ feed 15m http://blog.zaq.ne.jp/opensuse/rss/
     define_lang ja
     define_member 1
     define_eonnect 59
+
+feed 15m http://opensuse.blip.tv/rss/
+    define_name openSUSE TV
+    define_face opensuse-tv
