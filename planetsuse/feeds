@@ -1157,4 +1157,4 @@ feed 15m http://blog.zaq.ne.jp/opensuse/rss/
 
 feed 15m http://opensuse.blip.tv/rss/
     define_name openSUSE TV
-    define_face opensuse-tv
+    define_face opensusetv
