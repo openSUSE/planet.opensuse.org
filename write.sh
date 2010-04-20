@@ -28,7 +28,7 @@ if [ -n "$render_all" -o -n "$render_global" ]; then
         --write
 fi
 
-for lc in en_US de_DE es_ES pl_PL pt_PT ja_JP; do
+for lc in en_US de_DE es_ES pl_PL pt_PT ja_JP id_ID; do
     lang="${lc%%_*}"
     render_this="render_$lang"
     render="${!render_this}"

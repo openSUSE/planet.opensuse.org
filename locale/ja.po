@@ -15,8 +15,7 @@ msgstr ""
 msgid "Aggregation of the blogs of openSUSE contributors"
 msgstr "openSUSE 貢献者によるブログをまとめて紹介"
 
-#: planetsuse/planet_template.html:24
-#: planetsuse/planet_template.html:29
+#: planetsuse/planet_template.html:24 planetsuse/planet_template.html:29
 msgid "Subscriptions"
 msgstr "購読"
 
@@ -24,9 +23,8 @@ msgstr "購読"
 msgid "Subscriptions (all languages)"
 msgstr "購読 (全ての言語)"
 
-#: planetsuse/planet_template.html:27
-#: planetsuse/planet_template.html:28
-#: planetsuse/planet_template.html:83
+#: planetsuse/planet_template.html:27 planetsuse/planet_template.html:28
+#: planetsuse/planet_template.html:84
 msgid "all languages"
 msgstr "全ての言語"
 
@@ -46,24 +44,30 @@ msgstr "コミュニティ"
 msgid "Development"
 msgstr "開発"
 
-#: planetsuse/planet_template.html:48
-#: planetsuse/planet_template.html:89
+#: planetsuse/planet_template.html:48 planetsuse/planet_template.html:90
 msgid "Overview"
 msgstr "要約"
 
-#: planetsuse/planet_template.html:64
-#: planetsuse/feedlist_template.html:49
+#: planetsuse/planet_template.html:64 planetsuse/feedlist_template.html:49
 msgid "Welcome to Planet openSUSE"
 msgstr "Planet openSUSE へようこそ"
 
 #: planetsuse/planet_template.html:66
-msgid "This is a feed aggregator that collects what <a href=\"http://www.opensuse.org\">openSUSE</a> contributors are writing in their respective blogs."
-msgstr "このサイトは <a href=\"http://www.opensuse.org\">openSUSE</a> 貢献者の皆さんがそれぞれのブログで書いた記事をまとめてフィードしています。"
+msgid ""
+"This is a feed aggregator that collects what <a href=\"http://www.opensuse."
+"org\">openSUSE</a> contributors are writing in their respective blogs."
+msgstr ""
+"このサイトは <a href=\"http://www.opensuse.org\">openSUSE</a> 貢献者の皆さん"
+"がそれぞれのブログで書いた記事をまとめてフィードしています。"
 
-#: planetsuse/planet_template.html:71
-#: planetsuse/feedlist_template.html:56
-msgid "To have your blog added to this aggregator, please read <a href=\"http://en.opensuse.org/PlanetSUSE\">the instructions</a>."
-msgstr "このまとめサイトにあなたのブログも追加したいとご希望でしたら、以下の<a href=\"http://en.opensuse.org/PlanetSUSE\">説明 (英語)</a> に従って申請してください。"
+#: planetsuse/planet_template.html:71 planetsuse/feedlist_template.html:56
+msgid ""
+"To have your blog added to this aggregator, please read <a href=\"http://en."
+"opensuse.org/PlanetSUSE\">the instructions</a>."
+msgstr ""
+"このまとめサイトにあなたのブログも追加したいとご希望でしたら、以下の<a href="
+"\"http://en.opensuse.org/PlanetSUSE\">説明 (英語)</a> に従って申請してくださ"
+"い。"
 
 #: planetsuse/planet_template.html:75
 msgid "Languages"
@@ -93,87 +97,103 @@ msgstr "ポーランド語"
 msgid "Japanese"
 msgstr "日本語"
 
-#: planetsuse/planet_template.html:86
-#: planetsuse/feedlist_template.html:60
+#: planetsuse/planet_template.html:83
+msgid "Indonesian"
+msgstr ""
+
+#: planetsuse/planet_template.html:87 planetsuse/feedlist_template.html:60
 msgid "Actions"
 msgstr "アクション"
 
-#: planetsuse/planet_template.html:88
-#: planetsuse/planet_template.html:103
+#: planetsuse/planet_template.html:89 planetsuse/planet_template.html:104
 msgid "Keyboard shortcuts"
 msgstr "キーボードショートカット"
 
-#: planetsuse/planet_template.html:90
+#: planetsuse/planet_template.html:91
 msgid "Feed list"
 msgstr "フィード一覧"
 
-#: planetsuse/planet_template.html:93
-#: planetsuse/feedlist_template.html:67
+#: planetsuse/planet_template.html:94 planetsuse/feedlist_template.html:67
 msgid "Metadata"
 msgstr "メタデータ"
 
-#: planetsuse/planet_template.html:105
+#: planetsuse/planet_template.html:106
 msgid "toggle overview"
 msgstr "要約を表示"
 
-#: planetsuse/planet_template.html:106
+#: planetsuse/planet_template.html:107
 msgid "toggle help (this)"
 msgstr "ヘルプ (このウィンドウ) を表示 "
 
-#: planetsuse/planet_template.html:107
+#: planetsuse/planet_template.html:108
 msgid "next post"
 msgstr "次の投稿"
 
-#: planetsuse/planet_template.html:108
+#: planetsuse/planet_template.html:109
 msgid "previous post"
 msgstr "前の投稿"
 
-#: planetsuse/planet_template.html:109
+#: planetsuse/planet_template.html:110
 msgid "next day"
 msgstr "次の日"
 
-#: planetsuse/planet_template.html:110
+#: planetsuse/planet_template.html:111
 msgid "previous day"
 msgstr "前日"
 
-#: planetsuse/planet_template.html:111
+#: planetsuse/planet_template.html:112
 msgid "go to top"
 msgstr "トップへ移動"
 
-#: planetsuse/planet_template.html:112
+#: planetsuse/planet_template.html:113
 msgid "cancel"
 msgstr "キャンセル"
 
-#: planetsuse/planet_template.html:114
-msgid "Note that you may use those keys with or without pressing the <span class=\"key\">alt</span> key."
-msgstr "これらのキーボードショートカットは <span class=\"key\">Alt</span> キーと合わせて打っても、合わせなくても同様に機能します。"
+#: planetsuse/planet_template.html:115
+msgid ""
+"Note that you may use those keys with or without pressing the <span class="
+"\"key\">alt</span> key."
+msgstr ""
+"これらのキーボードショートカットは <span class=\"key\">Alt</span> キーと合わ"
+"せて打っても、合わせなくても同様に機能します。"
 
-#: planetsuse/planet_template.html:144
+#: planetsuse/planet_template.html:145
 msgid "Current blog entries"
 msgstr "現在のブログエントリー"
 
-#: planetsuse/planet_template.html:146
+#: planetsuse/planet_template.html:147
 msgid "Older blog entries"
 msgstr "過去のブログエントリー"
 
-#: planetsuse/planet_template.html:160
-#: planetsuse/feedlist_template.html:116
+#: planetsuse/planet_template.html:161 planetsuse/feedlist_template.html:116
 msgid "Pascal Bleser and the openSUSE Community"
 msgstr "Pascal Bleser および openSUSE コミュニティ"
 
-#: planetsuse/planet_template.html:163
-#: planetsuse/feedlist_template.html:119
-msgid "This site is not an official openSUSE website, and is not in any way affiliated with or endorsed by SUSE Linux GmbH or Novell."
-msgstr "このサイトは公式な openSUSE のウェブサイトではなく、いかなる意味においても SUSE Linux GmbH や Novell の管理下にあるわけでも、承認されているわけでもありません。"
+#: planetsuse/planet_template.html:164 planetsuse/feedlist_template.html:119
+msgid ""
+"This site is not an official openSUSE website, and is not in any way "
+"affiliated with or endorsed by SUSE Linux GmbH or Novell."
+msgstr ""
+"このサイトは公式な openSUSE のウェブサイトではなく、いかなる意味においても "
+"SUSE Linux GmbH や Novell の管理下にあるわけでも、承認されているわけでもあり"
+"ません。"
 
-#: planetsuse/planet_template.html:168
-#: planetsuse/feedlist_template.html:124
-msgid "openSUSE and SUSE are trademarks of Novell, Inc. in the United States and other countries."
-msgstr "openSUSE と SUSE は米国内およびその他の各国における Novell, Inc. の登録商標です。"
+#: planetsuse/planet_template.html:169 planetsuse/feedlist_template.html:124
+msgid ""
+"openSUSE and SUSE are trademarks of Novell, Inc. in the United States and "
+"other countries."
+msgstr ""
+"openSUSE と SUSE は米国内およびその他の各国における Novell, Inc. の登録商標で"
+"す。"
 
 #: planetsuse/feedlist_template.html:51
-msgid "This page contains the list of all the <a href=\"http://www.opensuse.org\">openSUSE</a> contributors who are aggregated on <a href=\"./\">Planet openSUSE</a>."
-msgstr "このページでは <a href=\"./\">Planet openSUSE</a> にまとめられた <a href=\"http://www.opensuse.org\">openSUSE</a> 貢献者の一覧を見ることができます。"
+msgid ""
+"This page contains the list of all the <a href=\"http://www.opensuse.org"
+"\">openSUSE</a> contributors who are aggregated on <a href=\"./\">Planet "
+"openSUSE</a>."
+msgstr ""
+"このページでは <a href=\"./\">Planet openSUSE</a> にまとめられた <a href="
+"\"http://www.opensuse.org\">openSUSE</a> 貢献者の一覧を見ることができます。"
 
 #: planetsuse/feedlist_template.html:62
 msgid "Back to Planet openSUSE"
@@ -190,4 +210,3 @@ msgstr "まとめられたフィード"
 #: planetsuse/code.html:8
 msgid "_DATE_FORMAT_"
 msgstr "%Y年%m月%d日"
-

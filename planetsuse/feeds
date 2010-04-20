@@ -1050,7 +1050,7 @@ feed 15m http://blog.binaridev.es/feeds/posts/default
 	define_name Ángel Llosa
 	define_lang es
 
-feed 15m http://emtorres.com.ar/blog/feed/atom/
+feed 15m http://feeds.feedburner.com/IterativoEIncremental
 	define_name Martin Torres
 	define_lang es
 
@@ -1079,6 +1079,8 @@ feed 15m http://www.rogozinski.org/feed/atom/
 feed 15m http://my.opera.com/dragonzone/xml/atom/blog/
 	define_name Piotr Krakowiak
 	define_lang pl
+    define_member 1
+    define_face piotr_krakowiak
 
 feed 15m http://elchevive68.wordpress.com/feed/atom/
 	define_name Luiz Fernando Ranghetti
@@ -1162,4 +1164,15 @@ feed 15m http://opensuse.blip.tv/rss/
 feed 15m http://blog.susestudio.com/feeds/posts/default
     define_name SUSE Studio
     define_face studio
+
+feed 15m http://shayonj.wordpress.com/feed/rss/
+    define_name Shayon Mukherjee
+    define_member 1
+    define_connect 106
+
+feed 15m http://idulk.kendari.linux.or.id/feed/atom/
+    define_name Saydul Akram
+    define_irc  anoalinux
+    define_lang id
+    define_connect 127
 
