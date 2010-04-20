@@ -4,7 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2010-04-10 02:30+0200\n"
+"PO-Revision-Date: 2010-04-17 19:14+0200\n"
+"Last-Translator: Javier Llorente <javier@opensuse.org>\n"
 "Language-Team: Spanish <opensuse-translation-es@opensuse.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -51,7 +52,7 @@ msgstr "Visión general"
 
 #: planetsuse/planet_template.html:64 planetsuse/feedlist_template.html:49
 msgid "Welcome to Planet openSUSE"
-msgstr "Bienvenido a Planet openSUSE"
+msgstr "Bienvenido al Planeta openSUSE"
 
 #: planetsuse/planet_template.html:66
 msgid ""
@@ -84,7 +85,7 @@ msgstr "Alemán"
 
 #: planetsuse/planet_template.html:79
 msgid "Spanish"
-msgstr "Español"
+msgstr "Castellano"
 
 #: planetsuse/planet_template.html:80
 msgid "Portuguese"
@@ -116,15 +117,15 @@ msgstr "Lista de fuentes"
 
 #: planetsuse/planet_template.html:94 planetsuse/feedlist_template.html:67
 msgid "Metadata"
-msgstr "Metadata"
+msgstr "Metadatos"
 
 #: planetsuse/planet_template.html:106
 msgid "toggle overview"
-msgstr "conmutar la vista general"
+msgstr "activar/desactivar la vista general"
 
 #: planetsuse/planet_template.html:107
 msgid "toggle help (this)"
-msgstr "conmutar la ayuda (esto)"
+msgstr "activar/desactivar la ayuda (ésto)"
 
 #: planetsuse/planet_template.html:108
 msgid "next post"
@@ -184,7 +185,7 @@ msgid ""
 "other countries."
 msgstr ""
 "openSUSE y SUSE son marcas registradas de Novell, Inc. en los Estados Unidos "
-"y en otros países"
+"y en otros países."
 
 #: planetsuse/feedlist_template.html:51
 msgid ""
@@ -193,12 +194,12 @@ msgid ""
 "openSUSE</a>."
 msgstr ""
 "Esta página tiene una lista de todos los colaboradores de <a href=\"http://"
-"www.opensuse.org\">openSUSE</a> que están agrupados en <a href=\"./\">Planet "
-"openSUSE</a>."
+"www.opensuse.org\">openSUSE</a> que están agrupados en el <a href=\"./"
+"\">Planeta openSUSE</a>."
 
 #: planetsuse/feedlist_template.html:62
 msgid "Back to Planet openSUSE"
-msgstr "Volver a Planet openSUSE"
+msgstr "Volver al Planeta openSUSE"
 
 #: planetsuse/feedlist_template.html:64
 msgid "Show all feeds"
@@ -210,4 +211,4 @@ msgstr "Fuentes agrupadas"
 
 #: planetsuse/code.html:8
 msgid "_DATE_FORMAT_"
-msgstr ""
+msgstr "%d de %B de %Y"
