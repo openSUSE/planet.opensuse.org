@@ -1158,3 +1158,8 @@ feed 15m http://blog.zaq.ne.jp/opensuse/rss/
 feed 15m http://opensuse.blip.tv/rss/
     define_name openSUSE TV
     define_face opensusetv
+
+feed 15m http://blog.susestudio.com/feeds/posts/default
+    define_name SUSE Studio
+    define_face studio
+
