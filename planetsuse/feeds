@@ -1176,3 +1176,8 @@ feed 15m http://idulk.kendari.linux.or.id/feed/atom/
     define_lang id
     define_connect 127
 
+feed 15m http://lurchi.wordpress.com/feed/
+    define_name Stefan Brüns
+    define_irc  lurchi
+    define_connect 137
+
