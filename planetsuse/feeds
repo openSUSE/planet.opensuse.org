@@ -1181,3 +1181,24 @@ feed 15m http://lurchi.wordpress.com/feed/
     define_irc  lurchi
     define_connect 137
 
+feed 15m http://thefreecountry.wordpress.com/category/linux/suse-ru/feed/
+    define_name Alexander Naumov
+    define_irc anaumov
+    define_connect 138
+    define_member 1
+
+feed 15m http://antony-online.blogspot.com/feeds/posts/default/-/opensuse
+    define_name Antony Reznik
+    define_irc  t0xa
+    define_connect 95
+
+feed 15m http://clangprogramming.blogspot.com/feeds/posts/default
+    define_name Alexey Bovanenko
+    define_connect 89
+
+feed 15m http://dinarv.blogspot.com/feeds/posts/default
+    define_name Dinar Valeev
+    define_irc  k0da
+    define_connect 65
+    define_member 1
+
