@@ -1206,3 +1206,8 @@ feed 15m http://dinarv.blogspot.com/feeds/posts/default
     define_member 1
     define_lang ru
 
+feed 15m http://genixinfo.blogspot.com/feeds/posts/default
+    define_name Genix Info
+    define_connect 144
+    define_lang pt
+
