@@ -2,31 +2,35 @@
 <html xmlns="http://www.w3.org/1999/xhtml" {% if lang %}xml:lang="{{ lang }}" lang="{{ lang }}" {% else %}xml:lang="en" lang="en"{% endif %}>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-{% if lang -%}
+  {%- if lang -%}
   <meta http-equiv="content-language" content="{{ lang }}"/>
-{% endif -%}
+  {%- endif -%}
   <meta name="description" content="Aggregation of the blogs of openSUSE contributors"/>
   <meta name="keywords" content="opensuse, linux"/>
   <link rel="stylesheet" href="http://static.opensuse.org/themes/bento/css/style.css" type="text/css" media="screen" title="All" charset="utf-8" />
   <link rel="stylesheet" href="../css/style.min.css" type="text/css" media="screen" title="All" charset="utf-8" />
   <link rel="stylesheet" href="../css/feedlist.min.css" type="text/css" media="screen" title="All" charset="utf-8" />
   <script src="http://static.opensuse.org/themes/bento/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  {%- if lang -%}
+  <script src="http://static.opensuse.org/themes/bento/js/l10n/global-navigation-data-{{ lang }}.js" type="text/javascript" charset="utf-8"></script>
+  {%- else -%}
   <script src="http://static.opensuse.org/themes/bento/js/l10n/global-navigation-data-en_US.js" type="text/javascript" charset="utf-8"></script>
+  {%- endif -%}
   <script src="http://static.opensuse.org/themes/bento/js/global-navigation.js" type="text/javascript" charset="utf-8"></script>
 
   <title>Planet openSUSE Feed List{% if lang %} ({{ lang }}){% endif %}</title>
-{% if lang -%}
+  {%- if lang -%}
   <link rel="alternate"     type="application/rss+xml" title="Planet openSUSE ({{ lang }})" href="rss20.xml" />
   <link rel="alternate"     type="application/rss+xml" title="Planet openSUSE (all languages)" href="../global/rss20.xml" />
   <link rel="meta"          type="application/rdf+xml" title="FOAF ({{ lang }})" href="foafroll.xml" />
   <link rel="meta"          type="application/rdf+xml" title="FOAF (all languages)" href="../global/foafroll.xml" />
   <link rel="subscriptions" type="text/x-opml"         title="Subscriptions ({{ lang }})" href="opml.xml" />
   <link rel="subscriptions" type="text/x-opml"         title="Subscriptions (all languages)" href="../global/opml.xml" />
-{% else -%}
+  {%- else -%}
   <link rel="alternate"     type="application/rss+xml" title="Planet openSUSE (all languages)" href="rss20.xml" />
   <link rel="meta"          type="application/rdf+xml" title="FOAF (all languages)" href="foafroll.xml" />
   <link rel="subscriptions" type="text/x-opml"         title="Subscriptions" href="opml.xml" />
-{% endif -%}
+  {%- endif -%}
 </head>
 <body>
   <!-- Start: Header -->
