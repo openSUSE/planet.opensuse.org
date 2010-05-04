@@ -1211,3 +1211,9 @@ feed 15m http://genixinfo.blogspot.com/feeds/posts/default
     define_connect 144
     define_lang pt
 
+feed 15m http://my.opera.com/hreyes/xml/rss/blog/
+    define_name Héctor Reyes Armenta
+    define_irc  hreyes
+    define_lang es
+
+
