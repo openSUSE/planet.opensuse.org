@@ -11,6 +11,7 @@
 import os, time, cgi, sys
 import rawdoglib.plugins, rawdoglib.rawdog
 import libxml2
+import locale
 
 from time import gmtime, strftime
 
@@ -119,7 +120,13 @@ class RSS_Feed:
             if feed[0] == article.feed:
                 title = feed[2]["define_name"] + u": " + title
         xml_article.newChild(None, 'title', title.encode('utf8'))
-        date = strftime("%a, %d %b %Y %H:%M:%S", gmtime(article.date)) + " +0000"
+        actual_locale = locale.getdefaultlocale()
+        try:
+            locale.setlocale(locale.LC_TIME, 'en_US.UTF8')
+            date = strftime("%a, %d %b %Y %H:%M:%S", gmtime(article.date)) + " +0000"
+        finally:
+            locale.setlocale(locale.LC_TIME, actual_locale)
+            pass
         xml_article.newChild(None, 'pubDate', date)
         if entry_info.has_key('link'):
             xml_article.newChild(None, 'link', entry_info['link'])
