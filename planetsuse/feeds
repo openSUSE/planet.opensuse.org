@@ -1174,6 +1174,7 @@ feed 15m http://shayonj.wordpress.com/feed/rss/
 feed 15m http://idulk.kendari.linux.or.id/feed/atom/
     define_name Saydul Akram
     define_irc  anoalinux
+    define_face saydul_akram
     define_lang id
     define_connect 127
 
