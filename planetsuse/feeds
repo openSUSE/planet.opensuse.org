@@ -452,6 +452,7 @@ feed 15m http://www.vuntz.net/journal/feed/en/rss2
 feed 15m http://gabrielstein.org/blog/?feed=rss2
 	define_name Gabriel Stein
 	define_irc  gabrielstein
+    define_face gabriel_stein
 
 feed 15m http://visnov.blogspot.com/feeds/posts/default
 	define_name Stanislav Visnovsky
