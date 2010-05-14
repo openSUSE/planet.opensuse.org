@@ -452,7 +452,6 @@ feed 15m http://www.vuntz.net/journal/feed/en/rss2
 feed 15m http://gabrielstein.org/blog/?feed=rss2
 	define_name Gabriel Stein
 	define_irc  gabrielstein
-    define_face gabriel_stein
 
 feed 15m http://visnov.blogspot.com/feeds/posts/default
 	define_name Stanislav Visnovsky
@@ -686,7 +685,7 @@ feed 15m http://feeds.feedburner.com/zdnet/community?format=xml
 feed 15m http://www.dissociatedpress.net/category/opensuse/feed/
 	define_name Joe Brockmeier
 	define_irc  jbrockmeier
-	define_faze zonker
+	define_face zonker
 
 feed 15m http://lizards.opensuse.org/author/msmeissn/feed/
 	define_name Marcus Meissner
@@ -906,9 +905,9 @@ feed 15m http://lizards.opensuse.org/author/andreasstieger/feed/
 
 feed 15m http://www.phocean.net/category/administration-systeme/linux/opensuse-linux-administration-systeme/feed
 	define_name Jean-Christophe Baptiste
-    define_face http://www.phocean.net/wp-content/uploads/2010/04/JCB100.png
-    define_irc  phocean
-    define_connect 119
+	define_face http://www.phocean.net/wp-content/uploads/2010/04/JCB100.png
+	define_irc  phocean
+	define_connect 119
 
 feed 15m http://lizards.opensuse.org/author/holgisms/feed/
 	define_name Holger Sickenberg
@@ -1080,8 +1079,8 @@ feed 15m http://www.rogozinski.org/feed/atom/
 feed 15m http://my.opera.com/dragonzone/xml/atom/blog/
 	define_name Piotr Krakowiak
 	define_lang pl
-    define_member 1
-    define_face piotr_krakowiak
+	define_member 1
+	define_face piotr_krakowiak
 
 feed 15m http://elchevive68.wordpress.com/feed/atom/
 	define_name Luiz Fernando Ranghetti
@@ -1152,74 +1151,73 @@ feed 15m http://strufts.blogspot.com/feeds/posts/default
 	define_lang pt
 
 feed 15m http://blog.zaq.ne.jp/opensuse/rss/
-    define_name Satoru Matsumoto
-    define_irc  heliosreds
-    define_lang ja
-    define_member 1
-    define_eonnect 59
+	define_name Satoru Matsumoto
+	define_irc  heliosreds
+	define_lang ja
+	define_member 1
+	define_connect 59
 
 feed 15m http://opensuse.blip.tv/rss/
-    define_name openSUSE TV
-    define_face opensusetv
+	define_name openSUSE TV
+	define_face opensusetv
 
 feed 15m http://blog.susestudio.com/feeds/posts/default
-    define_name SUSE Studio
-    define_face studio
+	define_name SUSE Studio
+	define_face studio
 
 feed 15m http://shayonj.wordpress.com/feed/rss/
-    define_name Shayon Mukherjee
-    define_member 1
-    define_connect 106
+	define_name Shayon Mukherjee
+	define_member 1
+	define_connect 106
 
 feed 15m http://idulk.kendari.linux.or.id/feed/atom/
-    define_name Saydul Akram
-    define_irc  anoalinux
-    define_face saydul_akram
-    define_lang id
-    define_connect 127
+	define_name Saydul Akram
+	define_irc  anoalinux
+	define_face saydul_akram
+	define_lang id
+	define_connect 127
 
 feed 15m http://lurchi.wordpress.com/feed/
-    define_name Stefan Brüns
-    define_irc  lurchi
-    define_connect 137
+	define_name Stefan Brüns
+	define_irc  lurchi
+	define_connect 137
 
 feed 15m http://thefreecountry.wordpress.com/category/linux/suse-ru/feed/
-    define_name Alexander Naumov
-    define_irc anaumov
-    define_connect 138
-    define_member 1
-    define_lang ru
+	define_name Alexander Naumov
+	define_irc anaumov
+	define_connect 138
+	define_member 1
+	define_lang ru
 
 feed 15m http://antony-online.blogspot.com/feeds/posts/default/-/opensuse
-    define_name Antony Reznik
-    define_irc  t0xa
-    define_connect 95
-    define_lang ru
+	define_name Antony Reznik
+	define_irc  t0xa
+	define_connect 95
+	define_lang ru
 
 feed 15m http://clangprogramming.blogspot.com/feeds/posts/default
-    define_name Alexey Bovanenko
-    define_connect 89
-    define_lang ru
+	define_name Alexey Bovanenko
+	define_connect 89
+	define_lang ru
 
 feed 15m http://dinarv.blogspot.com/feeds/posts/default
-    define_name Dinar Valeev
-    define_irc  k0da
-    define_connect 65
-    define_member 1
-    define_lang ru
+	define_name Dinar Valeev
+	define_irc  k0da
+	define_connect 65
+	define_member 1
+	define_lang ru
 
 feed 15m http://genixinfo.blogspot.com/feeds/posts/default
-    define_name Genix Info
-    define_connect 144
-    define_lang pt
+	define_name Genix Info
+	define_connect 144
+	define_lang pt
 
 feed 15m http://my.opera.com/hreyes/xml/rss/blog/
-    define_name Héctor Reyes Armenta
-    define_irc  hreyes
-    define_lang es
+	define_name Héctor Reyes Armenta
+	define_irc  hreyes
+	define_lang es
 
 feed 15m http://dominique.leuenberger.net/blog/?feed=rss2
-    define_name Dominique Leuenberger
-    define_irc  DimStar
-    define_member 1
-
+	define_name Dominique Leuenberger
+	define_irc  DimStar
+	define_member 1
