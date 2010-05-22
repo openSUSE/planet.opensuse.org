@@ -1221,3 +1221,9 @@ feed 15m http://dominique.leuenberger.net/blog/?feed=rss2
 	define_name Dominique Leuenberger
 	define_irc  DimStar
 	define_member 1
+
+feed 15m http://lizards.opensuse.org/author/jaom7/feed/
+    define_name José Oramas M.
+    define_irc  jaom7
+    define_member 1
+    define_connect 158
