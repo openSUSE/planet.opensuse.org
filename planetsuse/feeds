@@ -1227,3 +1227,11 @@ feed 15m http://lizards.opensuse.org/author/jaom7/feed/
     define_irc  jaom7
     define_member 1
     define_connect 158
+
+feed 15m http://tittiatcoke.wordpress.com/category/openSUSE/feed/?mrss=off
+    define_name Raymond Wooninck
+    define_irc tittiatcoke
+    define_member 1
+    define_connect 103
+    define_face tittatcoke
+
