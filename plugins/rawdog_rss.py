@@ -41,7 +41,7 @@ class RSS_Feed:
         if 'linkxml' in config.config:
             href = config['linkxml']
         else:
-            href = self.out_file
+            href = 'http://planet.opensuse.org/rss20.xml'
         atomLink.setProp('href', href)
         atomLink.setProp('rel', 'self')
         atomLink.setProp('type', 'application/rss+xml')
@@ -115,7 +115,10 @@ class RSS_Feed:
         else:
             guid = xml_article.newChild(None, 'guid', article.hash)
         guid.setProp('isPermaLink', 'false')
-        title = unicode(entry_info['title'].encode('utf8'), 'utf8') #, 'ignore')
+        if 'title' in entry_info:
+            title = unicode(entry_info['title'].encode('utf8'), 'utf8') #, 'ignore')
+        else:
+            title = u'(no title)'
         for feed in config["feedslist"]:
             if feed[0] == article.feed:
                 title = feed[2]["define_name"] + u": " + title
