@@ -1121,110 +1121,6 @@ class Rawdog(Persistable):
 		"""Show the configured item template."""
 		print self.get_itemtemplate(config)
 
-	def write_article(self, f, article, config):
-		"""Write an article to the given file."""
-		print "write_article"
-		feed = self.feeds[article.feed]
-		feed_info = feed.feed_info
-		entry_info = article.entry_info
-
-		link = entry_info.get("link")
-		if link == "":
-			link = None
-
-		guid = entry_info.get("id")
-		if guid == "":
-			guid = None
-
-		itembits = {}
-		for name, value in feed.args.items():
-			if name.startswith("define_"):
-				itembits[name[7:]] = value
-
-		title = detail_to_html(entry_info.get("title_detail"), True, config)
-
-		key = None
-		for k in ["content", "summary_detail"]:
-			if entry_info.has_key(k):
-				key = k
-				break
-		if key is None:
-			description = None
-		else:
-			force_preformatted = feed.args.has_key("format") and (feed.args["format"] == "text")
-			description = detail_to_html(entry_info[key], False, config, force_preformatted)
-
-		date = article.date
-		if title is None:
-			if link is None:
-				title = "Article"
-			else:
-				title = "Link"
-
-		itembits["title_no_link"] = title
-		if link is not None:
-			itembits["url"] = string_to_html(link, config)
-		else:
-			itembits["url"] = ""
-		if guid is not None:
-			itembits["guid"] = string_to_html(guid, config)
-		else:
-			itembits["guid"] = ""
-		if link is None:
-			itembits["title"] = title
-		else:
-			itembits["title"] = '<a href="' + string_to_html(link, config) + '">' + title + '</a>'
-
-		itembits["feed_title_no_link"] = detail_to_html(feed_info.get("title_detail"), True, config)
-		itembits["feed_title"] = feed.get_html_link(config)
-		itembits["feed_url"] = string_to_html(feed.url, config)
-		itembits["feed_hash"] = short_hash(feed.url)
-		itembits["feed_id"] = feed.get_id(config)
-		itembits["hash"] = short_hash(article.hash)
-		itembits["blogurl"] = ""
-		if feed_info.has_key("links"):
-			for dict in feed_info['links']:
-				if dict.has_key("href") and dict["type"] == "text/html":
-					itembits["blogurl"] = dict["href"]
-					break
-
-		if description is not None:
-			if False and len(description) > 5000:
-				print "WARNING: long post (%d bytes) for %s" % (len(description), feed.url)
-				shortened = description[0:5000]
-				shortened += """\n<p class="more"><a class="more">Read more...</a></p>\n"""
-				itembits["description"] = shortened
-			else:
-				itembits["description"] = description
-		else:
-			itembits["description"] = ""
-
-		author = author_to_html(entry_info, feed.url, config)
-		if author is not None:
-			itembits["author"] = author
-		else:
-			itembits["author"] = ""
-
-		itembits["added"] = format_time(article.added, config)
-		if date is not None:
-			itembits["date"] = format_time(date, config)
-		else:
-			itembits["date"] = ""
-
-		if config.lang:
-			itembits['lang'] = config.lang
-			itembits['lang_'+config.lang] = True
-		else:
-			itembits['item_lang'] = itembits['lang']
-
-		tim = time.localtime(date)
-		itembits["time"] = unicode(time.strftime("%H:%M", tim).encode("utf8"), "utf8")
-
-		plugins.call_hook("output_item_bits", self, config, feed, article, itembits)
-		itemtemplate = self.get_itemtemplate(config)
-
-		f.write(fill_template(itemtemplate, itembits))
-
 	def write_remove_dups(self, articles, config, now):
 		"""Filter the list of articles to remove articles that are too
 		old or are duplicates."""
@@ -1346,6 +1242,10 @@ class Rawdog(Persistable):
 			else:
 				force_preformatted = feed.args.has_key("format") and (feed.args["format"] == "text")
 				description = detail_to_html(entry_info[key], False, config, force_preformatted)
+				box = plugins.Box(description)
+				box.value = description
+				plugins.call_hook("alter_post", box, entry_info.get("title_detail"), link)
+				description = box.value
 
 			date = article.date
 			if title is None:
@@ -1456,8 +1356,6 @@ class Rawdog(Persistable):
 		file."""
 		config.log("Starting write")
 		now = time.time()
-
-		#from pudb import set_trace; set_trace()
 
 		article_dates = {}
 		articlesAll = self.articles.values()

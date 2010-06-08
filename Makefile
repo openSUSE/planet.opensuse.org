@@ -1,7 +1,8 @@
-JAVA=java
+JAVA=java -Xmx8m
 L10N_DIR=locale
 DOMAIN=planetsuse
 POT=$(L10N_DIR)/$(DOMAIN).pot
+COMPRESSOR=$(JAVA) -jar ./tools/yuicompressor.jar
 
 CSS := $(patsubst %.css,%.min.css,$(filter-out %.min.css,$(wildcard website/css/*.css)))
 JS  := $(patsubst %.js,%.min.js,$(filter-out %.min.js,$(wildcard website/js/*.js)))
@@ -10,10 +11,10 @@ PO_FILES := $(wildcard locale/*.po)
 MO_FILES := $(patsubst locale/%.po,locale/%/LC_MESSAGES/$(DOMAIN).mo,${PO_FILES})
 
 website/css/%.min.css:	website/css/%.css
-	$(JAVA) -jar ./tools/yuicompressor.jar --type css --charset UTF-8 --verbose -o "$@" "$<"
+	$(COMPRESSOR) --type css --charset UTF-8 --verbose -o "$@" "$<"
 
 website/js/%.min.js:	website/js/%.js
-	$(JAVA) -jar ./tools/yuicompressor.jar --type js --charset UTF-8 --verbose -o "$@" "$<"
+	$(COMPRESSOR) --type js --charset UTF-8 --verbose -o "$@" "$<"
 
 $(L10N_DIR)/%/LC_MESSAGES/$(DOMAIN).mo:	$(L10N_DIR)/%.po
 	mkdir -p $(dir $@) && msgfmt -o "$@" "$<"

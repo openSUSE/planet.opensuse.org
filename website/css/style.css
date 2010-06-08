@@ -370,3 +370,28 @@ ul.menu {
 #current-entries:before { content: "\21E6\00A0"; }
 #old-entries:after      { content: "\00A0\21E8"; }
 
+div.readmore {
+    margin-top: 0.5em;
+}
+
+span.readmore, a.readmore {
+    color: #e35302;
+    font-weight: bold;
+}
+
+a.readmore {
+    padding: 2px 0.5em;
+    background: #fafafa;
+    border: 1px solid #fcb11c;
+}
+
+a.readmore:hover {
+    color: #3399cc;
+    background: #f3f9fc;
+    border-color: #3399cc;
+}
+
+a.readmore:before {
+    content: "\00BB\00A0";
+}
+

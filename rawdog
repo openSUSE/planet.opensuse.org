@@ -19,6 +19,7 @@
 
 import sys, os
 sys.path.insert(0, os.path.join(os.path.abspath(os.curdir), "libs", "jinja"))
+sys.path.insert(0, os.path.join(os.path.abspath(os.curdir), "libs"))
 #for lib in ('lib', 'lib64'):
 #	sys.path.insert(0, os.path.join(os.path.abspath(os.curdir), "libs", lib, "python%s.%s" % (sys.version_info[:2]), "site-packages"))
 
