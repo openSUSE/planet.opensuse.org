@@ -153,11 +153,11 @@ msgstr "Русский"
 
 #: planetsuse/planet_template.html:94 planetsuse/planet_template.html:109
 msgid "Keyboard shortcuts"
-msgstr "Грячие клавиши"
+msgstr "Горячие клавиши"
 
 #: planetsuse/planet_template.html:96
 msgid "Feed list"
-msgstr "Списол источников"
+msgstr "Список источников"
 
 #: planetsuse/planet_template.html:111
 msgid "toggle overview"
