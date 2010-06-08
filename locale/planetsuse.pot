@@ -1,47 +1,3 @@
-#: planetsuse/feedlist_template.html:53 planetsuse/planet_template.html:68
-msgid "Welcome to Planet openSUSE"
-msgstr ""
-
-#: planetsuse/feedlist_template.html:55
-msgid "This page contains the list of all the <a href=\"http://www.opensuse.org\">openSUSE</a> contributors who are aggregated on <a href=\"./\">Planet openSUSE</a>."
-msgstr ""
-
-#: planetsuse/feedlist_template.html:60 planetsuse/planet_template.html:75
-msgid "To have your blog added to this aggregator, please read <a href=\"http://en.opensuse.org/PlanetSUSE\">the instructions</a>."
-msgstr ""
-
-#: planetsuse/feedlist_template.html:64 planetsuse/planet_template.html:92
-msgid "Actions"
-msgstr ""
-
-#: planetsuse/feedlist_template.html:66
-msgid "Back to Planet openSUSE"
-msgstr ""
-
-#: planetsuse/feedlist_template.html:68
-msgid "Show all feeds"
-msgstr ""
-
-#: planetsuse/feedlist_template.html:71 planetsuse/planet_template.html:99
-msgid "Metadata"
-msgstr ""
-
-#: planetsuse/feedlist_template.html:81
-msgid "Aggregated feeds"
-msgstr ""
-
-#: planetsuse/feedlist_template.html:120 planetsuse/planet_template.html:166
-msgid "Pascal Bleser and the openSUSE Community"
-msgstr ""
-
-#: planetsuse/feedlist_template.html:123 planetsuse/planet_template.html:169
-msgid "This site is not an official openSUSE website, and is not in any way affiliated with or endorsed by SUSE Linux GmbH or Novell."
-msgstr ""
-
-#: planetsuse/feedlist_template.html:128 planetsuse/planet_template.html:174
-msgid "openSUSE and SUSE are trademarks of Novell, Inc. in the United States and other countries."
-msgstr ""
-
 #: planetsuse/planet_template.html:8
 msgid "Aggregation of the blogs of openSUSE contributors"
 msgstr ""
@@ -78,8 +34,16 @@ msgstr ""
 msgid "Overview"
 msgstr ""
 
+#: planetsuse/planet_template.html:68 planetsuse/feedlist_template.html:53
+msgid "Welcome to Planet openSUSE"
+msgstr ""
+
 #: planetsuse/planet_template.html:70
 msgid "This is a feed aggregator that collects what <a href=\"http://www.opensuse.org\">openSUSE</a> contributors are writing in their respective blogs."
+msgstr ""
+
+#: planetsuse/planet_template.html:75 planetsuse/feedlist_template.html:60
+msgid "To have your blog added to this aggregator, please read <a href=\"http://en.opensuse.org/PlanetSUSE\">the instructions</a>."
 msgstr ""
 
 #: planetsuse/planet_template.html:79
@@ -118,12 +82,20 @@ msgstr ""
 msgid "Russian"
 msgstr ""
 
+#: planetsuse/planet_template.html:92 planetsuse/feedlist_template.html:64
+msgid "Actions"
+msgstr ""
+
 #: planetsuse/planet_template.html:94 planetsuse/planet_template.html:109
 msgid "Keyboard shortcuts"
 msgstr ""
 
 #: planetsuse/planet_template.html:96
 msgid "Feed list"
+msgstr ""
+
+#: planetsuse/planet_template.html:99 planetsuse/feedlist_template.html:71
+msgid "Metadata"
 msgstr ""
 
 #: planetsuse/planet_template.html:111
@@ -170,7 +142,39 @@ msgstr ""
 msgid "Older blog entries"
 msgstr ""
 
+#: planetsuse/planet_template.html:166 planetsuse/feedlist_template.html:120
+msgid "Pascal Bleser and the openSUSE Community"
+msgstr ""
+
+#: planetsuse/planet_template.html:169 planetsuse/feedlist_template.html:123
+msgid "This site is not an official openSUSE website, and is not in any way affiliated with or endorsed by SUSE Linux GmbH or Novell."
+msgstr ""
+
+#: planetsuse/planet_template.html:174 planetsuse/feedlist_template.html:128
+msgid "openSUSE and SUSE are trademarks of Novell, Inc. in the United States and other countries."
+msgstr ""
+
+#: planetsuse/feedlist_template.html:55
+msgid "This page contains the list of all the <a href=\"http://www.opensuse.org\">openSUSE</a> contributors who are aggregated on <a href=\"./\">Planet openSUSE</a>."
+msgstr ""
+
+#: planetsuse/feedlist_template.html:66
+msgid "Back to Planet openSUSE"
+msgstr ""
+
+#: planetsuse/feedlist_template.html:68
+msgid "Show all feeds"
+msgstr ""
+
+#: planetsuse/feedlist_template.html:81
+msgid "Aggregated feeds"
+msgstr ""
+
 #: planetsuse/code.html:8
 msgid "_DATE_FORMAT_"
+msgstr ""
+
+#: planetsuse/code.html:9
+msgid "read more"
 msgstr ""
 

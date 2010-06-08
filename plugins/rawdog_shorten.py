@@ -12,7 +12,8 @@ class Shorten:
         if html != None:
             sh = utils.truncate_html_words(html, 100, '<span class="readmore">&hellip;</span>')
             if sh != None and len(sh) < len(html):
-                sh += "\n<div class=\"readmore\"><a href=\"%s\" class=\"readmore\">read more</a></div>" % link
+				readmore = rawdog.translations.gettext('read more').decode("utf8")
+                sh += "\n<div class=\"readmore\"><a href=\"%s\" class=\"readmore\">%s</a></div>" % (link, readmore)
                 box.value = sh
                 pass
             pass

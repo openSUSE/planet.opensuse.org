@@ -11,69 +11,6 @@ msgstr ""
 "X-Poedit-Language: Japanese\n"
 "X-Poedit-Country: JAPAN\n"
 
-#: planetsuse/feedlist_template.html:53 planetsuse/planet_template.html:68
-msgid "Welcome to Planet openSUSE"
-msgstr "Planet openSUSE へようこそ"
-
-#: planetsuse/feedlist_template.html:55
-msgid ""
-"This page contains the list of all the <a href=\"http://www.opensuse.org"
-"\">openSUSE</a> contributors who are aggregated on <a href=\"./\">Planet "
-"openSUSE</a>."
-msgstr ""
-"このページでは <a href=\"./\">Planet openSUSE</a> にまとめられた <a href="
-"\"http://www.opensuse.org\">openSUSE</a> 貢献者の一覧を見ることができます。"
-
-#: planetsuse/feedlist_template.html:60 planetsuse/planet_template.html:75
-msgid ""
-"To have your blog added to this aggregator, please read <a href=\"http://en."
-"opensuse.org/PlanetSUSE\">the instructions</a>."
-msgstr ""
-"このまとめサイトにあなたのブログも追加したいとご希望でしたら、以下の<a href="
-"\"http://en.opensuse.org/PlanetSUSE\">説明 (英語)</a> に従って申請してくださ"
-"い。"
-
-#: planetsuse/feedlist_template.html:64 planetsuse/planet_template.html:92
-msgid "Actions"
-msgstr "アクション"
-
-#: planetsuse/feedlist_template.html:66
-msgid "Back to Planet openSUSE"
-msgstr "Planet openSUSE へ戻る"
-
-#: planetsuse/feedlist_template.html:68
-msgid "Show all feeds"
-msgstr "全てのフィードを表示する"
-
-#: planetsuse/feedlist_template.html:71 planetsuse/planet_template.html:99
-msgid "Metadata"
-msgstr "メタデータ"
-
-#: planetsuse/feedlist_template.html:81
-msgid "Aggregated feeds"
-msgstr "まとめられたフィード"
-
-#: planetsuse/feedlist_template.html:120 planetsuse/planet_template.html:166
-msgid "Pascal Bleser and the openSUSE Community"
-msgstr "Pascal Bleser および openSUSE コミュニティ"
-
-#: planetsuse/feedlist_template.html:123 planetsuse/planet_template.html:169
-msgid ""
-"This site is not an official openSUSE website, and is not in any way "
-"affiliated with or endorsed by SUSE Linux GmbH or Novell."
-msgstr ""
-"このサイトは公式な openSUSE のウェブサイトではなく、いかなる意味においても "
-"SUSE Linux GmbH や Novell の管理下にあるわけでも、承認されているわけでもあり"
-"ません。"
-
-#: planetsuse/feedlist_template.html:128 planetsuse/planet_template.html:174
-msgid ""
-"openSUSE and SUSE are trademarks of Novell, Inc. in the United States and "
-"other countries."
-msgstr ""
-"openSUSE と SUSE は米国内およびその他の各国における Novell, Inc. の登録商標で"
-"す。"
-
 #: planetsuse/planet_template.html:8
 msgid "Aggregation of the blogs of openSUSE contributors"
 msgstr "openSUSE 貢献者によるブログをまとめて紹介"
@@ -111,6 +48,10 @@ msgstr "開発"
 msgid "Overview"
 msgstr "要約"
 
+#: planetsuse/planet_template.html:68 planetsuse/feedlist_template.html:53
+msgid "Welcome to Planet openSUSE"
+msgstr "Planet openSUSE へようこそ"
+
 #: planetsuse/planet_template.html:70
 msgid ""
 "This is a feed aggregator that collects what <a href=\"http://www.opensuse."
@@ -118,6 +59,15 @@ msgid ""
 msgstr ""
 "このサイトは <a href=\"http://www.opensuse.org\">openSUSE</a> 貢献者の皆さん"
 "がそれぞれのブログで書いた記事をまとめてフィードしています。"
+
+#: planetsuse/planet_template.html:75 planetsuse/feedlist_template.html:60
+msgid ""
+"To have your blog added to this aggregator, please read <a href=\"http://en."
+"opensuse.org/PlanetSUSE\">the instructions</a>."
+msgstr ""
+"このまとめサイトにあなたのブログも追加したいとご希望でしたら、以下の<a href="
+"\"http://en.opensuse.org/PlanetSUSE\">説明 (英語)</a> に従って申請してくださ"
+"い。"
 
 #: planetsuse/planet_template.html:79
 msgid "Languages"
@@ -155,6 +105,10 @@ msgstr ""
 msgid "Russian"
 msgstr ""
 
+#: planetsuse/planet_template.html:92 planetsuse/feedlist_template.html:64
+msgid "Actions"
+msgstr "アクション"
+
 #: planetsuse/planet_template.html:94 planetsuse/planet_template.html:109
 msgid "Keyboard shortcuts"
 msgstr "キーボードショートカット"
@@ -162,6 +116,10 @@ msgstr "キーボードショートカット"
 #: planetsuse/planet_template.html:96
 msgid "Feed list"
 msgstr "フィード一覧"
+
+#: planetsuse/planet_template.html:99 planetsuse/feedlist_template.html:71
+msgid "Metadata"
+msgstr "メタデータ"
 
 #: planetsuse/planet_template.html:111
 msgid "toggle overview"
@@ -211,6 +169,52 @@ msgstr "現在のブログエントリー"
 msgid "Older blog entries"
 msgstr "過去のブログエントリー"
 
+#: planetsuse/planet_template.html:166 planetsuse/feedlist_template.html:120
+msgid "Pascal Bleser and the openSUSE Community"
+msgstr "Pascal Bleser および openSUSE コミュニティ"
+
+#: planetsuse/planet_template.html:169 planetsuse/feedlist_template.html:123
+msgid ""
+"This site is not an official openSUSE website, and is not in any way "
+"affiliated with or endorsed by SUSE Linux GmbH or Novell."
+msgstr ""
+"このサイトは公式な openSUSE のウェブサイトではなく、いかなる意味においても "
+"SUSE Linux GmbH や Novell の管理下にあるわけでも、承認されているわけでもあり"
+"ません。"
+
+#: planetsuse/planet_template.html:174 planetsuse/feedlist_template.html:128
+msgid ""
+"openSUSE and SUSE are trademarks of Novell, Inc. in the United States and "
+"other countries."
+msgstr ""
+"openSUSE と SUSE は米国内およびその他の各国における Novell, Inc. の登録商標で"
+"す。"
+
+#: planetsuse/feedlist_template.html:55
+msgid ""
+"This page contains the list of all the <a href=\"http://www.opensuse.org"
+"\">openSUSE</a> contributors who are aggregated on <a href=\"./\">Planet "
+"openSUSE</a>."
+msgstr ""
+"このページでは <a href=\"./\">Planet openSUSE</a> にまとめられた <a href="
+"\"http://www.opensuse.org\">openSUSE</a> 貢献者の一覧を見ることができます。"
+
+#: planetsuse/feedlist_template.html:66
+msgid "Back to Planet openSUSE"
+msgstr "Planet openSUSE へ戻る"
+
+#: planetsuse/feedlist_template.html:68
+msgid "Show all feeds"
+msgstr "全てのフィードを表示する"
+
+#: planetsuse/feedlist_template.html:81
+msgid "Aggregated feeds"
+msgstr "まとめられたフィード"
+
 #: planetsuse/code.html:8
 msgid "_DATE_FORMAT_"
 msgstr "%Y年%m月%d日"
+
+#: planetsuse/code.html:9
+msgid "read more"
+msgstr ""
