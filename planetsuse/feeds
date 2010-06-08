@@ -964,6 +964,9 @@ feed 15m http://lizards.opensuse.org/author/rjschwei/feed/
 
 feed 15m http://lizards.opensuse.org/author/alexander_naumov/feed/
 	define_name Alexander Naumov
+    define_member 1
+    define_connect 138
+    define_irc  anaumov
 
 feed 15m http://lizards.opensuse.org/author/bruno_friedmann/feed/
 	define_name Bruno Friedmann
@@ -1238,4 +1241,10 @@ feed 15m http://tittiatcoke.wordpress.com/category/openSUSE/feed/?mrss=off
 feed 15m http://kdeatopensuse.wordpress.com/feed/
     define_name KDE at openSUSE
     define_face kdeatopensuse
+
+feed 15m http://index01d.com/?feed=rss2
+    define_name Eduard Antsupov
+    define_connect 177
+    define_irc  index01d
+    define_lang ru
 
