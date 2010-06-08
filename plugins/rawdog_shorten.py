@@ -9,10 +9,12 @@ class Shorten:
 
     def alter_post(self, box, title, link):
         html = box.value
-        sh = utils.truncate_html_words(html, 100, '<span class="readmore">&hellip;</span>')
-        if len(sh) < len(html):
-            sh += "\n<div class=\"readmore\"><a href=\"%s\" class=\"readmore\">read more</a></div>" % link
-            box.value = sh
+        if html != None:
+            sh = utils.truncate_html_words(html, 100, '<span class="readmore">&hellip;</span>')
+            if sh != None and len(sh) < len(html):
+                sh += "\n<div class=\"readmore\"><a href=\"%s\" class=\"readmore\">read more</a></div>" % link
+                box.value = sh
+                pass
             pass
         return True
 
