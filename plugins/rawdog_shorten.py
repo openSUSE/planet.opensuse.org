@@ -11,7 +11,7 @@ class Shorten:
     def alter_post(self, box, title, link):
         html = box.value
         if html != None:
-            sh = utils.truncate_html_words(html, 100, '<span class="readmore">&hellip;</span>')
+            sh = utils.truncate_html_words(html, 500, '<span class="readmore">&hellip;</span>')
             if sh != None and len(sh) < len(html):
                 readmore = rawdoglib.rawdog.translations.gettext('read more').decode("utf8")
                 sh += "\n<div class=\"readmore\"><a href=\"%s\" class=\"readmore\">%s</a></div>" % (link, readmore)
