@@ -1,3 +1,4 @@
+# vim: sw=4 ts=4 noet ai:
 # -*- coding: utf-8 -*-
 
 import utils
@@ -12,7 +13,7 @@ class Shorten:
         if html != None:
             sh = utils.truncate_html_words(html, 100, '<span class="readmore">&hellip;</span>')
             if sh != None and len(sh) < len(html):
-				readmore = rawdog.translations.gettext('read more').decode("utf8")
+                readmore = rawdoglib.rawdog.translations.gettext('read more').decode("utf8")
                 sh += "\n<div class=\"readmore\"><a href=\"%s\" class=\"readmore\">%s</a></div>" % (link, readmore)
                 box.value = sh
                 pass
