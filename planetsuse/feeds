@@ -1032,6 +1032,13 @@ feed 15m http://www.andreas-demmer.de/category/linux/feed/
 	define_member 1
 	define_lang de
 
+feed 15m http://feeds.feedburner.com/andreas-demmer/kde
+    define_name Andreas Demmer
+    define_irc  ademmer
+    define_face ademmer
+    define_connect 61
+    define_member 1
+
 feed 15m http://www.kde4.de/?feed=rss2
 	define_name KDE4.de
 	define_face http://kde.org/media/images/top-kde.jpg
@@ -1246,5 +1253,38 @@ feed 15m http://index01d.com/?feed=rss2
     define_name Eduard Antsupov
     define_connect 177
     define_irc  index01d
+    define_lang ru
+
+feed 15m http://vizzzion.org/blog/feed/
+    define_name Sebastian Kügler
+    define_connect 161
+    define_irc sebas
+    define_face sebas
+
+feed 15m http://cabelovivaolinux.wordpress.com/feed/
+    define_name Alessandro de Oliveira Faria
+    define_irc  cabelo
+    define_lang pt
+
+feed 15m http://www.marcus-moeller.de/feed
+    define_name Marcus Moeller
+    define_irc  marcus_
+    define_connect 142
+    define_lang de
+    define_face marcusmoeller
+
+feed 15m http://medwinz.blogsome.com/feed/
+    define_name M. Edwin Zakaria
+    define_irc  medwin
+    define_lang id
+    define_connect 18
+    define_member 1
+
+feed 15m http://0x2207.blogspot.com/feeds/posts/default
+    define_name Matwey Kornilov
+    define_lang ru
+
+feed 15m http://tux-the-penguin.blogspot.com/feeds/posts/default
+    define_name Anton Chernishov
     define_lang ru
 
