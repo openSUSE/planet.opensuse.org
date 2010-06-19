@@ -1290,7 +1290,7 @@ feed 15m http://tux-the-penguin.blogspot.com/feeds/posts/default
 
 feed 15m http://feeds.feedburner.com/kdeblogrss
     define_name Baltasar Ortega
-    define_lang sp
+    define_lang es
     define_irc  baltolkien
     define_connect 200
     define_member 1
