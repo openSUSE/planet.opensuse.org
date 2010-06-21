@@ -1249,7 +1249,7 @@ feed 15m http://kdeatopensuse.wordpress.com/feed/
     define_name KDE at openSUSE
     define_face kdeatopensuse
 
-feed 15m http://index01d.com/?feed=rss2
+feed 15m http://index01d.com/?feed=rss2&tag=opensuse
     define_name Eduard Antsupov
     define_connect 177
     define_irc  index01d
@@ -1295,4 +1295,11 @@ feed 15m http://feeds.feedburner.com/kdeblogrss
     define_connect 200
     define_member 1
 
+feed 15m http://feeds.feedburner.com/suseblog
+    define_name Artem Gavrilyuk
+    define_lang ru
+
+feed 15m http://livelog.wordpress.com/category/opensuse/feed/
+    define_name Anatoly Shikolay
+    define_lang ru
 
