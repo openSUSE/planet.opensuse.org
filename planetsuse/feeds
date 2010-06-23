@@ -1018,6 +1018,14 @@ feed 15m http://saigkill.wordpress.com/category/computer/opensuse/feed/
 	define_member 1
 	define_connect 71
 
+feed 15m http://saigkill.wordpress.com/category/computer/opensuse-de/feed/
+	define_name Sascha Manns
+	define_face sascha
+	define_irc  saigkill
+	define_member 1
+	define_connect 71
+    define_lang de
+
 feed 15m http://blog.coly.li/?feed=rss2
 	define_name Coly Li
 	define_face coly_li
