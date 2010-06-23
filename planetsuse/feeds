@@ -1311,3 +1311,11 @@ feed 15m http://livelog.wordpress.com/category/opensuse/feed/
     define_name Anatoly Shikolay
     define_lang ru
 
+feed 15m http://feeds.feedburner.com/blogspot/lXMaK
+    define_name Mauro Parra-Miranda
+    define_irc  mauropm
+    define_member 1
+    define_connect 203
+    define_face mauropm
+    define_lang es
+
