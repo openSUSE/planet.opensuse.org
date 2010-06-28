@@ -1319,3 +1319,8 @@ feed 15m http://feeds.feedburner.com/blogspot/lXMaK
     define_face mauropm
     define_lang es
 
+feed 15m http://www.liveinternet.ru/users/ilya_chernykh/rss
+    define_name Ilya Chernykh
+    define_lang ru
+
+
