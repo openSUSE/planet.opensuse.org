@@ -1328,3 +1328,8 @@ feed 15m http://knotes.ru/feed/
     define_lang ru
     define_face kde-ru
 
+feed 15m http://site.irk.ru/category/nixsovodstvo/feed/
+    define_name Alexey Smirnov
+    define_lang ru
+
+
