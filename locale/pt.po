@@ -69,7 +69,7 @@ msgid ""
 "opensuse.org/PlanetSUSE\">the instructions</a>."
 msgstr ""
 "Para ter seu blog adicionado a este agregador, por favor leia <a href="
-"\"http://en.opensuse.org/PlanetSUSE\">as instruções</a>."
+"\"http://old-en.opensuse.org/PlanetSUSE\">as instruções</a>."
 
 #: planetsuse/planet_template.html:79
 msgid "Languages"
