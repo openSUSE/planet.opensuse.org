@@ -1355,3 +1355,8 @@ feed 15m http://www.sebastian-siebert.de/feed/
     define_lang de
     define_member 1
 
+feed 15m http://aviv.pp.ua/blog/feed/
+    define_name Valery Gornih
+    define_lang ru
+
+
