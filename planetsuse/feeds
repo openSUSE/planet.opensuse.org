@@ -1293,7 +1293,7 @@ feed 15m http://0x2207.blogspot.com/feeds/posts/default
     define_lang ru
 
 feed 15m http://tux-the-penguin.blogspot.com/feeds/posts/default
-    define_name Anton Chernishov
+    define_name Anton Chernyshov
     define_lang ru
 
 feed 15m http://feeds.feedburner.com/kdeblogrss
