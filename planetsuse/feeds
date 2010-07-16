@@ -302,7 +302,7 @@ feed 15m http://news.opensuse.org/feed/
 feed 15m http://psankar.blogspot.com/feeds/posts/default/-/suse
 	define_name Sankar P
 	define_irc  psankar
-	define_face psankar.jpg
+	define_face psankar
 	define_member 1
 
 feed 15m http://chenthill.wordpress.com/category/suse/feed/atom/
@@ -1335,4 +1335,10 @@ feed 15m http://site.irk.ru/category/nixsovodstvo/feed/
 feed 15m http://feeds.feedburner.com/SapfeerOpensuse
     define_name Sergey Lomakov
     define_lang ru
+
+feed 15m http://ifup.org/complete.xml
+    define_name Brandon Philips
+    define_irc philips
+    define_member 1
+    define_face brandon_philips
 
