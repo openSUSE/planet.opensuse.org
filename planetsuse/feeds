@@ -1348,3 +1348,10 @@ feed 15m http://softwarelivre.org/usesuse/blog/feed
     define_connect 102
     define_lang pt
 
+feed 15m http://www.sebastian-siebert.de/feed/
+    define_name Sebastian Siebert
+    define_irc Freespacer
+    define_connect 212
+    define_lang de
+    define_member 1
+
