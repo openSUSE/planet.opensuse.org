@@ -1342,3 +1342,9 @@ feed 15m http://ifup.org/complete.xml
     define_member 1
     define_face brandon_philips
 
+feed 15m http://softwarelivre.org/usesuse/blog/feed
+    define_name Carlos Ribeiro
+    define_irc CarlosRibeiro
+    define_connect 102
+    define_lang pt
+
