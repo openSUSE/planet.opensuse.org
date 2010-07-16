@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2010-04-22 21:22+0200\n"
+"PO-Revision-Date: 2010-07-16 12:08+0200\n"
 "Last-Translator: Dinar Valeev\n"
 "Language-Team: RU <ry@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -60,10 +60,10 @@ msgstr ""
 #: planetsuse/planet_template.html:75 planetsuse/feedlist_template.html:60
 msgid ""
 "To have your blog added to this aggregator, please read <a href=\"http://en."
-"opensuse.org/PlanetSUSE\">the instructions</a>."
+"opensuse.org/openSUSE:Planet\">the instructions</a>."
 msgstr ""
 "Для того чтобы добавить ваш блог в агрегатор, пожалуйста прочтите <a href="
-"\"http://old-en.opensuse.org/PlanetSUSE\">инструкцию</a>."
+"\"http://en.opensuse.org/openSUSE:Planet\">инструкцию</a>."
 
 #: planetsuse/planet_template.html:79
 msgid "Languages"

@@ -43,7 +43,7 @@ msgid "This is a feed aggregator that collects what <a href=\"http://www.opensus
 msgstr ""
 
 #: planetsuse/planet_template.html:75 planetsuse/feedlist_template.html:60
-msgid "To have your blog added to this aggregator, please read <a href=\"http://en.opensuse.org/PlanetSUSE\">the instructions</a>."
+msgid "To have your blog added to this aggregator, please read <a href=\"http://en.opensuse.org/openSUSE:Planet\">the instructions</a>."
 msgstr ""
 
 #: planetsuse/planet_template.html:79

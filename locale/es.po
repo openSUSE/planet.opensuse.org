@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2010-04-17 19:14+0200\n"
+"PO-Revision-Date: 2010-07-16 12:07+0200\n"
 "Last-Translator: Javier Llorente <javier@opensuse.org>\n"
 "Language-Team: Spanish <opensuse-translation-es@opensuse.org>\n"
 "MIME-Version: 1.0\n"
@@ -66,10 +66,10 @@ msgstr ""
 #: planetsuse/planet_template.html:75 planetsuse/feedlist_template.html:60
 msgid ""
 "To have your blog added to this aggregator, please read <a href=\"http://en."
-"opensuse.org/PlanetSUSE\">the instructions</a>."
+"opensuse.org/openSUSE:Planet\">the instructions</a>."
 msgstr ""
 "Para que añadan tu blog en esta agrupación, por favor lee <a href=\"http://"
-"old-en.opensuse.org/PlanetSUSE\">las instrucciones</a>."
+"en.opensuse.org/openSUSE:Planet\">las instrucciones</a>."
 
 #: planetsuse/planet_template.html:79
 msgid "Languages"
