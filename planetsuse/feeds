@@ -602,9 +602,6 @@ feed 15m http://lizards.opensuse.org/author/jdsn/feed/
 #	define_name Kevin Dupuy
 #	define_irc  KevinYo
 
-feed 15m http://lizards.opensuse.org/author/marcusmoeller/feed/
-	define_name Marcus Moeller
-
 feed 15m http://lizards.opensuse.org/author/helcaraxe/feed/
 	define_name Jan-Christoph Bornschlegel
 
@@ -1274,8 +1271,15 @@ feed 15m http://cabelovivaolinux.wordpress.com/feed/
     define_irc  cabelo
     define_lang pt
 
-feed 15m http://www.marcus-moeller.de/feed
+feed 15m http://www.marcus-moeller.de/suse/feed
     define_name Marcus Moeller
+    define_irc  marcus_
+    define_connect 142
+    define_lang de
+    define_face marcusmoeller
+
+feed 15m http://lizards.opensuse.org/author/marcusmoeller/feed/
+	define_name Marcus Moeller
     define_irc  marcus_
     define_connect 142
     define_lang de
