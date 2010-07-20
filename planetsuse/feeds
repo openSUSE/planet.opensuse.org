@@ -1359,4 +1359,9 @@ feed 15m http://aviv.pp.ua/blog/feed/
     define_name Valery Gornih
     define_lang ru
 
+feed 15m http://www.kroah.com/log/index.rss
+    define_name Greg Kroah-Hartman
+    define_face gkh
+    define_member 1
+    define_irc gregkh
 
