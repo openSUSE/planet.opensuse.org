@@ -1000,6 +1000,15 @@ feed 15m http://blog.reblochon.org/feeds/posts/default
 feed 15m http://lizards.opensuse.org/author/alexbariv/feed/
 	define_name Alex Barrios
 	define_irc  alexbariv
+    define_face alex_barrios
+    define_member 1
+
+feed 15m http://blog.alexbariv.com/feed/
+	define_name Alex Barrios
+	define_irc  alexbariv
+    define_face alex_barrios
+    define_member 1
+    define_lang es
 
 feed 15m http://lizards.opensuse.org/author/saigkill/feed/
 	define_name Sascha Manns
