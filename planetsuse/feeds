@@ -1369,3 +1369,12 @@ feed 15m http://www.kroah.com/log/index.rss
     define_member 1
     define_irc gregkh
 
+feed 15m http://alexqwesa.blogspot.com/feeds/posts/default/-/opensuse
+    define_name Alexander Savin
+    define_lang ru
+
+feed 15m http://cherkasof.blogspot.com/feeds/posts/default/
+    define_name Anton Cherkasov
+    define_lang ru
+    define_connect 68
+
