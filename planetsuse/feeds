@@ -1336,3 +1336,9 @@ feed 15m http://cherkasof.blogspot.com/feeds/posts/default/
 feed 15m http://web.natur.cuni.cz/~zeisek/cs/taxonomy/term/27/0/feed
 	define_name Vojtěch Zeisek
 	define_lang cs
+
+feed 15m http://sakananote2.blogspot.com/feeds/posts/default
+    define_name Chun-Hung "sakana" Huang
+    define_irc sakana
+    define_lang tw
+
