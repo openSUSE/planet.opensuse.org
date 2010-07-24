@@ -1341,4 +1341,6 @@ feed 15m http://sakananote2.blogspot.com/feeds/posts/default
     define_name Chun-Hung "sakana" Huang
     define_irc sakana
     define_lang tw
+    define_face sakana
+
 
