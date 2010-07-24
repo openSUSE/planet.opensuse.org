@@ -57,6 +57,8 @@ feed 15m http://andreasjaeger.blogspot.com/feeds/posts/full
 feed 15m http://lizards.opensuse.org/author/a_jaeger/feed/
 	define_name Andreas Jaeger
 	define_face aj
+	define_irc  AJaeger
+	define_member 1
 
 feed 15m http://marcusmeissner.livejournal.com/data/rss
 	define_name Marcus Meissner
@@ -111,7 +113,7 @@ feed 15m http://metaverse.wordpress.com/feed/atom/
 
 feed 15m http://www.kdedevelopers.org/blog/280/feed
 	define_name Lubos Lunak
-	define_irc  Seli
+	define_irc  llunak
 	define_member 1
 
 feed 15m http://antjefaber.blogspot.com/feeds/posts/full
@@ -120,6 +122,7 @@ feed 15m http://antjefaber.blogspot.com/feeds/posts/full
 feed 15m http://www.kdedevelopers.org/blog/457/feed
 	define_name Stephan Binner
 	define_irc  Beineri
+	define_member 1
 
 feed 15m http://lizards.opensuse.org/author/coolo/feed/
 	define_name Stephan Kulow
@@ -130,6 +133,8 @@ feed 15m http://lizards.opensuse.org/author/coolo/feed/
 feed 15m http://www.kdedevelopers.org/blog/124/feed
 	define_name Stephan Kulow
 	define_face coolo
+	define_irc  coolo
+	define_member 1
 
 feed 15m http://rschiele.blogspot.com/feeds/posts/full
 	define_name Robert Schiele
@@ -180,6 +185,7 @@ feed 15m http://jprosevear.org/blog/?feed=rss2
 	define_name JP Rosevear
 	define_face http://planet.gnome.org/heads/jpr.png
 	define_irc  jpr
+	define_member 1
 
 feed 15m http://www.kroah.com/log/index.rss
 	define_name Greg Kroah-Hartman
@@ -191,13 +197,15 @@ feed 15m http://lizards.opensuse.org/author/mlasars/feed/
 
 feed 15m http://www.kdedevelopers.org/blog/77/feed
 	define_name Will Stephenson
+	define_face wstephenson
 	define_irc  wstephenson
 	define_member 1
-	define_face wstephenson
 
 feed 15m http://lizards.opensuse.org/author/wstephenson/feed/
 	define_name Will Stephenson
 	define_face wstephenson
+	define_irc  wstephenson
+	define_member 1
 
 feed 15m http://blog.cryptomilch.de/?feed=rss2
 	define_name Daniel Gollub
@@ -288,6 +296,7 @@ feed 15m http://foodformonkeys.blogspot.com/feeds/posts/default
 feed 15m http://kkaempf.blogspot.com/feeds/posts/default
 	define_name Klaus Kämpf
 	define_irc  kkaempf
+	define_member 1
 
 feed 15m http://news.opensuse.org/feed/
 	define_name openSUSE News
@@ -355,6 +364,8 @@ feed 15m http://www.wafaa.eu/tag/blog?output=rss
 feed 15m http://lizards.opensuse.org/author/funkypenguin/feed/
 	define_name Andrew Wafaa
 	define_face wafaa
+	define_irc  FunkyPenguin
+	define_member 1
 
 feed 15m http://feeds.feedburner.com/sontek
 	define_name John Anderson
@@ -432,6 +443,7 @@ feed 15m http://blog.cboltz.de/feeds/categories/6-english.rss
 
 feed 15m http://blog.cboltz.de/rss.xml
 	define_name Christian Boltz
+	define_member 1
 	define_lang de
 
 feed 15m http://www.vuntz.net/journal/feed/en/rss2
@@ -446,6 +458,7 @@ feed 15m http://gabrielstein.org/blog/?feed=rss2
 
 feed 15m http://visnov.blogspot.com/feeds/posts/default
 	define_name Stanislav Visnovsky
+	define_irc visnov
 	define_member 1
 
 feed 15m http://blog.fnmueller.de/feed/atom/
@@ -476,6 +489,7 @@ feed 15m http://seife.kernalert.de/blog/feed/
 
 feed 15m http://www.digitalflow.de/module/blog/rss.php?ver=2&num=5&sectionid=4
 	define_name Thomas Schmidt
+	define_irc digitltom
 	define_member 1
 
 feed 15m http://jeffreystedfast.blogspot.com/feeds/posts/default
@@ -492,6 +506,7 @@ feed 15m http://automorphic.blogspot.com/feeds/posts/default
 
 feed 15m http://jniq.blogspot.com/feeds/posts/default
 	define_name Jan Kupec
+	define_irc jniq
 	define_member 1
 
 feed 15m http://cameronseader.blogspot.com/feeds/posts/default
@@ -608,10 +623,12 @@ feed 15m http://lizards.opensuse.org/author/rhorstkoetter/feed/
 
 feed 15m http://lizards.opensuse.org/author/michal-m/feed/
 	define_name Michal Marek
+	define_irc mmarek
 	define_member 1
 
 feed 15m http://lizards.opensuse.org/author/lnussel/feed/
 	define_name Ludwig Nussel
+	define_irc lnussel
 	define_member 1
 
 feed 15m http://lizards.opensuse.org/author/schubi2/feed/
@@ -646,6 +663,7 @@ feed 15m http://lizards.opensuse.org/author/anubisg1/feed/
 
 feed 15m http://lizards.opensuse.org/author/visnov/feed/
 	define_name Stanislav Visnovsky
+	define_irc visnov
 	define_member 1
 
 feed 15m http://lizards.opensuse.org/author/sh-sh-sh/feed/
@@ -653,6 +671,7 @@ feed 15m http://lizards.opensuse.org/author/sh-sh-sh/feed/
 
 feed 15m http://lizards.opensuse.org/author/pmladek/feed/
 	define_name Petr Mladek
+	define_irc pmladek
 
 feed 15m http://lizards.opensuse.org/author/martinmohring/feed/
 	define_name Martin Mohring
@@ -778,6 +797,7 @@ feed 15m http://lizards.opensuse.org/author/jnweiger/feed/
 
 feed 15m http://lizards.opensuse.org/author/mvyskocil/feed/
 	define_name Michal Vyskocil
+	define_irc mvyskocil
 	define_member 1
 
 feed 15m http://bornkessel.com/kesselblog/?feed=atom&cat=3
@@ -858,6 +878,8 @@ feed 15m http://bolta-gecko.blogspot.com/feeds/posts/default
 
 feed 15m http://michal.hrusecky.net/data/xml/blog.Linux-openSUSE.rss
 	define_name Michal Hrusecky
+	define_irc |miska|
+	define_member 1
 
 feed 15m http://lizards.opensuse.org/author/ricardovarassantana/feed/
 	define_name Ricardo Varas Santana
@@ -924,6 +946,7 @@ feed 15m http://lizards.opensuse.org/author/sjayaraman/feed/
 
 feed 15m http://desire.sk/simple/suse_blog
 	define_name Michal Seben
+	define_irc mseben
 
 feed 15m http://lizards.opensuse.org/author/puzel/feed/
 	define_name Petr Uzel
@@ -955,6 +978,7 @@ feed 15m http://lizards.opensuse.org/author/spyhawk/feed/
 
 feed 15m http://infragments.blogspot.com/feeds/posts/default
 	define_name Lukas Lipavsky
+	define_irc llipavsky
 
 feed 15m http://feeds.feedburner.com/Karl-tux-stadtOpensuse
 	define_name Sirko Kemter
@@ -1335,12 +1359,11 @@ feed 15m http://cherkasof.blogspot.com/feeds/posts/default/
 
 feed 15m http://web.natur.cuni.cz/~zeisek/cs/taxonomy/term/27/0/feed
 	define_name Vojtěch Zeisek
+	define_irc Vojtaeus
 	define_lang cs
 
 feed 15m http://sakananote2.blogspot.com/feeds/posts/default
-    define_name Chun-Hung "sakana" Huang
-    define_irc sakana
-    define_lang tw
-    define_face sakana
-
-
+	define_name Chun-Hung "sakana" Huang
+	define_irc sakana
+	define_lang tw
+	define_face sakana
