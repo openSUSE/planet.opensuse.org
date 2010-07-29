@@ -1343,4 +1343,24 @@ feed 15m http://sakananote2.blogspot.com/feeds/posts/default
     define_lang tw
     define_face sakana
 
+feed 15m http://swyear.blogspot.com/feeds/posts/default?alt=rss
+    define_name Ray Chen
+    define_irc swyear
+    define_member 1
+    define_lang tw
+
+feed 15m http://figaro.neo-info.net/?feed=rss2
+    define_name Cheng-Ho Yang
+    define_lang tw
+    define_face cheng_ho_yang
+
+feed 15m http://nowwhatthe.blogspot.com/feeds/posts/default
+    define_name Jos Poortvliet
+    define_face jospoortvliet
+    define_irc jospoortvliet
+
+feed 15m http://feeds.feedburner.com/omgsuse
+    define_name R. Tyler Ballance
+    define_nick rtyler
+    define_face omgsuse_rtyler.png
 
