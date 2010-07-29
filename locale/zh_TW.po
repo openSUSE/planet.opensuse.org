@@ -1,0 +1,188 @@
+#: planetsuse/planet_template.html:8
+msgid "Aggregation of the blogs of openSUSE contributors"
+msgstr "openSUSE 貢獻者們的部落格整合"
+
+#: planetsuse/planet_template.html:28 planetsuse/planet_template.html:33
+msgid "Subscriptions"
+msgstr "訂閱"
+
+#: planetsuse/planet_template.html:29
+msgid "Subscriptions (all languages)"
+msgstr "訂閱(所有語言)"
+
+#: planetsuse/planet_template.html:31 planetsuse/planet_template.html:32 planetsuse/planet_template.html:91
+msgid "all languages"
+msgstr "所有語言"
+
+#: planetsuse/planet_template.html:42
+msgid "Downloads"
+msgstr "下載"
+
+#: planetsuse/planet_template.html:43
+msgid "Support"
+msgstr "支援"
+
+#: planetsuse/planet_template.html:44
+msgid "Community"
+msgstr "社群"
+
+#: planetsuse/planet_template.html:45
+msgid "Development"
+msgstr "開發"
+
+#: planetsuse/planet_template.html:52 planetsuse/planet_template.html:97
+msgid "Overview"
+msgstr "導覽"
+
+#: planetsuse/planet_template.html:68 planetsuse/feedlist_template.html:53
+msgid "Welcome to Planet openSUSE"
+msgstr "歡迎光臨 Planet openSUSE"
+
+#: planetsuse/planet_template.html:70
+msgid "This is a feed aggregator that collects what <a href=\"http://www.opensuse.org\">openSUSE</a> contributors are writing in their respective blogs."
+msgstr "這是一個訊息來源(feed)整合，收集了 <a href=\"http://www.opensuse.org\">openSUSE</a> 貢獻者在他們個人部落格中的文章"
+
+#: planetsuse/planet_template.html:75 planetsuse/feedlist_template.html:60
+msgid "To have your blog added to this aggregator, please read <a href=\"http://en.opensuse.org/openSUSE:Planet\">the instructions</a>."
+msgstr "要將您的部落格加入此整合中，請參閱<a href=\"http://en.opensuse.org/openSUSE:Planet\">此指引</a>。"
+
+#: planetsuse/planet_template.html:79
+msgid "Languages"
+msgstr "語言"
+
+#: planetsuse/planet_template.html:81
+msgid "English"
+msgstr "英文"
+
+#: planetsuse/planet_template.html:82
+msgid "German"
+msgstr "德文"
+
+#: planetsuse/planet_template.html:83
+msgid "Spanish"
+msgstr "西班牙文"
+
+#: planetsuse/planet_template.html:84
+msgid "Portuguese"
+msgstr "葡萄牙文"
+
+#: planetsuse/planet_template.html:85
+msgid "Polish"
+msgstr "波蘭文"
+
+#: planetsuse/planet_template.html:86
+msgid "Japanese"
+msgstr "日文"
+
+#: planetsuse/planet_template.html:87
+msgid "Indonesian"
+msgstr "印尼文"
+
+#: planetsuse/planet_template.html:88
+msgid "Russian"
+msgstr "俄文"
+
+#: planetsuse/planet_template.html:89
+msgid "Czech"
+msgstr "捷克文"
+
+#: planetsuse/planet_template.html:90
+msgid "Taiwanese"
+msgstr "中文"
+
+#: planetsuse/planet_template.html:94 planetsuse/feedlist_template.html:64
+msgid "Actions"
+msgstr "操作"
+
+#: planetsuse/planet_template.html:96 planetsuse/planet_template.html:111
+msgid "Keyboard shortcuts"
+msgstr "鍵盤捷徑"
+
+#: planetsuse/planet_template.html:98
+msgid "Feed list"
+msgstr "訊息來源(feed)清單"
+
+#: planetsuse/planet_template.html:101 planetsuse/feedlist_template.html:71
+msgid "Metadata"
+msgstr "中繼資訊"
+
+#: planetsuse/planet_template.html:113
+msgid "toggle overview"
+msgstr "開啟/關閉導覽"
+
+#: planetsuse/planet_template.html:114
+msgid "toggle help (this)"
+msgstr "開啟/關閉說明(就是這個)"
+
+#: planetsuse/planet_template.html:115
+msgid "next post"
+msgstr "後一篇文章"
+
+#: planetsuse/planet_template.html:116
+msgid "previous post"
+msgstr "前一篇文章"
+
+#: planetsuse/planet_template.html:117
+msgid "next day"
+msgstr "後一天的文章"
+
+#: planetsuse/planet_template.html:118
+msgid "previous day"
+msgstr "前一天的文章"
+
+#: planetsuse/planet_template.html:119
+msgid "go to top"
+msgstr "回到頂端"
+
+#: planetsuse/planet_template.html:120
+msgid "cancel"
+msgstr "取消"
+
+#: planetsuse/planet_template.html:122
+msgid "Note that you may use those keys with or without pressing the <span class=\"key\">alt</span> key."
+msgstr "提醒您，這些快速鍵您可以搭配或不搭配按 <span class=\"key\">alt</span> 鍵。"
+
+#: planetsuse/planet_template.html:152
+msgid "Current blog entries"
+msgstr "現在的部落格內容"
+
+#: planetsuse/planet_template.html:154
+msgid "Older blog entries"
+msgstr "較舊的部落格內容"
+
+#: planetsuse/planet_template.html:168 planetsuse/feedlist_template.html:120
+msgid "Pascal Bleser and the openSUSE Community"
+msgstr "Pascal Bleser 和 openSUSE 社群"
+
+#: planetsuse/planet_template.html:171 planetsuse/feedlist_template.html:123
+msgid "This site is not an official openSUSE website, and is not in any way affiliated with or endorsed by SUSE Linux GmbH or Novell."
+msgstr "這個站台不是 openSUSE 官方網站，而且完全不附屬於也不是由 SUSE Linux GmbH 或 Novell 支持贊助。"
+
+#: planetsuse/planet_template.html:176 planetsuse/feedlist_template.html:128
+msgid "openSUSE and SUSE are trademarks of Novell, Inc. in the United States and other countries."
+msgstr "openSUSE 和 SUSE 為 Novell Inc. 的商標，在美國以及其他國家。"
+
+#: planetsuse/feedlist_template.html:55
+msgid "This page contains the list of all the <a href=\"http://www.opensuse.org\">openSUSE</a> contributors who are aggregated on <a href=\"./\">Planet openSUSE</a>."
+msgstr "此頁面為所有整合在 <a href=\"./\">Planet openSUSE</a> 的 <a href=\"http://www.opensuse.org\">openSUSE</a> 貢獻者的清單。"
+
+#: planetsuse/feedlist_template.html:66
+msgid "Back to Planet openSUSE"
+msgstr "回到 Planet openSUSE"
+
+#: planetsuse/feedlist_template.html:68
+msgid "Show all feeds"
+msgstr "顯示所有訊息來源(feed)"
+
+#: planetsuse/feedlist_template.html:81
+msgid "Aggregated feeds"
+msgstr "整合的訊息來源(feed)"
+
+#: planetsuse/code.html:8
+msgid "_DATE_FORMAT_"
+msgstr "%Y年%m月%d日"
+
+#: planetsuse/code.html:9
+msgid "read more"
+msgstr "繼續閱讀"
+
