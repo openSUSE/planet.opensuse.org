@@ -223,7 +223,7 @@ msgstr "Agregované zdroje"
 
 #: planetsuse/code.html:8
 msgid "_DATE_FORMAT_"
-msgstr "_DATE_FORMAT_"
+msgstr "%d. %B %Y"
 
 #: planetsuse/code.html:9
 msgid "read more"
