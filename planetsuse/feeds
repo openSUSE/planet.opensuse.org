@@ -1395,8 +1395,8 @@ feed 15m http://www.opensuse.cz/node/feed
 	define_name openSUSE.cz
 	define_face opensusecz.png
 
-feed 15m http://cervajz.com/data/xml/blog.linux.rss
-	define_lang cs
-	define_name Jaromír Červenka
-	define_nick Cervajz
-	define_face cervajz.jpg
+#feed 15m http://cervajz.com/data/xml/blog.linux.rss
+#	define_lang cs
+#	define_name Jaromír Červenka
+#	define_nick Cervajz
+#	define_face cervajz.jpg
