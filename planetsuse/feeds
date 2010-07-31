@@ -1361,31 +1361,41 @@ feed 15m http://web.natur.cuni.cz/~zeisek/cs/taxonomy/term/27/0/feed
 	define_name Vojtěch Zeisek
 	define_irc Vojtaeus
 	define_lang cs
+	define_face vojtaeus.jpg
 
 feed 15m http://sakananote2.blogspot.com/feeds/posts/default
-    define_name Chun-Hung "sakana" Huang
-    define_irc sakana
-    define_lang tw
-    define_face sakana
+	define_name Chun-Hung "sakana" Huang
+	define_irc sakana
+	define_lang tw
+	define_face sakana
 
 feed 15m http://swyear.blogspot.com/feeds/posts/default?alt=rss
-    define_name Ray Chen
-    define_irc swyear
-    define_member 1
-    define_lang tw
+	define_name Ray Chen
+	define_irc swyear
+	define_member 1
+	define_lang tw
 
 feed 15m http://figaro.neo-info.net/?feed=rss2
-    define_name Cheng-Ho Yang
-    define_lang tw
-    define_face cheng_ho_yang
+	define_name Cheng-Ho Yang
+	define_lang tw
+	define_face cheng_ho_yang
 
 feed 15m http://nowwhatthe.blogspot.com/feeds/posts/default
-    define_name Jos Poortvliet
-    define_face jospoortvliet
-    define_irc jospoortvliet
+	define_name Jos Poortvliet
+	define_face jospoortvliet
+	define_irc jospoortvliet
 
 feed 15m http://feeds.feedburner.com/omgsuse
     define_name OMG!SUSE! team
-    define_nick rtyler
     define_face omgsuse_rtyler.png
 
+feed 15m http://www.opensuse.cz/node/feed
+	define_lang cs
+	define_name openSUSE.cz
+	define_face opensusecz.png
+
+#feed 15m http://cervajz.com/data/xml/blog.linux.rss
+#	define_lang cs
+#	define_name Jaromír Červenka
+#	define_nick Cervajz
+#	define_face cervajz.jpg
