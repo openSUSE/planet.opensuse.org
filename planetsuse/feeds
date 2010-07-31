@@ -1385,7 +1385,7 @@ feed 15m http://nowwhatthe.blogspot.com/feeds/posts/default
     define_irc jospoortvliet
 
 feed 15m http://feeds.feedburner.com/omgsuse
-    define_name R. Tyler Ballance
+    define_name OMG!SUSE! team
     define_nick rtyler
     define_face omgsuse_rtyler.png
 
