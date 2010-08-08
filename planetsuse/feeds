@@ -1411,3 +1411,9 @@ feed 15m http://vavai.com/category/linux/feed
     define_member 1
     define_lang id
 
+feed 15m http://www.matthewehle.info/blog/?tag=opensuse&feed=rss2
+    define_name Matthew Ehle
+    define_irc  mehle
+    define_member 1
+    define_face matthew_ehle
+
