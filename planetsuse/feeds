@@ -1405,3 +1405,9 @@ feed 15m http://ungethym.blogspot.com/search/label/opensuse
     define_irc  ungethym
     define_face thomas_thym
 
+feed 15m http://vavai.com/category/linux/feed
+    define_name Masim Vavai Sugianto
+    define_irc  vavai
+    define_member 1
+    define_lang id
+
