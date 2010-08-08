@@ -1399,3 +1399,9 @@ feed 15m http://www.opensuse.cz/node/feed
 #	define_name Jaromír Červenka
 #	define_nick Cervajz
 #	define_face cervajz.jpg
+
+feed 15m http://ungethym.blogspot.com/search/label/opensuse
+    define_name Thomas Thym
+    define_irc  ungethym
+    define_face thomas_thym
+
