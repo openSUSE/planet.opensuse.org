@@ -26,7 +26,7 @@ msgid "Subscriptions (all languages)"
 msgstr "Přihlášení se k odběru (všechny jazyky)"
 
 #: planetsuse/planet_template.html:31 planetsuse/planet_template.html:32
-#: planetsuse/planet_template.html:91
+#: planetsuse/planet_template.html:92
 msgid "all languages"
 msgstr "všechny jazyky"
 
@@ -46,7 +46,7 @@ msgstr "Komunita"
 msgid "Development"
 msgstr "Vývoj"
 
-#: planetsuse/planet_template.html:52 planetsuse/planet_template.html:97
+#: planetsuse/planet_template.html:52 planetsuse/planet_template.html:98
 msgid "Overview"
 msgstr "Přehled"
 
@@ -115,55 +115,59 @@ msgstr "Čeština"
 msgid "Taiwanese"
 msgstr "Japonština"
 
-#: planetsuse/planet_template.html:94 planetsuse/feedlist_template.html:64
+#: planetsuse/planet_template.html:91
+msgid "Romanian"
+msgstr ""
+
+#: planetsuse/planet_template.html:95 planetsuse/feedlist_template.html:64
 msgid "Actions"
 msgstr "Akce"
 
-#: planetsuse/planet_template.html:96 planetsuse/planet_template.html:111
+#: planetsuse/planet_template.html:97 planetsuse/planet_template.html:112
 msgid "Keyboard shortcuts"
 msgstr "Klávesové zkratky"
 
-#: planetsuse/planet_template.html:98
+#: planetsuse/planet_template.html:99
 msgid "Feed list"
 msgstr "Seznam zdrojů"
 
-#: planetsuse/planet_template.html:101 planetsuse/feedlist_template.html:71
+#: planetsuse/planet_template.html:102 planetsuse/feedlist_template.html:71
 msgid "Metadata"
 msgstr "Metadata"
 
-#: planetsuse/planet_template.html:113
+#: planetsuse/planet_template.html:114
 msgid "toggle overview"
 msgstr "přepnout přehled"
 
-#: planetsuse/planet_template.html:114
+#: planetsuse/planet_template.html:115
 msgid "toggle help (this)"
 msgstr "přepnout nápovědu (tuto)"
 
-#: planetsuse/planet_template.html:115
+#: planetsuse/planet_template.html:116
 msgid "next post"
 msgstr "další příspěvek"
 
-#: planetsuse/planet_template.html:116
+#: planetsuse/planet_template.html:117
 msgid "previous post"
 msgstr "předchozí příspěvek"
 
-#: planetsuse/planet_template.html:117
+#: planetsuse/planet_template.html:118
 msgid "next day"
 msgstr "další den"
 
-#: planetsuse/planet_template.html:118
+#: planetsuse/planet_template.html:119
 msgid "previous day"
 msgstr "předchozí den"
 
-#: planetsuse/planet_template.html:119
+#: planetsuse/planet_template.html:120
 msgid "go to top"
 msgstr "jdi nahoru"
 
-#: planetsuse/planet_template.html:120
+#: planetsuse/planet_template.html:121
 msgid "cancel"
 msgstr "zrušit"
 
-#: planetsuse/planet_template.html:122
+#: planetsuse/planet_template.html:123
 msgid ""
 "Note that you may use those keys with or without pressing the <span class="
 "\"key\">alt</span> key."
@@ -171,19 +175,19 @@ msgstr ""
 "Povšimněte si, že můžete použít tyto klávesy s i bez současného držení "
 "klávesy <span class=\"key\">alt</span>."
 
-#: planetsuse/planet_template.html:152
+#: planetsuse/planet_template.html:153
 msgid "Current blog entries"
 msgstr "Současné příspěvky v blogu"
 
-#: planetsuse/planet_template.html:154
+#: planetsuse/planet_template.html:155
 msgid "Older blog entries"
 msgstr "Starší příspěvky v blogu"
 
-#: planetsuse/planet_template.html:168 planetsuse/feedlist_template.html:120
+#: planetsuse/planet_template.html:169 planetsuse/feedlist_template.html:120
 msgid "Pascal Bleser and the openSUSE Community"
 msgstr "Pascal Bleser a komunita openSUSE"
 
-#: planetsuse/planet_template.html:171 planetsuse/feedlist_template.html:123
+#: planetsuse/planet_template.html:172 planetsuse/feedlist_template.html:123
 msgid ""
 "This site is not an official openSUSE website, and is not in any way "
 "affiliated with or endorsed by SUSE Linux GmbH or Novell."
@@ -191,7 +195,7 @@ msgstr ""
 "Tento web není oficiálním webem openSUSE a není žádným způsobem spojený nebo "
 "schválený společnostmi SUSE Linux GmbH nebo Novell."
 
-#: planetsuse/planet_template.html:176 planetsuse/feedlist_template.html:128
+#: planetsuse/planet_template.html:177 planetsuse/feedlist_template.html:128
 msgid ""
 "openSUSE and SUSE are trademarks of Novell, Inc. in the United States and "
 "other countries."
