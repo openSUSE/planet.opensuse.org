@@ -1424,4 +1424,7 @@ feed 15m http://www.suseromania.ro/tag/softwareliber/feed/
     define_face lucian_oprea
     define_lang ro
 
-
+feed 15m http://lizards.opensuse.org/author/badshah400/feed/
+    define_name Atri Bhattacharya
+    define_irc  badshah400
+    define_member 1
