@@ -1144,11 +1144,13 @@ feed 15m http://opensusebr.blogspot.com/feeds/posts/default
 	define_name Fábio Faria
 	define_lang pt
 
-feed 15m http://rauhmaru.blogspot.com/feeds/posts/default
-	define_name Raul Libório
-	define_face rauhmaru
-	define_irc  rauhmaru
-	define_lang pt
+# disabled because of sexist content:
+# http://rauhmaru.blogspot.com/2010/08/parabens-opensuse-5-anos-de-vida.html
+#feed 15m http://rauhmaru.blogspot.com/feeds/posts/default
+#	define_name Raul Libório
+#	define_face rauhmaru
+#	define_irc  rauhmaru
+#	define_lang pt
 
 feed 15m http://mrcliq.freehostia.com/?feed=rss2
 	define_name Márcio Riccardo
