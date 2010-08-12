@@ -76,7 +76,7 @@ feed 15m http://ct.kki.org/blog/feed/
 	define_irc  cthiel
 	define_member 1
 
-feed 15m http://www.rosenauer.org/blog/feed/
+feed 15m http://www.rosenauer.org/blog/category/suse/feed/
 	define_name Wolfgang Rosenauer
 	define_irc  WolfiR
 	define_member 1
