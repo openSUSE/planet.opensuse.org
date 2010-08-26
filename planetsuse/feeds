@@ -1436,3 +1436,13 @@ feed 15m http://anditosan.blogspot.com/feeds/posts/default?alt=rss
     define_irc  anditosan
     define_member 1
 
+feed 15m http://nmarques.digitalwhores.net/category/opensuse/feed/
+    define_name Nelson Marques
+    define_irc  nmarques
+    define_face nmarques
+feed 15m http://nmarques.digitalwhores.net/category/opensuse-pt/feed/
+    define_name Nelson Marques
+    define_irc  nmarques
+    define_face nmarques
+    define_lang pt
+
