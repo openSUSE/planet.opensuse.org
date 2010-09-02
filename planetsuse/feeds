@@ -311,7 +311,7 @@ feed 15m http://psankar.blogspot.com/feeds/posts/default/-/suse
 feed 15m http://chenthill.wordpress.com/category/suse/feed/atom/
 	define_name Chenthill P
 
-feed 15m http://pavelmachek.livejournal.com/data/rss
+feed 15m http://pavelmachek.livejournal.com/data/atom
 	define_name Pavel Machek
 
 #feed 15m http://ifup.org/category/suse/feed/
