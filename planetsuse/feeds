@@ -1205,6 +1205,7 @@ feed 15m http://antony-online.blogspot.com/feeds/posts/default/-/opensuse
 	define_name Antony Reznik
 	define_irc  t0xa
 	define_lang ru
+    define_member 1
 
 feed 15m http://clangprogramming.blogspot.com/feeds/posts/default
 	define_name Alexey Bovanenko
@@ -1354,6 +1355,7 @@ feed 15m http://www.kroah.com/log/index.rss
 feed 15m http://alexqwesa.blogspot.com/feeds/posts/default/-/opensuse
 	define_name Alexander Savin
 	define_lang ru
+    define_member 1
 
 feed 15m http://cherkasof.blogspot.com/feeds/posts/default/
 	define_name Anton Cherkasov
