@@ -46,6 +46,7 @@ for lc in en_US de_DE es_ES pl_PL pt_PT ja_JP id_ID ru_RU cs_CZ zh_TW=tw ro_RO; 
     TZ=UTC \
     ./rawdog -d planetsuse/ \
         --lang="$lang" \
+        --locale="$lc" \
         --output-dir=website/"$lang" \
         --write
 done

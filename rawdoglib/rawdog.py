@@ -1424,6 +1424,7 @@ Usage: rawdog [OPTION]...
 General options (use only once):
 -d|--dir DIR                 Use DIR instead of ~/.rawdog
 -l|--lang LANG               language filter
+-L|--locale LOCALE           locale to use to lookup translations
 -v, --verbose                Print more detailed status information
 -N, --no-locking             Do not lock the state file
 --help                       Display this help and exit
@@ -1522,6 +1523,7 @@ def main(argv):
 	parser.add_option('-d', '--dir',    action='store', type='string', dest='statedir')
 	parser.add_option('-N', '--no-locking', action='store_false', dest='locking')
 	parser.add_option('-l', '--lang', action='store', type='string', dest='lang')
+	parser.add_option('-L', '--locale', action='store', type='string', dest='locale')
 	parser.add_option('--output-dir', action='store', type='string', dest='output_dir')
 	parser.add_option('-o', '--output-file', action='store', type='string', dest='output_file')
 	parser.add_option('--no-feed-list', action='store_false', dest='feedlist', default=True)
@@ -1531,6 +1533,7 @@ def main(argv):
 	(options, args) = parser.parse_args()
 
 	config.lang = options.lang
+	config.locale = options.locale
 	config.no_feed_list = not options.feedlist
 	if options.output_file:
 		config["outputfile"] = options.output_file
@@ -1541,14 +1544,19 @@ def main(argv):
 
 	if options.op == "write":
 		global jinja_env
-		if config.lang:
-			gettext_langs = [config.lang, 'en']
-			lcall = config.lang
+		if config.locale:
+			gettext_langs = [config.locale, 'en']
+			lcall = config.locale
 		else:
 			gettext_langs = ['en']
 			lcall = 'en'
 		global translations
 		translations = gettext.translation('planetsuse', './locale', gettext_langs, fallback=True, codeset='UTF-8')
+		print
+		print "LOCALE: "
+		for x in gettext_langs:
+			print "- ", x
+			pass
 		jinja_env.install_gettext_translations(translations)
 
 		if options.output_dir:

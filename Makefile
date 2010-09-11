@@ -17,7 +17,7 @@ website/js/%.min.js:	website/js/%.js
 	$(COMPRESSOR) --type js --charset UTF-8 --verbose -o "$@" "$<"
 
 $(L10N_DIR)/%/LC_MESSAGES/$(DOMAIN).mo:	$(L10N_DIR)/%.po
-	mkdir -p $(dir $@) && msgfmt -o "$@" "$<"
+	mkdir -p $(dir $@) && msgfmt -c -o "$@" "$<"
 
 .DEFAULT:	all
 all:	minify l10n
