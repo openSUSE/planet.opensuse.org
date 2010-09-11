@@ -1552,11 +1552,6 @@ def main(argv):
 			lcall = 'en'
 		global translations
 		translations = gettext.translation('planetsuse', './locale', gettext_langs, fallback=True, codeset='UTF-8')
-		print
-		print "LOCALE: "
-		for x in gettext_langs:
-			print "- ", x
-			pass
 		jinja_env.install_gettext_translations(translations)
 
 		if options.output_dir:
