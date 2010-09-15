@@ -679,11 +679,6 @@ feed 15m http://lizards.opensuse.org/author/martinmohring/feed/
 feed 15m http://lizards.opensuse.org/author/dmitry_serpokryl/feed/
 	define_name Dmitry Serpokryl
 
-feed 15m http://feeds.feedburner.com/zdnet/community?format=xml
-	define_name Joe Brockmeier
-	define_irc  jbrockmeier
-	define_face zonker
-
 feed 15m http://www.dissociatedpress.net/category/opensuse/feed/
 	define_name Joe Brockmeier
 	define_irc  jbrockmeier
