@@ -367,10 +367,10 @@ feed 15m http://lizards.opensuse.org/author/funkypenguin/feed/
 	define_irc  FunkyPenguin
 	define_member 1
 
-feed 15m http://feeds.feedburner.com/sontek
-	define_name John Anderson
-	define_face sontek
-	define_irc  sontek
+#feed 15m http://feeds.feedburner.com/sontek
+#	define_name John Anderson
+#	define_face sontek
+#	define_irc  sontek
 
 feed 15m http://www.decriptor.com/?feed=rss2
 	define_name Stephen Shaw
