@@ -1447,4 +1447,7 @@ feed 15m http://opensuseambassadors.blogspot.com/feeds/posts/default
     define_name Greek openSUSE Ambassadors
     define_face greek_ambassadors
 
+feed 15m http://feeds.feedburner.com/SUSEware
+    define_name Manu Gupta
+    define_irc  manugupt1
 
