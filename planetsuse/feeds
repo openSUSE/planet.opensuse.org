@@ -1451,3 +1451,8 @@ feed 15m http://feeds.feedburner.com/SUSEware
     define_name Manu Gupta
     define_irc  manugupt1
 
+feed 15m http://binoinformatica.com/blog/?feed=rss2
+    define_name Albino Biasutti Neto
+    define_irc  bino
+    define_lang pt
+
