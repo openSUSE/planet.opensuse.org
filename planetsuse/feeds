@@ -1456,3 +1456,7 @@ feed 15m http://binoinformatica.com/blog/?feed=rss2
     define_irc  bino
     define_lang pt
 
+feed 15m http://gnurockreggae.blogspot.com/feeds/posts/default/-/opensuse
+    define_name Alexandre Moura
+    define_lang pt
+
