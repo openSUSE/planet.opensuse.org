@@ -1443,3 +1443,8 @@ feed 15m http://nmarques.digitalwhores.net/category/opensuse-pt/feed/
     define_face nmarques
     define_lang pt
 
+feed 15m http://opensuseambassadors.blogspot.com/feeds/posts/default
+    define_name Greek openSUSE Ambassadors
+    define_face greek_ambassadors
+
+
