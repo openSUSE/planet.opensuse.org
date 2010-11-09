@@ -1470,3 +1470,9 @@ feed 15m http://malayin.net/?feed=atom
     define_lang id
     define_irc  kurniawan-007
 
+feed 15m http://syvolc.briolet.fr/?feed=rss2
+    define_name Timothée Briolet
+    define_lang fr
+    define_irc  Syvolc
+
+

@@ -346,6 +346,7 @@ ul.menu {
 .lang-id,
 .lang-tw,
 .lang-ro,
+.lang-fr,
 .lang-all,
 .lang {
     padding-left: 20px !important;
@@ -369,6 +370,7 @@ ul.menu {
 .lang-id { background-image: url(../images/lang/id.png); }
 .lang-tw { background-image: url(../images/lang/tw.png); }
 .lang-ro { background-image: url(../images/lang/ro.png); }
+.lang-fr { background-image: url(../images/lang/fr.png); }
 .lang-all { background-image: url(../images/lang/_.png); }
 
 #current-entries:before { content: "\21E6\00A0"; }
