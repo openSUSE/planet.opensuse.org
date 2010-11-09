@@ -1465,4 +1465,8 @@ feed 15m http://blog.lotz1009.de/feed/
     define_lang de
     define_irc  lOtz1009
 
+feed 15m http://malayin.net/?feed=atom
+    define_name Bonnie Kurniawan
+    define_lang id
+    define_irc  kurniawan-007
 
