@@ -1475,4 +1475,8 @@ feed 15m http://syvolc.briolet.fr/?feed=rss2
     define_lang fr
     define_irc  Syvolc
 
-
+feed 15m https://saschpe.wordpress.com/category/opensource/suse/feed/
+    define_name Sascha Peilicke
+    define_irc  saschpe
+    define_member 1
+    define_face sascha_peilicke
