@@ -1485,3 +1485,8 @@ feed 15m http://oyranos-cms.blogspot.com/feeds/posts/default
     define_name Kai-Uwe Behrmann
     define_irc  oy
 
+feed 15m http://my.opera.com/avm-xandry/xml/rss/blog/
+    define_name Alexander Mityunin
+    define_irc  xandry
+    define_lang ru
+
