@@ -1,13 +1,13 @@
-feed 15m http://jamesthevicar.com/blog/?feed=rss2
-	define_name James Ogley
-	define_face james12
-	define_irc  Riggwelter
-	define_member 1
+#feed 15m http://jamesthevicar.com/blog/?feed=rss2
+#	define_name James Ogley
+#	define_face james12
+#	define_irc  Riggwelter
+#	define_member 1
 
-feed 15m http://nermal.org/feed
-	define_name Peter Prior
-	define_face nermal
-	define_irc  Nermal
+#feed 15m http://nermal.org/feed
+#	define_name Peter Prior
+#	define_face nermal
+#	define_irc  Nermal
 
 feed 15m http://www.lenzg.net/blog/feeds/categories/2-Linux.rss
 	define_name LenZ Grimmer
@@ -168,9 +168,9 @@ feed 15m http://jimmac.musichall.cz/log/?feed=rss2
 feed 15m http://feeds.ottleys.net/jaredottley?format=xml
 	define_name Jared Ottley
 
-feed 15m http://tirania.org/blog/miguel.rss2
-	define_name Miguel de Icaza
-	define_face http://planet.gnome.org/heads/miguel.png
+#feed 15m http://tirania.org/blog/miguel.rss2
+#	define_name Miguel de Icaza
+#	define_face http://planet.gnome.org/heads/miguel.png
 
 #feed 15m http://susediary.blogspot.com/feeds/posts/full
 #	define_name Graham Anderson
@@ -679,10 +679,10 @@ feed 15m http://lizards.opensuse.org/author/martinmohring/feed/
 feed 15m http://lizards.opensuse.org/author/dmitry_serpokryl/feed/
 	define_name Dmitry Serpokryl
 
-feed 15m http://www.dissociatedpress.net/category/opensuse/feed/
-	define_name Joe Brockmeier
-	define_irc  jbrockmeier
-	define_face zonker
+#feed 15m http://www.dissociatedpress.net/category/opensuse/feed/
+#	define_name Joe Brockmeier
+#	define_irc  jbrockmeier
+#	define_face zonker
 
 feed 15m http://lizards.opensuse.org/author/msmeissn/feed/
 	define_name Marcus Meissner
