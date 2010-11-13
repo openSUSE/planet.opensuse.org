@@ -1490,3 +1490,10 @@ feed 15m http://my.opera.com/avm-xandry/xml/rss/blog/
     define_irc  xandry
     define_lang ru
 
+feed 15m http://fisiu.fidano.pl/feed/atom/
+    define_name Mariusz Fik
+    define_irc  Fisiu
+    define_member 1
+    define_lang pl
+    define_face fisiu
+
