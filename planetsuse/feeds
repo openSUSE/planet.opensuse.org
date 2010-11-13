@@ -1460,9 +1460,13 @@ feed 15m http://gnurockreggae.blogspot.com/feeds/posts/default/-/opensuse
     define_name Alexandre Moura
     define_lang pt
 
-feed 15m http://blog.lotz1009.de/feed/
+feed 15m http://blog.lotz1009.de/tag/de/feed/
     define_name Lutz Thuns
     define_lang de
+    define_irc  lOtz1009
+feed 15m http://blog.lotz1009.de/tag/en/feed/
+    define_name Lutz Thuns
+    define_lang en
     define_irc  lOtz1009
 
 feed 15m http://malayin.net/?feed=atom
