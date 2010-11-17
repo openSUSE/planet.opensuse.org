@@ -22,7 +22,7 @@ msgid "Subscriptions (all languages)"
 msgstr "Subskrypcje (wszystkie języki)"
 
 #: planetsuse/planet_template.html:31 planetsuse/planet_template.html:32
-#: planetsuse/planet_template.html:92
+#: planetsuse/planet_template.html:94
 msgid "all languages"
 msgstr "wszystkie języki"
 
@@ -42,7 +42,7 @@ msgstr "Społeczność"
 msgid "Development"
 msgstr "Rozwój"
 
-#: planetsuse/planet_template.html:52 planetsuse/planet_template.html:98
+#: planetsuse/planet_template.html:52 planetsuse/planet_template.html:100
 msgid "Overview"
 msgstr "Przegląd"
 
@@ -79,91 +79,99 @@ msgid "German"
 msgstr "Niemiecki"
 
 #: planetsuse/planet_template.html:83
+msgid "French"
+msgstr ""
+
+#: planetsuse/planet_template.html:84
 msgid "Spanish"
 msgstr "Hiszpański"
 
-#: planetsuse/planet_template.html:84
+#: planetsuse/planet_template.html:85
 msgid "Portuguese"
 msgstr "Portugalski"
 
-#: planetsuse/planet_template.html:85
+#: planetsuse/planet_template.html:86
 msgid "Polish"
 msgstr "Polski"
 
-#: planetsuse/planet_template.html:86
+#: planetsuse/planet_template.html:87
 msgid "Japanese"
 msgstr "Japoński"
 
-#: planetsuse/planet_template.html:87
+#: planetsuse/planet_template.html:88
 msgid "Indonesian"
 msgstr ""
 
-#: planetsuse/planet_template.html:88
+#: planetsuse/planet_template.html:89
 msgid "Russian"
 msgstr ""
 
-#: planetsuse/planet_template.html:89
+#: planetsuse/planet_template.html:90
 msgid "Czech"
 msgstr ""
 
-#: planetsuse/planet_template.html:90
+#: planetsuse/planet_template.html:91
 #, fuzzy
 msgid "Taiwanese"
 msgstr "Japoński"
 
-#: planetsuse/planet_template.html:91
+#: planetsuse/planet_template.html:92
 msgid "Romanian"
 msgstr ""
 
-#: planetsuse/planet_template.html:95 planetsuse/feedlist_template.html:64
+#: planetsuse/planet_template.html:93
+msgid "Hungarian"
+msgstr ""
+
+#: planetsuse/planet_template.html:97 planetsuse/feedlist_template.html:64
 msgid "Actions"
 msgstr "Akcje"
 
-#: planetsuse/planet_template.html:97 planetsuse/planet_template.html:112
+#: planetsuse/planet_template.html:99 planetsuse/planet_template.html:114
 msgid "Keyboard shortcuts"
 msgstr "Skróty klawiszowe"
 
-#: planetsuse/planet_template.html:99
+#: planetsuse/planet_template.html:101
 msgid "Feed list"
 msgstr "Lista zasobów"
 
-#: planetsuse/planet_template.html:102 planetsuse/feedlist_template.html:71
+#: planetsuse/planet_template.html:104 planetsuse/feedlist_template.html:71
 msgid "Metadata"
 msgstr "Metadane"
 
-#: planetsuse/planet_template.html:114
+#: planetsuse/planet_template.html:116
 msgid "toggle overview"
 msgstr "przełącz pogląd"
 
-#: planetsuse/planet_template.html:115
+#: planetsuse/planet_template.html:117
 msgid "toggle help (this)"
 msgstr "przełącz pomoc (tę)"
 
-#: planetsuse/planet_template.html:116
+#: planetsuse/planet_template.html:118
 msgid "next post"
 msgstr "następny post"
 
-#: planetsuse/planet_template.html:117
+#: planetsuse/planet_template.html:119
 msgid "previous post"
 msgstr "poprzedni post"
 
-#: planetsuse/planet_template.html:118
+#: planetsuse/planet_template.html:120
 msgid "next day"
 msgstr "następny dzień"
 
-#: planetsuse/planet_template.html:119
+#: planetsuse/planet_template.html:121
 msgid "previous day"
 msgstr "poprzedni dzień"
 
-#: planetsuse/planet_template.html:120
+#: planetsuse/planet_template.html:122
 msgid "go to top"
 msgstr "idź do góry"
 
-#: planetsuse/planet_template.html:121
+#: planetsuse/planet_template.html:123
 msgid "cancel"
 msgstr "anuluj"
 
-#: planetsuse/planet_template.html:123
+#: planetsuse/planet_template.html:125
 msgid ""
 "Note that you may use those keys with or without pressing the <span class="
 "\"key\">alt</span> key."
@@ -171,19 +179,19 @@ msgstr ""
 "Zauważ, że możesz użyć tych klawiszy wciskając lub nie klawisz <span class="
 "\"key\">alt</span>."
 
-#: planetsuse/planet_template.html:153
+#: planetsuse/planet_template.html:155
 msgid "Current blog entries"
 msgstr "Aktualnie wpisy na blogach"
 
-#: planetsuse/planet_template.html:155
+#: planetsuse/planet_template.html:157
 msgid "Older blog entries"
 msgstr "Starsze wpisy na blogach"
 
-#: planetsuse/planet_template.html:169 planetsuse/feedlist_template.html:120
+#: planetsuse/planet_template.html:171 planetsuse/feedlist_template.html:120
 msgid "Pascal Bleser and the openSUSE Community"
 msgstr "Pascal Bleser i społeczność openSUSE"
 
-#: planetsuse/planet_template.html:172 planetsuse/feedlist_template.html:123
+#: planetsuse/planet_template.html:174 planetsuse/feedlist_template.html:123
 msgid ""
 "This site is not an official openSUSE website, and is not in any way "
 "affiliated with or endorsed by SUSE Linux GmbH or Novell."
@@ -191,7 +199,7 @@ msgstr ""
 "Ta strona nie jest oficjalną stroną openSUSE i nie jest w żaden sposób "
 "związania z firmą SUSE Linux GmbH lub Novell."
 
-#: planetsuse/planet_template.html:177 planetsuse/feedlist_template.html:128
+#: planetsuse/planet_template.html:179 planetsuse/feedlist_template.html:128
 msgid ""
 "openSUSE and SUSE are trademarks of Novell, Inc. in the United States and "
 "other countries."

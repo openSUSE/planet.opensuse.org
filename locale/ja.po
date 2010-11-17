@@ -24,7 +24,7 @@ msgid "Subscriptions (all languages)"
 msgstr "購読 (全ての言語)"
 
 #: planetsuse/planet_template.html:31 planetsuse/planet_template.html:32
-#: planetsuse/planet_template.html:92
+#: planetsuse/planet_template.html:94
 msgid "all languages"
 msgstr "全ての言語"
 
@@ -44,7 +44,7 @@ msgstr "コミュニティ"
 msgid "Development"
 msgstr "開発"
 
-#: planetsuse/planet_template.html:52 planetsuse/planet_template.html:98
+#: planetsuse/planet_template.html:52 planetsuse/planet_template.html:100
 msgid "Overview"
 msgstr "要約"
 
@@ -82,91 +82,99 @@ msgid "German"
 msgstr "ドイツ語"
 
 #: planetsuse/planet_template.html:83
+msgid "French"
+msgstr ""
+
+#: planetsuse/planet_template.html:84
 msgid "Spanish"
 msgstr "スペイン語"
 
-#: planetsuse/planet_template.html:84
+#: planetsuse/planet_template.html:85
 msgid "Portuguese"
 msgstr "ポルトガル語"
 
-#: planetsuse/planet_template.html:85
+#: planetsuse/planet_template.html:86
 msgid "Polish"
 msgstr "ポーランド語"
 
-#: planetsuse/planet_template.html:86
+#: planetsuse/planet_template.html:87
 msgid "Japanese"
 msgstr "日本語"
 
-#: planetsuse/planet_template.html:87
+#: planetsuse/planet_template.html:88
 msgid "Indonesian"
 msgstr ""
 
-#: planetsuse/planet_template.html:88
+#: planetsuse/planet_template.html:89
 msgid "Russian"
 msgstr ""
 
-#: planetsuse/planet_template.html:89
+#: planetsuse/planet_template.html:90
 msgid "Czech"
 msgstr ""
 
-#: planetsuse/planet_template.html:90
+#: planetsuse/planet_template.html:91
 #, fuzzy
 msgid "Taiwanese"
 msgstr "日本語"
 
-#: planetsuse/planet_template.html:91
+#: planetsuse/planet_template.html:92
 msgid "Romanian"
 msgstr ""
 
-#: planetsuse/planet_template.html:95 planetsuse/feedlist_template.html:64
+#: planetsuse/planet_template.html:93
+msgid "Hungarian"
+msgstr ""
+
+#: planetsuse/planet_template.html:97 planetsuse/feedlist_template.html:64
 msgid "Actions"
 msgstr "アクション"
 
-#: planetsuse/planet_template.html:97 planetsuse/planet_template.html:112
+#: planetsuse/planet_template.html:99 planetsuse/planet_template.html:114
 msgid "Keyboard shortcuts"
 msgstr "キーボードショートカット"
 
-#: planetsuse/planet_template.html:99
+#: planetsuse/planet_template.html:101
 msgid "Feed list"
 msgstr "フィード一覧"
 
-#: planetsuse/planet_template.html:102 planetsuse/feedlist_template.html:71
+#: planetsuse/planet_template.html:104 planetsuse/feedlist_template.html:71
 msgid "Metadata"
 msgstr "メタデータ"
 
-#: planetsuse/planet_template.html:114
+#: planetsuse/planet_template.html:116
 msgid "toggle overview"
 msgstr "要約を表示"
 
-#: planetsuse/planet_template.html:115
+#: planetsuse/planet_template.html:117
 msgid "toggle help (this)"
 msgstr "ヘルプ (このウィンドウ) を表示 "
 
-#: planetsuse/planet_template.html:116
+#: planetsuse/planet_template.html:118
 msgid "next post"
 msgstr "次の投稿"
 
-#: planetsuse/planet_template.html:117
+#: planetsuse/planet_template.html:119
 msgid "previous post"
 msgstr "前の投稿"
 
-#: planetsuse/planet_template.html:118
+#: planetsuse/planet_template.html:120
 msgid "next day"
 msgstr "次の日"
 
-#: planetsuse/planet_template.html:119
+#: planetsuse/planet_template.html:121
 msgid "previous day"
 msgstr "前日"
 
-#: planetsuse/planet_template.html:120
+#: planetsuse/planet_template.html:122
 msgid "go to top"
 msgstr "トップへ移動"
 
-#: planetsuse/planet_template.html:121
+#: planetsuse/planet_template.html:123
 msgid "cancel"
 msgstr "キャンセル"
 
-#: planetsuse/planet_template.html:123
+#: planetsuse/planet_template.html:125
 msgid ""
 "Note that you may use those keys with or without pressing the <span class="
 "\"key\">alt</span> key."
@@ -174,19 +182,19 @@ msgstr ""
 "これらのキーボードショートカットは <span class=\"key\">Alt</span> キーと合わ"
 "せて打っても、合わせなくても同様に機能します。"
 
-#: planetsuse/planet_template.html:153
+#: planetsuse/planet_template.html:155
 msgid "Current blog entries"
 msgstr "現在のブログエントリー"
 
-#: planetsuse/planet_template.html:155
+#: planetsuse/planet_template.html:157
 msgid "Older blog entries"
 msgstr "過去のブログエントリー"
 
-#: planetsuse/planet_template.html:169 planetsuse/feedlist_template.html:120
+#: planetsuse/planet_template.html:171 planetsuse/feedlist_template.html:120
 msgid "Pascal Bleser and the openSUSE Community"
 msgstr "Pascal Bleser および openSUSE コミュニティ"
 
-#: planetsuse/planet_template.html:172 planetsuse/feedlist_template.html:123
+#: planetsuse/planet_template.html:174 planetsuse/feedlist_template.html:123
 msgid ""
 "This site is not an official openSUSE website, and is not in any way "
 "affiliated with or endorsed by SUSE Linux GmbH or Novell."
@@ -195,7 +203,7 @@ msgstr ""
 "SUSE Linux GmbH や Novell の管理下にあるわけでも、承認されているわけでもあり"
 "ません。"
 
-#: planetsuse/planet_template.html:177 planetsuse/feedlist_template.html:128
+#: planetsuse/planet_template.html:179 planetsuse/feedlist_template.html:128
 msgid ""
 "openSUSE and SUSE are trademarks of Novell, Inc. in the United States and "
 "other countries."
