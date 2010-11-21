@@ -1511,3 +1511,13 @@ feed 15m http://www.myopensuse.hu/?q=rss.xml
     define_name Szágyi Károly
     define_lang hu
 
+feed 15m http://e-tote-kala.blogspot.com/feeds/posts/default/-/opensuse-en
+    define_name Kostas Koudaras
+    define_irc  warlordfff
+    define_member 1
+feed 15m http://e-tote-kala.blogspot.com/feeds/posts/default/-/opensuse-gr
+    define_name Kostas Koudaras
+    define_irc  warlordfff
+    define_member 1
+    define_lang gr
+
