@@ -1456,6 +1456,7 @@ feed 15m http://opensuseambassadors.blogspot.com/feeds/posts/default
 feed 15m http://feeds.feedburner.com/SUSEware
     define_name Manu Gupta
     define_irc  manugupt1
+    define_member 1
 
 feed 15m http://binoinformatica.com/blog/?feed=rss2
     define_name Albino Biasutti Neto
