@@ -749,8 +749,8 @@ feed 15m http://andrew.jorgensenfamily.us/category/opensuse/feed/
 	define_face ajorg
 	define_irc  ajorg
 
-feed 15m http://lizards.opensuse.org/author/bwalle/feed/
-	define_name Bernhard Walle
+#feed 15m http://lizards.opensuse.org/author/bwalle/feed/
+#	define_name Bernhard Walle
 
 feed 15m http://blog.leeromero.org/feed/
 	define_name Lee Romero
@@ -1525,4 +1525,10 @@ feed 15m http://e-tote-kala.blogspot.com/feeds/posts/default/-/opensuse-gr
     define_irc  warlordfff
     define_member 1
     define_lang gr
+
+feed 15m http://lizards.opensuse.org/author/bmwiedemann/
+    define_name Bernhard Wiedemann
+    define_irc  bmwiedemann
+    define_member 1
+
 
