@@ -1530,5 +1530,6 @@ feed 15m http://lizards.opensuse.org/author/bmwiedemann/
     define_name Bernhard Wiedemann
     define_irc  bmwiedemann
     define_member 1
+    define_face bmwiedemann
 
 
