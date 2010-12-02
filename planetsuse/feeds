@@ -1532,4 +1532,9 @@ feed 15m http://lizards.opensuse.org/author/bmwiedemann/
     define_member 1
     define_face bmwiedemann
 
+feed 15m http://opensuse.terrorpup.net/wp-atom.php
+    define_name Chuck Payne
+    define_irc  terrorpup
+    define_member 1
+    define_face chuck_payne
 
