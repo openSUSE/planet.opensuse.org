@@ -26,7 +26,7 @@ msgid "Subscriptions (all languages)"
 msgstr "Suscripciones (todos los idiomas)"
 
 #: planetsuse/planet_template.html:31 planetsuse/planet_template.html:32
-#: planetsuse/planet_template.html:94
+#: planetsuse/planet_template.html:95
 msgid "all languages"
 msgstr "todos los idiomas"
 
@@ -46,7 +46,7 @@ msgstr "Comunidad"
 msgid "Development"
 msgstr "Desarrollo"
 
-#: planetsuse/planet_template.html:52 planetsuse/planet_template.html:100
+#: planetsuse/planet_template.html:52 planetsuse/planet_template.html:101
 msgid "Overview"
 msgstr "Visión general"
 
@@ -128,55 +128,59 @@ msgstr ""
 msgid "Hungarian"
 msgstr ""
 
-#: planetsuse/planet_template.html:97 planetsuse/feedlist_template.html:64
+#: planetsuse/planet_template.html:94
+msgid "Greek"
+msgstr ""
+
+#: planetsuse/planet_template.html:98 planetsuse/feedlist_template.html:64
 msgid "Actions"
 msgstr "Acciones"
 
-#: planetsuse/planet_template.html:99 planetsuse/planet_template.html:114
+#: planetsuse/planet_template.html:100 planetsuse/planet_template.html:115
 msgid "Keyboard shortcuts"
 msgstr "Atajos de teclado"
 
-#: planetsuse/planet_template.html:101
+#: planetsuse/planet_template.html:102
 msgid "Feed list"
 msgstr "Lista de fuentes"
 
-#: planetsuse/planet_template.html:104 planetsuse/feedlist_template.html:71
+#: planetsuse/planet_template.html:105 planetsuse/feedlist_template.html:71
 msgid "Metadata"
 msgstr "Metadatos"
 
-#: planetsuse/planet_template.html:116
+#: planetsuse/planet_template.html:117
 msgid "toggle overview"
 msgstr "activar/desactivar la vista general"
 
-#: planetsuse/planet_template.html:117
+#: planetsuse/planet_template.html:118
 msgid "toggle help (this)"
 msgstr "activar/desactivar la ayuda (ésto)"
 
-#: planetsuse/planet_template.html:118
+#: planetsuse/planet_template.html:119
 msgid "next post"
 msgstr "siguiente post"
 
-#: planetsuse/planet_template.html:119
+#: planetsuse/planet_template.html:120
 msgid "previous post"
 msgstr "post anterior"
 
-#: planetsuse/planet_template.html:120
+#: planetsuse/planet_template.html:121
 msgid "next day"
 msgstr "siguiente día"
 
-#: planetsuse/planet_template.html:121
+#: planetsuse/planet_template.html:122
 msgid "previous day"
 msgstr "día anterior"
 
-#: planetsuse/planet_template.html:122
+#: planetsuse/planet_template.html:123
 msgid "go to top"
 msgstr "ir arriba"
 
-#: planetsuse/planet_template.html:123
+#: planetsuse/planet_template.html:124
 msgid "cancel"
 msgstr "cancelar"
 
-#: planetsuse/planet_template.html:125
+#: planetsuse/planet_template.html:126
 msgid ""
 "Note that you may use those keys with or without pressing the <span class="
 "\"key\">alt</span> key."
@@ -184,19 +188,19 @@ msgstr ""
 "Ten en cuenta de que puedes usar esas teclas pulsando o sin pulsar la tecla "
 "<span class=\"key\">alt</span>."
 
-#: planetsuse/planet_template.html:155
+#: planetsuse/planet_template.html:156
 msgid "Current blog entries"
 msgstr "Entradas de blog actuales"
 
-#: planetsuse/planet_template.html:157
+#: planetsuse/planet_template.html:158
 msgid "Older blog entries"
 msgstr "Entradas de blog más antiguas"
 
-#: planetsuse/planet_template.html:171 planetsuse/feedlist_template.html:120
+#: planetsuse/planet_template.html:172 planetsuse/feedlist_template.html:120
 msgid "Pascal Bleser and the openSUSE Community"
 msgstr "Pascal Bleser y la comunidad de openSUSE"
 
-#: planetsuse/planet_template.html:174 planetsuse/feedlist_template.html:123
+#: planetsuse/planet_template.html:175 planetsuse/feedlist_template.html:123
 msgid ""
 "This site is not an official openSUSE website, and is not in any way "
 "affiliated with or endorsed by SUSE Linux GmbH or Novell."
@@ -204,7 +208,7 @@ msgstr ""
 "Este sitio no es un sitio Web oficial de openSUSE, y no está afiliado de "
 "ninguna manera o respaldado por SUSE Linux GmbH o Novell."
 
-#: planetsuse/planet_template.html:179 planetsuse/feedlist_template.html:128
+#: planetsuse/planet_template.html:180 planetsuse/feedlist_template.html:128
 msgid ""
 "openSUSE and SUSE are trademarks of Novell, Inc. in the United States and "
 "other countries."
