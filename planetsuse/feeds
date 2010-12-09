@@ -1318,10 +1318,6 @@ feed 15m http://knotes.ru/feed/
 	define_lang ru
 	define_face kde-ru
 
-feed 15m http://site.irk.ru/category/nixsovodstvo/feed/
-	define_name Alexey Smirnov
-	define_lang ru
-
 feed 15m http://feeds.feedburner.com/SapfeerOpensuse
 	define_name Sergey Lomakov
 	define_lang ru
@@ -1542,4 +1538,10 @@ feed 15m http://blog.pitoulias.gr/taxonomy/term/14/0/feed
     define_irc  skoliX
     define_face pitoulias
     define_lang gr
+
+#feed 15m http://izabelvalverde.wordpress.com/category/opensuse/feed/
+#    define_name Izabel Valverde
+#    define_irc  izabelvalverde
+#    define_lang pt
+
 
