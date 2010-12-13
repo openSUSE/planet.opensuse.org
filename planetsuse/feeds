@@ -1544,4 +1544,7 @@ feed 15m http://blog.pitoulias.gr/taxonomy/term/14/0/feed
 #    define_irc  izabelvalverde
 #    define_lang pt
 
+feed 15m http://hrafn.me/category/linux/opensuse-linux/feed/
+    define_name Alexander Ivanov
+    define_lang ru
 
