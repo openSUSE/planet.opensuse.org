@@ -982,18 +982,18 @@ feed 15m http://infragments.blogspot.com/feeds/posts/default
 	define_name Lukas Lipavsky
 	define_irc llipavsky
 
-feed 15m http://feeds.feedburner.com/Karl-tux-stadtOpensuse
-	define_name Sirko Kemter
-	define_face kemter
-	define_irc  gnokii
-	define_member 1
-
-feed 15m http://feeds.feedburner.com/karl-tux-stadt
-	define_name Sirko Kemter
-	define_face kemter
-	define_irc  gnokii
-	define_member 1
-	define_lang de
+#feed 15m http://feeds.feedburner.com/Karl-tux-stadtOpensuse
+#	define_name Sirko Kemter
+#	define_face kemter
+#	define_irc  gnokii
+#	define_member 1
+#
+#feed 15m http://feeds.feedburner.com/karl-tux-stadt
+#	define_name Sirko Kemter
+#	define_face kemter
+#	define_irc  gnokii
+#	define_member 1
+#	define_lang de
 
 feed 15m http://blog.reblochon.org/feeds/posts/default
 	define_name Stephane Delcroix
