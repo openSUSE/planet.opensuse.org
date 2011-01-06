@@ -1554,10 +1554,10 @@ feed 15m http://stathisuse.blogspot.com/feeds/posts/default/-/opensuse-en
     define_irc  Diamond_gr
     define_face efstathios_iosifidis
     define_member 1
-feed 15m http://stathisuse.blogspot.com/feeds/posts/default/-/opensuse-el
+feed 15m http://stathisuse.blogspot.com/feeds/posts/default/-/opensuse-gr
     define_name Efstathios Iosifidis
     define_irc  Diamond_gr
     define_face efstathios_iosifidis
     define_member 1
-    define_lang el
+    define_lang gr
 
