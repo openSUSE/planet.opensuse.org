@@ -1566,3 +1566,9 @@ feed 15m http://ununseptium.wordpress.com/feed/
     define_irc  liquidsky42
     define_lang de
 
+feed 15m http://masterpatricko.blogspot.com/feeds/posts/default?alt=rss
+    define_name Tejas Guruswamy
+    define_irc  MasterPatricko
+    define_member 1
+
+
