@@ -856,10 +856,11 @@ feed 15m http://lizards.opensuse.org/author/jasujt/feed/
 	define_name James Tremblay
 	define_irc  SLEducator
 
-feed 15m http://blog.carrion.ws/tag/opensuse/feed/
+feed 15m http://blog.carrion.mx/feed/
 	define_name Mario Carrion
 	define_irc  marioc
 	define_face mario_carrion
+    define_member 1
 
 feed 15m http://knocte.blogspot.com/feeds/posts/default/-/SoftwareLibre
 	define_name Andrés G. Aragoneses
