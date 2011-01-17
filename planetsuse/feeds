@@ -1572,4 +1572,9 @@ feed 15m http://masterpatricko.blogspot.com/feeds/posts/default?alt=rss
     define_irc  MasterPatricko
     define_member 1
 
+feed 15m http://alan-clark.blogspot.com/
+    define_name Alan Clark
+    define_irc  AlanClark
+    define_face alan_clark
+
 
