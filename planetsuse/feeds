@@ -1577,4 +1577,9 @@ feed 15m http://alan-clark.blogspot.com/
     define_irc  AlanClark
     define_face alan_clark
 
-
+feed 15m http://fcoarias.wordpress.com/category/opensuse/feed/
+    define_name Francisco J. Arias
+    define_irc  fcoarias
+    define_member 1
+    define_face fcoarias
+	define_lang es
