@@ -1084,10 +1084,10 @@ feed 15m http://hippie.wordpress.com/feed/atom/
 	define_lang es
 	define_irc  hippiesus
 
-feed 15m http://blog.jakubrusinek.pl/feed/
-	define_name Jakub Rusinek
-	define_irc Livio
-	define_lang pl
+#feed 15m http://blog.jakubrusinek.pl/feed/
+#	define_name Jakub Rusinek
+#	define_irc Livio
+#	define_lang pl
 
 feed 15m http://pangrys.blogspot.com/feeds/posts/default
 	define_name Maciej Piotr Szczepański
