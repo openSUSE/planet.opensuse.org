@@ -1583,3 +1583,9 @@ feed 15m http://fcoarias.wordpress.com/category/opensuse/feed/
     define_member 1
     define_face fcoarias
 	define_lang es
+
+feed 15m http://blog.cihar.com/archives/suse/index-atom.xml
+    define_name Michal Čihař
+    define_irc  nijel
+    define_face michal_cihar
+
