@@ -3,7 +3,7 @@ html {
     width: 100%;
 }
 
-#planet {
+#_A67JAZHE9192_planet_opensuse_planet {
     margin: 0;
     padding: 0;
 }
@@ -62,7 +62,7 @@ html {
     background: #444444;
 }
 
-#content > div {
+#_A67JAZHE9192_planet_opensuse_content > div {
     width: auto;
 }
 
@@ -85,7 +85,7 @@ html {
     margin-bottom: 1em;
 }
 
-#main, #footer, #header-content {
+#_A67JAZHE9192_planet_opensuse_main, #_A67JAZHE9192_planet_opensuse_footer, #_A67JAZHE9192_planet_opensuse_header-content {
     /*
     margin-left: 110px;
     margin-right: 20%;
@@ -94,26 +94,26 @@ html {
     margin-left: 10%;
 }
 
-#intro, #footer {
+#_A67JAZHE9192_planet_opensuse_intro, #_A67JAZHE9192_planet_opensuse_footer {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
 
-#intro p, #intro h3 {
+#_A67JAZHE9192_planet_opensuse_intro p, #_A67JAZHE9192_planet_opensuse_intro h3 {
     margin-left: 0;
     margin-right: 0;
 }
 
-#content {
+#_A67JAZHE9192_planet_opensuse_content {
 }
 
-#intro {
+#_A67JAZHE9192_planet_opensuse_intro {
     color: #666666;
     font-size: 0.8em;
     margin-bottom: 2em;
 }
 
-#content > p {
+#_A67JAZHE9192_planet_opensuse_content > p {
     /*clear: both;*/
     text-align: center !important;
     margin: 0em 10% 2em 10% !important;
@@ -191,7 +191,7 @@ html {
 .day .day-day { font-size: 120%; font-weight: bold; }
 .day .day-date { font-size: 90%; }
 
-#help {
+#_A67JAZHE9192_planet_opensuse_help {
     position: fixed;
     left: 50%;
     margin: -10% 0 0 -25%;
@@ -206,17 +206,17 @@ html {
     z-index: 10000;
 }
 
-#help p {
+#_A67JAZHE9192_planet_opensuse_help p {
     clear: both;
     padding-top: 0.5em;
 }
 
-#help dl {
+#_A67JAZHE9192_planet_opensuse_help dl {
     margin: 0;
     padding: 0;
 }
 
-#help dt {
+#_A67JAZHE9192_planet_opensuse_help dt {
     clear: left;
     padding-right: 5%;
     text-align: right;
@@ -224,16 +224,16 @@ html {
     margin-right: 1em;
 }
 
-#help dt, .key {
+#_A67JAZHE9192_planet_opensuse_help dt, .key {
     font-variant: small-caps;
 }
 
-#help dd, #help dt {
+#_A67JAZHE9192_planet_opensuse_help dd, #_A67JAZHE9192_planet_opensuse_help dt {
     display: block;
     float: left;
 }
 
-#help h4 {
+#_A67JAZHE9192_planet_opensuse_help h4 {
     text-align: left;
     text-decoration: none;
     border-bottom: 1px solid #888888;
@@ -253,7 +253,7 @@ html {
     display: none;
 }
 
-#overview {
+#_A67JAZHE9192_planet_opensuse_overview {
     position: fixed;
     top: 0;
     left: 0;
@@ -268,38 +268,38 @@ html {
     font-size: 0.8em;
     overflow: auto;
 }
-#overview ul {
+#_A67JAZHE9192_planet_opensuse_overview ul {
     margin: 0.5em 1em 0.5em 1em;
     padding: 0;
 }
-#overview li {
+#_A67JAZHE9192_planet_opensuse_overview li {
     margin: 0 0 0.1em 0;
     color: #669900;
 }
-#overview .overview-day {
+#_A67JAZHE9192_planet_opensuse_overview ._A67JAZHE9192_planet_opensuse_overview-day {
     list-style-type: none;
     font-weight: bold;
     text-decoration: underline;
     color: #ffffff;
     padding-top: 2px;
 }
-#overview a {
+#_A67JAZHE9192_planet_opensuse_overview a {
     color: #cccccc;
     text-decoration: none;
 }
-#overview a:hover {
+#_A67JAZHE9192_planet_opensuse_overview a:hover {
     color: #3399cc;
     text-decoration: underline;
 }
-#overview a:visited {
+#_A67JAZHE9192_planet_opensuse_overview a:visited {
     color: #888888;
 }
-#overview a:focus {
+#_A67JAZHE9192_planet_opensuse_overview a:focus {
     background: #3399cc;
     color: #ffffff;
 }
 
-#overview h4 {
+#_A67JAZHE9192_planet_opensuse_overview h4 {
     display: none;
 }
 
@@ -377,8 +377,8 @@ ul.menu {
 .lang-gr { background-image: url(../images/lang/gr.png); }
 .lang-all { background-image: url(../images/lang/_.png); }
 
-#current-entries:before { content: "\21E6\00A0"; }
-#old-entries:after      { content: "\00A0\21E8"; }
+#_A67JAZHE9192_planet_opensuse_current-entries:before { content: "\21E6\00A0"; }
+#_A67JAZHE9192_planet_opensuse_old-entries:after      { content: "\00A0\21E8"; }
 
 div.readmore {
     margin-top: 0.5em;

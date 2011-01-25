@@ -35,10 +35,10 @@
 </head>
 <body>
   <!-- Start: Header -->
-  <div id="header">
-    <div id="header-content" class="container_12">
-      <a id="header-logo" href="http://planet.opensuse.org/"><img src="../images/header-logo.png" width="46" height="26" alt="Header Logo" /></a>
-      <ul id="global-navigation">
+  <div id="_A67JAZHE9192_planet_opensuse_header">
+    <div id="_A67JAZHE9192_planet_opensuse_header-content" class="container_12">
+      <a id="_A67JAZHE9192_planet_opensuse_header-logo" href="http://planet.opensuse.org/"><img src="../images/header-logo.png" width="46" height="26" alt="Header Logo" /></a>
+      <ul id="_A67JAZHE9192_planet_opensuse_global-navigation">
         <li id="item-downloads"><a href="http://opensuse.org/sitemap#downloads">{% trans %}Downloads{% endtrans %}</a></li>
         <li id="item-support"><a href="http://opensuse.org/sitemap#support">{% trans %}Support{% endtrans %}</a></li>
         <li id="item-community"><a href="http://opensuse.org/sitemap#community">{% trans %}Community{% endtrans %}</a></li>
@@ -48,11 +48,11 @@
   </div>
   <!-- End: Header -->
 
-  <div id="overview" style="display: none;">
+  <div id="_A67JAZHE9192_planet_opensuse_overview" style="display: none;">
     <h4>{% trans %}Overview{% endtrans %}</h4>
     <ul>
       {%- for d in items -%}
-      <li class="overview-day"><a{% if loop.first %} id="overview-day-first"{% endif %} href="#day-item-{{ loop.index }}">{{ d.dow }} {{ d.month }} {{ d.day }}, {{ d.year }}</a></li>
+      <li class="_A67JAZHE9192_planet_opensuse_overview-day"><a{% if loop.first %} id="_A67JAZHE9192_planet_opensuse_overview-day-first"{% endif %} href="#day-item-{{ loop.index }}">{{ d.dow }} {{ d.month }} {{ d.day }}, {{ d.year }}</a></li>
       {%- for a in d.articles -%}
       <li><a href="#post-item-{{ a.index }}">{{ a.name }}: {{ a.title_no_link }}</a></li>
       {%- endfor -%}
@@ -60,11 +60,11 @@
     </ul>
   </div> <!-- #overview -->
 
-  <div id="planet">
+  <div id="_A67JAZHE9192_planet_opensuse_planet">
 
-  <div id="main">
+  <div id="_A67JAZHE9192_planet_opensuse_main">
 
-  <div id="intro">
+  <div id="_A67JAZHE9192_planet_opensuse_intro">
     <h3>{% trans %}Welcome to Planet openSUSE{% endtrans %}</h3>
     <p>
         {%- trans -%}
@@ -95,11 +95,11 @@
       <li><a href="../global" id="lang-menu-all" class="lang-all">{% trans %}all languages{% endtrans %}</a></li>
     </ul>
 
-    <h4 id="actions-header" class="menu-header">{% trans %}Actions{% endtrans %}:</h4>
-    <ul id="actions-menu" class="menu">
-      <li><a href="#" id="help-trigger">{% trans %}Keyboard shortcuts{% endtrans %}</a></li>
-      <li><a href="#" id="overview-trigger">{% trans %}Overview{% endtrans %}</a></li>
-      <li><a href="feedlist.html" id="feeds-trigger">{% trans %}Feed list{% endtrans %}</a></li>
+    <h4 id="_A67JAZHE9192_planet_opensuse_actions-header" class="menu-header">{% trans %}Actions{% endtrans %}:</h4>
+    <ul id="_A67JAZHE9192_planet_opensuse_actions-menu" class="menu">
+      <li><a href="#" id="_A67JAZHE9192_planet_opensuse_help-trigger">{% trans %}Keyboard shortcuts{% endtrans %}</a></li>
+      <li><a href="#" id="_A67JAZHE9192_planet_opensuse_overview-trigger">{% trans %}Overview{% endtrans %}</a></li>
+      <li><a href="feedlist.html" id="_A67JAZHE9192_planet_opensuse_feeds-trigger">{% trans %}Feed list{% endtrans %}</a></li>
     </ul>
 
     <h4 id="xml-header" class="menu-header">{% trans %}Metadata{% endtrans %}:</h4>
@@ -111,7 +111,7 @@
   </div> <!-- #intro -->
   <div class="clear"></div>
 
-  <div id="help" style="display: none;">
+  <div id="_A67JAZHE9192_planet_opensuse_help" style="display: none;">
     <h4>{% trans %}Keyboard shortcuts{% endtrans %}:</h4>
     <dl>
       <dt>o</dt><dd>{% trans %}toggle overview{% endtrans %}</dd>
@@ -127,7 +127,7 @@
   </div> <!-- #help -->
 
   <!-- Start: Main Content Area -->
-  <div id="content" class="content-wrapper">
+  <div id="_A67JAZHE9192_planet_opensuse_content" class="content-wrapper">
     {% for day in items %}
     <hr class="textonly"/>
     <div class="day day-{{ day.day }}"><a id="day-item-{{ loop.index }}" class="day-item-anchor" name="day-item-{{ loop.index }}"></a>
@@ -153,9 +153,9 @@
     {% endfor %}
 
     {%- if old -%}
-    <p id="current-entries"><span class="textonly">&lt;-&nbsp;</span><a href="./">{% trans %}Current blog entries{% endtrans %}</a></p>
+    <p id="_A67JAZHE9192_planet_opensuse_current-entries"><span class="textonly">&lt;-&nbsp;</span><a href="./">{% trans %}Current blog entries{% endtrans %}</a></p>
     {%- else -%}
-    <p id="old-entries"><a href="old.html">{% trans %}Older blog entries{% endtrans %}</a><span class="textonly">&nbsp;-&gt;</span></p>
+    <p id="_A67JAZHE9192_planet_opensuse_old-entries"><a href="old.html">{% trans %}Older blog entries{% endtrans %}</a><span class="textonly">&nbsp;-&gt;</span></p>
     {%- endif -%}
   </div>
   <!-- End: Main Content Area -->
@@ -164,10 +164,10 @@
   <!-- Note: this clears floating, set in previous elements -->
   <div class="clear"></div>
   <!-- Start: Footer -->
-  <div id="footer">
-    <div id="footer-content" class="clear-block">
+  <div id="_A67JAZHE9192_planet_opensuse_footer">
+    <div id="_A67JAZHE9192_planet_opensuse_footer-content" class="clear-block">
     </div>
-    <div id="footer-legal" class="border-top">
+    <div id="_A67JAZHE9192_planet_opensuse_footer-legal" class="border-top">
       <p>
         &copy; 2010 {% trans %}Pascal Bleser and the openSUSE Community{% endtrans %}.
       </p>
