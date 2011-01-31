@@ -1520,7 +1520,7 @@ feed 15m http://e-tote-kala.blogspot.com/feeds/posts/default/-/opensuse-gr
     define_lang gr
 
 feed 15m http://lizards.opensuse.org/author/bmwiedemann/
-    define_name Bernhard Wiedemann
+    define_name Bernhard M. Wiedemann
     define_irc  bmwiedemann
     define_member 1
     define_face bmwiedemann
