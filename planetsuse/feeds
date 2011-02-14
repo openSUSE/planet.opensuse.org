@@ -1360,7 +1360,7 @@ feed 15m http://cherkasof.blogspot.com/feeds/posts/default/
 	define_name Anton Cherkasov
 	define_lang ru
 
-feed 15m http://web.natur.cuni.cz/~zeisek/cs/taxonomy/term/27/0/feed
+feed 15m http://trapa.cz/cs/taxonomy/term/27/0/feed
 	define_name Vojtěch Zeisek
 	define_irc Vojtaeus
 	define_lang cs
