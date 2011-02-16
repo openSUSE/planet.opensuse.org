@@ -1594,3 +1594,10 @@ feed 15m http://blog.karlitschek.de/feeds/posts/default
     define_face frank_karlitschek
     define_member 1
 
+feed 15m http://blog.crozat.net/feeds/posts/default/
+    define_name Frédéric Crozat
+    define_irc  fcrozat
+    define_member 1
+    define_face fcrozat
+
+
