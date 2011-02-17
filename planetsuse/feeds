@@ -1600,4 +1600,7 @@ feed 15m http://blog.crozat.net/feeds/posts/default/
     define_member 1
     define_face fcrozat
 
+feed 15m http://azouhr.wordpress.com/feed/
+    define_name Berthold Gunreben
+    define_irc  azouhr
 
