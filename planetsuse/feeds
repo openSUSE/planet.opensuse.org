@@ -1604,3 +1604,7 @@ feed 15m http://azouhr.wordpress.com/feed/
     define_name Berthold Gunreben
     define_irc  azouhr
 
+feed 15m http://boltonlinux.blogspot.com/feeds/posts/default
+    define_name Stuart Tanner
+    define_irc  SatManUK
+
