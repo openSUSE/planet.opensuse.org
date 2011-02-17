@@ -44,9 +44,9 @@ feed 15m http://people.gnome.org/~federico/rss.xml
 	define_irc  federico1
 	define_member 1
 
-feed 15m http://suseroot.com/blog/rss.php?ver=2
-	define_name Damian Smith
-	define_face damian
+#feed 15m http://suseroot.com/blog/rss.php?ver=2
+#	define_name Damian Smith
+#	define_face damian
 
 feed 15m http://andreasjaeger.blogspot.com/feeds/posts/full
 	define_name Andreas Jaeger
