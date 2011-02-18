@@ -1,3 +1,4 @@
+.ssh
 NOCRON
 website/global
 website/cs
@@ -10,3 +11,8 @@ website/pt
 website/id
 website/ru
 website/tw
+website/fr
+website/gr
+website/hu
+website/ro
+website/mn
