@@ -1608,3 +1608,8 @@ feed 15m http://boltonlinux.blogspot.com/feeds/posts/default
     define_name Stuart Tanner
     define_irc  SatManUK
 
+feed 15m http://badralb.posterous.com/rss.xml
+    define_name Badral Baigaltugs
+    define_lang mn
+    define_member 1
+
