@@ -1,0 +1,222 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"PO-Revision-Date: 2010-07-16 12:07+0200\n"
+"Last-Translator: Badral Baigaltugs <badral214@gmail.com>\n"
+"Language-Team: MN <mn@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: planetsuse/planet_template.html:8
+msgid "Aggregation of the blogs of openSUSE contributors"
+msgstr "OpenSUSE дэмжигчдийн блог хуримтлал"
+
+#: planetsuse/planet_template.html:28 planetsuse/planet_template.html:33
+msgid "Subscriptions"
+msgstr "Захиалгууд"
+
+#: planetsuse/planet_template.html:29
+msgid "Subscriptions (all languages)"
+msgstr "Захиалгууд (бүх хэл)"
+
+#: planetsuse/planet_template.html:31 planetsuse/planet_template.html:32 planetsuse/planet_template.html:96
+msgid "all languages"
+msgstr "бүх хэлүүд"
+
+#: planetsuse/planet_template.html:42
+msgid "Downloads"
+msgstr "Татацууд"
+
+#: planetsuse/planet_template.html:43
+msgid "Support"
+msgstr "Дэмжлэг"
+
+#: planetsuse/planet_template.html:44
+msgid "Community"
+msgstr "Нэгдэл"
+
+#: planetsuse/planet_template.html:45
+msgid "Development"
+msgstr "Хөгжүүлэлт"
+
+#: planetsuse/planet_template.html:52 planetsuse/planet_template.html:102
+msgid "Overview"
+msgstr "Тойм"
+
+#: planetsuse/planet_template.html:68 planetsuse/feedlist_template.html:53
+msgid "Welcome to Planet openSUSE"
+msgstr "Planet openSUSE-д тавтай морилно уу"
+
+#: planetsuse/planet_template.html:70
+msgid "This is a feed aggregator that collects what <a href=\"http://www.opensuse.org\">openSUSE</a> contributors are writing in their respective blogs."
+msgstr "Энэ бол <a href=\"http://www.opensuse.org\">openSUSE</a> дэмжигчдийн өөрсдийн блог дээрээ бичиж буй зүйлсийг цуглуулах feed хуримтлуулагч юм."
+
+#: planetsuse/planet_template.html:75 planetsuse/feedlist_template.html:60
+msgid "To have your blog added to this aggregator, please read <a href=\"http://en.opensuse.org/openSUSE:Planet\">the instructions</a>."
+msgstr "Энэ хуримтлалд өөрийн блогоо нэмэхийн тулд<a href=\"http://en.opensuse.org/openSUSE:Planet\">зааврыг </a> уншина уу."
+
+#: planetsuse/planet_template.html:79
+msgid "Languages"
+msgstr "Хэлүүд"
+
+#: planetsuse/planet_template.html:81
+msgid "English"
+msgstr "Англи"
+
+#: planetsuse/planet_template.html:82
+msgid "German"
+msgstr "Герман"
+
+#: planetsuse/planet_template.html:83
+msgid "French"
+msgstr "Франц"
+
+#: planetsuse/planet_template.html:84
+msgid "Spanish"
+msgstr "Испани"
+
+#: planetsuse/planet_template.html:85
+msgid "Portuguese"
+msgstr "Португал"
+
+#: planetsuse/planet_template.html:86
+msgid "Polish"
+msgstr "Польш"
+
+#: planetsuse/planet_template.html:87
+msgid "Japanese"
+msgstr "Япон"
+
+#: planetsuse/planet_template.html:88
+msgid "Indonesian"
+msgstr "Индонези"
+
+#: planetsuse/planet_template.html:89
+msgid "Russian"
+msgstr "Орос"
+
+#: planetsuse/planet_template.html:90
+msgid "Czech"
+msgstr "Чех"
+
+#: planetsuse/planet_template.html:91
+msgid "Taiwanese"
+msgstr "Тайвань"
+
+#: planetsuse/planet_template.html:92
+msgid "Romanian"
+msgstr "Румын"
+
+#: planetsuse/planet_template.html:93
+msgid "Hungarian"
+msgstr "Унгар"
+
+#: planetsuse/planet_template.html:94
+msgid "Greek"
+msgstr "Грек"
+
+#: planetsuse/planet_template.html:95
+msgid "Mongolian"
+msgstr "Монгол"
+
+#: planetsuse/planet_template.html:99 planetsuse/feedlist_template.html:64
+msgid "Actions"
+msgstr "Үйлдлүүд"
+
+#: planetsuse/planet_template.html:101 planetsuse/planet_template.html:116
+msgid "Keyboard shortcuts"
+msgstr "Гарны товчлолууд"
+
+#: planetsuse/planet_template.html:103
+msgid "Feed list"
+msgstr "Feed жагсаалт"
+
+#: planetsuse/planet_template.html:106 planetsuse/feedlist_template.html:71
+msgid "Metadata"
+msgstr "Метадата"
+
+#: planetsuse/planet_template.html:118
+msgid "toggle overview"
+msgstr "тойм хөшүүрэг"
+
+#: planetsuse/planet_template.html:119
+msgid "toggle help (this)"
+msgstr "тусламж хөшүүрэг(энэ)"
+
+#: planetsuse/planet_template.html:120
+msgid "next post"
+msgstr "дараагийн бичлэг"
+
+#: planetsuse/planet_template.html:121
+msgid "previous post"
+msgstr "өмнөх бичлэг"
+
+#: planetsuse/planet_template.html:122
+msgid "next day"
+msgstr "дараагийн өдөр"
+
+#: planetsuse/planet_template.html:123
+msgid "previous day"
+msgstr "өмнөх өдөр"
+
+#: planetsuse/planet_template.html:124
+msgid "go to top"
+msgstr "эхэнд очих"
+
+#: planetsuse/planet_template.html:125
+msgid "cancel"
+msgstr "болих"
+
+#: planetsuse/planet_template.html:127
+msgid "Note that you may use those keys with or without pressing the <span class=\"key\">alt</span> key."
+msgstr "Та тэдгээр түлхүүрийг <span class=\"key\">alt</span> товчийг дарж эсвэл дарахгүйгээр ашиглаж болно."
+
+#: planetsuse/planet_template.html:157
+msgid "Current blog entries"
+msgstr "Одоогийн блог бичилтүүд"
+
+#: planetsuse/planet_template.html:159
+msgid "Older blog entries"
+msgstr "Хуучин блог бичилтүүд"
+
+#: planetsuse/planet_template.html:173 planetsuse/feedlist_template.html:120
+msgid "Pascal Bleser and the openSUSE Community"
+msgstr "Паскаль Блезер ба openSUSE Нэгдэл"
+
+#: planetsuse/planet_template.html:176 planetsuse/feedlist_template.html:123
+msgid "This site is not an official openSUSE website, and is not in any way affiliated with or endorsed by SUSE Linux GmbH or Novell."
+msgstr "Энэ сайт нь openSUSE албан ёсны вебсайт биш ба ямар нэг байдлаар SUSE Linux GmbH эсвэл Novell-той харъяалалгүй болон тэднээс сайшаагдаагүй болно."
+
+#: planetsuse/planet_template.html:181 planetsuse/feedlist_template.html:128
+msgid "openSUSE and SUSE are trademarks of Novell, Inc. in the United States and other countries."
+msgstr ""
+
+#: planetsuse/feedlist_template.html:55
+msgid "This page contains the list of all the <a href=\"http://www.opensuse.org\">openSUSE</a> contributors who are aggregated on <a href=\"./\">Planet openSUSE</a>."
+msgstr "Энэ хуудас нь бүх<a href=\"http://www.opensuse.org\">openSUSE</a> дэмжигчдийн жагсаалт ба тэдгээр нь <a href=\"./\">Planet openSUSE</a> дээр цугларсан болно."
+
+#: planetsuse/feedlist_template.html:66
+msgid "Back to Planet openSUSE"
+msgstr "Planet openSUSE руу буцах"
+
+#: planetsuse/feedlist_template.html:68
+msgid "Show all feeds"
+msgstr "Бүх feed-г харуулах"
+
+#: planetsuse/feedlist_template.html:81
+msgid "Aggregated feeds"
+msgstr "Хуримтлагдсан feed-үүд"
+
+#: planetsuse/code.html:8
+msgid "_DATE_FORMAT_"
+msgstr ""
+
+#: planetsuse/code.html:9
+msgid "read more"
+msgstr "дэлгэрэнгүй"
+
