@@ -1018,13 +1018,13 @@ feed 15m http://lizards.opensuse.org/author/saigkill/feed/
 	define_irc  saigkill
 	define_member 1
 
-feed 15m http://saigkill.wordpress.com/category/computer/opensuse/feed/
+feed 15m http://saigkill.homelinux.net/index.php/computer/linux/opensuse/opensuse-blog?format=feed&type=rss
 	define_name Sascha Manns
 	define_face sascha
 	define_irc  saigkill
 	define_member 1
 
-feed 15m http://saigkill.wordpress.com/category/computer/opensuse-de/feed/
+feed 15m http://saigkill.homelinux.net/index.php/computer/linux/opensuse/opensuse-blog?format=feed&type=rss
 	define_name Sascha Manns
 	define_face sascha
 	define_irc  saigkill
