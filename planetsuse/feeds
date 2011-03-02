@@ -33,10 +33,10 @@ feed 15m http://joeshaw.org/rss.php
 	define_name Joe Shaw
 	define_face http://planet.gnome.org/heads/joe.png
 
-feed 15m http://nat.org/blog/feed/
-	define_name Nat Friedman
-	define_face http://planet.gnome.org/heads/nat.png
-	define_irc  Nat_
+#feed 15m http://nat.org/blog/feed/
+#	define_name Nat Friedman
+#	define_face http://planet.gnome.org/heads/nat.png
+#	define_irc  Nat_
 
 feed 15m http://people.gnome.org/~federico/rss.xml
 	define_name Federico Mena-Quintero
