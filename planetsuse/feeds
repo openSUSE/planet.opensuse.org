@@ -487,7 +487,7 @@ feed 15m http://seife.kernalert.de/blog/feed/
 	define_irc  seife
 	define_member 1
 
-feed 15m http://www.digitalflow.de/module/blog/rss.php?ver=2&num=5&sectionid=4
+feed 15m http://ts237.server2.raumopol.de/blog/category/opensuse/feed/
 	define_name Thomas Schmidt
 	define_irc digitltom
 	define_member 1
@@ -1619,4 +1619,8 @@ feed 15m http://feeds.feedburner.com/FlavioCastelli
     define_member 1
     define_face flavio_castelli
 
+feed 15m http://etern4l.wordpress.com/feed/
+    define_name George Bratsos
+    define_irc  Etern4L
+    define_face george_bratsos
 
