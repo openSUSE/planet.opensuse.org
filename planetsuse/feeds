@@ -967,6 +967,11 @@ feed 15m http://lizards.opensuse.org/author/alexander_naumov/feed/
 	define_member 1
 	define_irc  anaumov
 
+feed 15m http://thefreecountry.wordpress.com/category/gnulinux/opensuse/feed/
+	define_name Alexander Naumov
+	define_member 1
+	define_irc  anaumov
+
 feed 15m http://lizards.opensuse.org/author/bruno_friedmann/feed/
 	define_name Bruno Friedmann
 	define_irc  tigerfoot
