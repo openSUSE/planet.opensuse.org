@@ -1023,15 +1023,15 @@ feed 15m http://lizards.opensuse.org/author/saigkill/feed/
 	define_irc  saigkill
 	define_member 1
 
-feed 15m http://saigkill.homelinux.net/index.php/computer/linux/opensuse/opensuse-blog?format=feed&type=rss
+feed 15m http://feeds.feedburner.com/homelinux/opensuse-blog
 	define_name Sascha Manns
-	define_face sascha
+	define_face sascha_manns
 	define_irc  saigkill
 	define_member 1
 
-feed 15m http://saigkill.homelinux.net/index.php/computer/linux/opensuse/opensuse-blog?format=feed&type=rss
+feed 15m http://feeds.feedburner.com/homelinux/opensuse-de
 	define_name Sascha Manns
-	define_face sascha
+	define_face sascha_manns
 	define_irc  saigkill
 	define_member 1
 	define_lang de
@@ -1451,7 +1451,7 @@ feed 15m http://opensuseambassadors.blogspot.com/feeds/posts/default
     define_name Greek openSUSE Ambassadors
     define_face greek_ambassadors
 
-feed 15m http://feeds.feedburner.com/SUSEware
+feed 15m http://sysbytes.wordpress.com/feed/
     define_name Manu Gupta
     define_irc  manugupt1
     define_member 1
@@ -1628,4 +1628,10 @@ feed 15m http://etern4l.wordpress.com/feed/
     define_name George Bratsos
     define_irc  Etern4L
     define_face george_bratsos
+
+feed 15m http://blog.lowkster.com/search/label/opensuse
+    define_name Low Kian Seong
+    define_irc  lowks
+    define_member 1
+
 
