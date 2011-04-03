@@ -1638,3 +1638,5 @@ feed 15m http://anksos.blogspot.com/feeds/posts/default
     define_name Anastasios Ksouzafeiris
     define_irc  ankso
     define_lang gr
+    define_face ankso
+
