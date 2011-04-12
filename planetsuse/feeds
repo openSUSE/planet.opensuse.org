@@ -175,7 +175,7 @@ feed 15m http://feeds.ottleys.net/jaredottley?format=xml
 #feed 15m http://susediary.blogspot.com/feeds/posts/full
 #	define_name Graham Anderson
 
-feed 15m http://duncan.mac-vicar.com/blog/archives/tag/suse/feed
+feed 15m http://duncan.mac-vicar.com/rss.xml?tag=suse
 	define_name Duncan Mac-Vicar
 	define_face dmv
 	define_irc  duncanmv
