@@ -537,7 +537,7 @@ feed 15m http://gburt.blogspot.com/feeds/posts/default
 	define_name Gabriel Burt
 	define_face http://planet.gnome.org/heads/gabaug.png
 
-feed 15m http://lizards.opensuse.org/author/adriansuse/feed/
+feed 15m https://monarchieundalltag.wordpress.com/feed/
 	define_name Adrian Schröter
 	define_irc  adrianS
 	define_member 1
@@ -1567,7 +1567,7 @@ feed 15m http://stathisuse.blogspot.com/feeds/posts/default/-/opensuse-gr
     define_member 1
     define_lang gr
 
-feed 15m http://ununseptium.wordpress.com/feed/
+feed 15m http://ununseptium.de/?feed=rss2
     define_name Jan Krings
     define_irc  liquidsky42
     define_lang de
