@@ -1644,3 +1644,10 @@ feed 15m http://anksos.blogspot.com/feeds/posts/default/-/opensuse-en?alt=rss
     define_irc  ankso
     define_face ankso
 
+feed 15m http://webeve.de/~cwh/blog/category/opensuse/feed/
+    define_name Christopher Hofmann
+    define_irc  cwh
+    define_member 1
+    define_face cwh
+
+
