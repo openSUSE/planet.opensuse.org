@@ -1650,4 +1650,7 @@ feed 15m http://webeve.de/~cwh/blog/category/opensuse/feed/
     define_member 1
     define_face cwh
 
+feed 15m http://nbprashanth.wordpress.com/feed/rss/
+    define_name N.B.Prashanth
+    define_irc  nbprashanth
 
