@@ -874,12 +874,12 @@ feed 15m http://bolta-gecko.blogspot.com/feeds/posts/default
 	define_name Mohit Verma
 
 feed 15m http://michal.hrusecky.net/category/opensuse/feed/
-	define_name Michal Hrusecky
+	define_name Michal Hrušecký
 	define_irc |miska|
 	define_member 1
     define_face miska
 feed 15m http://michal.hrusecky.net/category/opensuse-cz/feed/
-	define_name Michal Hrusecky
+	define_name Michal Hrušecký
 	define_irc |miska|
 	define_member 1
     define_face miska
