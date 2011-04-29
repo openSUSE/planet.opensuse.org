@@ -1655,3 +1655,13 @@ feed 15m http://nbprashanth.wordpress.com/feed/rss/
     define_name N.B.Prashanth
     define_irc  nbprashanth
 
+feed 15m http://stathisagrapidis.wordpress.com/tag/opensuse-en/feed/
+    define_name Efstathios Agrapidis
+    define_irc  efagra
+    define_face efagra
+feed 15m http://stathisagrapidis.wordpress.com/tag/opensuse-el/feed/
+    define_name Efstathios Agrapidis
+    define_lang gr
+    define_irc  efagra
+    define_face efagra
+
