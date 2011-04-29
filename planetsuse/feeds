@@ -873,10 +873,17 @@ feed 15m http://log.or.cz/?feed=rss2
 feed 15m http://bolta-gecko.blogspot.com/feeds/posts/default
 	define_name Mohit Verma
 
-feed 15m http://michal.hrusecky.net/data/xml/blog.Linux-openSUSE.rss
+feed 15m http://michal.hrusecky.net/category/opensuse/feed/
 	define_name Michal Hrusecky
 	define_irc |miska|
 	define_member 1
+    define_face miska
+feed 15m http://michal.hrusecky.net/category/opensuse-cz/feed/
+	define_name Michal Hrusecky
+	define_irc |miska|
+	define_member 1
+    define_face miska
+    define_lang cs
 
 feed 15m http://lizards.opensuse.org/author/ricardovarassantana/feed/
 	define_name Ricardo Varas Santana
