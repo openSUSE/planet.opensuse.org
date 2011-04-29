@@ -56,7 +56,7 @@ class Feed_List:
 		for feed in rawdog.feeds.values():
 			itembits = {}
 			itembits['lang'] = feed.lang
-			for d in ('member', 'connect'):
+			for d in ('member', 'connect', 'gsoc'):
 				if 'define_'+d in feed.args:
 					itembits[d] = feed.args['define_'+d]
 

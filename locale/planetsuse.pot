@@ -162,23 +162,23 @@ msgstr ""
 msgid "Note that you may use those keys with or without pressing the <span class=\"key\">alt</span> key."
 msgstr ""
 
-#: planetsuse/planet_template.html:157
+#: planetsuse/planet_template.html:158
 msgid "Current blog entries"
 msgstr ""
 
-#: planetsuse/planet_template.html:159
+#: planetsuse/planet_template.html:160
 msgid "Older blog entries"
 msgstr ""
 
-#: planetsuse/planet_template.html:173 planetsuse/feedlist_template.html:120
+#: planetsuse/planet_template.html:174 planetsuse/feedlist_template.html:121
 msgid "Pascal Bleser and the openSUSE Community"
 msgstr ""
 
-#: planetsuse/planet_template.html:176 planetsuse/feedlist_template.html:123
+#: planetsuse/planet_template.html:177 planetsuse/feedlist_template.html:124
 msgid "This site is not an official openSUSE website, and is not in any way affiliated with or endorsed by SUSE Linux GmbH or Novell."
 msgstr ""
 
-#: planetsuse/planet_template.html:181 planetsuse/feedlist_template.html:128
+#: planetsuse/planet_template.html:182 planetsuse/feedlist_template.html:129
 msgid "openSUSE and SUSE are trademarks of Novell, Inc. in the United States and other countries."
 msgstr ""
 

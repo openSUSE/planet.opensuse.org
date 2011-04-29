@@ -141,6 +141,7 @@
             <h3{% if a.item_lang %} class="lang-{{ a.item_lang }} lang"{% endif %}><a class="blogurl" href="{{ a.blogurl }}">{{ a.name }}</a>: <a class="posttitle" href="{{ a.url }} ">{{ a.title_no_link }}</a></h3>
             <h4 class="date"><span class="textonly">@&nbsp;</span>{{ a.time }} UTC
               {%- if a.member  %}<span class="member">member</span>{% endif -%}
+              {%- if a.gsoc    %}<span class="gsoc">gsoc</span>{% endif -%}
             </h4>
           </div>
         </div>

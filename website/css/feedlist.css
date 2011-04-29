@@ -64,6 +64,7 @@
 
 #feedlist a.feed-url,
 #feedlist .feed-member,
+#feedlist .feed-gsoc,
 #feedlist a.feed-connect {
     padding: 1px 2px 1px 2px;
     color: #ffffff;
@@ -78,6 +79,10 @@
 #feedlist .feed-member {
     background: #669900;
 }
+#feedlist .feed-gsoc {
+    background: #996600;
+}
+#feedlist a.feed-connect {
 #feedlist a.feed-connect {
     background: #444444;
 }

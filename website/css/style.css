@@ -47,6 +47,7 @@ html {
 }
 
 .box-header .member,
+.box-header .gsoc,
 .box-header .connect {
     padding: 0px 2px 0px 2px;
     color: #ffffff;
@@ -60,6 +61,9 @@ html {
 }
 .box-header .connect {
     background: #444444;
+}
+.box-header .gsoc {
+    background: #996600;
 }
 
 #_A67JAZHE9192_planet_opensuse_content > div {

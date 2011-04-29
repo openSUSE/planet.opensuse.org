@@ -1392,6 +1392,7 @@ feed 15m http://nowwhatthe.blogspot.com/feeds/posts/default
 	define_name Jos Poortvliet
 	define_face jospoortvliet
 	define_irc jospoortvliet
+    define_member 1
 
 feed 15m http://feeds.feedburner.com/omgsuse
     define_name OMG!SUSE! team

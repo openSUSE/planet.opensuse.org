@@ -5,5 +5,7 @@ basedir="${0%/*}"
 
 [ -e ./NOCRON ] && exit 0
 
+LOGFILE="$PWD/website/log.txt"
+
 ./update.sh >log 2>&1
 ./write.sh >>log 2>&1
