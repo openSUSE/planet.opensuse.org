@@ -1670,3 +1670,9 @@ feed 15m http://cbounta.wordpress.com/category/Event/feed/
     define_irc  mpounta
     define_gsoc 1
 
+feed 15m http://anadiotisd.wordpress.com/feed/
+    define_name Diomidis Anadiotis
+    define_lang gr
+    define_irc  diomidis
+    define_face diomidis
+
