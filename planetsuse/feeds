@@ -1665,3 +1665,9 @@ feed 15m http://stathisagrapidis.wordpress.com/tag/opensuse-el/feed/
     define_irc  efagra
     define_face efagra
 
+feed 15m http://cbounta.wordpress.com/feed/
+    define_name Christos Bountalis
+    define_irc  mpounta
+    define_gsoc 1
+
+
