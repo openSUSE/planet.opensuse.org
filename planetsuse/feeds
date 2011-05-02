@@ -1075,7 +1075,7 @@ feed 15m http://mauropm.livejournal.com/data/rss
 	define_name Mauro Parra Miranda
 	define_lang es
 
-feed 15m http://blog.binaridev.es/feeds/posts/default
+feed 15m http://feeds.feedburner.com/binaridev
 	define_name Ángel Llosa
 	define_lang es
 
