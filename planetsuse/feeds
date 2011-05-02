@@ -792,9 +792,9 @@ feed 15m http://lizards.opensuse.org/author/mvyskocil/feed/
 	define_irc mvyskocil
 	define_member 1
 
-feed 15m http://bornkessel.com/kesselblog/?feed=atom&cat=3
-	define_name Daniel Bornkessel
-	define_member 1
+#feed 15m http://bornkessel.com/kesselblog/?feed=atom&cat=3
+#	define_name Daniel Bornkessel
+#	define_member 1
 
 feed 15m http://lmedinas.livejournal.com/data/rss
 	define_name Luis Medinas
