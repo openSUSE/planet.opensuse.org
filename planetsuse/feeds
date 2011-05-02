@@ -712,9 +712,9 @@ feed 15m http://lizards.opensuse.org/author/hobbsc/feed/
 	define_irc  hobbsc
 	define_member 1
 
-feed 15m http://altbit.org/wp/?feed=rss2
-	define_name Christopher Hobbs
-	define_irc  hobbsc
+#feed 15m http://altbit.org/wp/?feed=rss2
+#	define_name Christopher Hobbs
+#	define_irc  hobbsc
 
 feed 15m http://lizards.opensuse.org/author/dj_ubun_1/feed/
 	define_name Agustin Chavarria
