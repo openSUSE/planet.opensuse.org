@@ -1272,11 +1272,11 @@ feed 15m http://cabelovivaolinux.wordpress.com/feed/
 	define_irc  cabelo
 	define_lang pt
 
-feed 15m http://www.marcus-moeller.de/suse/feed
-	define_name Marcus Moeller
-	define_irc  marcus_
-	define_lang de
-	define_face marcusmoeller
+#feed 15m http://www.marcus-moeller.de/suse/feed
+#	define_name Marcus Moeller
+#	define_irc  marcus_
+#	define_lang de
+#	define_face marcusmoeller
 
 feed 15m http://lizards.opensuse.org/author/marcusmoeller/feed/
 	define_name Marcus Moeller
