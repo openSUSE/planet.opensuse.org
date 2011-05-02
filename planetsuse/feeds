@@ -287,8 +287,8 @@ feed 15m http://francis.giannaros.org/blog/category/openSUSE/feed/
 feed 15m http://tablefor1.wordpress.com/feed/atom/
 	define_name Jonathan Ervine
 
-feed 15m http://rodo.foo.cz/blog/?feed=rss2
-	define_name Radek Doulík
+#feed 15m http://rodo.foo.cz/blog/?feed=rss2
+#	define_name Radek Doulík
 
 feed 15m http://foodformonkeys.blogspot.com/feeds/posts/default
 	define_name Lluis Sanchez
