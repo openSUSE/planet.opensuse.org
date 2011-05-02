@@ -1067,9 +1067,9 @@ feed 15m http://www.opensuse-lernen.de/?feed=rss2
 	define_name openSUSE-lernen.de
 	define_lang de
 
-feed 15m http://blog.bgta.net/feed/tag/opensuse/
-	define_name Raul Romero
-	define_lang es
+#feed 15m http://blog.bgta.net/feed/tag/opensuse/
+#	define_name Raul Romero
+#	define_lang es
 
 feed 15m http://mauropm.livejournal.com/data/rss
 	define_name Mauro Parra Miranda
