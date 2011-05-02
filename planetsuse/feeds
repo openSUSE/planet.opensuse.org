@@ -1540,11 +1540,7 @@ feed 15m http://opensuse.terrorpup.net/wp-atom.php
     define_member 1
     define_face chuck_payne
 
-feed 15m http://blog.pitoulias.gr/taxonomy/term/15/0/feed
-    define_name George Pitoulias
-    define_irc  skoliX
-    define_face pitoulias
-feed 15m http://blog.pitoulias.gr/taxonomy/term/14/0/feed
+feed 15m http://blog.pitoulias.gr/el/taxonomy/term/2/feed
     define_name George Pitoulias
     define_irc  skoliX
     define_face pitoulias
