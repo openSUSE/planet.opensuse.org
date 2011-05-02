@@ -817,8 +817,8 @@ feed 15m http://sellingfreesoftwareforaliving.blogspot.com/feeds/posts/default
 	define_name Han Wen Kam
     define_face han_wen_kam
 
-feed 15m http://www.jeffshantz.com/feed/
-	define_name Jeff Shantz
+#feed 15m http://www.jeffshantz.com/feed/
+#	define_name Jeff Shantz
 
 feed 15m http://rajkov-blog.blogspot.com/feeds/posts/default
 	define_name Rajko Matovic
