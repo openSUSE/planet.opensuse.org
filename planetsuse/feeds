@@ -1192,9 +1192,9 @@ feed 15m http://blog.susestudio.com/feeds/posts/default
 	define_name SUSE Studio
 	define_face studio
 
-feed 15m http://shayonj.wordpress.com/feed/rss/
-	define_name Shayon Mukherjee
-	define_member 1
+#feed 15m http://shayonj.wordpress.com/feed/rss/
+#	define_name Shayon Mukherjee
+#	define_member 1
 
 feed 15m http://idulk.kendari.linux.or.id/feed/atom/
 	define_name Saydul Akram
