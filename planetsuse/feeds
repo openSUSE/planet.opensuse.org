@@ -247,7 +247,7 @@ feed 15m http://blog.hennevogel.de/feed/
 	define_face henne
 	define_member 1
 
-feed 15m http://snorp.net/posts.atom
+feed 15m http://snorp.net/blog/atom.xml
 	define_name James Willcox
 	define_face http://planet.gnome.org/heads/snorp.png
 
@@ -607,9 +607,6 @@ feed 15m http://lizards.opensuse.org/author/jdsn/feed/
 
 feed 15m http://lizards.opensuse.org/author/helcaraxe/feed/
 	define_name Jan-Christoph Bornschlegel
-
-feed 15m http://azaadsource.com/category/suse/feed/
-	define_name Hameedullah Khan
 
 feed 15m http://lizards.opensuse.org/author/g0nz0/feed/
 	define_name Rossana Motta
