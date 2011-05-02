@@ -7,5 +7,7 @@ basedir="${0%/*}"
 
 LOGFILE="$PWD/website/log.txt"
 
-./update.sh >log 2>&1
-./write.sh >>log 2>&1
+{
+    ./update.sh
+    ./write.sh
+} >"$LOGFILE" 2>&1
