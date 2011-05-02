@@ -1151,9 +1151,9 @@ feed 15m http://blog.marcolino.com.br/wordpress/tags/opensuse/feed/
 #	define_name Leandro Hamid
 #	define_lang pt
 
-feed 15m http://opensusebr.blogspot.com/feeds/posts/default
-	define_name Fábio Faria
-	define_lang pt
+#feed 15m http://opensusebr.blogspot.com/feeds/posts/default
+#	define_name Fábio Faria
+#	define_lang pt
 
 # disabled because of sexist content:
 # http://rauhmaru.blogspot.com/2010/08/parabens-opensuse-5-anos-de-vida.html
