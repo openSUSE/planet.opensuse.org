@@ -954,11 +954,11 @@ feed 15m http://lizards.opensuse.org/author/puzel/feed/
 	define_face petr_uzel
 	define_irc  ptr_uzl
     define_member 1
-feed 15m http://petr.gk2.sk/blog/index.php/feed/
-	define_name Petr Uzel
-	define_face petr_uzel
-	define_irc  ptr_uzl
-    define_member 1
+#feed 15m http://petr.gk2.sk/blog/index.php/feed/
+#	define_name Petr Uzel
+#	define_face petr_uzel
+#	define_irc  ptr_uzl
+#   define_member 1
 
 feed 15m http://blog.reblochon.org/feeds/posts/default
 	define_name Stephane Delcroix
