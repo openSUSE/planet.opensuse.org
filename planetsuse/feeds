@@ -1083,7 +1083,7 @@ feed 15m http://feeds.feedburner.com/IterativoEIncremental
 	define_name Martin Torres
 	define_lang es
 
-feed 15m http://gnuowned.tumblr.com/rss
+feed 15m http://www.gnuowned.org/rss
 	define_name Miguel Angel Barajas
 	define_lang es
 
