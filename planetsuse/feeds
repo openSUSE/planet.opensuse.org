@@ -1134,9 +1134,9 @@ feed 15m http://usuariolinux.blogspot.com/feeds/posts/default
 	define_name Marcelo Segura
 	define_lang pt
 
-feed 15m http://ninjitisu.wordpress.com/feed/atom/
-	define_name Agail Sanches
-	define_lang pt
+#feed 15m http://ninjitisu.wordpress.com/feed/atom/
+#	define_name Agail Sanches
+#	define_lang pt
 
 feed 15m http://neofenix.wordpress.com/feed/atom/
 	define_name Fabio Lima
