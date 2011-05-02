@@ -465,8 +465,8 @@ feed 15m http://blog.fnmueller.de/feed/atom/
 	define_name Felix-Nicolai Müller
 	define_irc  fnmueller
 
-feed 15m http://blogs.gnome.org/gekker/feed/
-	define_name Gary Ekker
+#feed 15m http://blogs.gnome.org/gekker/feed/
+#	define_name Gary Ekker
 
 feed 15m http://jared.allenville.com/feeds/posts/default
 	define_name Jared Allen
