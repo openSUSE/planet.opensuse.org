@@ -1016,8 +1016,7 @@ feed 15m http://lizards.opensuse.org/author/alexbariv/feed/
 	define_irc  alexbariv
 	define_face alex_barrios
 	define_member 1
-
-feed 15m http://blog.alexbariv.com/feed/
+feed 15m http://www.alexertech.com/?feed=rss
 	define_name Alex Barrios
 	define_irc  alexbariv
 	define_face alex_barrios
