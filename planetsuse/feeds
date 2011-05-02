@@ -1683,3 +1683,9 @@ feed 15m http://anadiotisd.wordpress.com/feed/
     define_irc  diomidis
     define_face diomidis
 
+feed 15m http://www.trebol-a.com/categoria/gnu-linux/feed/
+    define_name Alberto Garcia
+    define_lang es
+    define_irc  Trebol-a
+    define_face alberto_garcia
+
