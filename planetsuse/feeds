@@ -1681,3 +1681,15 @@ feed 15m http://www.trebol-a.com/categoria/gnu-linux/feed/
     define_irc  Trebol-a
     define_face alberto_garcia
 
+feed 15m http://zoumpis.wordpress.com/category/opensuse-el/feed
+    define_name Rousinopoulos Athanasios-Ilias
+    define_irc  zoumpis
+feed 15m http://zoumpis.wordpress.com/category/opensuse-es/feed
+    define_name Rousinopoulos Athanasios-Ilias
+    define_irc  zoumpis
+    define_lang es
+feed 15m http://zoumpis.wordpress.com/category/opensuse-el/feed
+    define_name Rousinopoulos Athanasios-Ilias
+    define_irc  zoumpis
+    define_lang el
+
