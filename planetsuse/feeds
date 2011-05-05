@@ -1693,3 +1693,8 @@ feed 15m http://zoumpis.wordpress.com/category/opensuse-el/feed
     define_irc  zoumpis
     define_lang el
 
+feed 15m http://alex.eftimie.ro/category/gsoc/feed/
+    define_name Alex Eftimie
+    define_gsoc 1
+    define_irc  alex3f
+    define_face alex_eftimie
