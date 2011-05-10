@@ -1323,10 +1323,10 @@ feed 15m http://www.liveinternet.ru/users/ilya_chernykh/rss
 	define_name Ilya Chernykh
 	define_lang ru
 
-#feed 15m http://knotes.ru/feed/
-#	define_name KNotes
-#	define_lang ru
-#	define_face kde-ru
+feed 15m http://knotes.ru/feed/
+	define_name KNotes
+	define_lang ru
+	define_face kde-ru
 
 feed 15m http://feeds.feedburner.com/SapfeerOpensuse
 	define_name Sergey Lomakov
