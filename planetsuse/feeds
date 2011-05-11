@@ -429,8 +429,8 @@ feed 15m http://www.bryen.com/?feed=rss2
 	define_face bryen
 	define_member 1
 
-feed 15m http://blogs.gnome.org/sragavan/feed/
-	define_name Srinivasa Ragavan
+#feed 15m http://blogs.gnome.org/sragavan/feed/
+#	define_name Srinivasa Ragavan
 
 feed 15m http://jordimassaguerpla.blogspot.com/feeds/posts/default
 	define_name Jordi Massaguer
