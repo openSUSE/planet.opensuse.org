@@ -1364,7 +1364,7 @@ feed 15m http://alexqwesa.blogspot.com/feeds/posts/default/-/opensuse
 	define_lang ru
     define_member 1
 
-feed 15m http://cherkasof.blogspot.com/feeds/posts/default/
+feed 15m http://blog.linux-oid.ru/feeds/posts/default/
 	define_name Anton Cherkasov
 	define_lang ru
 
