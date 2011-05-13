@@ -1634,12 +1634,12 @@ feed 15m http://blog.lowkster.com/feeds/posts/default/-/opensuse?alt=rss
     define_irc  lowks
     define_member 1
 
-feed 15m http://anksos.blogspot.com/feeds/posts/default/-/opensuse-gr?alt=rss
+feed 15m http://anksos.blogspot.com/feeds/posts/default/-/openSUSE-gr?alt=rss
     define_name Anastasios Ksouzafeiris
     define_irc  ankso
     define_lang gr
     define_face ankso
-feed 15m http://anksos.blogspot.com/feeds/posts/default/-/opensuse-en?alt=rss
+feed 15m http://anksos.blogspot.com/feeds/posts/default/-/openSUSE-en?alt=rss
     define_name Anastasios Ksouzafeiris
     define_irc  ankso
     define_face ankso
