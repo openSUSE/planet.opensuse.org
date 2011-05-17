@@ -1185,7 +1185,7 @@ feed 15m http://blog.zaq.ne.jp/opensuse/rss/
 	define_lang ja
 	define_member 1
 
-feed 15m http://opensuse.blip.tv/rss/
+feed 15m http://blip.tv/opensuse/rss
 	define_name openSUSE TV
 	define_face opensusetv
 
