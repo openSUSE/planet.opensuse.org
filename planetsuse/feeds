@@ -830,8 +830,9 @@ feed 15m http://feeds.feedburner.com/Vioan
 feed 15m http://www.mindby.com/feeds/atom.xml
 	define_name Brent McConnell
 
-feed 15m http://ugansert.blogspot.com/feeds/posts/default
+feed 15m http://suse.gansert.net/?feed=rss2
 	define_name Uwe Gansert
+    define_irc  wumpscut
 
 feed 15m http://lizards.opensuse.org/author/cyberorg/feed/
 	define_name Jigish Gohil
