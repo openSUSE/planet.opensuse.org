@@ -1699,3 +1699,9 @@ feed 15m http://alex.eftimie.ro/category/gsoc/feed/
     define_gsoc 1
     define_irc  alex3f
     define_face alex_eftimie
+
+feed 15m http://dothefly.wordpress.com/feed/
+    define_name Adrian Zavala Coria
+    define_irc  hawk___
+    define_lang es
+
