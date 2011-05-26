@@ -865,7 +865,7 @@ feed 15m http://knocte.blogspot.com/feeds/posts/default/-/SoftwareLibre
 	define_face knocte
 	define_irc  knocte
 
-feed 15m http://log.or.cz/?feed=rss2&tag=suse
+feed 15m http://log.or.cz/?feed=rss2
 	define_name Petr Baudis
 	define_irc  pasky
 
