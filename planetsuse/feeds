@@ -1710,3 +1710,9 @@ feed 15m http://www.ralf-lang.de/category/it/opensuse/feed/
     define_name Ralf Lang
     define_irc  lang-b1
 
+feed 15m http://rxvl.in/rss
+    define_name Ratan Sebastian
+    define_irc  rjsvaljean
+    define_gsoc 1
+
+
