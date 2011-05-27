@@ -1706,3 +1706,7 @@ feed 15m http://dothefly.wordpress.com/feed/
 	define_irc  hawk___
 	define_lang es
 
+feed 15m http://www.ralf-lang.de/category/it/opensuse/feed/
+    define_name Ralf Lang
+    define_irc  lang-b1
+
