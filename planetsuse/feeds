@@ -1718,6 +1718,6 @@ feed 15m http://rxvl.in/rss
 feed 15m http://obsforandroid.wordpress.com/feed/
     define_name Justine Leng
     define_irc  justine19
-    define_face justine_leng
+    define_face j_leng
     define_gsoc 1
 
