@@ -1721,3 +1721,7 @@ feed 15m http://obsforandroid.wordpress.com/feed/
     define_face j_leng
     define_gsoc 1
 
+feed 15m http://my.opera.com/miki100/xml/rss/blog/
+    define_name Mikolaj Siuda
+    
+
