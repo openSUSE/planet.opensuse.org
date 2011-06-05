@@ -1292,7 +1292,7 @@ feed 15m http://medwinz.blogsome.com/feed/
 	define_lang id
 	define_member 1
 
-feed 15m http://0x2207.blogspot.com/feeds/posts/default
+feed 15m http://0x2207.blogspot.com/feeds/posts/default/-/opensuse
 	define_name Matwey Kornilov
 	define_lang ru
 
