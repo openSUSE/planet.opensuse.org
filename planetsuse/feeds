@@ -1448,7 +1448,7 @@ feed 15m http://anditosan.blogspot.com/feeds/posts/default?alt=rss
 	define_irc  anditosan
 	define_member 1
 
-feed 15m http://lizards.opensuse.org/author/ketheriel/feed/
+feed 15m http://www.marques.so/category/opensuse/feed/
 	define_name Nelson Marques
 	define_irc  nmarques
 	define_face nmarques
