@@ -1724,4 +1724,8 @@ feed 15m http://obsforandroid.wordpress.com/feed/
 feed 15m http://my.opera.com/miki100/xml/rss/blog/
     define_name Mikolaj Siuda
     
+feed 15m http://carlos.lubas.com.br/?feed=rss2
+    define_name Carlos Alberto Soares Lubas
+    define_face carlos_lubas
+    define_lang pt
 
