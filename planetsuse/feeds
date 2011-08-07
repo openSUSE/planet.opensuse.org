@@ -175,7 +175,7 @@ feed 15m http://feeds.ottleys.net/jaredottley?format=xml
 #feed 15m http://susediary.blogspot.com/feeds/posts/full
 #	define_name Graham Anderson
 
-feed 15m http://duncan.mac-vicar.com/rss.xml?tag=suse
+feed 15m http://duncan.mac-vicar.com/tag/suse/feed
 	define_name Duncan Mac-Vicar
 	define_face dmv
 	define_irc  duncanmv
@@ -1728,4 +1728,8 @@ feed 15m http://carlos.lubas.com.br/?feed=rss2
     define_name Carlos Alberto Soares Lubas
     define_face carlos_lubas
     define_lang pt
+
+feed 15m http://oyox.de/feeds/index.rss2
+    define_name Marco Heizmann
+    define_lang de
 
