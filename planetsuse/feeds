@@ -1738,3 +1738,13 @@ feed 15m http://opensusespain.blogspot.com/feeds/posts/default
     define_face marcos_baro
     define_lang es
 
+feed 15m http://www.sebastianoliva.com/en/tag/opensuse/feed
+    define_name Sebastian Oliva
+    define_gsoc 1
+    define_irc  tian2992
+feed 15m http://www.sebastianoliva.com/tag/opensuse/feed/
+    define_name Sebastian Oliva
+    define_lang es
+    define_gsoc 1
+    define_irc  tian2992
+
