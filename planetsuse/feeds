@@ -1759,3 +1759,7 @@ feed 15m http://www.sebastianoliva.com/tag/opensuse/feed/
     define_gsoc 1
     define_irc  tian2992
 
+feed 15m http://blog.tampakrap.gr/category/planets/planet-opensuse/feed/
+    define_name Theo Chatzimichos
+    define_face theo_chatzimichos
+
