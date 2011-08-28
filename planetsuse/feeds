@@ -113,11 +113,11 @@ feed 15m http://dev-loki.blogspot.com/feeds/posts/default?alt=rss
 	define_face yaloki
 	define_irc  yaloki
 	define_member 1
-feed 15m https://plusfeed.appspot.com/117680951975244630647
-	define_name Pascal Bleser
-	define_face yaloki
-	define_irc  yaloki
-	define_member 1
+#feed 15m https://plusfeed.appspot.com/117680951975244630647
+#	define_name Pascal Bleser
+#	define_face yaloki
+#	define_irc  yaloki
+#	define_member 1
 
 feed 15m http://metaverse.wordpress.com/feed/atom/
 	define_name Mike McCallister
