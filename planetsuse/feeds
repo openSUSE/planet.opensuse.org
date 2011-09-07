@@ -1768,3 +1768,8 @@ feed 15m https://vasiliskarampouzis.wordpress.com/feed/
     define_irc  Master91
     define_lang el
 
+feed 15m http://al-tw.blogspot.com/feeds/posts/default
+# littledro@gmail.com
+	define_name Yu-Chen Cho
+	define_lang tw
+
