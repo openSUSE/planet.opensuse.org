@@ -1773,3 +1773,8 @@ feed 15m http://al-tw.blogspot.com/feeds/posts/default
 	define_name Yu-Chen Cho
 	define_lang tw
 
+feed 15m http://lisufasblog.linuxfreundeonline.de/?feed=rss2
+    define_name Uwe Dittmann
+    define_lang de
+    define_member 1
+
