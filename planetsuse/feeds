@@ -1778,3 +1778,7 @@ feed 15m http://lisufasblog.linuxfreundeonline.de/?feed=rss2
     define_lang de
     define_member 1
 
+feed 15m http://openleadership.blogspot.com/feeds/posts/default
+    define_name Gregory M. Zysk
+    define_irc  gmzysk
+
