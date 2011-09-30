@@ -572,7 +572,7 @@ feed 15m http://stick.gk2.sk/blog/tag/opensuse/feed/
 feed 15m http://lizards.opensuse.org/author/dl9pf/feed/
 	define_name Jan-Simon Möller
 
-feed 15m http://lizards.opensuse.org/author/kfreitag/feed/
+feed 15m http://kfreitag.tumblr.com/rss
 	define_name Klaas Freitag
 	define_irc  dragotin
 	define_member 1
