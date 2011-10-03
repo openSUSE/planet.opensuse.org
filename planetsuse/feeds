@@ -992,6 +992,8 @@ feed 15m http://thefreecountry.wordpress.com/category/gnulinux/opensuse/feed/
 feed 15m http://lizards.opensuse.org/author/bruno_friedmann/feed/
 	define_name Bruno Friedmann
 	define_irc  tigerfoot
+    define_face bruno_friedmann
+    define_member 1
 
 feed 15m http://lizards.opensuse.org/author/migbarajas/feed/
 	define_name Miguel Angel Barajas Hernandez
