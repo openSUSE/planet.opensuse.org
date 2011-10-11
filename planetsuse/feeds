@@ -463,9 +463,9 @@ feed 15m http://www.vuntz.net/journal/feed/en/rss2
 	define_irc  vuntz
 	define_member 1
 
-feed 15m http://gabrielstein.org/blog/?feed=rss2
-	define_name Gabriel Stein
-	define_irc  gabrielstein
+#feed 15m http://gabrielstein.org/blog/?feed=rss2
+#	define_name Gabriel Stein
+#	define_irc  gabrielstein
 
 feed 15m http://visnov.blogspot.com/feeds/posts/default
 	define_name Stanislav Visnovsky
@@ -1116,9 +1116,9 @@ feed 15m http://pangrys.blogspot.com/feeds/posts/default
 	define_name Maciej Piotr Szczepański
 	define_lang pl
 
-feed 15m http://www.rogozinski.org/feed/atom/
-	define_name Mirosław Rogoziński
-	define_lang pl
+#feed 15m http://www.rogozinski.org/feed/atom/
+#	define_name Mirosław Rogoziński
+#	define_lang pl
 
 feed 15m http://my.opera.com/dragonzone/xml/atom/blog/
 	define_name Piotr Krakowiak
