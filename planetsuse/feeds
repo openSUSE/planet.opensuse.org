@@ -1444,7 +1444,7 @@ feed 15m http://www.matthewehle.info/blog/?tag=opensuse&feed=rss2
 	define_member 1
 	define_face matthew_ehle
 
-feed 15m http://www.suseromania.ro/tag/softwareliber/feed/
+feed 15m http://www.suseromania.ro/?feed=atom
 	define_name Lucian Oprea
 	define_irc  oprea_luci
 	define_member 1
