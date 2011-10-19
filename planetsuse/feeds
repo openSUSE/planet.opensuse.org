@@ -1785,3 +1785,9 @@ feed 15m http://openleadership.blogspot.com/feeds/posts/default
     define_name Gregory M. Zysk
     define_irc  gmzysk
 
+feed 15m https://jfehlig.wordpress.com/feed/
+    define_name Jim Fehlig
+    define_irc  jimfehlig
+    define_member 1
+    define_face jimfehlig
+
