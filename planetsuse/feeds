@@ -1459,6 +1459,7 @@ feed 15m http://lizards.opensuse.org/author/badshah400/feed/
 feed 15m http://anditosan.blogspot.com/feeds/posts/default?alt=rss
 	define_name Andres Silva
 	define_irc  anditosan
+    define_face anditosan
 	define_member 1
 
 feed 15m http://www.marques.so/category/opensuse/feed/
@@ -1513,7 +1514,7 @@ feed 15m https://saschpe.wordpress.com/category/opensource/suse/feed/
 	define_member 1
 	define_face sascha_peilicke
 
-feed 15m http://oyranos-cms.blogspot.com/feeds/posts/default
+feed 15m http://www.oyranos.org/feed/rss/
 	define_name Kai-Uwe Behrmann
 	define_irc  oy
 
