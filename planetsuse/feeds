@@ -1514,7 +1514,7 @@ feed 15m https://saschpe.wordpress.com/category/opensource/suse/feed/
 	define_member 1
 	define_face sascha_peilicke
 
-feed 15m http://www.oyranos.org/feed/rss/
+feed 15m http://www.oyranos.org/feed
 	define_name Kai-Uwe Behrmann
 	define_irc  oy
 
