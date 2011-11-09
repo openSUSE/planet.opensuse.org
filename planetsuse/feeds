@@ -1796,3 +1796,8 @@ feed 15m https://iamsaurabh.wordpress.com/feed/
     define_name Saurabh Sood
     define_irc  saurabhsood91
 
+feed 15m http://www.nui.fr/blog/
+    define_name NUI-France
+    define_face nui-fr
+    define_lang fr
+
