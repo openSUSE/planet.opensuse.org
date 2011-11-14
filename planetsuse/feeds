@@ -1801,3 +1801,11 @@ feed 15m http://www.nui.fr/blog/
     define_face nui-fr
     define_lang fr
 
+feed 15m http://opensuseadventures.blogspot.com/feeds/posts/default
+    define_name Roger Luedecke
+
+feed 15m http://suseserver.de/?feed=rss2
+    define_name Jörg Stephan
+    define_irc  johest
+    define_member 1
+
