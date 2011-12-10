@@ -1815,3 +1815,8 @@ feed 15m http://www.sysrich.co.uk/?feed=rss2
     define_member 1
     define_face ilmehtar
 
+feed 15m https://victorhckinthefreeworld.wordpress.com/feed/
+    define_name Victorhck
+    define_irc  Victorhck
+	define_lang es
+
