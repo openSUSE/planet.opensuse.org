@@ -572,7 +572,7 @@ feed 15m http://stick.gk2.sk/blog/tag/opensuse/feed/
 feed 15m http://lizards.opensuse.org/author/dl9pf/feed/
 	define_name Jan-Simon Möller
 
-feed 15m http://kfreitag.tumblr.com/rss
+feed 15m http://dragotin.wordpress.com/feed/
 	define_name Klaas Freitag
 	define_irc  dragotin
 	define_member 1
@@ -1819,4 +1819,10 @@ feed 15m https://victorhckinthefreeworld.wordpress.com/feed/
     define_name Victorhck
     define_irc  Victorhck
 	define_lang es
+
+feed 15m http://www.alionet.org/external.php?do=rss&type=newcontent&sectionid=1&days=120
+    define_name Alionet
+    define_lang fr
+    define_face alionet
+
 
