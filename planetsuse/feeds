@@ -1825,4 +1825,8 @@ feed 15m http://www.alionet.org/external.php?do=rss&type=newcontent&sectionid=1&
     define_lang fr
     define_face alionet
 
+feed 15m http://peternixon.net/feeds/rss/blog/
+    define_name Peter Nixon
+    define_irc  Nix
+    define_member 1
 
