@@ -11,6 +11,7 @@
 import os, time, cgi, sys
 import rawdoglib.plugins, rawdoglib.rawdog
 import libxml2
+import urllib
 import locale
 
 from time import gmtime, strftime
@@ -108,12 +109,7 @@ class RSS_Feed:
 
     def __article_sync(self, xml_article, rawdog, config, article):
         entry_info = article.entry_info
-        if entry_info.has_key('id'):
-            guid = xml_article.newChild(None, 'guid', entry_info.id)
-        elif entry_info.has_key('link'):
-            guid = xml_article.newChild(None, 'guid', entry_info.link)
-        else:
-            guid = xml_article.newChild(None, 'guid', article.hash)
+	guid = xml_article.newChild(None, 'guid', article.hash)
         guid.setProp('isPermaLink', 'false')
         if 'title' in entry_info:
             title = unicode(entry_info['title'].encode('utf8'), 'utf8') #, 'ignore')
@@ -132,7 +128,10 @@ class RSS_Feed:
             pass
         xml_article.newChild(None, 'pubDate', date)
         if entry_info.has_key('link'):
-            xml_article.newChild(None, 'link', entry_info['link'])
+            try:
+                xml_article.newChild(None, 'link', entry_info['link'])
+            except UnicodeEncodeError:
+                pass
 
         if entry_info.has_key('content'):
             for content in entry_info['content']:
