@@ -1395,6 +1395,11 @@ feed 15m http://sakananote2.blogspot.com/feeds/posts/default/-/SUSE%20Linux
 	define_lang tw
 	define_face sakana
 
+feed 15m http://sakananote2english.blogspot.com/feeds/posts/default
+	define_name Chun-Hung "sakana" Huang
+	define_irc sakana
+	define_face sakana
+
 feed 15m http://swyear.blogspot.com/feeds/posts/default?alt=rss
 	define_name Ray Chen
 	define_irc swyear
