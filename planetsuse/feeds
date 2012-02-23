@@ -1467,11 +1467,6 @@ feed 15m http://anditosan.blogspot.com/feeds/posts/default?alt=rss
     define_face anditosan
 	define_member 1
 
-feed 15m http://www.marques.so/category/opensuse/feed/
-	define_name Nelson Marques
-	define_irc  nmarques
-	define_face nmarques
-
 feed 15m http://opensuseambassadors.blogspot.com/feeds/posts/default
 	define_name Greek openSUSE Ambassadors
 	define_face greek_ambassadors
