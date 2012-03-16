@@ -1792,7 +1792,7 @@ feed 15m http://jfehlig.wordpress.com/feed/
     define_member 1
     define_face jimfehlig
 
-feed 15m https://iamsaurabh.wordpress.com/feed/
+feed 15m https://iamsaurabh.wordpress.com/tag/opensuse/feed/
     define_name Saurabh Sood
     define_irc  saurabhsood91
 
