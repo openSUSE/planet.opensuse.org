@@ -119,8 +119,8 @@ feed 15m http://dev-loki.blogspot.com/feeds/posts/default?alt=rss
 #	define_irc  yaloki
 #	define_member 1
 
-feed 15m http://metaverse.wordpress.com/feed/atom/
-	define_name Mike McCallister
+#feed 15m http://metaverse.wordpress.com/feed/atom/
+#	define_name Mike McCallister
 
 feed 15m http://www.kdedevelopers.org/blog/280/feed
 	define_name Lubos Lunak
@@ -1518,7 +1518,7 @@ feed 15m http://www.oyranos.org/feed
 	define_name Kai-Uwe Behrmann
 	define_irc  oy
 
-feed 15m http://my.opera.com/avm-xandry/xml/rss/blog/
+feed 15m http://avm-xandry.blogspot.com/feeds/posts/default
 	define_name Alexander Mityunin
 	define_irc  xandry
 	define_lang ru
