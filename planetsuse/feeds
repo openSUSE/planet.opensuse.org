@@ -1830,3 +1830,8 @@ feed 15m http://peternixon.net/feeds/rss/blog/
     define_irc  Nix
     define_member 1
 
+feed 15m http://www.dennogumi.org/category/opensuse/feed
+    define_name Luca Beltrame
+    define_irc  einar77
+    define_member 1
+
