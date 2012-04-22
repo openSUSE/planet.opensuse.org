@@ -1835,3 +1835,8 @@ feed 15m http://www.dennogumi.org/category/opensuse/feed
     define_irc  einar77
     define_member 1
 
+feed 15m http://andreipetre.blogspot.com/feeds/posts/default
+    define_name Andrei Petre
+    define_irc  andreip
+    define_face andreip
+
