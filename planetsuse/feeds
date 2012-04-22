@@ -1844,3 +1844,7 @@ feed 15m http://suseana.ru/?feed=rss2
     define_name Alexey Fedorchuk
     define_lang ru
 
+feed 15m http://summit.opensuse.org/feed.xml
+    define_name openSUSE Summit
+    define_face opensuse_summit
+
