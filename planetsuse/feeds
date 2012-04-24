@@ -1848,3 +1848,7 @@ feed 15m http://summit.opensuse.org/feed.xml
     define_name openSUSE Summit
     define_face opensuse_summit
 
+feed 15m http://www.open-build-service.org/feed/
+    define_name Open Build Service
+    define_face obs
+
