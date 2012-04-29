@@ -1856,3 +1856,9 @@ feed 15m http://priyankafoss.blogspot.com/feeds/posts/default
     define_name Priyanka Menghani
     define_gsoc 1
 
+feed 15m http://blog.tenstral.net/category/planet/planet-opensuse/feed
+    define_name Matthias Klumpp
+    define_gsoc 1
+    define_irc  ximion
+
+
