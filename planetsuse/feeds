@@ -1852,3 +1852,7 @@ feed 15m http://www.open-build-service.org/feed/
     define_name Open Build Service
     define_face obs
 
+feed 15m http://priyankafoss.blogspot.com/feeds/posts/default
+    define_name Priyanka Menghani
+    define_gsoc 1
+
