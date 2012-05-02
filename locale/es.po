@@ -118,7 +118,7 @@ msgstr ""
 
 #: planetsuse/planet_template.html:91
 #, fuzzy
-msgid "Taiwanese"
+msgid "Traditional Chinese"
 msgstr "Japonés"
 
 #: planetsuse/planet_template.html:92

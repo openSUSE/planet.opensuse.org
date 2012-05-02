@@ -111,7 +111,7 @@ msgid "Czech"
 msgstr ""
 
 #: planetsuse/planet_template.html:91
-msgid "Taiwanese"
+msgid "Traditional Chinese"
 msgstr ""
 
 #: planetsuse/planet_template.html:92
