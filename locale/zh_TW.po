@@ -64,7 +64,7 @@ msgstr ""
 
 #: planetsuse/planet_template.html:75 planetsuse/feedlist_template.html:60
 msgid ""
-"To have your blog added to this aggregator, please read <a href=\"http://en."
+"To have your blog added to this aggregator, please read <a href=\"http://zh."
 "opensuse.org/openSUSE:Planet\">the instructions</a>."
 msgstr ""
 "要將您的部落格加入此整合中，請參閱<a href=\"http://en.opensuse.org/openSUSE:"
