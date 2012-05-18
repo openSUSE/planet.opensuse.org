@@ -654,9 +654,6 @@ feed 15m http://lizards.opensuse.org/author/poeml/feed/
 feed 15m http://lizards.opensuse.org/author/wiederda/feed/
 	define_name Hubert Mantel
 
-feed 15m http://opensuse-tutorials.com/feed/
-	define_name openSUSE Tutorials
-
 feed 15m http://nderkach.blogspot.com/feeds/posts/default
 	define_name Nikolay Derkach
 
