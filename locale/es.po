@@ -14,6 +14,76 @@ msgstr ""
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: planetsuse/code.html:8
+msgid "_DATE_FORMAT_"
+msgstr "%d de %B de %Y"
+
+#: planetsuse/code.html:9
+msgid "read more"
+msgstr ""
+
+#: planetsuse/feedlist_template.html:53 planetsuse/planet_template.html:68
+msgid "Welcome to Planet openSUSE"
+msgstr "Bienvenido al Planeta openSUSE"
+
+#: planetsuse/feedlist_template.html:55
+msgid ""
+"This page contains the list of all the <a href=\"http://www.opensuse.org"
+"\">openSUSE</a> contributors who are aggregated on <a href=\"./\">Planet "
+"openSUSE</a>."
+msgstr ""
+"Esta página tiene una lista de todos los colaboradores de <a href=\"http://"
+"www.opensuse.org\">openSUSE</a> que están agrupados en el <a href=\"./"
+"\">Planeta openSUSE</a>."
+
+#: planetsuse/feedlist_template.html:60 planetsuse/planet_template.html:75
+msgid ""
+"To have your blog added to this aggregator, please read <a href=\"http://en."
+"opensuse.org/openSUSE:Planet\">the instructions</a>."
+msgstr ""
+"Para que añadan tu blog en esta agrupación, por favor lee <a href=\"http://"
+"en.opensuse.org/openSUSE:Planet\">las instrucciones</a>."
+
+#: planetsuse/feedlist_template.html:64 planetsuse/planet_template.html:100
+msgid "Actions"
+msgstr "Acciones"
+
+#: planetsuse/feedlist_template.html:66
+msgid "Back to Planet openSUSE"
+msgstr "Volver al Planeta openSUSE"
+
+#: planetsuse/feedlist_template.html:68
+msgid "Show all feeds"
+msgstr "Mostrar todas las fuentes"
+
+#: planetsuse/feedlist_template.html:71 planetsuse/planet_template.html:107
+msgid "Metadata"
+msgstr "Metadatos"
+
+#: planetsuse/feedlist_template.html:81
+msgid "Aggregated feeds"
+msgstr "Fuentes agrupadas"
+
+#: planetsuse/feedlist_template.html:121 planetsuse/planet_template.html:175
+msgid "Pascal Bleser and the openSUSE Community"
+msgstr "Pascal Bleser y la comunidad de openSUSE"
+
+#: planetsuse/feedlist_template.html:124 planetsuse/planet_template.html:178
+msgid ""
+"This site is not an official openSUSE website, and is not in any way "
+"affiliated with or endorsed by SUSE Linux GmbH or Novell."
+msgstr ""
+"Este sitio no es un sitio Web oficial de openSUSE, y no está afiliado de "
+"ninguna manera o respaldado por SUSE Linux GmbH o Novell."
+
+#: planetsuse/feedlist_template.html:129 planetsuse/planet_template.html:183
+msgid ""
+"openSUSE and SUSE are trademarks of Novell, Inc. in the United States and "
+"other countries."
+msgstr ""
+"openSUSE y SUSE son marcas registradas de Novell, Inc. en los Estados Unidos "
+"y en otros países."
+
 #: planetsuse/planet_template.html:8
 msgid "Aggregation of the blogs of openSUSE contributors"
 msgstr "Agrupación de blogs de colaboradores de openSUSE"
@@ -27,7 +97,7 @@ msgid "Subscriptions (all languages)"
 msgstr "Suscripciones (todos los idiomas)"
 
 #: planetsuse/planet_template.html:31 planetsuse/planet_template.html:32
-#: planetsuse/planet_template.html:96
+#: planetsuse/planet_template.html:97
 msgid "all languages"
 msgstr "todos los idiomas"
 
@@ -47,13 +117,9 @@ msgstr "Comunidad"
 msgid "Development"
 msgstr "Desarrollo"
 
-#: planetsuse/planet_template.html:52 planetsuse/planet_template.html:102
+#: planetsuse/planet_template.html:52 planetsuse/planet_template.html:103
 msgid "Overview"
 msgstr "Visión general"
-
-#: planetsuse/planet_template.html:68 planetsuse/feedlist_template.html:53
-msgid "Welcome to Planet openSUSE"
-msgstr "Bienvenido al Planeta openSUSE"
 
 #: planetsuse/planet_template.html:70
 msgid ""
@@ -63,14 +129,6 @@ msgstr ""
 "Esto es una agrupación de fuentes que recopila lo que escriben los "
 "colaboradores de <a href=\"http://www.opensuse.org\">openSUSE</a> en sus "
 "respectivos blogs."
-
-#: planetsuse/planet_template.html:75 planetsuse/feedlist_template.html:60
-msgid ""
-"To have your blog added to this aggregator, please read <a href=\"http://en."
-"opensuse.org/openSUSE:Planet\">the instructions</a>."
-msgstr ""
-"Para que añadan tu blog en esta agrupación, por favor lee <a href=\"http://"
-"en.opensuse.org/openSUSE:Planet\">las instrucciones</a>."
 
 #: planetsuse/planet_template.html:79
 msgid "Languages"
@@ -117,75 +175,71 @@ msgid "Czech"
 msgstr ""
 
 #: planetsuse/planet_template.html:91
+msgid "Simplified Chinese"
+msgstr ""
+
+#: planetsuse/planet_template.html:92
 #, fuzzy
 msgid "Traditional Chinese"
 msgstr "Japonés"
 
-#: planetsuse/planet_template.html:92
+#: planetsuse/planet_template.html:93
 msgid "Romanian"
 msgstr ""
 
-#: planetsuse/planet_template.html:93
+#: planetsuse/planet_template.html:94
 msgid "Hungarian"
 msgstr ""
 
-#: planetsuse/planet_template.html:94
+#: planetsuse/planet_template.html:95
 msgid "Greek"
 msgstr ""
 
-#: planetsuse/planet_template.html:95
+#: planetsuse/planet_template.html:96
 msgid "Mongolian"
 msgstr ""
 
-#: planetsuse/planet_template.html:99 planetsuse/feedlist_template.html:64
-msgid "Actions"
-msgstr "Acciones"
-
-#: planetsuse/planet_template.html:101 planetsuse/planet_template.html:116
+#: planetsuse/planet_template.html:102 planetsuse/planet_template.html:117
 msgid "Keyboard shortcuts"
 msgstr "Atajos de teclado"
 
-#: planetsuse/planet_template.html:103
+#: planetsuse/planet_template.html:104
 msgid "Feed list"
 msgstr "Lista de fuentes"
 
-#: planetsuse/planet_template.html:106 planetsuse/feedlist_template.html:71
-msgid "Metadata"
-msgstr "Metadatos"
-
-#: planetsuse/planet_template.html:118
+#: planetsuse/planet_template.html:119
 msgid "toggle overview"
 msgstr "activar/desactivar la vista general"
 
-#: planetsuse/planet_template.html:119
+#: planetsuse/planet_template.html:120
 msgid "toggle help (this)"
 msgstr "activar/desactivar la ayuda (ésto)"
 
-#: planetsuse/planet_template.html:120
+#: planetsuse/planet_template.html:121
 msgid "next post"
 msgstr "siguiente post"
 
-#: planetsuse/planet_template.html:121
+#: planetsuse/planet_template.html:122
 msgid "previous post"
 msgstr "post anterior"
 
-#: planetsuse/planet_template.html:122
+#: planetsuse/planet_template.html:123
 msgid "next day"
 msgstr "siguiente día"
 
-#: planetsuse/planet_template.html:123
+#: planetsuse/planet_template.html:124
 msgid "previous day"
 msgstr "día anterior"
 
-#: planetsuse/planet_template.html:124
+#: planetsuse/planet_template.html:125
 msgid "go to top"
 msgstr "ir arriba"
 
-#: planetsuse/planet_template.html:125
+#: planetsuse/planet_template.html:126
 msgid "cancel"
 msgstr "cancelar"
 
-#: planetsuse/planet_template.html:127
+#: planetsuse/planet_template.html:128
 msgid ""
 "Note that you may use those keys with or without pressing the <span class="
 "\"key\">alt</span> key."
@@ -193,60 +247,10 @@ msgstr ""
 "Ten en cuenta de que puedes usar esas teclas pulsando o sin pulsar la tecla "
 "<span class=\"key\">alt</span>."
 
-#: planetsuse/planet_template.html:158
+#: planetsuse/planet_template.html:159
 msgid "Current blog entries"
 msgstr "Entradas de blog actuales"
 
-#: planetsuse/planet_template.html:160
+#: planetsuse/planet_template.html:161
 msgid "Older blog entries"
 msgstr "Entradas de blog más antiguas"
-
-#: planetsuse/planet_template.html:174 planetsuse/feedlist_template.html:121
-msgid "Pascal Bleser and the openSUSE Community"
-msgstr "Pascal Bleser y la comunidad de openSUSE"
-
-#: planetsuse/planet_template.html:177 planetsuse/feedlist_template.html:124
-msgid ""
-"This site is not an official openSUSE website, and is not in any way "
-"affiliated with or endorsed by SUSE Linux GmbH or Novell."
-msgstr ""
-"Este sitio no es un sitio Web oficial de openSUSE, y no está afiliado de "
-"ninguna manera o respaldado por SUSE Linux GmbH o Novell."
-
-#: planetsuse/planet_template.html:182 planetsuse/feedlist_template.html:129
-msgid ""
-"openSUSE and SUSE are trademarks of Novell, Inc. in the United States and "
-"other countries."
-msgstr ""
-"openSUSE y SUSE son marcas registradas de Novell, Inc. en los Estados Unidos "
-"y en otros países."
-
-#: planetsuse/feedlist_template.html:55
-msgid ""
-"This page contains the list of all the <a href=\"http://www.opensuse.org"
-"\">openSUSE</a> contributors who are aggregated on <a href=\"./\">Planet "
-"openSUSE</a>."
-msgstr ""
-"Esta página tiene una lista de todos los colaboradores de <a href=\"http://"
-"www.opensuse.org\">openSUSE</a> que están agrupados en el <a href=\"./"
-"\">Planeta openSUSE</a>."
-
-#: planetsuse/feedlist_template.html:66
-msgid "Back to Planet openSUSE"
-msgstr "Volver al Planeta openSUSE"
-
-#: planetsuse/feedlist_template.html:68
-msgid "Show all feeds"
-msgstr "Mostrar todas las fuentes"
-
-#: planetsuse/feedlist_template.html:81
-msgid "Aggregated feeds"
-msgstr "Fuentes agrupadas"
-
-#: planetsuse/code.html:8
-msgid "_DATE_FORMAT_"
-msgstr "%d de %B de %Y"
-
-#: planetsuse/code.html:9
-msgid "read more"
-msgstr ""

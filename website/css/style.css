@@ -348,6 +348,7 @@ ul.menu {
 .lang-ru,
 .lang-ja,
 .lang-id,
+.lang-cn,
 .lang-tw,
 .lang-ro,
 .lang-fr,
@@ -375,6 +376,7 @@ ul.menu {
 .lang-ru { background-image: url(../images/lang/ru.png); }
 .lang-ja { background-image: url(../images/lang/jp.png); }
 .lang-id { background-image: url(../images/lang/id.png); }
+.lang-cn { background-image: url(../images/lang/cn.png); }
 .lang-tw { background-image: url(../images/lang/tw.png); }
 .lang-ro { background-image: url(../images/lang/ro.png); }
 .lang-fr { background-image: url(../images/lang/fr.png); }

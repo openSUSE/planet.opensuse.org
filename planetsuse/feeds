@@ -1858,4 +1858,27 @@ feed 15m http://blog.tenstral.net/category/planet/planet-opensuse/feed
     define_gsoc 1
     define_irc  ximion
 
+# zh_CN feeds
+feed 15m http://feeds.feedburner.com/susews-without-planet-authors
+    define_name opensuse-zh
+    define_face opensuse-zh
+    define_lang cn
+    
+feed 15m http://feeds.feedburner.com/marguerite-opensuse
+    define_name Marguerite Su
+    define_nick marguerite
+    define_face marguerite
+    define_lang cn
+    define_irc  marguerite
+    define_member 1
+    
+feed 15m https://hillwoodhome.info/feed/
+    define_name Hillwood Yang
+    define_nick hillwoodhome
+    define_face hillwood_yang
+    define_lang cn
+    define_irc  hillwood
+    
+    
+
 

@@ -1,30 +1,30 @@
-# Copyright (C) 2010 Free Software Foundation, Inc.
+# Copyright (C) 2012 Free Software Foundation, Inc.
 #
-# Vojtěch Zeisek <Vojtech.Zeisek@opensuse.org>, 2010.
+# Marguerite Su, 2012.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"PO-Revision-Date: 2010-07-21 13:15+0200\n"
-"Last-Translator: Vojtěch Zeisek <Vojtech.Zeisek@opensuse.org>\n"
-"Language-Team: Český <kde-i18n-doc@kde.org>\n"
-"Language: \n"
+"Project-Id-Version: planetsuse\n"
+"PO-Revision-Date: 2012-08-20 05:56+0800\n"
+"Last-Translator: Marguerite Su\n"
+"Language-Team: Chinese Simplified <kde-i18n-doc@kde.org>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.0\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
 
 #: planetsuse/code.html:8
 msgid "_DATE_FORMAT_"
-msgstr "%d. %B %Y"
+msgstr "%Y年%m月%d日"
 
 #: planetsuse/code.html:9
 msgid "read more"
-msgstr "přečíst více"
+msgstr "继续阅读"
 
 #: planetsuse/feedlist_template.html:53 planetsuse/planet_template.html:68
 msgid "Welcome to Planet openSUSE"
-msgstr "Vítejte na planetě openSUSE"
+msgstr "欢迎光临 Planet openSUSE"
 
 #: planetsuse/feedlist_template.html:55
 msgid ""
@@ -32,224 +32,219 @@ msgid ""
 "\">openSUSE</a> contributors who are aggregated on <a href=\"./\">Planet "
 "openSUSE</a>."
 msgstr ""
-"Tato stránka obsahuje seznam všech přispěvatelů <a href=\"http://www."
-"opensuse.org/\">openSUSE</a>, jejichž blogy jsou agregovány na <a href=\"./"
-"\">Planetě openSUSE</a>."
+"此页面包含所有聚合在 <a href=\"./\">Planet openSUSE</a> 的 <a href=\"http://"
+"www.opensuse.org\">openSUSE</a> 贡献者的列表。"
 
 #: planetsuse/feedlist_template.html:60 planetsuse/planet_template.html:75
 msgid ""
 "To have your blog added to this aggregator, please read <a href=\"http://en."
 "opensuse.org/openSUSE:Planet\">the instructions</a>."
 msgstr ""
-"Abyste přidali svůj blog, přečtěte si, prosíme, <a href=\"http://en.opensuse."
-"org/openSUSE:Planet\">instrukce</a>."
+"要将您的博客加入此聚合中，请阅读 <a href=\"http://en.opensuse.org/openSUSE:"
+"Planet\">此指南</a>。"
 
 #: planetsuse/feedlist_template.html:64 planetsuse/planet_template.html:100
 msgid "Actions"
-msgstr "Akce"
+msgstr "操作"
 
 #: planetsuse/feedlist_template.html:66
 msgid "Back to Planet openSUSE"
-msgstr "Zpět na planetu openSUSE"
+msgstr "回到 Planet openSUSE"
 
 #: planetsuse/feedlist_template.html:68
 msgid "Show all feeds"
-msgstr "Zobrazit všechny zdroje"
+msgstr "显示所有新闻种子"
 
 #: planetsuse/feedlist_template.html:71 planetsuse/planet_template.html:107
 msgid "Metadata"
-msgstr "Metadata"
+msgstr "元数据"
 
 #: planetsuse/feedlist_template.html:81
 msgid "Aggregated feeds"
-msgstr "Agregované zdroje"
+msgstr "聚合的新闻种子"
 
 #: planetsuse/feedlist_template.html:121 planetsuse/planet_template.html:175
 msgid "Pascal Bleser and the openSUSE Community"
-msgstr "Pascal Bleser a komunita openSUSE"
+msgstr "Pascal Bleser 和 openSUSE 社区"
 
 #: planetsuse/feedlist_template.html:124 planetsuse/planet_template.html:178
 msgid ""
 "This site is not an official openSUSE website, and is not in any way "
 "affiliated with or endorsed by SUSE Linux GmbH or Novell."
 msgstr ""
-"Tento web není oficiálním webem openSUSE a není žádným způsobem spojený nebo "
-"schválený společnostmi SUSE Linux GmbH nebo Novell."
+"本站不是 openSUSE 官方网站，而且完全不附属于也不是由 SUSE Linux GmbH 或 "
+"Novell 支持赞助。"
 
 #: planetsuse/feedlist_template.html:129 planetsuse/planet_template.html:183
 msgid ""
 "openSUSE and SUSE are trademarks of Novell, Inc. in the United States and "
 "other countries."
-msgstr ""
-"openSUSE a SUSE jsou obchodní známky společnosti Novell, Inc. ve Spojených "
-"státech a dalších zemích."
+msgstr "openSUSE 和 SUSE 为 Novell Inc. 的商标，在美国以及其他国家。"
 
 #: planetsuse/planet_template.html:8
 msgid "Aggregation of the blogs of openSUSE contributors"
-msgstr "Agregace blogů přispěvatelů openSUSE"
+msgstr "openSUSE 贡献者们的博客聚合"
 
 #: planetsuse/planet_template.html:28 planetsuse/planet_template.html:33
 msgid "Subscriptions"
-msgstr "Přihlášení se k odběru"
+msgstr "订阅"
 
 #: planetsuse/planet_template.html:29
 msgid "Subscriptions (all languages)"
-msgstr "Přihlášení se k odběru (všechny jazyky)"
+msgstr "订阅（所有语言）"
 
 #: planetsuse/planet_template.html:31 planetsuse/planet_template.html:32
 #: planetsuse/planet_template.html:97
 msgid "all languages"
-msgstr "všechny jazyky"
+msgstr "所有语言"
 
 #: planetsuse/planet_template.html:42
 msgid "Downloads"
-msgstr "Stažení"
+msgstr "下载"
 
 #: planetsuse/planet_template.html:43
 msgid "Support"
-msgstr "Podpora"
+msgstr "支持"
 
 #: planetsuse/planet_template.html:44
 msgid "Community"
-msgstr "Komunita"
+msgstr "社区"
 
 #: planetsuse/planet_template.html:45
 msgid "Development"
-msgstr "Vývoj"
+msgstr "开发"
 
 #: planetsuse/planet_template.html:52 planetsuse/planet_template.html:103
 msgid "Overview"
-msgstr "Přehled"
+msgstr "概览"
 
 #: planetsuse/planet_template.html:70
 msgid ""
 "This is a feed aggregator that collects what <a href=\"http://www.opensuse."
 "org\">openSUSE</a> contributors are writing in their respective blogs."
 msgstr ""
-"Toto je agregátor zdrojů shromažďující to, co vývojáři <a href=\"http://www."
-"opensuse.org/\">openSUSE</a> napsali ve svých blozích."
+"这是一个新闻种子聚合，搜集了 <a href=\"http://www.opensuse.org\">openSUSE</"
+"a> 贡献者在他们博客中的文章。"
 
 #: planetsuse/planet_template.html:79
 msgid "Languages"
-msgstr "Jazyky"
+msgstr "语言"
 
 #: planetsuse/planet_template.html:81
 msgid "English"
-msgstr "Angličtina"
+msgstr "英语"
 
 #: planetsuse/planet_template.html:82
 msgid "German"
-msgstr "Němčina"
+msgstr "德语"
 
 #: planetsuse/planet_template.html:83
 msgid "French"
-msgstr ""
+msgstr "法语"
 
 #: planetsuse/planet_template.html:84
 msgid "Spanish"
-msgstr "Španělština"
+msgstr "西班牙语"
 
 #: planetsuse/planet_template.html:85
 msgid "Portuguese"
-msgstr "Portugalština"
+msgstr "葡萄牙语"
 
 #: planetsuse/planet_template.html:86
 msgid "Polish"
-msgstr "Polština"
+msgstr "波兰语"
 
 #: planetsuse/planet_template.html:87
 msgid "Japanese"
-msgstr "Japonština"
+msgstr "日语"
 
 #: planetsuse/planet_template.html:88
 msgid "Indonesian"
-msgstr "Indonéština"
+msgstr "印尼语"
 
 #: planetsuse/planet_template.html:89
 msgid "Russian"
-msgstr "Ruština"
+msgstr "俄语"
 
 #: planetsuse/planet_template.html:90
 msgid "Czech"
-msgstr "Čeština"
+msgstr "捷克语"
 
 #: planetsuse/planet_template.html:91
 msgid "Simplified Chinese"
-msgstr ""
+msgstr "简体中文"
 
 #: planetsuse/planet_template.html:92
-#, fuzzy
 msgid "Traditional Chinese"
-msgstr "Japonština"
+msgstr "繁体中文"
 
 #: planetsuse/planet_template.html:93
 msgid "Romanian"
-msgstr ""
+msgstr "罗马尼亚语"
 
 #: planetsuse/planet_template.html:94
 msgid "Hungarian"
-msgstr ""
+msgstr "匈牙利语"
 
 #: planetsuse/planet_template.html:95
 msgid "Greek"
-msgstr ""
+msgstr "希腊语"
 
 #: planetsuse/planet_template.html:96
 msgid "Mongolian"
-msgstr ""
+msgstr "蒙古文"
 
 #: planetsuse/planet_template.html:102 planetsuse/planet_template.html:117
 msgid "Keyboard shortcuts"
-msgstr "Klávesové zkratky"
+msgstr "键盘快捷键"
 
 #: planetsuse/planet_template.html:104
 msgid "Feed list"
-msgstr "Seznam zdrojů"
+msgstr "种子列表"
 
 #: planetsuse/planet_template.html:119
 msgid "toggle overview"
-msgstr "přepnout přehled"
+msgstr "概览开关"
 
 #: planetsuse/planet_template.html:120
 msgid "toggle help (this)"
-msgstr "přepnout nápovědu (tuto)"
+msgstr "说明开关（就是我）"
 
 #: planetsuse/planet_template.html:121
 msgid "next post"
-msgstr "další příspěvek"
+msgstr "后一篇文章"
 
 #: planetsuse/planet_template.html:122
 msgid "previous post"
-msgstr "předchozí příspěvek"
+msgstr "前一篇文章"
 
 #: planetsuse/planet_template.html:123
 msgid "next day"
-msgstr "další den"
+msgstr "后一天的文章"
 
 #: planetsuse/planet_template.html:124
 msgid "previous day"
-msgstr "předchozí den"
+msgstr "前一天的文章"
 
 #: planetsuse/planet_template.html:125
 msgid "go to top"
-msgstr "jdi nahoru"
+msgstr "回到顶部"
 
 #: planetsuse/planet_template.html:126
 msgid "cancel"
-msgstr "zrušit"
+msgstr "取消"
 
 #: planetsuse/planet_template.html:128
 msgid ""
 "Note that you may use those keys with or without pressing the <span class="
 "\"key\">alt</span> key."
-msgstr ""
-"Povšimněte si, že můžete použít tyto klávesy s i bez současného držení "
-"klávesy <span class=\"key\">alt</span>."
+msgstr "注意您按不按 <span class=\"key\">alt</span> 键都可以使用这些快捷键。"
 
 #: planetsuse/planet_template.html:159
 msgid "Current blog entries"
-msgstr "Současné příspěvky v blogu"
+msgstr "当前博客文章"
 
 #: planetsuse/planet_template.html:161
 msgid "Older blog entries"
-msgstr "Starší příspěvky v blogu"
+msgstr "较旧的博客文章"
+
