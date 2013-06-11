@@ -1,10 +1,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2010-07-16 12:08+0200\n"
-"Last-Translator: Dinar Valeev\n"
+"PO-Revision-Date: 2012-07-14 12:08+0200\n"
+"Last-Translator: Alexander Naumov\n"
 "Language-Team: RU <ry@li.org>\n"
-"Language: \n"
+"Language: Russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -121,8 +121,16 @@ msgid ""
 "This is a feed aggregator that collects what <a href=\"http://www.opensuse."
 "org\">openSUSE</a> contributors are writing in their respective blogs."
 msgstr ""
-"Это агрегатор блогов собирающий записи членов <a href=\"http://www.opensuse."
+"Это агрегатор блогов, собирающий посты членов <a href=\"http://www.opensuse."
 "org\">openSUSE</a> сообщества"
+
+#: planetsuse/planet_template.html:75 planetsuse/feedlist_template.html:60
+msgid ""
+"To have your blog added to this aggregator, please read <a href=\"http://en."
+"opensuse.org/openSUSE:Planet\">the instructions</a>."
+msgstr ""
+"Для того, чтобы добавить Ваш блог в агрегатор, пожалуйста прочтите <a href="
+"\"http://ru.opensuse.org/openSUSE:Planet\">инструкцию</a>."
 
 #: planetsuse/planet_template.html:79
 msgid "Languages"
@@ -138,7 +146,7 @@ msgstr "Немецкий"
 
 #: planetsuse/planet_template.html:83
 msgid "French"
-msgstr ""
+msgstr "Французский"
 
 #: planetsuse/planet_template.html:84
 msgid "Spanish"
@@ -166,7 +174,7 @@ msgstr "Русский"
 
 #: planetsuse/planet_template.html:90
 msgid "Czech"
-msgstr ""
+msgstr "Чешский"
 
 #: planetsuse/planet_template.html:91
 msgid "Simplified Chinese"
@@ -175,23 +183,23 @@ msgstr ""
 #: planetsuse/planet_template.html:92
 #, fuzzy
 msgid "Traditional Chinese"
-msgstr "Японский"
+msgstr "Китайский"
 
 #: planetsuse/planet_template.html:93
 msgid "Romanian"
-msgstr ""
+msgstr "Румынский"
 
 #: planetsuse/planet_template.html:94
 msgid "Hungarian"
-msgstr ""
+msgstr "Венгерский"
 
 #: planetsuse/planet_template.html:95
 msgid "Greek"
-msgstr ""
+msgstr "Греческий"
 
 #: planetsuse/planet_template.html:96
 msgid "Mongolian"
-msgstr ""
+msgstr "Монгольский"
 
 #: planetsuse/planet_template.html:102 planetsuse/planet_template.html:117
 msgid "Keyboard shortcuts"
@@ -238,8 +246,8 @@ msgid ""
 "Note that you may use those keys with or without pressing the <span class="
 "\"key\">alt</span> key."
 msgstr ""
-"Заметте что вы можете использовать эти клавиши как с нажатой клавишей <span "
-"class=\"key\">alt</span> так и без."
+"Заметте, что Вы можете использовать эти клавиши как с нажатым <span "
+"class=\"key\">alt</span>, так и без него."
 
 #: planetsuse/planet_template.html:159
 msgid "Current blog entries"
@@ -248,3 +256,53 @@ msgstr "Текущие записи в блогах"
 #: planetsuse/planet_template.html:161
 msgid "Older blog entries"
 msgstr "Старые записи в блогах"
+
+#: planetsuse/planet_template.html:174 planetsuse/feedlist_template.html:121
+msgid "Pascal Bleser and the openSUSE Community"
+msgstr "Паскаль Блезер и сообщество openSUSE"
+
+#: planetsuse/planet_template.html:177 planetsuse/feedlist_template.html:124
+msgid ""
+"This site is not an official openSUSE website, and is not in any way "
+"affiliated with or endorsed by SUSE Linux GmbH or Novell."
+msgstr ""
+"Это неофициальная страница openSUSE, которая не имеет никакого "
+"отношения к SUSE LINUX Products GmbH или Novell, Inc."
+
+#: planetsuse/planet_template.html:182 planetsuse/feedlist_template.html:129
+msgid ""
+"openSUSE and SUSE are trademarks of Novell, Inc. in the United States and "
+"other countries."
+msgstr ""
+"openSUSE и SUSE являются торговыми марками Novell, Inc. в США и других "
+"странах."
+
+#: planetsuse/feedlist_template.html:55
+msgid ""
+"This page contains the list of all the <a href=\"http://www.opensuse.org"
+"\">openSUSE</a> contributors who are aggregated on <a href=\"./\">Planet "
+"openSUSE</a>."
+msgstr ""
+"Эта страница содержит список всех членов сообщества <a href=\"http://www.opensuse.org"
+"\">openSUSE</a>, чьи блоги агрегируются на <a href=\"./\">Планету openSUSE</"
+"a>."
+
+#: planetsuse/feedlist_template.html:66
+msgid "Back to Planet openSUSE"
+msgstr "Вернутся на планету openSUSE"
+
+#: planetsuse/feedlist_template.html:68
+msgid "Show all feeds"
+msgstr "Показать все источники"
+
+#: planetsuse/feedlist_template.html:81
+msgid "Aggregated feeds"
+msgstr "Агрегированные источники"
+
+#: planetsuse/code.html:8
+msgid "_DATE_FORMAT_"
+msgstr "%d. %B %Y"
+
+#: planetsuse/code.html:9
+msgid "read more"
+msgstr "читать далее"
