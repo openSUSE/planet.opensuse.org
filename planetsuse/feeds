@@ -934,10 +934,15 @@ feed 15m http://www.opensuse-education.org/rss-news.php
 	define_name openSUSE Education
 	define_face opensuse-education
 
-feed 15m http://lizards.opensuse.org/author/javierllorente/feed/
+feed 15m http://www.javierllorente.com/category/english/feed/
 	define_name Javier Llorente
-	define_irc  javier_
+	define_irc  javier
 	define_member 1
+feed 15m http://www.javierllorente.com/category/castellano/feed/
+	define_name Javier Llorente
+	define_lang es	
+	define_irc javier
+	define_mamber 1
 
 feed 15m http://lizards.opensuse.org/author/fabiomux/feed/
 	define_name Fabio Mucciante
