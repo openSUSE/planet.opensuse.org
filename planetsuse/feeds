@@ -1886,4 +1886,7 @@ feed 15m https://hillwoodhome.info/feed/
     
     
 
+feed 15m https://lizards.opensuse.org/author/calumma/feed/
+    define_face calumma
+    define_name Calumma Brevicorne
 
