@@ -366,7 +366,7 @@ feed 15m http://artax.karlin.mff.cuni.cz/~kendy/blog/index.rdf
 feed 15m http://noelpower.blogs.ie/feed/
 	define_name Noel Power
 
-feed 15m http://andrew.wafaa.eu/blog/feed/
+feed 15m http://andrew.wafaa.eu/atom.xml
 	define_name Andrew Wafaa
 	define_face wafaa
 	define_irc  FunkyPenguin
