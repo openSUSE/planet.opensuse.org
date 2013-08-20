@@ -1895,3 +1895,9 @@ feed 15m https://kolab.org/blog/70/feed
 	define_nick ajaissle
 	define_irc  aen
 	define_member 1
+
+feed 15m http://smithfarm-thebrain.blogspot.cz/feeds/posts/default/-/opensuse
+	define_name Nathan Cutler
+	define_nick smithfarm
+	define_irc  smithfarm
+
