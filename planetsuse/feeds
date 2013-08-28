@@ -1901,3 +1901,8 @@ feed 15m http://smithfarm-thebrain.blogspot.cz/feeds/posts/default/-/opensuse
 	define_nick smithfarm
 	define_irc  smithfarm
 
+feed 15m http://blogs.gentoo.org/scarabeus/category/opensuse/feed/
+	define_name Tomáš Chvátal
+	define_nick scarabeus
+	define_irc scarabeus
+
