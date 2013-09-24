@@ -1577,12 +1577,12 @@ feed 15m http://hrafn.me/category/linux/opensuse-linux/feed/
 	define_name Alexander Ivanov
 	define_lang ru
 
-feed 15m http://stathisuse.blogspot.com/feeds/posts/default/-/opensuse-en
+feed 15m http://eiosifidis.blogspot.com/feeds/posts/default/-/opensuse-en
 	define_name Efstathios Iosifidis
 	define_irc  Diamond_gr
 	define_face efstathios_iosifidis
 	define_member 1
-feed 15m http://stathisuse.blogspot.com/feeds/posts/default/-/opensuse-gr
+feed 15m http://eiosifidis.blogspot.com/feeds/posts/default/-/opensuse-gr
 	define_name Efstathios Iosifidis
 	define_irc  Diamond_gr
 	define_face efstathios_iosifidis
