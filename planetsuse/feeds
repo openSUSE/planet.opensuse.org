@@ -1910,3 +1910,9 @@ feed 15m http://blogs.gentoo.org/scarabeus/category/opensuse/feed/
 	define_nick scarabeus
 	define_irc scarabeus
 
+feed 15m http://ourobengr.com/tag/opensuse/feed/
+    define_name Tim Serong
+    define_lang en
+    define_nick tserong
+    define_irc tserong
+    define_member 1
