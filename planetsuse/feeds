@@ -1640,7 +1640,7 @@ feed 15m http://badralb.posterous.com/rss.xml
 	define_lang mn
 	define_member 1
 
-feed 15m http://feeds.feedburner.com/FlavioCastelli
+feed 15m http://flavio.castelli.name/atom.xml
 	define_name Flavio Castelli
 	define_nick flavio
 	define_member 1
