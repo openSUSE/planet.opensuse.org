@@ -1916,3 +1916,9 @@ feed 15m http://ourobengr.com/tag/opensuse/feed/
     define_nick tserong
     define_irc tserong
     define_member 1
+
+feed 15m http://blog.riemann.cc/tags/opensuse/
+	define_name Robert Riemann
+	define_lang en
+	define_nick rriemann
+	define_irc rriemann
