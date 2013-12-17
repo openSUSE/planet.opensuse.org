@@ -1922,3 +1922,15 @@ feed 15m http://blog.riemann.cc/tags/opensuse/
 	define_lang en
 	define_nick rriemann
 	define_irc rriemann
+
+feed 15m http://toscalix.blogspot.com/feeds/posts/default/-/opensuse
+    define_name Agustin Benito Bethencourt
+    define_lang en
+    define_nick toscalix
+    define_irc toscalix
+
+feed 15m http://abenitobethencourt.blogspot.cz/feeds/posts/default/-/openSUSE
+    define_name Agustin Benito Bethencourt
+    define_lang es
+    define_nick toscalix
+    define_irc toscalix
