@@ -360,7 +360,7 @@ feed 15m http://blog.kohei.us/feed/
 feed 15m http://linpeifeng.blogspot.com/atom.xml
 	define_name Fong Lin
 
-feed 15m http://artax.karlin.mff.cuni.cz/~kendy/blog/index.rdf
+feed 15m http://holesovsky.blogspot.com/feeds/posts/default?alt=rss
 	define_name Jan Holesovsky
 
 feed 15m http://noelpower.blogs.ie/feed/
