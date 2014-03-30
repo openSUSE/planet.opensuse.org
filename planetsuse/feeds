@@ -1820,11 +1820,14 @@ feed 15m http://www.sysrich.co.uk/?feed=rss2
     define_irc  Ilmehtar
     define_member 1
     define_face ilmehtar
-
+    
+    
+#My blog was in planet.o.o but since January 2014 is disappear, can you fix it?? Thanks!
 feed 15m https://victorhckinthefreeworld.wordpress.com/feed/
     define_name Victorhck
     define_irc  Victorhck
-	define_lang es
+    define_member 1
+    define_lang es
 
 feed 15m http://www.alionet.org/external.php?do=rss&type=newcontent&sectionid=1&days=120
     define_name Alionet
