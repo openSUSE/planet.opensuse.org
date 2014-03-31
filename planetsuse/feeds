@@ -1940,7 +1940,7 @@ feed 20m https://progress.opensuse.org/projects/opensuse-admin/news.atom
     define_lang en
     define_nick opensuse-admin
 
-feed 15m http://sleepwalker-hnd.blogspot.com/feeds/posts/default?alt=rss
+feed 15m http://sleepwalker-hnd.blogspot.com/feeds/posts/default/-/opensuse?alt=rss
     define_name Tomáš Čech
     define_nick Sleep_Walker
     define_lang en
