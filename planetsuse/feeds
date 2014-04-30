@@ -2014,3 +2014,7 @@ feed 15m http://sleepwalker-hnd.blogspot.com/feeds/posts/default/-/opensuse?alt=
     define_lang en
     define_member 1
     define_irc Sleep_Walker
+
+feed 15m http://opensusescience.wordpress.com/feed/
+    define_name openSUSE Science Team
+    define_lang en
