@@ -123,7 +123,7 @@ feed 15m http://dev-loki.blogspot.com/feeds/posts/default?alt=rss
 #feed 15m http://metaverse.wordpress.com/feed/atom/
 #	define_name Mike McCallister
 
-feed 15m http://www.kdedevelopers.org/blog/280/feed
+feed 15m http://blogs.kde.org/blog/280/feed
 	define_name Lubos Lunak
 	define_irc  llunak
 	define_member 1
@@ -131,7 +131,7 @@ feed 15m http://www.kdedevelopers.org/blog/280/feed
 feed 15m http://antjefaber.blogspot.com/feeds/posts/full
 	define_name Antje Faber
 
-feed 15m http://www.kdedevelopers.org/blog/457/feed
+feed 15m http://blogs.kde.org/blog/457/feed
 	define_name Stephan Binner
 	define_irc  Beineri
 	define_member 1
@@ -142,7 +142,7 @@ feed 15m http://lizards.opensuse.org/author/coolo/feed/
 	define_irc  coolo
 	define_member 1
 
-feed 15m http://www.kdedevelopers.org/blog/124/feed
+feed 15m http://blogs.kde.org/blog/124/feed
 	define_name Stephan Kulow
 	define_face coolo
 	define_irc  coolo
@@ -209,7 +209,7 @@ feed 15m http://lizards.opensuse.org/author/mlasars/feed/
 	define_name Martin Lasarsch
 	define_irc  notlocalhorst
 
-feed 15m http://www.kdedevelopers.org/blog/77/feed
+feed 15m http://blogs.kde.org/blog/77/feed
 	define_name Will Stephenson
 	define_face wstephenson
 	define_irc  wstephenson
