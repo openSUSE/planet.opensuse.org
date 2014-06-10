@@ -153,7 +153,7 @@ feed 15m http://rschiele.blogspot.com/feeds/posts/full
 	define_irc  schiele
 
 feed 15m http://blog.bisect.de/feeds/posts/default
-	define_name Danny Kukawka
+	define_name Danny Al-Gaaf
 	define_irc  dannyK
 
 feed 15m http://www.homac.de/wordpress/?feed=rss2
