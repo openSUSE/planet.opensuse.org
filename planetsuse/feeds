@@ -2018,3 +2018,11 @@ feed 15m http://sleepwalker-hnd.blogspot.com/feeds/posts/default/-/opensuse?alt=
 feed 15m http://opensusescience.wordpress.com/feed/
     define_name openSUSE Science Team
     define_lang en
+
+feed 30m https://ushamim.wordpress.com/feed/
+    define_name Uzair Shamim
+    define_nick Stallmanu
+    define_lang en
+    define_irc Stallmanu
+
+
