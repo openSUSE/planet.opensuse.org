@@ -1069,11 +1069,14 @@ feed 15m http://www.alexertech.com/feed/
 	define_member 1
 	define_lang es
 
-feed 15m http://lizards.opensuse.org/author/saigkill/feed/
-	define_name Sascha Manns
-	define_face sascha
-	define_irc  saigkill
-	define_member 1
+# Blog moved news only for .Net
+# Checked by bruno_friedmann on August 3th 2014
+# https://progress.opensuse.org/issues/3010
+#feed 15m http://lizards.opensuse.org/author/saigkill/feed/
+#	define_name Sascha Manns
+#	define_face sascha
+#	define_irc  saigkill
+#	define_member 1
 
 feed 15m http://feeds.feedburner.com/homelinux/opensuse-blog
 	define_name Sascha Manns
@@ -2024,5 +2027,3 @@ feed 30m https://ushamim.wordpress.com/feed/
     define_nick Stallmanu
     define_lang en
     define_irc Stallmanu
-
-
