@@ -1078,11 +1078,12 @@ feed 15m http://www.alexertech.com/feed/
 #	define_irc  saigkill
 #	define_member 1
 
-feed 15m http://feeds.feedburner.com/homelinux/opensuse-blog
-	define_name Sascha Manns
-	define_face sascha_manns
-	define_irc  saigkill
-	define_member 1
+# Disable Sascha for real.....
+#feed 15m http://feeds.feedburner.com/homelinux/opensuse-blog
+#	define_name Sascha Manns
+#	define_face sascha_manns
+#	define_irc  saigkill
+#	define_member 1
 
 # DynDNS redirect ending nowhere - checked by lrupp at Tue Apr 29 2014
 #feed 15m http://feeds.feedburner.com/homelinux/opensuse-de
