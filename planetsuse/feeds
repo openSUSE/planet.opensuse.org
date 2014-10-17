@@ -1,3 +1,13 @@
+feed 15m http://nintyfan.wordpress.com/
+	define_name Sławomir Lach
+	define_face slawek
+	define_lang en
+
+feed 15m http://fropensuse.blogspot.fr/
+	define_name Merlin Moreau
+	define_face mm03
+	define_lang fr
+
 #feed 15m http://jamesthevicar.com/blog/?feed=rss2
 #	define_name James Ogley
 #	define_face james12
