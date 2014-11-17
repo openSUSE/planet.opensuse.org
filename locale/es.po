@@ -1,17 +1,17 @@
 # Header entry was created by KBabel!
 #
-# Javier Llorente <javier@opensuse.org>, 2010.
+# Javier Llorente <javier@opensuse.org>, 2010, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2010-07-16 12:07+0200\n"
+"PO-Revision-Date: 2014-11-17 14:38+0100\n"
 "Last-Translator: Javier Llorente <javier@opensuse.org>\n"
 "Language-Team: Spanish <opensuse-translation-es@opensuse.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.0\n"
+"X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: planetsuse/code.html:8
@@ -20,7 +20,7 @@ msgstr "%d de %B de %Y"
 
 #: planetsuse/code.html:9
 msgid "read more"
-msgstr ""
+msgstr "leer más"
 
 #: planetsuse/feedlist_template.html:53 planetsuse/planet_template.html:68
 msgid "Welcome to Planet openSUSE"
@@ -144,7 +144,7 @@ msgstr "Alemán"
 
 #: planetsuse/planet_template.html:83
 msgid "French"
-msgstr ""
+msgstr "Francés"
 
 #: planetsuse/planet_template.html:84
 msgid "Spanish"
@@ -168,36 +168,35 @@ msgstr ""
 
 #: planetsuse/planet_template.html:89
 msgid "Russian"
-msgstr ""
+msgstr "Ruso"
 
 #: planetsuse/planet_template.html:90
 msgid "Czech"
-msgstr ""
+msgstr "Checo"
 
 #: planetsuse/planet_template.html:91
 msgid "Simplified Chinese"
-msgstr ""
+msgstr "Chino simplificado"
 
 #: planetsuse/planet_template.html:92
-#, fuzzy
 msgid "Traditional Chinese"
-msgstr "Japonés"
+msgstr "Chino tradicional"
 
 #: planetsuse/planet_template.html:93
 msgid "Romanian"
-msgstr ""
+msgstr "Rumano"
 
 #: planetsuse/planet_template.html:94
 msgid "Hungarian"
-msgstr ""
+msgstr "Húngaro"
 
 #: planetsuse/planet_template.html:95
 msgid "Greek"
-msgstr ""
+msgstr "Griego"
 
 #: planetsuse/planet_template.html:96
 msgid "Mongolian"
-msgstr ""
+msgstr "Mongol"
 
 #: planetsuse/planet_template.html:102 planetsuse/planet_template.html:117
 msgid "Keyboard shortcuts"
@@ -225,7 +224,7 @@ msgstr "post anterior"
 
 #: planetsuse/planet_template.html:123
 msgid "next day"
-msgstr "siguiente día"
+msgstr "día siguiente"
 
 #: planetsuse/planet_template.html:124
 msgid "previous day"
@@ -254,3 +253,4 @@ msgstr "Entradas de blog actuales"
 #: planetsuse/planet_template.html:161
 msgid "Older blog entries"
 msgstr "Entradas de blog más antiguas"
+
