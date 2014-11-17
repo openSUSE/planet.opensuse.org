@@ -1,3 +1,9 @@
+feed 15m http://www.edivaldobrito.com.br/category/opensuse/feed/
+	define_name Edivaldo Brito
+	define_lang pt
+	define_face edivaldobrito
+        define_member 1
+
 feed 15m http://nintyfan.wordpress.com/
 	define_name Sławomir Lach
 	define_face slawek
