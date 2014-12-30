@@ -1371,10 +1371,9 @@ feed 15m http://lizards.opensuse.org/author/marcusmoeller/feed/
 #	define_lang id
 #	define_member 1
 
-# blog not found - checked by lrupp at Tue Apr 29 2014
-#feed 15m http://0x2207.blogspot.com/feeds/posts/default/-/opensuse
-#	define_name Matwey Kornilov
-#	define_lang ru
+feed 15m http://blog.matwey.name/feeds/posts/default/-/opensuse
+	define_name Matwey Kornilov
+	define_lang ru
 
 feed 15m http://tux-the-penguin.blogspot.com/feeds/posts/default
 	define_name Anton Chernyshov
