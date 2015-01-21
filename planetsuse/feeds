@@ -1,3 +1,8 @@
+feed 15m https://susejackinthegreen.wordpress.com/
+	define_name Vinícius B. Rodrigues
+	define_lang pt
+
+
 feed 15m http://www.edivaldobrito.com.br/category/opensuse/feed/
 	define_name Edivaldo Brito
 	define_lang pt
