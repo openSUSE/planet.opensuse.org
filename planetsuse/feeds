@@ -1,3 +1,10 @@
+feed 15m http://blog.mattos.eng.br/feed/
+	define_name Leonardo M. N. de Mattos
+	define_lang pt
+#	define_face leomattos
+        define_member 1
+        define_irc analyser
+
 feed 15m https://susejackinthegreen.wordpress.com/
 	define_name Vinícius B. Rodrigues
 	define_lang pt
