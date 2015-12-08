@@ -1,3 +1,10 @@
+
+feed 15m http://www.nui.fr/blog/?feed=rss2
+	define_name  LUG/GULL Novell Users International (NUI) France 
+	define_lang fr
+#	define_face jymmipierre
+        define_member 1
+
 feed 15m http://blog.mattos.eng.br/feed/
 	define_name Leonardo M. N. de Mattos
 	define_lang pt
