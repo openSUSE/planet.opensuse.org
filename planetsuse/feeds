@@ -1,4 +1,9 @@
 
+feed 15m http://lizards.opensuse.org/author/yast-team/feed/
+    define_name YaST Team
+    define_face yast
+    define_lang en
+
 feed 15m http://www.nui.fr/blog/?feed=rss2
     define_name  LUG/GULL Novell Users International (NUI) France
     define_lang fr
