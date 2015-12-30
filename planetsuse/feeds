@@ -1,4 +1,10 @@
 
+feed 15m http://drakevr.gr/atom.xml
+    define_name Alex-P. Natsios
+    define_lang en
+    define_irc Drakevr
+    define_member 1
+
 feed 15m http://lizards.opensuse.org/author/yast-team/feed/
     define_name YaST Team
     define_face yast
