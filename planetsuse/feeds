@@ -1930,7 +1930,7 @@ feed 15m http://amelinux.blogspot.de//?cat=4http://xadmin.info/?cat=4&feed=rss2f
     define_irc  johest
     define_member 1
 
-feed 15m http://sysrich.co.uk/?feed=rss2
+feed 15m http://rootco.de/feed.xml
     define_name Richard Brown
     define_irc  Ilmehtar
     define_member 1
