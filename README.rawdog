@@ -1,0 +1,147 @@
+Planet SUSE uses rawdog, based on Jonathan Riddell's work on Planet KDE
+
+To add your blog edit planetsuse/config and add your photo head to website/hackergotchi/myname.png
+
+Run it with 
+
+ ./update.sh
+ ./write.sh
+
+will write to website/index.html and website/rss20.xml
+
+Jonathan Riddell, 10-2008
+Pascal Bleser, 04-2010
+
+---
+
+rawdog: RSS Aggregator Without Delusions Of Grandeur
+Adam Sampson <ats@offog.org>
+
+rawdog is an RSS (and other) feed aggregator, based on Mark Pilgrim's flexible
+feed parser. It's just an aggregator; it's not a weblog authoring tool, nor is
+it an NNTP gateway, outliner, mailserver or anything else.  rawdog probably
+only runs on Unix-like systems.
+
+(Important: If you're upgrading from rawdog 1.x to rawdog 2.x, please
+read the NEWS file to find out how to convert your rawdog state file.)
+
+rawdog requires Python 2.2 or later. rawdog itself doesn't need any
+additional modules to be installed, but it uses distutils for
+installation, so if you're on a Debian system you'll need to install the
+"python-dev" package first.
+
+rawdog reads articles from a number of feeds and writes out a single
+HTML file, based on a template either provided by the user or generated
+by rawdog, containing the latest articles it's seen. It uses the ETags
+and Last-Modified headers to avoid fetching a file that hasn't changed,
+and supports gzip compression to reduce bandwidth when it has. It is
+configured from a simple text file; the only state kept between
+invocations that can't be reconstructed from the feeds is the ordering
+of articles.
+
+To install rawdog on your system, use distutils -- "python setup.py install".
+This will install the library modules that rawdog needs, and will install the
+"rawdog" binary that you can use to run it. (If you want to install to a
+non-standard prefix, read the help provided by "python setup.py install
+--help".)
+
+rawdog needs a config file to function. Make the directory ".rawdog" in your
+$HOME directory, copy the provided file "config" into that directory, and edit
+it to suit your preferences. (Comments in that file describe what each of the
+options does.) You should copy the provided file "style.css" into the same
+directory that you've told rawdog to write its HTML output to. (rawdog should
+be usable from a browser that doesn't support CSS, but it won't be very
+pretty.)
+
+When you invoke rawdog from the command line, you give it a series of actions
+to perform -- for instance, "rawdog --update --write" tells it to do the
+"--update" action, then the "--write" action. The actions supported are
+as follows:
+
+"--update" (or "-u"): Fetch data from the feeds and store it. This could
+take some time if you've got lots of feeds.
+
+"--write" (or "-w"): Write out the HTML output file.
+
+"--list" (or "-l"): List brief information about each of the feeds that
+was known about when "--update" was last done.
+
+"--update-feed SOMEURL" (or "-f SOMEURL"), where SOMEURL is the URL of a
+known feed: Update that feed immediately, even if its period hasn't
+elapsed since it was last updated. This is useful if you're trying to
+debug your own feed.
+
+"--config FILE" (or "-c FILE"), where FILE is an absolute path or a path
+relative to your .rawdog directory: Read FILE as an additional config
+file; any options provided in FILE will override those already set in
+the main config file (with the exception of "feed", which is
+cumulative). Note that $HOME/.rawdog/config will still be read first
+even if you specify this option. This is useful if you want rawdog to
+write two different output files with different sets of options ("rawdog
+-u -w -c config2 -w" will first update and write with the main config
+file, then read config2, then write again).
+
+"--show-template" (or "-t"): Print the template currently in use to
+stdout. This is useful as a starting point if you want to modify your
+own template: do "rawdog -t >~/.rawdog/mytemplate" with "template
+default" in your config file, and you'll get a copy of the default
+template to edit.
+
+"--show-itemtemplate" (or "-T"): As for "--show-template", but for the
+item template.
+
+"--add URL" (or "-a URL"): Add a new feed to the config file. This uses
+Mark Pilgrim's "feedfinder" module to try to figure out a feed for any
+given URL, so you can usually just give it the URL of a blog's main
+page, and it'll automatically detect the appropriate feed. (It'll tell
+you if it can't guess a feed for the URL you give it.)
+
+There are also the following options which may only be supplied once
+(they're read before any of the actions are performed):
+
+"--help": Provide a brief summary of all the options rawdog supports,
+and exit.
+
+"--dir DIR" (or "-d DIR"), where DIR is a directory: Use DIR instead of
+the $HOME/.rawdog directory. This is useful if you want to have two or
+more completely different rawdog setups with different sets of feeds;
+just create a directory for each.
+
+"--verbose" (or "-v"): Print more information about what rawdog's doing
+while it's working. This is useful for tracking down problems.
+
+"--upgrade OLDDIR NEWDIR": This option can be used to convert your state
+file when upgrading from rawdog 1.x to rawdog 2.x; see the NEWS file for
+more information. If you're not doing this, then it won't be of any use
+to you.
+
+You will want to run "rawdog -uw" periodically to fetch data and write
+the output file. The easiest way to do this is to add a crontab entry
+that looks something like this:
+
+0,10,20,30,40,50 * * * *        /path/to/rawdog -uw
+
+(If you don't know how to use cron, then "man crontab" is probably a good
+start.) This will run rawdog every ten minutes.
+
+If you want rawdog to fetch URLs through a proxy server, then set your
+"http_proxy" environment variable appropriately; depending on your version of
+cron, putting something like:
+
+http_proxy=http://myproxy.mycompany.com:3128/
+
+at the top of your crontab should be appropriate. (The http_proxy variable will
+work for many other programs too.)
+
+In the event that rawdog gets horribly confused (for instance, if your system
+clock has a huge jump and it thinks it won't need to fetch anything for the
+next thirty years), you can forcibly clear its state by removing the
+~/.rawdog/state file.
+
+If you don't like the appearance of rawdog, then customise the style.css file.
+If you come up with one that looks much better than the existing one, please
+send it to me!
+
+This should, hopefully, be all you need to know. If rawdog breaks in
+interesting ways, please tell me at the email address at the top of this file.
+
