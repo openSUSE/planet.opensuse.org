@@ -1497,6 +1497,7 @@ feed 15m http://sakananote2english.blogspot.com/feeds/posts/default
     define_name Chun-Hung "sakana" Huang
     define_irc sakana
     define_face sakana
+    define_member 1
 
 feed 15m http://swyear.blogspot.com/feeds/posts/default?alt=rss
     define_name Ray Chen
