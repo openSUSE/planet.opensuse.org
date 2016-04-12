@@ -2078,3 +2078,9 @@ feed 15m https://hacklog.mu/c/opensuse/feed/
     define_name Ish Sookun
     define_face ishwon
     define_lang en
+
+feed 15m http://cheperobert.blogspot.com/feeds/posts/full
+    define_name José Roberto
+    define_irc  cheperobert
+    define_lang es
+
