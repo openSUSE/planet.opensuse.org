@@ -1964,9 +1964,12 @@ feed 15m http://andreipetre.blogspot.com/feeds/posts/default
     define_irc  andreip
     define_face andreip
 
-feed 15m http://suseana.ru/?feed=rss2
-    define_name Alexey Fedorchuk
-    define_lang ru
+# looks like the page got hacked and used for SPAM. 
+# disabling for now until the problem is solved.
+# lrupp at Tue Apr 19 10:03:25 CEST 2016
+#feed 15m http://suseana.ru/?feed=rss2
+#    define_name Alexey Fedorchuk
+#    define_lang ru
 
 # produces no items - checked by lrupp at Tue Apr 29 2014
 #feed 15m http://summit.opensuse.org/feed.xml
