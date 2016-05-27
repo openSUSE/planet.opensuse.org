@@ -968,8 +968,10 @@ feed 15m http://lizards.opensuse.org/author/ricardovarassantana/feed/
     define_name Ricardo Varas Santana
     define_irc  rvaras
 
-feed 15m http://lslezak.blogspot.com/feeds/posts/default
-    define_name Ladislav Slezak
+feed 15m http://blog.ladslezak.cz/feed.xml
+    define_name Ladislav Slezák
+    define_irc lslezak
+    define_lang en
 
 feed 15m http://lizards.opensuse.org/author/sts301/feed/
     define_name Sebastian Schöbinger
