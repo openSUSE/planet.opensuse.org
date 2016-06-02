@@ -302,12 +302,11 @@ feed 15m http://mvidner.blogspot.com/feeds/posts/default
     define_irc  mvidner
     define_member 1
 
-# URL unkown 404 - checked by lrupp at Tue Apr 29 2014
-#feed 15m http://blog.hennevogel.de/feed/
-#    define_name Henne Vogelsang
-#    define_irc  henne
-#    define_face henne
-#    define_member 1
+feed 15m https://hennevogel.de/feed.xml
+    define_name Henne Vogelsang
+    define_irc  henne
+    define_face henne
+    define_member 1
 
 feed 15m http://snorp.net/blog/atom.xml
     define_name James Willcox
