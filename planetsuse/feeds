@@ -2076,7 +2076,7 @@ feed 15m http://opensusescience.wordpress.com/feed/
     define_name openSUSE Science Team
     define_lang en
 
-feed 30m https://ushamim.wordpress.com/feed/
+feed 30m https://medium.com/feed/information-and-technology/
     define_name Uzair Shamim
     define_nick Stallmanu
     define_lang en
