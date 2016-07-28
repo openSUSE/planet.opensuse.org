@@ -901,9 +901,11 @@ feed 15m http://sellingfreesoftwareforaliving.blogspot.com/feeds/posts/default
 feed 15m http://rajkov-blog.blogspot.com/feeds/posts/default
     define_name Rajko Matovic
 
-feed 15m http://feeds.feedburner.com/Vioan
+feed 15m https://www.vioan.eu/blog/feeds/all.atom.xml
     define_name Ioan Vancea
     define_irc  IonutVan
+    define_lang en
+    define_member 1
 
 # 404 not found - checked by lrupp at Tue Apr 29 2014
 #feed 15m http://www.mindby.com/feeds/atom.xml
@@ -1858,7 +1860,7 @@ feed 15m http://obsforandroid.wordpress.com/feed/
 # no items - checked by lrupp at Tue Apr 29 2014
 #feed 15m http://my.opera.com/miki100/xml/rss/blog/
 #    define_name Mikolaj Siuda
-    
+
 # no items - checked by lrupp at Tue Apr 29 2014
 #feed 15m http://carlos.lubas.com.br/?feed=rss2
 #    define_name Carlos Alberto Soares Lubas
@@ -1968,7 +1970,7 @@ feed 15m http://andreipetre.blogspot.com/feeds/posts/default
     define_irc  andreip
     define_face andreip
 
-# looks like the page got hacked and used for SPAM. 
+# looks like the page got hacked and used for SPAM.
 # disabling for now until the problem is solved.
 # lrupp at Tue Apr 19 10:03:25 CEST 2016
 #feed 15m http://suseana.ru/?feed=rss2
@@ -2095,4 +2097,3 @@ feed 15m http://cheperobert.blogspot.com/feeds/posts/full
 feed 15m view-source:http://www.planetaunix.com.br/feeds/posts/default?alt=rss
 	define_name Fábio dos Reis
 	define_lang pt
-
