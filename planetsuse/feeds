@@ -2097,3 +2097,13 @@ feed 15m http://cheperobert.blogspot.com/feeds/posts/full
 feed 15m view-source:http://www.planetaunix.com.br/feeds/posts/default?alt=rss
 	define_name Fábio dos Reis
 	define_lang pt
+	
+feed 15m https://ahmadharis.wordpress.com/category/linux/feed/
+    define_name Ahmad Haris
+    define_lang id
+    define_irc princeofgiri
+    
+feed 15m https://tuanpembual.wordpress.com/tag/opensuse/feed/
+    define_name Estu Fardani
+    define_lang id
+    define_irc estu
