@@ -1357,6 +1357,12 @@ feed 15m http://dominique.leuenberger.net/blog/feed/
     define_name Dominique Leuenberger
     define_irc  DimStar
     define_member 1
+  
+feed 15m https://sarah-julia-kriesch.eu/category/openSUSE/
+    define_name Sarah Julia Kriesch
+    define_irc  AdaLovelace
+    define_member 1
+    define_lang en
 
 feed 15m http://lizards.opensuse.org/author/jaom7/feed/
     define_name José Oramas M.
