@@ -19,7 +19,7 @@ feed 15m http://www.nui.fr/blog/?feed=rss2
 #    define_face jimmypierre
     define_member 1
 
-feed 15m http://blog.mattos.eng.br/feed/
+feed 15m http://www.mattos.eng.br/tag/opensuse/feed/
     define_name Leonardo M. N. de Mattos
     define_lang pt
 #    define_face leomattos
