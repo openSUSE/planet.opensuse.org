@@ -1634,11 +1634,6 @@ feed 15m http://www.oyranos.org/feed
     define_name Kai-Uwe Behrmann
     define_irc  oy
 
-feed 15m http://avm-xandry.blogspot.com/feeds/posts/default
-    define_name Alexander Mityunin
-    define_irc  xandry
-    define_lang ru
-
 feed 15m http://fisiu.fidano.pl/feed/atom/
     define_name Mariusz Fik
     define_irc  Fisiu
