@@ -1634,11 +1634,6 @@ feed 15m http://www.oyranos.org/feed
     define_name Kai-Uwe Behrmann
     define_irc  oy
 
-feed 15m http://avm-xandry.blogspot.com/feeds/posts/default
-    define_name Alexander Mityunin
-    define_irc  xandry
-    define_lang ru
-
 feed 15m http://fisiu.fidano.pl/feed/atom/
     define_name Mariusz Fik
     define_irc  Fisiu
@@ -2121,3 +2116,19 @@ feed 15m https://www.cyphar.com/blog/tag/suse/posts.atom
 	define_face https://www.cyphar.com/static/img/profile.png
 	define_connect cyphar
 	define_member 1
+
+feed 15m https://recetasyapuntes.wordpress.com/feed/
+	define_name Pablo Moya
+	define_lang es
+
+feed 15m https://czanik.blogs.balabit.com/tag/openSUSE/feed/
+	define_name Peter Czanik
+	define_lang en
+	define_irc CzP
+	define_connect czanik
+	define_member 1
+
+feed 15m http://opensuseblogbr.blogspot.com/feeds/posts/default
+	define_name Carlos Alberto Ferreira Filho
+	define_lang pt
+	define_connect caffilhobr
