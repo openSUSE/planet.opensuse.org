@@ -2116,3 +2116,7 @@ feed 15m https://www.cyphar.com/blog/tag/suse/posts.atom
 	define_face https://www.cyphar.com/static/img/profile.png
 	define_connect cyphar
 	define_member 1
+
+feed 15m https://recetasyapuntes.wordpress.com/feed/
+	define_name Pablo Moya
+	define_lang es
