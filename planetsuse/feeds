@@ -2135,6 +2135,7 @@ feed 15m http://opensuseblogbr.blogspot.com/feeds/posts/default
 
 feed 15m http://www.cubiclenate.com/blatherings/posts.xml
 	define_name Nathan Wolf
+	define_face futureboy
 	define_lang en
 	define_irc Futureboy
 	define_connect Futureboy
