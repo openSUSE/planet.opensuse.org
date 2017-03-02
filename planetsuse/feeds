@@ -2088,9 +2088,9 @@ feed 30m https://medium.com/feed/information-and-technology/
     define_lang en
     define_irc Stallmanu
 
-feed 15m https://hacklog.mu/c/opensuse/feed/
+feed 15m https://hacklog.mu/tag/opensuse/rss/
     define_name Ish Sookun
-    define_face https://hacklog.mu/files/planetsuse-ish-sookun.jpg
+    define_face https://hacklog.mu/content/images/planetsuse-ish-sookun.jpg
     define_lang en
 
 feed 15m http://cheperobert.blogspot.com/feeds/posts/full
