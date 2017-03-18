@@ -1891,10 +1891,6 @@ feed 15m http://oyox.de/feed/
 #    define_gsoc 1
 #    define_irc  tian2992
 
-feed 15m http://blog.tampakrap.gr/category/planets/planet-opensuse/feed/
-    define_name Theo Chatzimichos
-    define_face theo_chatzimichos
-
 feed 15m https://vasiliskarampouzis.wordpress.com/feed/
     define_name Vasilis Karampouzis
     define_irc  Master91
