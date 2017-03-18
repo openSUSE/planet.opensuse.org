@@ -2095,7 +2095,7 @@ feed 15m http://cheperobert.blogspot.com/feeds/posts/full
     define_irc  cheperobert
     define_lang es
 
-feed 15m view-source:http://www.planetaunix.com.br/feeds/posts/default?alt=rss
+feed 15m http://www.planetaunix.com.br/feeds/posts/default?alt=rss
 	define_name Fábio dos Reis
 	define_lang pt
 
