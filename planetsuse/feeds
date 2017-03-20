@@ -2143,3 +2143,10 @@ feed 15m http://www.cubiclenate.com/blatherings/posts.xml
 	define_irc Futureboy
 	define_connect Futureboy
 	define_member 1
+
+feed 15m https://bo.geekworld.dk/category/openSUSE/feed/
+	define_name Bo Simonsen
+	define_lang en
+	define_irc bosim
+	define_connect bosim
+	define_member 1
