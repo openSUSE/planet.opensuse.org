@@ -2127,7 +2127,7 @@ feed 15m https://czanik.blogs.balabit.com/tag/openSUSE/feed/
 	define_connect czanik
 	define_member 1
 
-feed 15m http://opensuseblogbr.blogspot.com/feeds/posts/default
+feed 15m http://opensusebr.blogspot.com/feeds/posts/default
 	define_name Carlos Alberto Ferreira Filho
 	define_lang pt
 	define_connect caffilhobr
