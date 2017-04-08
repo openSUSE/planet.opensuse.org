@@ -1,3 +1,5 @@
+# vim:expandtab
+
 feed 15m https://machinery-project.blogspot.com/feeds/posts/default
     define_name Machinery Team
     define_lang en
@@ -1124,30 +1126,6 @@ feed 15m http://www.alexertech.com/feed/
     define_member 1
     define_lang es
 
-# Blog moved news only for .Net
-# Checked by bruno_friedmann on August 3th 2014
-# https://progress.opensuse.org/issues/3010
-#feed 15m http://lizards.opensuse.org/author/saigkill/feed/
-#    define_name Sascha Manns
-#    define_face sascha
-#    define_irc  saigkill
-#    define_member 1
-
-# Disable Sascha for real.....
-#feed 15m http://feeds.feedburner.com/homelinux/opensuse-blog
-#    define_name Sascha Manns
-#    define_face sascha_manns
-#    define_irc  saigkill
-#    define_member 1
-
-# DynDNS redirect ending nowhere - checked by lrupp at Tue Apr 29 2014
-#feed 15m http://feeds.feedburner.com/homelinux/opensuse-de
-#    define_name Sascha Manns
-#    define_face sascha_manns
-#    define_irc  saigkill
-#    define_member 1
-#    define_lang de
-
 feed 15m http://blog.coly.li/?feed=rss2
     define_name Coly Li
     define_face coly_li
@@ -2146,3 +2124,11 @@ feed 15m https://bo.geekworld.dk/category/openSUSE/feed/
 	define_irc bosim
 	define_connect bosim
 	define_member 1
+
+feed 15m http://feeds.feedburner.com/SaigkillsBlog-Opensuse
+    define_name Sascha Manns
+    define_face saigkill
+    define_irc  saigkill
+    define_connect saigkill
+    define_member 1
+    define_lang en
