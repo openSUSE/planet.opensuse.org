@@ -355,6 +355,7 @@ ul.menu {
 .lang-hu,
 .lang-gr,
 .lang-mn,
+.lang-my,
 .lang-all,
 .lang {
     padding-left: 20px !important;
@@ -383,6 +384,7 @@ ul.menu {
 .lang-hu { background-image: url(../images/lang/hu.png); }
 .lang-gr { background-image: url(../images/lang/gr.png); }
 .lang-mn { background-image: url(../images/lang/mn.png); }
+.lang-my { background-image: url(../images/lang/my.png); }
 .lang-all { background-image: url(../images/lang/_.png); }
 
 #_A67JAZHE9192_planet_opensuse_current-entries:before { content: "\21E6\00A0"; }
