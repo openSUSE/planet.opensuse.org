@@ -76,3 +76,17 @@ in-place, and that the order of the files is first the .po file and then the
 
 From here on, steps (3) and (4) from above apply as well.
 
+
+ADDING A NEW LANGUAGE
+=====================
+
+This section describes how to add a blog in a language that wasn't on planet yet.
+
+- planetsuse/planet_template.html: search for "German", then add a similar link
+  for the new language. Make sure to also adjust class= and id=.
+- website/css/style.css: search for ".lang-de"
+  - on the first match, add a line for the new language
+  - on the second match, add a line that includes the flag image
+- write.sh: search for "de_DE" and add the new language
+- website/images/lang/: add the flag image (filename as specified in style.css, 16x11px)
+- run "make"

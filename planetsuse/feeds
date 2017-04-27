@@ -2132,3 +2132,9 @@ feed 15m http://feeds.feedburner.com/SaigkillsBlog-Opensuse
     define_connect saigkill
     define_member 1
     define_lang en
+
+feed 15m http://opensusemyanmar.top/feed/
+    define_name Ko Nova
+    define_irc kon0va
+    define_connect konova
+    define_lang my
