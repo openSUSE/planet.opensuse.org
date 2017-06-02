@@ -1707,7 +1707,7 @@ feed 15m http://blog.cihar.com/archives/suse/index-atom.xml
     define_irc  nijel
     define_face michal_cihar
 
-feed 15m http://blog.karlitschek.de/feeds/posts/default
+feed 15m http://karlitschek.de/category/openSUSE/feed/
     define_name Frank Karlitschek
     define_face frank_karlitschek
     define_member 1
