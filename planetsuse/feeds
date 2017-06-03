@@ -987,9 +987,6 @@ feed 15m http://lizards.opensuse.org/author/sts301/feed/
     define_face sts301
     define_irc  STS301
 
-feed 15m http://linux301.wordpress.com/feed/
-    define_name Sebastian Schöbinger
-
 feed 15m http://lizards.opensuse.org/author/jsrain/feed/
     define_name Jiri Srain
 
