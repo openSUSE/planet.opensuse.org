@@ -92,7 +92,7 @@ feed 15m http://joeshaw.org/rss.php
 #    define_face http://planet.gnome.org/heads/nat.png
 #    define_irc  Nat_
 
-feed 15m http://people.gnome.org/~federico/news.xml
+feed 15m https://people.gnome.org/~federico/blog/feeds/all.atom.xml
     define_name Federico Mena-Quintero
     define_face http://planet.gnome.org/heads/federico2.png
     define_irc  federico1
