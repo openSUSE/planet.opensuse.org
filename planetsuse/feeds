@@ -2135,3 +2135,8 @@ feed 15m http://opensusemyanmar.top/feed/
     define_irc kon0va
     define_connect konova
     define_lang my
+
+feed 15m http://www.codeblueprint.co.uk/feed.xml
+    define_name Matt Fleming
+    define_irc mfleming
+    define_lang en
