@@ -2140,3 +2140,15 @@ feed 15m http://www.codeblueprint.co.uk/feed.xml
     define_name Matt Fleming
     define_irc mfleming
     define_lang en
+
+feed 15m https://opensuse.id/feed/
+    define_name Komunitas openSUSE Indonesia
+    define_lang id
+
+feed 15m https://dhenandi.com/tag/opensuse-eng/feed/ 
+    define_name Muhammad Dhenandi Putra
+    define_lang en
+
+feed 15m https://dhenandi.com/tag/opensuse-id/feed/ 
+    define_name Muhammad Dhenandi Putra
+    define_lang id
