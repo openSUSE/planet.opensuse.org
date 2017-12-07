@@ -2152,3 +2152,8 @@ feed 15m https://dhenandi.com/tag/opensuse-eng/feed/
 feed 15m https://dhenandi.com/tag/opensuse-id/feed/ 
     define_name Muhammad Dhenandi Putra
     define_lang id
+
+feed 30m http://release-tools.opensuse.org/feed.xml
+    define_name Jimmy Berry
+    define_irc boombatower
+    define_lang en
