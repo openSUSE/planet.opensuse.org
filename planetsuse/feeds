@@ -2157,3 +2157,8 @@ feed 30m http://release-tools.opensuse.org/feed.xml
     define_name Jimmy Berry
     define_irc boombatower
     define_lang en
+
+feed 15m https://marix.org/feeds/tags/opensuse.atom.xml
+    define_name Matthias Bach
+    define_connect theMarix
+    define_lang de
