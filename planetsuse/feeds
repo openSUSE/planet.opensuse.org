@@ -1729,7 +1729,7 @@ feed 15m http://boltonlinux.blogspot.com/feeds/posts/default
 #    define_lang mn
 #    define_member 1
 
-feed 15m http://flavio.castelli.name/atom.xml
+feed 15m http://flavio.castelli.me/atom.xml
     define_name Flavio Castelli
     define_nick flavio
     define_member 1
