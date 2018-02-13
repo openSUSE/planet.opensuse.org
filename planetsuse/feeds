@@ -2162,3 +2162,11 @@ feed 15m https://marix.org/feeds/tags/opensuse.atom.xml
     define_name Matthias Bach
     define_connect theMarix
     define_lang de
+
+feed 30m https://antlarr.io/feed/
+    define_name Antonio Larrosa
+    define_face antlarr
+    define_irc antlarr
+    define_connect alarrosa
+    define_member 1
+    define_lang en
