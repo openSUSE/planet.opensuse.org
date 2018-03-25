@@ -494,11 +494,6 @@ feed 15m http://www.coolice.org/blog/?feed=rss2
 feed 15m http://lilypond.org/blog/janneke/rss/?css=0
     define_name Jan Nieuwenhuizen
 
-# Whole domain returns 404 - checked by lrupp at Tue Apr 29 2014
-feed 15m http://spotlight.opensuse.org/feed/
-    define_name openSUSE Spotlight
-    define_face opensuse
-
 feed 15m http://www.bryen.com/?feed=rss2
     define_name Bryen Yunashko
     define_irc  suseROCKS
