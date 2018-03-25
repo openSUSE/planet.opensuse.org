@@ -16,9 +16,10 @@ feed 15m http://lizards.opensuse.org/author/yast-team/feed/
     define_lang en
 
 feed 15m http://www.nui.fr/blog/?feed=rss2
-    define_name  LUG/GULL Novell Users International (NUI) France
+    define_name Network Users Institute
     define_lang fr
 #    define_face jimmypierre
+    define_face nui-fr
     define_member 1
 
 feed 15m http://www.mattos.eng.br/tag/opensuse/feed/
@@ -1898,11 +1899,6 @@ feed 15m http://jfehlig.wordpress.com/feed/
 feed 15m https://iamsaurabh.wordpress.com/tag/opensuse/feed/
     define_name Saurabh Sood
     define_irc  saurabhsood91
-
-feed 15m http://www.nui.fr/blog/
-    define_name NUI-France
-    define_face nui-fr
-    define_lang fr
 
 feed 15m http://opensuseadventures.blogspot.com/feeds/posts/default
     define_name Roger Luedecke
