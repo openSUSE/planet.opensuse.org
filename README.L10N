@@ -10,7 +10,7 @@ The .pot is a plain text template file that contains all the localizable
 strings that are used by Planet openSUSE.
 
 To download that file to the current directory:
-wget http://gitorious.org/opensuse/planet-opensuse/blobs/raw/master/locale/planetsuse.pot
+wget https://github.com/openSUSE/planet.opensuse.org/raw/master/locale/planetsuse.pot
 
 2) Make a copy for the target language
 ======================================
@@ -27,7 +27,8 @@ PO (gettext) support, such as Emacs, gted, poedit, gtranslator, kbabel, etc...
 
 4) Submit
 =========
-Please send the resulting .po file (de.po in our example) to pascal.bleser@opensuse.org
+Please submit the resulting .po file (de.po in our example) as a pull request,
+or mail it to admin@opensuse.org
 
 Thanks!
 
@@ -46,7 +47,7 @@ Using the same URL as in step (1) above, replace your current planetsuse.pot
 file with the most recent one:
 
 rm planetsuse.pot
-wget http://gitorious.org/opensuse/planet-opensuse/blobs/raw/master/locale/planetsuse.pot
+wget https://github.com/openSUSE/planet.opensuse.org/raw/master/locale/planetsuse.pot
 
 2) Merge the template with the .po file
 =======================================
@@ -55,7 +56,7 @@ then you probably already have the latest .po file (e.g. de.po) on your host.
 
 If not, also make sure to have the latest .po file, e.g.:
 rm de.po
-wget http://gitorious.org/opensuse/planet-opensuse/blobs/raw/master/locale/de.po
+wget https://github.com/openSUSE/planet.opensuse.org/raw/master/locale/de.po
 
 Now it is necessary to merge the localizable strings from the .pot template
 file with what has already been translated in the .po file.
