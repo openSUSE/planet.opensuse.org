@@ -1194,11 +1194,11 @@ feed 15m http://hippie.wordpress.com/feed/atom/
 #    define_member 1
 #    define_face piotr_krakowiak
 
-feed 15m http://elchevive68.wordpress.com/feed/atom/
-    define_name Luiz Fernando Ranghetti
-    define_irc  elchevive1968
-    define_member 1
-    define_lang pt
+#feed 15m http://elchevive68.wordpress.com/feed/atom/
+#    define_name Luiz Fernando Ranghetti
+#    define_irc  elchevive1968
+#    define_member 1
+#    define_lang pt
 
 feed 15m http://dionatamartins.blogspot.com/feeds/posts/default
     define_name Dionata Martins
