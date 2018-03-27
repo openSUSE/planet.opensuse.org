@@ -1019,7 +1019,7 @@ feed 15m http://www.javierllorente.com/category/castellano/feed/
     define_name Javier Llorente
     define_lang es
     define_irc javier
-    define_mamber 1
+    define_member 1
 
 feed 15m http://lizards.opensuse.org/author/fabiomux/feed/
     define_name Fabio Mucciante
@@ -2166,3 +2166,10 @@ feed 30m https://kubic.opensuse.org/feed.xml
     define_name Kubic Project
     define_face kubic
     define_lang en
+
+feed 30m https://www.volted.net/feed/rss
+    define_name Sébastien POHER
+    define_lang fr
+    define_nick sogal
+    # not yet ;-)  define_member 1
+    define_face sogal
