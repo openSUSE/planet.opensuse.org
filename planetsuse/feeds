@@ -2180,3 +2180,11 @@ feed 30m http://anamaria.martinezgomez.name/feed.xml
     define_connect ana06
     define_member 1
     define_lang en
+
+feed 15m https://gsocwithopensuse.wordpress.com/feed
+    define_name Ana María Marínez Gómez
+    define_irc Ana06
+    define_connect ana06
+    define_member 1
+    define_gsoc 1
+    define_lang en
