@@ -65,7 +65,7 @@
 #feedlist a.feed-url,
 #feedlist .feed-member,
 #feedlist .feed-gsoc,
-#feedlist a.feed-connect {
+#feedlist .feed-connect {
     padding: 1px 2px 1px 2px;
     color: #ffffff;
     text-decoration: none;
@@ -82,9 +82,15 @@
 #feedlist .feed-gsoc {
     background: #996600;
 }
-#feedlist a.feed-connect {
-#feedlist a.feed-connect {
+#feedlist .feed-connect {
     background: #444444;
+}
+#feedlist .feed-connect a {
+    color: #ffffff;
+    text-decoration: none;
+}
+#feedlist .feed-connect:hover {
+    background: #2E2E2E;
 }
 
 #feedlist a.feed-url:hover {
