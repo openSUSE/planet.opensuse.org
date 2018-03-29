@@ -87,7 +87,7 @@
         {% if a.irc %}<span class="feed-irc">(<a class="feed-irc" href="irc://irc.freenode.net/{{ a.irc }},isnick">{{ a.irc }}</a>)</span>{% endif %}
         {% if a.member %}<span class="feed-member">member</span>{% endif %}
         {% if a.gsoc %}<span class="feed-gsoc">gsoc</span>{% endif %}
-        {% if a.connect %}<a class="feed-connect" href="http://connect.opensuse.org/profiles/{{ a.connect }}">profile</a>{% endif %}
+        {% if a.connect %}<a class="feed-connect" href="https://connect.opensuse.org/pg/profile/{{ a.connect }}">profile</a>{% endif %}
         <ul class="feed-feeds">
           {% for f in a.feeds %}
           <li class="feed-feed{% if f.lang %} lang lang-{{ f.lang }}{% endif %}">
