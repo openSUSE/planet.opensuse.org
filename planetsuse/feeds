@@ -2098,7 +2098,7 @@ feed 15m https://opensusebr.blogspot.com/feeds/posts/default
 	define_lang pt
 	define_connect caffilhobr
 
-feed 15m http://www.cubiclenate.com/blatherings/posts.xml
+feed 15m https://cubiclenate.com/feed/
 	define_name Nathan Wolf
 	define_face futureboy
 	define_lang en
