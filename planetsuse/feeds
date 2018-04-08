@@ -2193,3 +2193,4 @@ feed 30m https://cloudyday.tech.blog/feed
     define_name Jason Evans
     define_irc tgeek
     define_lang en
+    define_member 1
