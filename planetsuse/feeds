@@ -2170,6 +2170,7 @@ feed 30m https://kubic.opensuse.org/feed.xml
 feed 30m https://www.volted.net/feed/rss
     define_name Sébastien POHER
     define_lang fr
+    define_connect sogal
     define_nick sogal
     # not yet ;-)  define_member 1
     define_face sogal
@@ -2201,3 +2202,10 @@ feed 30m https://www.opensusemexico.com/feeds/posts/default
     define_connect aaronluna75
     define_member 1
     define_lang es
+
+feed 30m https://www.fossadventures.com/feed/
+    define_name Martin de Boer
+    define_face mdutours
+    define_connect mdutours
+    # not yet # define_member 1
+    define_lang en
