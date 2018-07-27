@@ -1923,9 +1923,9 @@ feed 15m http://abenitobethencourt.blogspot.cz/feeds/posts/default/-/openSUSE
     define_irc toscalix
 
 feed 20m https://progress.opensuse.org/projects/opensuse-admin/news.atom
-    define_name openSUSE Admins
+    define_name openSUSE Heroes
     define_lang en
-    define_nick opensuse-admin
+    define_face opensuse-heroes
 
 feed 15m http://sleepwalker-hnd.blogspot.com/feeds/posts/default/-/opensuse?alt=rss
     define_name Tomáš Čech
