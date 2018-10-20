@@ -1685,7 +1685,7 @@ feed 15m http://anadiotisd.wordpress.com/feed/
     define_irc  diomidis
     define_face diomidis
 
-feed 15m http://www.trebol-a.com/categoria/gnu-linux/feed/
+feed 15m https://www.trebol-a.com/categoria/gnu-linux/feed/
     define_name Alberto Garcia
     define_lang es
     define_irc  Trebol-a
@@ -1904,7 +1904,7 @@ feed 15m http://ourobengr.com/tag/opensuse/feed/
     define_irc tserong
     define_member 1
 
-feed 15m http://blog.riemann.cc/tags/opensuse/atom.xml
+feed 15m https://blog.riemann.cc/feed.xml
     define_name Robert Riemann
     define_lang en
     define_nick rriemann
@@ -1944,7 +1944,7 @@ feed 30m https://medium.com/feed/information-and-technology/
     define_lang en
     define_irc Stallmanu
 
-feed 15m https://hacklog.mu/tag/opensuse/rss/
+feed 15m https://hacklog.mu/post/index.xml
     define_name Ish Sookun
     define_face https://hacklog.mu/content/images/planetsuse-ish-sookun.jpg
     define_lang en
