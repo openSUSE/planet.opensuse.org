@@ -15,7 +15,7 @@ feed 15m https://lizards.opensuse.org/author/yast-team/feed/
     define_face yast
     define_lang en
 
-feed 15m http://www.nui.fr/blog/?feed=rss2
+feed 15m http://nui.fr/blog/feed/
     define_name Network Users Institute
     define_lang fr
 #    define_face jimmypierre
@@ -29,8 +29,8 @@ feed 15m http://www.mattos.eng.br/tag/opensuse/feed/
     define_member 1
     define_irc analyser
 
-feed 15m https://thelinuxalchemist.wordpress.com/feed/
-    define_name Bruno Exposito  
+feed 15m https://purolinux.com/feed/
+    define_name Bruno Exposito
     define_lang es
 
 feed 15m https://www.edivaldobrito.com.br/category/opensuse/feed/
@@ -75,7 +75,7 @@ feed 15m http://disruptive.org.uk/rss.xml
     define_name Roger Whittaker
     define_face roger
 
-feed 15m http://joeshaw.org/rss.php
+feed 15m https://www.joeshaw.org/atom.xml
     define_name Joe Shaw
     define_face http://planet.gnome.org/heads/joe.png
 
@@ -616,7 +616,7 @@ feed 15m https://lizards.opensuse.org/author/vavai/feed/
     define_name Masim Sugianto
     define_member 1
 
-feed 15m http://vavai.net/category/opensuse/feed/
+feed 15m http://www.vavai.net/category/opensuse/feed/
     define_name Masim Sugianto
 
 feed 15m https://lizards.opensuse.org/author/aschnell/feed/
@@ -1279,7 +1279,7 @@ feed 15m https://vizzzion.org/blog/feed/
     define_irc sebas
     define_face sebas
 
-feed 15m http://cabelovivaolinux.wordpress.com/feed/
+feed 15m https://assuntonerd.com.br/feed/
     define_name Alessandro de Oliveira Faria
     define_irc  cabelo
     define_lang pt
@@ -1541,7 +1541,7 @@ feed 15m https://lizards.opensuse.org/author/bmwiedemann/
     define_member 1
     define_face bmwiedemann
 
-feed 15m http://opensuse.terrorpup.net/?feed=atom
+feed 15m http://opensuse.terrorpup.net/index.php/feed/atom/
     define_name Chuck Payne
     define_irc  terrorpup
     define_member 1
@@ -1810,7 +1810,7 @@ feed 15m https://rootco.de/feed.xml
     define_face ilmehtar
 
 #My blog was in planet.o.o but since January 2014 is disappear, can you fix it?? Thanks!
-feed 15m https://victorhckinthefreeworld.wordpress.com/feed/
+feed 15m https://victorhckinthefreeworld.com/feed/
     define_name Victorhck
     define_irc  Victorhck
     define_member 1
@@ -1826,7 +1826,7 @@ feed 15m https://peternixon.net/feeds/rss/blog/
     define_irc  Nix
     define_member 1
 
-feed 15m https://www.dennogumi.org/category/opensuse/feed
+feed 15m https://www.dennogumi.org/category/opensuse/feed/
     define_name Luca Beltrame
     define_irc  einar77
     define_member 1
@@ -2076,7 +2076,7 @@ feed 30m http://anamaria.martinezgomez.name/feed.xml
     define_member 1
     define_lang en
 
-feed 15m https://gsocwithopensuse.wordpress.com/feed
+feed 15m https://gsocwithopensuse.wordpress.com/feed/
     define_name Ana María Marínez Gómez
     define_irc Ana06
     define_connect ana06
@@ -2084,7 +2084,7 @@ feed 15m https://gsocwithopensuse.wordpress.com/feed
     define_gsoc 1
     define_lang en
 
-feed 30m https://cloudyday.tech.blog/feed
+feed 30m https://cloudyday.tech.blog/feed/
     define_name Jason Evans
     define_irc tgeek
     define_lang en
