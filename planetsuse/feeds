@@ -10,7 +10,7 @@ feed 15m http://drakevr.gr/index.xml
     define_irc Drakevr
     define_member 1
 
-feed 15m http://lizards.opensuse.org/author/yast-team/feed/
+feed 15m https://lizards.opensuse.org/author/yast-team/feed/
     define_name YaST Team
     define_face yast
     define_lang en
@@ -106,7 +106,7 @@ feed 15m http://jaegerandi.blogspot.com/feeds/posts/default
     define_irc  AJaeger
     define_member 1
 
-feed 15m http://lizards.opensuse.org/author/a_jaeger/feed/
+feed 15m https://lizards.opensuse.org/author/a_jaeger/feed/
     define_name Andreas Jaeger
     define_face aj
     define_irc  AJaeger
@@ -182,7 +182,7 @@ feed 15m http://blogs.kde.org/blog/457/feed
     define_irc  Beineri
     define_member 1
 
-feed 15m http://lizards.opensuse.org/author/coolo/feed/
+feed 15m https://lizards.opensuse.org/author/coolo/feed/
     define_name Stephan Kulow
     define_face coolo
     define_irc  coolo
@@ -251,7 +251,7 @@ feed 15m http://www.kroah.com/log/index.rss
     define_name Greg Kroah-Hartman
     define_member 1
 
-feed 15m http://lizards.opensuse.org/author/mlasars/feed/
+feed 15m https://lizards.opensuse.org/author/mlasars/feed/
     define_name Martin Lasarsch
     define_irc  notlocalhorst
 
@@ -261,7 +261,7 @@ feed 15m http://blogs.kde.org/blog/77/feed
     define_irc  wstephenson
     define_member 1
 
-feed 15m http://lizards.opensuse.org/author/wstephenson/feed/
+feed 15m https://lizards.opensuse.org/author/wstephenson/feed/
     define_name Will Stephenson
     define_face wstephenson
     define_irc  wstephenson
@@ -425,7 +425,7 @@ feed 15m https://andrew.wafaa.eu/index.xml
     define_irc  FunkyPenguin
     define_member 1
 
-feed 15m http://lizards.opensuse.org/author/funkypenguin/feed/
+feed 15m https://lizards.opensuse.org/author/funkypenguin/feed/
     define_name Andrew Wafaa
     define_face wafaa
     define_irc  FunkyPenguin
@@ -453,7 +453,7 @@ feed 15m http://www.freetechie.com/blog/category/techie/suse-linux/feed/
 feed 15m http://yarpen.cz/rants/?feed=rss2
     define_name Petr Vaněk
 
-feed 15m http://lizards.opensuse.org/author/dirkmueller/feed/
+feed 15m https://lizards.opensuse.org/author/dirkmueller/feed/
     define_name Dirk Müller
 
 feed 15m http://blog.cgoncalves.pt/feeds/posts/default
@@ -603,7 +603,7 @@ feed 15m https://monarchieundalltag.wordpress.com/feed/
 #    define_face http://stick.gk2.sk/head.png
 #    define_member 1
 
-feed 15m http://lizards.opensuse.org/author/dl9pf/feed/
+feed 15m https://lizards.opensuse.org/author/dl9pf/feed/
     define_name Jan-Simon Möller
 
 feed 15m http://dragotin.wordpress.com/feed/
@@ -612,17 +612,17 @@ feed 15m http://dragotin.wordpress.com/feed/
     define_member 1
     define_face dragotin
 
-feed 15m http://lizards.opensuse.org/author/vavai/feed/
+feed 15m https://lizards.opensuse.org/author/vavai/feed/
     define_name Masim Sugianto
     define_member 1
 
 feed 15m http://vavai.net/category/opensuse/feed/
     define_name Masim Sugianto
 
-feed 15m http://lizards.opensuse.org/author/aschnell/feed/
+feed 15m https://lizards.opensuse.org/author/aschnell/feed/
     define_name Arvin Schnell
 
-feed 15m http://lizards.opensuse.org/author/kdupuy9/feed/
+feed 15m https://lizards.opensuse.org/author/kdupuy9/feed/
     define_name Kevin Dupuy
     define_irc  KevinYo
 
@@ -635,46 +635,46 @@ feed 15m http://emmes.livejournal.com/data/rss
 #    define_name Marko Jung
 #    define_face mjung
 
-feed 15m http://lizards.opensuse.org/author/snwint/feed/
+feed 15m https://lizards.opensuse.org/author/snwint/feed/
     define_name Steffen Winterfeldt
 
-feed 15m http://lizards.opensuse.org/author/thomas-schraitle/feed/
+feed 15m https://lizards.opensuse.org/author/thomas-schraitle/feed/
     define_name Thomas Schraitle
 
-feed 15m http://lizards.opensuse.org/author/mlandres/feed/
+feed 15m https://lizards.opensuse.org/author/mlandres/feed/
     define_name Michael Andres
 
-feed 15m http://lizards.opensuse.org/author/jdsn/feed/
+feed 15m https://lizards.opensuse.org/author/jdsn/feed/
     define_name J. Daniel Schmidt
 
 #feed 15m http://kevinsword.com/feed/
 #    define_name Kevin Dupuy
 #    define_irc  KevinYo
 
-feed 15m http://lizards.opensuse.org/author/helcaraxe/feed/
+feed 15m https://lizards.opensuse.org/author/helcaraxe/feed/
     define_name Jan-Christoph Bornschlegel
 
-feed 15m http://lizards.opensuse.org/author/g0nz0/feed/
+feed 15m https://lizards.opensuse.org/author/g0nz0/feed/
     define_name Rossana Motta
     define_irc  G0NZ0
 
-feed 15m http://lizards.opensuse.org/author/rhorstkoetter/feed/
+feed 15m https://lizards.opensuse.org/author/rhorstkoetter/feed/
     define_name Rupert Horstkötter
     define_irc  rhorstkoetter
     define_face rhorstkoetter
     define_member 1
 
-feed 15m http://lizards.opensuse.org/author/michal-m/feed/
+feed 15m https://lizards.opensuse.org/author/michal-m/feed/
     define_name Michal Marek
     define_irc mmarek
     define_member 1
 
-feed 15m http://lizards.opensuse.org/author/lnussel/feed/
+feed 15m https://lizards.opensuse.org/author/lnussel/feed/
     define_name Ludwig Nussel
     define_irc lnussel
     define_member 1
 
-feed 15m http://lizards.opensuse.org/author/schubi2/feed/
+feed 15m https://lizards.opensuse.org/author/schubi2/feed/
     define_name Stefan Schubert
 
 # no permission to read - checked by lrupp at Tue Apr 29 2014
@@ -682,12 +682,12 @@ feed 15m http://lizards.opensuse.org/author/schubi2/feed/
 #    define_name Thomas Biege
 #    define_member 1
 
-feed 15m http://lizards.opensuse.org/author/poeml/feed/
+feed 15m https://lizards.opensuse.org/author/poeml/feed/
     define_name Peter Pöml
     define_irc ppoeml
     define_member 1
 
-feed 15m http://lizards.opensuse.org/author/wiederda/feed/
+feed 15m https://lizards.opensuse.org/author/wiederda/feed/
     define_name Hubert Mantel
 
 # blog does not exist - checked by lrupp at Tue Apr 29 2014
@@ -698,28 +698,28 @@ feed 15m http://lizards.opensuse.org/author/wiederda/feed/
 #feed 15m http://feeds.feedburner.com/susegeek
 #    define_name SUSE Geek
 
-feed 15m http://lizards.opensuse.org/author/anubisg1/feed/
+feed 15m https://lizards.opensuse.org/author/anubisg1/feed/
     define_name Andrea Florio
     define_face anubisg1
     define_irc  anubisg1
     define_member 1
 
-feed 15m http://lizards.opensuse.org/author/visnov/feed/
+feed 15m https://lizards.opensuse.org/author/visnov/feed/
     define_name Stanislav Visnovsky
     define_irc visnov
     define_member 1
 
-feed 15m http://lizards.opensuse.org/author/sh-sh-sh/feed/
+feed 15m https://lizards.opensuse.org/author/sh-sh-sh/feed/
     define_name Stefan Hundhammer
 
-feed 15m http://lizards.opensuse.org/author/pmladek/feed/
+feed 15m https://lizards.opensuse.org/author/pmladek/feed/
     define_name Petr Mladek
     define_irc pmladek
 
-feed 15m http://lizards.opensuse.org/author/martinmohring/feed/
+feed 15m https://lizards.opensuse.org/author/martinmohring/feed/
     define_name Martin Mohring
 
-feed 15m http://lizards.opensuse.org/author/dmitry_serpokryl/feed/
+feed 15m https://lizards.opensuse.org/author/dmitry_serpokryl/feed/
     define_name Dmitry Serpokryl
 
 #feed 15m http://www.dissociatedpress.net/category/opensuse/feed/
@@ -727,34 +727,34 @@ feed 15m http://lizards.opensuse.org/author/dmitry_serpokryl/feed/
 #    define_irc  jbrockmeier
 #    define_face zonker
 
-feed 15m http://lizards.opensuse.org/author/msmeissn/feed/
+feed 15m https://lizards.opensuse.org/author/msmeissn/feed/
     define_name Marcus Meissner
     define_irc  _Marcus_
     define_member 1
 
-feed 15m http://lizards.opensuse.org/author/rawang/feed/
+feed 15m https://lizards.opensuse.org/author/rawang/feed/
     define_name Ray Wang
 
-feed 15m http://lizards.opensuse.org/author/sax2/feed/
+feed 15m https://lizards.opensuse.org/author/sax2/feed/
     define_name Marcus Schaefer
 
-feed 15m http://lizards.opensuse.org/author/aorlovskyy/feed/
+feed 15m https://lizards.opensuse.org/author/aorlovskyy/feed/
     define_name Alexander Orlovskyy
 
-feed 15m http://lizards.opensuse.org/author/gogga/feed/
+feed 15m https://lizards.opensuse.org/author/gogga/feed/
     define_name Johan Kotze
 
-feed 15m http://lizards.opensuse.org/author/jan-portugal/feed/
+feed 15m https://lizards.opensuse.org/author/jan-portugal/feed/
     define_name Jan Madsen
 
-feed 15m http://lizards.opensuse.org/author/illuusio/feed/
+feed 15m https://lizards.opensuse.org/author/illuusio/feed/
     define_name Tuukka Pasanen
 
 # gets redirected to main HTML page - checked by lrupp at Tue Apr 29 2014
 #feed 15m http://ldn.linuxfoundation.org/blogs/ddavis/feed
 #    define_name Darren Davis
 
-feed 15m http://lizards.opensuse.org/author/hobbsc/feed/
+feed 15m https://lizards.opensuse.org/author/hobbsc/feed/
     define_name Christopher Hobbs
     define_irc  hobbsc
     define_member 1
@@ -763,35 +763,35 @@ feed 15m http://lizards.opensuse.org/author/hobbsc/feed/
 #    define_name Christopher Hobbs
 #    define_irc  hobbsc
 
-feed 15m http://lizards.opensuse.org/author/dj_ubun_1/feed/
+feed 15m https://lizards.opensuse.org/author/dj_ubun_1/feed/
     define_name Agustin Chavarria
 
-feed 15m http://lizards.opensuse.org/author/froh/feed/
+feed 15m https://lizards.opensuse.org/author/froh/feed/
     define_name Susanne Oberhauser
 
-feed 15m http://lizards.opensuse.org/author/haass/feed/
+feed 15m https://lizards.opensuse.org/author/haass/feed/
     define_name Stefan Haas
 
 feed 15m http://ungaman.wordpress.com/feed/atom/
     define_name Julio Vannini
     define_lang es
 
-feed 15m http://lizards.opensuse.org/author/UngaMan/feed/
+feed 15m https://lizards.opensuse.org/author/UngaMan/feed/
     define_name Julio Vannini
     define_lang en
 
-feed 15m http://lizards.opensuse.org/author/k0da/feed/
+feed 15m https://lizards.opensuse.org/author/k0da/feed/
     define_name Dinar Valeev
     define_irc  k0da
     define_member 1
 
-#feed 15m http://lizards.opensuse.org/author/bwalle/feed/
+#feed 15m https://lizards.opensuse.org/author/bwalle/feed/
 #    define_name Bernhard Walle
 
 feed 15m http://blog.leeromero.org/feed/
     define_name Lee Romero
 
-feed 15m http://lizards.opensuse.org/author/jreidinger/feed/
+feed 15m https://lizards.opensuse.org/author/jreidinger/feed/
     define_name Josef Reidinger
 
 feed 15m http://hedgehogpainter.livejournal.com/data/atom
@@ -800,10 +800,10 @@ feed 15m http://hedgehogpainter.livejournal.com/data/atom
     define_irc  Bubli
     define_member 1
 
-feed 15m http://lizards.opensuse.org/author/babelworx/feed/
+feed 15m https://lizards.opensuse.org/author/babelworx/feed/
     define_name Ciaran Farrell
 
-feed 15m http://lizards.opensuse.org/author/lrupp/feed/
+feed 15m https://lizards.opensuse.org/author/lrupp/feed/
     define_name Lars Vogdt
     define_irc kl_eisbaer
     define_member 1
@@ -812,21 +812,21 @@ feed 15m http://johnnyjacob.wordpress.com/category/tech/suse/feed/
     define_name Johnny Jacob
     define_irc  jony
 
-feed 15m http://lizards.opensuse.org/author/tgoettlicher/feed/
+feed 15m https://lizards.opensuse.org/author/tgoettlicher/feed/
     define_name Thomas Göttlicher
 
-feed 15m http://lizards.opensuse.org/author/janblunck/feed/
+feed 15m https://lizards.opensuse.org/author/janblunck/feed/
     define_name Jan Blunck
 
 # blog not found - checked by lrupp at Tue Apr 29 2014
 #feed 15m http://mlandres.blogspot.com/feeds/posts/default
 #    define_name Michael Andres
 
-feed 15m http://lizards.opensuse.org/author/jnweiger/feed/
+feed 15m https://lizards.opensuse.org/author/jnweiger/feed/
     define_name Juergen Weigert
     define_member 1
 
-feed 15m http://lizards.opensuse.org/author/mvyskocil/feed/
+feed 15m https://lizards.opensuse.org/author/mvyskocil/feed/
     define_name Michal Vyskocil
     define_irc mvyskocil
     define_member 1
@@ -842,10 +842,10 @@ feed 15m http://lmedinas.livejournal.com/data/rss
 feed 15m http://nikanth.blogspot.com/feeds/posts/default/-/planetsuse
     define_name Nikanth Karthikesan
 
-feed 15m http://lizards.opensuse.org/author/rbos/feed/
+feed 15m https://lizards.opensuse.org/author/rbos/feed/
     define_name Richard Bos
 
-feed 15m http://lizards.opensuse.org/author/jsuchome/feed/
+feed 15m https://lizards.opensuse.org/author/jsuchome/feed/
     define_name Jiří Suchomel
 
 feed 15m http://sellingfreesoftwareforaliving.blogspot.com/feeds/posts/default
@@ -873,13 +873,13 @@ feed 15m https://www.vioan.eu/blog/feeds/all.atom.xml
 #    define_name Uwe Gansert
 #    define_irc  wumpscut
 
-feed 15m http://lizards.opensuse.org/author/cyberorg/feed/
+feed 15m https://lizards.opensuse.org/author/cyberorg/feed/
     define_name Jigish Gohil
     define_face cyberorg
     define_irc  cyberorg
     define_member 1
 
-feed 15m http://lizards.opensuse.org/author/marcus_h/feed/
+feed 15m https://lizards.opensuse.org/author/marcus_h/feed/
     define_name Marcus Hüwe
     define_irc  }-Tux-{
     define_member 1
@@ -889,7 +889,7 @@ feed 15m http://dominique.leuenberger.net/blog/feed/
     define_irc  DimStar
     define_member 1
 
-feed 15m http://lizards.opensuse.org/author/jasujt/feed/
+feed 15m https://lizards.opensuse.org/author/jasujt/feed/
     define_name James Tremblay
     define_irc  SLEducator
 
@@ -925,7 +925,7 @@ feed 15m http://michal.hrusecky.net/category/opensuse-cz/feed/
     define_face miska
     define_lang cs
 
-feed 15m http://lizards.opensuse.org/author/ricardovarassantana/feed/
+feed 15m https://lizards.opensuse.org/author/ricardovarassantana/feed/
     define_name Ricardo Varas Santana
     define_irc  rvaras
 
@@ -934,24 +934,24 @@ feed 15m http://blog.ladslezak.cz/feed.xml
     define_irc lslezak
     define_lang en
 
-feed 15m http://lizards.opensuse.org/author/sts301/feed/
+feed 15m https://lizards.opensuse.org/author/sts301/feed/
     define_name Sebastian Schöbinger
     define_face sts301
     define_irc  STS301
 
-feed 15m http://lizards.opensuse.org/author/jsrain/feed/
+feed 15m https://lizards.opensuse.org/author/jsrain/feed/
     define_name Jiri Srain
 
-feed 15m http://lizards.opensuse.org/author/andreasstieger/feed/
+feed 15m https://lizards.opensuse.org/author/andreasstieger/feed/
     define_name Andreas Stieger
 
-feed 15m http://lizards.opensuse.org/author/holgisms/feed/
+feed 15m https://lizards.opensuse.org/author/holgisms/feed/
     define_name Holger Sickenberg
 
-feed 15m http://lizards.opensuse.org/author/nikanth/feed/
+feed 15m https://lizards.opensuse.org/author/nikanth/feed/
     define_name Nikanth Karthikesan
 
-feed 15m http://lizards.opensuse.org/author/michl19/feed/
+feed 15m https://lizards.opensuse.org/author/michl19/feed/
     define_name Michael Löffler
     define_irc  michl
     define_face michl
@@ -968,10 +968,10 @@ feed 15m http://www.javierllorente.com/category/castellano/feed/
     define_irc javier
     define_member 1
 
-feed 15m http://lizards.opensuse.org/author/fabiomux/feed/
+feed 15m https://lizards.opensuse.org/author/fabiomux/feed/
     define_name Fabio Mucciante
 
-feed 15m http://lizards.opensuse.org/author/ealin/feed/
+feed 15m https://lizards.opensuse.org/author/ealin/feed/
     define_name Alin M Elena
     define_irc alin
 
@@ -983,7 +983,7 @@ feed 15m http://lizards.opensuse.org/author/ealin/feed/
 #feed 15m http://blog.mecworks.com/feed/
 #    define_name Marc Christensen
 
-feed 15m http://lizards.opensuse.org/author/sjayaraman/feed/
+feed 15m https://lizards.opensuse.org/author/sjayaraman/feed/
     define_name Suresh Jayaraman
 
 # redirects to HTML main page
@@ -991,7 +991,7 @@ feed 15m http://lizards.opensuse.org/author/sjayaraman/feed/
 #    define_name Michal Seben
 #    define_irc mseben
 
-feed 15m http://lizards.opensuse.org/author/puzel/feed/
+feed 15m https://lizards.opensuse.org/author/puzel/feed/
     define_name Petr Uzel
     define_face petr_uzel
     define_irc  ptr_uzl
@@ -1006,10 +1006,10 @@ feed 15m http://lizards.opensuse.org/author/puzel/feed/
 feed 15m http://blog.reblochon.org/feeds/posts/default
     define_name Stephane Delcroix
 
-feed 15m http://lizards.opensuse.org/author/rjschwei/feed/
+feed 15m https://lizards.opensuse.org/author/rjschwei/feed/
     define_name Robert Schweikert
 
-feed 15m http://lizards.opensuse.org/author/alexander_naumov/feed/
+feed 15m https://lizards.opensuse.org/author/alexander_naumov/feed/
     define_name Alexander Naumov
     define_member 1
     define_irc  anaumov
@@ -1019,16 +1019,16 @@ feed 15m http://thefreecountry.wordpress.com/category/gnulinux/opensuse/feed/
     define_member 1
     define_irc  anaumov
 
-feed 15m http://lizards.opensuse.org/author/bruno_friedmann/feed/
+feed 15m https://lizards.opensuse.org/author/bruno_friedmann/feed/
     define_name Bruno Friedmann
     define_irc  tigerfoot
     define_face bruno_friedmann
     define_member 1
 
-feed 15m http://lizards.opensuse.org/author/migbarajas/feed/
+feed 15m https://lizards.opensuse.org/author/migbarajas/feed/
     define_name Miguel Angel Barajas Hernandez
 
-feed 15m http://lizards.opensuse.org/author/spyhawk/feed/
+feed 15m https://lizards.opensuse.org/author/spyhawk/feed/
     define_name Rémy Marquis
     define_irc  Spyhawk
     define_member 1
@@ -1053,7 +1053,7 @@ feed 15m http://infragments.blogspot.com/feeds/posts/default
 feed 15m http://blog.reblochon.org/feeds/posts/default
     define_name Stephane Delcroix
 
-feed 15m http://lizards.opensuse.org/author/alexbariv/feed/
+feed 15m https://lizards.opensuse.org/author/alexbariv/feed/
     define_name Alex Barrios
     define_irc  alexbariv
     define_face alex_barrios
@@ -1259,7 +1259,7 @@ feed 15m https://sarah-julia-kriesch.eu/category/openSUSE/feed/
     define_member 1
     define_lang en
 
-feed 15m http://lizards.opensuse.org/author/jaom7/feed/
+feed 15m https://lizards.opensuse.org/author/jaom7/feed/
     define_name José Oramas M.
     define_irc  jaom7
     define_member 1
@@ -1290,7 +1290,7 @@ feed 15m http://cabelovivaolinux.wordpress.com/feed/
 #    define_lang de
 #    define_face marcusmoeller
 
-feed 15m http://lizards.opensuse.org/author/marcusmoeller/feed/
+feed 15m https://lizards.opensuse.org/author/marcusmoeller/feed/
     define_name Marcus Moeller
     define_irc  marcus_
     define_lang de
@@ -1459,7 +1459,7 @@ feed 15m http://www.suseromania.ro/feed/atom/
     define_face lucian_oprea
     define_lang ro
 
-feed 15m http://lizards.opensuse.org/author/badshah400/feed/
+feed 15m https://lizards.opensuse.org/author/badshah400/feed/
     define_name Atri Bhattacharya
     define_irc  badshah400
     define_member 1
@@ -1535,7 +1535,7 @@ feed 15m http://e-tote-kala.blogspot.com/feeds/posts/default/-/opensuse-gr
     define_member 1
     define_lang gr
 
-feed 15m http://lizards.opensuse.org/author/bmwiedemann/
+feed 15m https://lizards.opensuse.org/author/bmwiedemann/
     define_name Bernhard M. Wiedemann
     define_irc  bmwiedemann
     define_member 1
