@@ -94,18 +94,6 @@ feed 15m https://people.gnome.org/~federico/blog/feeds/all.atom.xml
 #    define_name Damian Smith
 #    define_face damian
 
-feed 15m http://andreasjaeger.blogspot.com/feeds/posts/full
-    define_name Andreas Jaeger
-    define_face aj
-    define_irc  AJaeger
-    define_member 1
-
-feed 15m http://jaegerandi.blogspot.com/feeds/posts/default
-    define_name Andreas Jaeger
-    define_face aj
-    define_irc  AJaeger
-    define_member 1
-
 feed 15m https://lizards.opensuse.org/author/a_jaeger/feed/
     define_name Andreas Jaeger
     define_face aj
