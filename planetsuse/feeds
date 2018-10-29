@@ -2099,3 +2099,7 @@ feed 30m https://robbinespu.github.io/feed/tags.suse.xml
     define_connect RobbiNespu
     #define_member 1
     define_lang en
+
+feed 30m http://blog.geeko.jp/feed
+    define_name openSUSE ja
+    define_lang ja
