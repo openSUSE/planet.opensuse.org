@@ -195,10 +195,6 @@ feed 15m http://www.homac.de/wordpress/?feed=rss2
     define_face hmacht
     define_member 1
 
-feed 15m http://ironman.darthgibus.net/?feed=rss2
-    define_name Fred Blaise
-    define_face fredb
-
 # domain unknown - checked by lrupp at Tue Apr 29 2014
 #feed 15m http://blog.nouse.net/?feed=rss2
 #    define_name Timo Hoenig
@@ -320,11 +316,6 @@ feed 15m http://www.cannon-linux.co.uk/feed/
     define_name Peter Cannon
     define_face petercannon
 
-feed 15m http://linuxart.com/log/feed/
-    define_name Garrett LeSage
-    define_face http://planet.gnome.org/heads/garrett.png
-    define_irc  garret
-
 # domain unknown - checked by lrupp at Tue Apr 29 2014
 #feed 15m http://blog.f-seidel.de/?feed=rss2
 #    define_name Frank Seidel
@@ -371,10 +362,6 @@ feed 15m https://pavelmachek.livejournal.com/data/atom
 
 feed 15m http://vvaradhan.blogspot.com/feeds/posts/default
     define_name Veerapuram Varadhan
-
-feed 15m http://calvinrg.blogspot.com/feeds/posts/default
-    define_name Calvin Gaisford
-    define_irc  calvin
 
 feed 15m http://nachosetcrayons.blogspot.com/feeds/posts/default
     define_name Michael Wolf
@@ -490,10 +477,6 @@ feed 15m http://visnov.blogspot.com/feeds/posts/default
     define_name Stanislav Visnovsky
     define_irc visnov
     define_member 1
-
-feed 15m http://blog.fnmueller.de/feed/atom/
-    define_name Felix-Nicolai Müller
-    define_irc  fnmueller
 
 #feed 15m http://blogs.gnome.org/gekker/feed/
 #    define_name Gary Ekker
@@ -1047,12 +1030,6 @@ feed 15m https://lizards.opensuse.org/author/alexbariv/feed/
     define_face alex_barrios
     define_member 1
 
-feed 15m http://blog.coly.li/?feed=rss2
-    define_name Coly Li
-    define_face coly_li
-    define_irc  coly
-    define_member 1
-
 feed 15m http://www.andreas-demmer.de/category/linux/feed/
     define_name Andreas Demmer
     define_irc  ademmer
@@ -1128,10 +1105,6 @@ feed 15m http://dionatamartins.blogspot.com/feeds/posts/default
     define_name Dionata Martins
     define_lang pt
 
-feed 15m http://www.mirandamaster.com/feeds/posts/default
-    define_name Márcio Miranda
-    define_lang pt
-
 #feed 15m http://jyulliano.ning.com/profiles/blog/feed
 #    define_name Jyulliano Rocha
 #    define_irc  jyulliano
@@ -1180,10 +1153,6 @@ feed 15m http://strufts.blogspot.com/feeds/posts/default
     define_name Isis Binder
     define_irc  isisbinder
     define_lang pt
-
-feed 15m http://blog.susestudio.com/feeds/posts/default
-    define_name SUSE Studio
-    define_face studio
 
 #feed 15m http://shayonj.wordpress.com/feed/rss/
 #    define_name Shayon Mukherjee
@@ -1645,12 +1614,6 @@ feed 15m http://anksos.blogspot.com/feeds/posts/default/-/openSUSE-en?alt=rss
     define_irc  ankso
     define_face ankso
 
-feed 15m http://webeve.de/~cwh/blog/category/opensuse/feed/
-    define_name Christopher Hofmann
-    define_irc  cwh
-    define_member 1
-    define_face cwh
-
 feed 15m https://stathisagrapidis.wordpress.com/tag/opensuse-en/feed/
     define_name Efstathios Agrapidis
     define_irc  efagra
@@ -1729,10 +1692,6 @@ feed 15m https://obsforandroid.wordpress.com/feed/
 #    define_name Carlos Alberto Soares Lubas
 #    define_face carlos_lubas
 #    define_lang pt
-
-feed 15m http://oyox.de/feed/
-    define_name Marco Heizmann
-    define_lang de
 
 # no items - checked by lrupp at Tue Apr 29 2014
 #feed 15m http://opensusespain.blogspot.com/feeds/posts/default
@@ -1818,11 +1777,6 @@ feed 15m https://www.dennogumi.org/category/opensuse/feed/
     define_name Luca Beltrame
     define_irc  einar77
     define_member 1
-
-feed 15m http://andreipetre.blogspot.com/feeds/posts/default
-    define_name Andrei Petre
-    define_irc  andreip
-    define_face andreip
 
 # looks like the page got hacked and used for SPAM.
 # disabling for now until the problem is solved.
@@ -1937,11 +1891,6 @@ feed 15m https://hacklog.mu/post/index.xml
     define_face https://hacklog.mu/content/images/planetsuse-ish-sookun.jpg
     define_lang en
 
-feed 15m http://cheperobert.blogspot.com/feeds/posts/full
-    define_name José Roberto
-    define_irc  cheperobert
-    define_lang es
-
 feed 15m http://www.planetaunix.com.br/feeds/posts/default?alt=rss
 	define_name Fábio dos Reis
 	define_lang pt
@@ -1975,24 +1924,12 @@ feed 15m https://czanik.blogs.balabit.com/tag/openSUSE/feed/
 	define_connect czanik
 	define_member 1
 
-feed 15m https://opensusebr.blogspot.com/feeds/posts/default
-	define_name Carlos Alberto Ferreira Filho
-	define_lang pt
-	define_connect caffilhobr
-
 feed 15m https://cubiclenate.com/feed/
 	define_name Nathan Wolf
 	define_face futureboy
 	define_lang en
 	define_irc Futureboy
 	define_connect Futureboy
-	define_member 1
-
-feed 15m https://bo.geekworld.dk/category/openSUSE/feed/
-	define_name Bo Simonsen
-	define_lang en
-	define_irc bosim
-	define_connect bosim
 	define_member 1
 
 feed 15m http://feeds.feedburner.com/SaigkillsBlog-Opensuse
