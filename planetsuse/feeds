@@ -2040,3 +2040,7 @@ feed 30m https://robbinespu.github.io/feed/tags.suse.xml
 feed 30m http://blog.geeko.jp/feed
     define_name openSUSE Japanese user group
     define_lang ja
+    
+feed 30m https://rifkiaz.web.id/tag/opensuse-id/feed/
+     define_name Mohammad Rifki Affandi Z
+     define_lang id
