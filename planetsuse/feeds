@@ -1986,12 +1986,13 @@ feed 30m https://kubic.opensuse.org/feed.xml
     define_face kubic
     define_lang en
 
-feed 30m https://www.volted.net/feed/rss
-    define_name Sébastien POHER
+feed 30m https://www.volted.net/feed.rss
+    define_name Sébastien 'sogal' Poher
+    define_irc sogal
     define_lang fr
     define_connect sogal
     define_nick sogal
-    # not yet ;-)  define_member 1
+    define_member 1
     define_face sogal
 
 feed 30m http://anamaria.martinezgomez.name/feed.xml
