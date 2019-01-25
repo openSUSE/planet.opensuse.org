@@ -112,12 +112,12 @@ msgstr "Чешский"
 
 #: planetsuse/planet_template.html:91
 msgid "Simplified Chinese"
-msgstr ""
+msgstr "Упрощенный китайский"
 
 #: planetsuse/planet_template.html:92
 #, fuzzy
 msgid "Traditional Chinese"
-msgstr "Китайский"
+msgstr "Традиционный китайский"
 
 #: planetsuse/planet_template.html:93
 msgid "Romanian"
@@ -137,7 +137,7 @@ msgstr "Монгольский"
 
 #: planetsuse/planet_template.html:97
 msgid "Burmese"
-msgstr ""
+msgstr "Бирманский"
 
 #: planetsuse/planet_template.html:101 planetsuse/feedlist_template.html:64
 msgid "Actions"
