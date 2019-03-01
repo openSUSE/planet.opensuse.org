@@ -2039,3 +2039,17 @@ feed 30m http://blog.geeko.jp/feed
 feed 30m https://rifkiaz.web.id/tag/opensuse-id/feed/
      define_name Mohammad Rifki Affandi Z
      define_lang id
+
+feed 30m https://vinzv.de/en/tag/opensuse-en/feed/
+    define_name Vinzenz Vietzke
+    define_irc vinzv
+    define_connect vinzv
+    define_member 1
+    define_lang en
+
+feed 30m https://vinzv.de/tag/opensuse/feed/
+    define_name Vinzenz Vietzke
+    define_irc vinzv
+    define_connect vinzv
+    define_member 1
+    define_lang de
