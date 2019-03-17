@@ -258,11 +258,6 @@ feed 15m http://benjiweber.co.uk/blog/feed/
     define_irc  benJIman
     define_member 1
 
-feed 15m http://graeber-clan.de/cgi-bin/weblog_basic/index.php?feed=rss2
-    define_name Herbert Graeber
-    define_irc herby_
-    define_member 1
-
 # page broken (404) and URL unknown - checked by lrupp at Tue Apr 29 2014
 #feed 15m http://dev.compiz.org/~cyberorg/feed/
 #    define_name Jigish Gohil
