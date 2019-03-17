@@ -1,9 +1,5 @@
 # vim:expandtab
 
-feed 15m https://machinery-project.blogspot.com/feeds/posts/default
-    define_name Machinery Team
-    define_lang en
-
 feed 15m http://drakevr.gr/index.xml
     define_name Alex-P. Natsios
     define_lang en
