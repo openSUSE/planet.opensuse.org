@@ -11,7 +11,7 @@ feed 15m https://lizards.opensuse.org/author/yast-team/feed/
     define_face yast
     define_lang en
 
-feed 15m http://nui.fr/blog/feed/
+feed 15m https://nui.fr/blog/feed/
     define_name Network Users Institute
     define_lang fr
 #    define_face jimmypierre
@@ -453,7 +453,7 @@ feed 15m https://blog.cboltz.de/rss.xml
     define_member 1
     define_lang de
 
-feed 15m http://www.vuntz.net/journal/feed/en/rss2
+feed 15m https://www.vuntz.net/journal/feed/en/rss2
     define_name Vincent Untz
     define_face http://planet.gnome.org/heads/vuntz.png
     define_irc  vuntz
@@ -2018,10 +2018,10 @@ feed 30m https://robbinespu.github.io/feed/tags.suse.xml
     #define_member 1
     define_lang en
 
-feed 30m http://blog.geeko.jp/feed
+feed 30m https://blog.geeko.jp/feed
     define_name openSUSE Japanese user group
     define_lang ja
-    
+
 feed 30m https://rifkiaz.web.id/tag/opensuse-id/feed/
      define_name Mohammad Rifki Affandi Z
      define_lang id
