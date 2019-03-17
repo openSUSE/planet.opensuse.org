@@ -1735,18 +1735,12 @@ feed 15m https://iamsaurabh.wordpress.com/tag/opensuse/feed/
 feed 15m http://opensuseadventures.blogspot.com/feeds/posts/default
     define_name Roger Luedecke
 
-feed 15m http://amelinux.blogspot.de//?cat=4http://xadmin.info/?cat=4&feed=rss2feed=rss2
-    define_name Jörg Stephan
-    define_irc  johest
-    define_member 1
-
 feed 15m https://rootco.de/feed.xml
     define_name Richard Brown
     define_irc  Ilmehtar
     define_member 1
     define_face ilmehtar
 
-#My blog was in planet.o.o but since January 2014 is disappear, can you fix it?? Thanks!
 feed 15m https://victorhckinthefreeworld.com/feed/
     define_name Victorhck
     define_irc  Victorhck
