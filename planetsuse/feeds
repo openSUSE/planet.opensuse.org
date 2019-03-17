@@ -1875,10 +1875,6 @@ feed 15m https://hacklog.mu/post/index.xml
     define_face https://hacklog.mu/content/images/planetsuse-ish-sookun.jpg
     define_lang en
 
-feed 15m http://www.planetaunix.com.br/feeds/posts/default?alt=rss
-	define_name Fábio dos Reis
-	define_lang pt
-
 feed 15m https://ahmadharis.wordpress.com/category/linux/feed/
     define_name Ahmad Haris
     define_lang id
