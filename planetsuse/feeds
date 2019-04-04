@@ -1389,13 +1389,6 @@ feed 15m http://vavai.com/category/linux/feed
 #    define_member 1
 #    define_face matthew_ehle
 
-feed 15m https://www.suseromania.ro/feed/atom/
-    define_name Lucian Oprea
-    define_irc  oprea_luci
-    define_member 1
-    define_face lucian_oprea
-    define_lang ro
-
 feed 15m https://lizards.opensuse.org/author/badshah400/feed/
     define_name Atri Bhattacharya
     define_irc  badshah400
