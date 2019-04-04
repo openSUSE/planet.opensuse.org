@@ -1764,7 +1764,7 @@ feed 15m https://www.dennogumi.org/category/opensuse/feed/
 #    define_name openSUSE Summit
 #    define_face opensuse_summit
 
-feed 15m https://www.open-build-service.org/feed/
+feed 15m https://openbuildservice.org/feed/
     define_name Open Build Service
     define_face obs
 
