@@ -1887,7 +1887,7 @@ feed 15m https://recetasyapuntes.wordpress.com/feed/
 	define_name Pablo Moya
 	define_lang es
 
-feed 15m https://czanik.blogs.balabit.com/tag/openSUSE/feed/
+feed 15m https://www.syslog-ng.com/community/members/peter-czanik/activities/rss
 	define_name Peter Czanik
 	define_lang en
 	define_irc CzP
