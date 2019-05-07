@@ -2028,3 +2028,13 @@ feed 30m https://opensuseopen.wordpress.com/feed/
     define_lang pt
     define_connect caffilhobr
     define_member 1
+
+feed 15m https://crowbyte.org/blog.rss
+    define_name Pierre Böckmann
+    define_lang en
+    define_irc crowbyte
+
+feed 15m https://crowbyte.org/de/blog.rss
+    define_name Pierre Böckmann
+    define_lang de
+    define_irc crowbyte
