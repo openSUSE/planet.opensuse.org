@@ -11,7 +11,7 @@ feed 15m https://lizards.opensuse.org/author/yast-team/feed/
     define_face yast
     define_lang en
 
-feed 15m https://nui.fr/blog/feed/
+feed 15m https://nui.fr/feed/
     define_name Network Users Institute
     define_lang fr
 #    define_face jimmypierre
