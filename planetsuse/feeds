@@ -55,11 +55,11 @@ feed 15m http://www.lenzg.net/blog/feeds/categories/2-Linux.rss
 #    define_face justin
 #    define_irc  darkworm
 
-feed 15m http://people.gnome.org/~michael/blog/index.atom
-    define_name Michael Meeks
-    define_face http://planet.gnome.org/heads/michael2.png
-    define_irc  mmeeks
-    define_member 1
+#feed 15m http://people.gnome.org/~michael/blog/index.atom
+#    define_name Michael Meeks
+#    define_face http://planet.gnome.org/heads/michael2.png
+#    define_irc  mmeeks
+#    define_member 1
 
 feed 15m http://disruptive.org.uk/rss.xml
     define_name Roger Whittaker
