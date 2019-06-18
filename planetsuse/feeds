@@ -2033,8 +2033,10 @@ feed 15m https://crowbyte.org/blog.rss
     define_name Pierre Böckmann
     define_lang en
     define_irc crowbyte
+    define_member 1
 
 feed 15m https://crowbyte.org/de/blog.rss
     define_name Pierre Böckmann
     define_lang de
     define_irc crowbyte
+    define_member 1
