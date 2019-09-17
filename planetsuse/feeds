@@ -486,11 +486,6 @@ feed 15m http://seifesrants.blogspot.com/feeds/posts/default?alt=rss
     define_irc  seife
     define_member 1
 
-feed 15m http://ts237.server2.raumopol.de/blog/category/opensuse/feed/
-    define_name Thomas Schmidt
-    define_irc digitltom
-    define_member 1
-
 feed 15m https://jeffreystedfast.blogspot.com/feeds/posts/default
     define_name Jeffrey Stedfast
     define_face http://planet.gnome.org/heads/fejj.png
