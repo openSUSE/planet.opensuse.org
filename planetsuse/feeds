@@ -305,12 +305,6 @@ feed 15m http://www.cannon-linux.co.uk/feed/
 #feed 15m http://blog.f-seidel.de/?feed=rss2
 #    define_name Frank Seidel
 
-feed 15m http://francis.giannaros.org/blog/category/openSUSE/feed/
-    define_name Francis Giannaros
-    define_face francis
-    define_irc  apokryphos
-    define_member 1
-
 feed 15m https://tablefor1.wordpress.com/feed/atom/
     define_name Jonathan Ervine
 
