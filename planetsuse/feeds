@@ -1842,9 +1842,9 @@ feed 30m https://medium.com/feed/information-and-technology/
     define_lang en
     define_irc Stallmanu
 
-feed 15m https://hacklog.mu/post/index.xml
+feed 15m https://hacklog.in/rss/
     define_name Ish Sookun
-    define_face https://hacklog.mu/content/images/planetsuse-ish-sookun.jpg
+    define_face ish-sookun.jpg
     define_lang en
 
 feed 15m https://ahmadharis.wordpress.com/category/linux/feed/
