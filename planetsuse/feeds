@@ -209,7 +209,7 @@ feed 15m http://jimmac.musichall.cz/log/?feed=rss2
 #feed 15m http://susediary.blogspot.com/feeds/posts/full
 #    define_name Graham Anderson
 
-feed 15m https://duncan.codes/atom.xml
+feed 15m https://duncan.codes/rss.xml
     define_name Duncan Mac-Vicar
     define_face dmv
     define_irc  duncanmv
