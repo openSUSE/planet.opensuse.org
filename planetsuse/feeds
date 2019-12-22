@@ -1719,7 +1719,7 @@ feed 15m https://victorhckinthefreeworld.com/feed/
     define_member 1
     define_lang es
 
-feed 15m http://www.alionet.org/external.php?do=rss&type=newcontent&sectionid=1&days=120
+feed 15m https://blog.alionet.org/fr/home.rss
     define_name Alionet
     define_lang fr
     define_face alionet
