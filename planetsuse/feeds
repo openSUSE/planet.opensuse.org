@@ -297,10 +297,6 @@ feed 15m http://andy.hillhome.org/blog/category/syndicated/feed/
 feed 15m http://nagappanal.blogspot.com/feeds/posts/full
     define_name Nagappan Alagappan
 
-feed 15m http://www.cannon-linux.co.uk/feed/
-    define_name Peter Cannon
-    define_face petercannon
-
 # domain unknown - checked by lrupp at Tue Apr 29 2014
 #feed 15m http://blog.f-seidel.de/?feed=rss2
 #    define_name Frank Seidel
