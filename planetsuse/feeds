@@ -1860,7 +1860,7 @@ feed 15m https://cubiclenate.com/feed/
 	define_connect Futureboy
 	define_member 1
 
-feed 15m http://www.codeblueprint.co.uk/feed.xml
+feed 15m https://www.codeblueprint.co.uk/feed.xml
     define_name Matt Fleming
     define_irc mfleming
     define_lang en
