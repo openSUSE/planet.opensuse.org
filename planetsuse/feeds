@@ -998,11 +998,6 @@ feed 15m http://feeds.feedburner.com/andreas-demmer/kde
     define_face ademmer
     define_member 1
 
-feed 15m http://www.kde4.de/feed/
-    define_name KDE4.de
-    define_face http://kde.org/media/images/top-kde.jpg
-    define_lang de
-
 #feed 15m http://blog.bgta.net/feed/tag/opensuse/
 #    define_name Raul Romero
 #    define_lang es
