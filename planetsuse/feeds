@@ -121,7 +121,7 @@ feed 15m http://sonjakrauseharder.blogspot.com/feeds/posts/full
     define_name Sonja Krause-Harder
     define_irc  skh
 
-feed 15m http://blog.cornelius-schumacher.de/feeds/posts/default
+feed 15m https://blog.cornelius-schumacher.de/feeds/posts/default
     define_name Cornelius Schumacher
     define_irc  cornelius
     define_member 1
@@ -400,7 +400,7 @@ feed 15m http://hpjansson.org/blag/feed/
 feed 15m http://www.freetechie.com/blog/category/techie/suse-linux/feed/
     define_name Ben Kevan
 
-feed 15m http://yarpen.cz/rants/?feed=rss2
+feed 15m https://yarpen.cz/rants/?feed=rss2
     define_name Petr Vaněk
 
 feed 15m https://lizards.opensuse.org/author/dirkmueller/feed/
@@ -1791,7 +1791,7 @@ feed 15m http://blogs.gentoo.org/scarabeus/category/opensuse/feed/
     define_nick scarabeus
     define_irc scarabeus
 
-feed 15m http://ourobengr.com/tag/opensuse/feed/
+feed 15m https://ourobengr.com/tag/opensuse/feed/
     define_name Tim Serong
     define_lang en
     define_nick tserong
