@@ -369,7 +369,7 @@ feed 15m http://holesovsky.blogspot.com/feeds/posts/default?alt=rss
 #feed 15m http://noelpower.blogs.ie/feed/
 #    define_name Noel Power
 
-feed 15m https://andrew.wafaa.eu/index.xml
+feed 15m http://www.wafaa.eu/index.xml
     define_name Andrew Wafaa
     define_face wafaa
     define_irc  FunkyPenguin
