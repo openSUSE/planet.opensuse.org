@@ -1003,10 +1003,6 @@ feed 15m http://www.kde4.de/feed/
     define_face http://kde.org/media/images/top-kde.jpg
     define_lang de
 
-feed 15m https://www.opensuse-lernen.de/?feed=rss2
-    define_name openSUSE-lernen.de
-    define_lang de
-
 #feed 15m http://blog.bgta.net/feed/tag/opensuse/
 #    define_name Raul Romero
 #    define_lang es
