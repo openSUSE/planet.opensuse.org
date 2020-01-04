@@ -1705,11 +1705,6 @@ feed 15m https://blog.alionet.org/fr/home.rss
     define_lang fr
     define_face alionet
 
-feed 15m https://peternixon.net/feeds/rss/blog/
-    define_name Peter Nixon
-    define_irc  Nix
-    define_member 1
-
 feed 15m https://www.dennogumi.org/category/opensuse/feed/
     define_name Luca Beltrame
     define_irc  einar77
