@@ -215,12 +215,6 @@ feed 15m https://duncan.codes/rss.xml
     define_irc  duncanmv
     define_member 1
 
-feed 15m http://blog.jprosevear.org/feed/
-    define_name JP Rosevear
-    define_face http://planet.gnome.org/heads/jpr.png
-    define_irc  jpr
-    define_member 1
-
 feed 15m http://www.kroah.com/log/index.rss
     define_name Greg Kroah-Hartman
     define_member 1
