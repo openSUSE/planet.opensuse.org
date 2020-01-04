@@ -245,11 +245,6 @@ feed 15m http://blog.cryptomilch.de/feeds/posts/default?alt=rss
     define_name Daniel Gollub
     define_irc  dgollub
 
-feed 15m https://abock.org/feed
-    define_name Aaron Bockover
-    define_face http://planet.gnome.org/heads/abock.png
-    define_irc  abock
-
 #feed 15m http://theopenstandard.com/blogs/raven/index.php?/feeds/index.rss2
 #    define_name Narayan Newton
 
