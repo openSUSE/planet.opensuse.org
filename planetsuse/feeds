@@ -1860,14 +1860,6 @@ feed 15m https://cubiclenate.com/feed/
 	define_connect Futureboy
 	define_member 1
 
-feed 15m http://feeds.feedburner.com/SaigkillsBlog-Opensuse
-    define_name Sascha Manns
-    define_face saigkill
-    define_irc  saigkill
-    define_connect saigkill
-    define_member 1
-    define_lang en
-
 feed 15m http://opensusemyanmar.top/feed/
     define_name Ko Nova
     define_irc kon0va
