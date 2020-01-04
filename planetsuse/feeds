@@ -1860,12 +1860,6 @@ feed 15m https://cubiclenate.com/feed/
 	define_connect Futureboy
 	define_member 1
 
-feed 15m http://opensusemyanmar.top/feed/
-    define_name Ko Nova
-    define_irc kon0va
-    define_connect konova
-    define_lang my
-
 feed 15m http://www.codeblueprint.co.uk/feed.xml
     define_name Matt Fleming
     define_irc mfleming
