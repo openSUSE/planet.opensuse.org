@@ -121,7 +121,7 @@ feed 15m http://sonjakrauseharder.blogspot.com/feeds/posts/full
     define_name Sonja Krause-Harder
     define_irc  skh
 
-feed 15m http://blog.cornelius-schumacher.de/feeds/posts/default
+feed 15m https://blog.cornelius-schumacher.de/feeds/posts/default
     define_name Cornelius Schumacher
     define_irc  cornelius
     define_member 1
@@ -215,12 +215,6 @@ feed 15m https://duncan.codes/rss.xml
     define_irc  duncanmv
     define_member 1
 
-feed 15m http://blog.jprosevear.org/feed/
-    define_name JP Rosevear
-    define_face http://planet.gnome.org/heads/jpr.png
-    define_irc  jpr
-    define_member 1
-
 feed 15m http://www.kroah.com/log/index.rss
     define_name Greg Kroah-Hartman
     define_member 1
@@ -240,15 +234,6 @@ feed 15m https://lizards.opensuse.org/author/wstephenson/feed/
     define_face wstephenson
     define_irc  wstephenson
     define_member 1
-
-feed 15m http://blog.cryptomilch.de/feeds/posts/default?alt=rss
-    define_name Daniel Gollub
-    define_irc  dgollub
-
-feed 15m https://abock.org/feed
-    define_name Aaron Bockover
-    define_face http://planet.gnome.org/heads/abock.png
-    define_irc  abock
 
 #feed 15m http://theopenstandard.com/blogs/raven/index.php?/feeds/index.rss2
 #    define_name Narayan Newton
@@ -369,7 +354,7 @@ feed 15m http://holesovsky.blogspot.com/feeds/posts/default?alt=rss
 #feed 15m http://noelpower.blogs.ie/feed/
 #    define_name Noel Power
 
-feed 15m https://andrew.wafaa.eu/index.xml
+feed 15m http://www.wafaa.eu/index.xml
     define_name Andrew Wafaa
     define_face wafaa
     define_irc  FunkyPenguin
@@ -400,7 +385,7 @@ feed 15m http://hpjansson.org/blag/feed/
 feed 15m http://www.freetechie.com/blog/category/techie/suse-linux/feed/
     define_name Ben Kevan
 
-feed 15m http://yarpen.cz/rants/?feed=rss2
+feed 15m https://yarpen.cz/rants/?feed=rss2
     define_name Petr Vaněk
 
 feed 15m https://lizards.opensuse.org/author/dirkmueller/feed/
@@ -1012,15 +997,6 @@ feed 15m http://feeds.feedburner.com/andreas-demmer/kde
     define_irc  ademmer
     define_face ademmer
     define_member 1
-
-feed 15m http://www.kde4.de/feed/
-    define_name KDE4.de
-    define_face http://kde.org/media/images/top-kde.jpg
-    define_lang de
-
-feed 15m https://www.opensuse-lernen.de/?feed=rss2
-    define_name openSUSE-lernen.de
-    define_lang de
 
 #feed 15m http://blog.bgta.net/feed/tag/opensuse/
 #    define_name Raul Romero
@@ -1720,11 +1696,6 @@ feed 15m https://blog.alionet.org/fr/home.rss
     define_lang fr
     define_face alionet
 
-feed 15m https://peternixon.net/feeds/rss/blog/
-    define_name Peter Nixon
-    define_irc  Nix
-    define_member 1
-
 feed 15m https://www.dennogumi.org/category/opensuse/feed/
     define_name Luca Beltrame
     define_irc  einar77
@@ -1750,7 +1721,7 @@ feed 15m http://priyankafoss.blogspot.com/feeds/posts/default
     define_name Priyanka Menghani
     define_gsoc 1
 
-feed 15m http://blog.tenstral.net/category/planet/planet-opensuse/feed
+feed 15m https://blog.tenstral.net/category/planet/planet-opensuse/feed
     define_name Matthias Klumpp
     define_gsoc 1
     define_irc  ximion
@@ -1791,7 +1762,7 @@ feed 15m http://blogs.gentoo.org/scarabeus/category/opensuse/feed/
     define_nick scarabeus
     define_irc scarabeus
 
-feed 15m http://ourobengr.com/tag/opensuse/feed/
+feed 15m https://ourobengr.com/tag/opensuse/feed/
     define_name Tim Serong
     define_lang en
     define_nick tserong
@@ -1880,21 +1851,7 @@ feed 15m https://cubiclenate.com/feed/
 	define_connect Futureboy
 	define_member 1
 
-feed 15m http://feeds.feedburner.com/SaigkillsBlog-Opensuse
-    define_name Sascha Manns
-    define_face saigkill
-    define_irc  saigkill
-    define_connect saigkill
-    define_member 1
-    define_lang en
-
-feed 15m http://opensusemyanmar.top/feed/
-    define_name Ko Nova
-    define_irc kon0va
-    define_connect konova
-    define_lang my
-
-feed 15m http://www.codeblueprint.co.uk/feed.xml
+feed 15m https://www.codeblueprint.co.uk/feed.xml
     define_name Matt Fleming
     define_irc mfleming
     define_lang en
@@ -2008,7 +1965,7 @@ feed 30m https://vinzv.de/tag/opensuse/feed/
     define_member 1
     define_lang de
 
-feed 30m https://opensuseopen.wordpress.com/feed/
+feed 30m https://osusebr.blogspot.com/feeds/posts/default
     define_name Carlos Alberto Ferreira Filho
     define_lang pt
     define_connect caffilhobr
