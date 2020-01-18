@@ -538,6 +538,13 @@ feed 15m https://dragotin.wordpress.com/feed/
     define_member 1
     define_face dragotin
 
+# blog about (mainly) office use of Linux in German language
+feed 15m https://tagfrei.wordpress.com/feed/
+    define_name Klaas Freitag
+    define_irc  dragotin
+    define_member 1
+    define_face dragotin
+
 feed 15m https://lizards.opensuse.org/author/vavai/feed/
     define_name Masim Sugianto
     define_member 1
@@ -1860,11 +1867,11 @@ feed 15m https://opensuse.id/feed/
     define_name Komunitas openSUSE Indonesia
     define_lang id
 
-feed 15m https://dhenandi.com/tag/opensuse-eng/feed/ 
+feed 15m https://dhenandi.com/tag/opensuse-eng/feed/
     define_name Muhammad Dhenandi Putra
     define_lang en
 
-feed 15m https://dhenandi.com/tag/opensuse-id/feed/ 
+feed 15m https://dhenandi.com/tag/opensuse-id/feed/
     define_name Muhammad Dhenandi Putra
     define_lang id
 
