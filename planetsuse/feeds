@@ -215,10 +215,6 @@ feed 15m https://duncan.codes/rss.xml
     define_irc  duncanmv
     define_member 1
 
-feed 15m http://www.kroah.com/log/index.rss
-    define_name Greg Kroah-Hartman
-    define_member 1
-
 feed 15m https://lizards.opensuse.org/author/mlasars/feed/
     define_name Martin Lasarsch
     define_irc  notlocalhorst
@@ -817,11 +813,6 @@ feed 15m https://lizards.opensuse.org/author/marcus_h/feed/
     define_irc  }-Tux-{
     define_member 1
 
-feed 15m http://dominique.leuenberger.net/blog/feed/
-    define_name Dominique Leuenberger
-    define_irc  DimStar
-    define_member 1
-
 feed 15m https://lizards.opensuse.org/author/jasujt/feed/
     define_name James Tremblay
     define_irc  SLEducator
@@ -982,9 +973,6 @@ feed 15m http://infragments.blogspot.com/feeds/posts/default
 #    define_irc  gnokii
 #    define_member 1
 #    define_lang de
-
-feed 15m http://blog.reblochon.org/feeds/posts/default
-    define_name Stephane Delcroix
 
 feed 15m https://lizards.opensuse.org/author/alexbariv/feed/
     define_name Alex Barrios
