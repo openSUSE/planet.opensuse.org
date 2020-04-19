@@ -2,7 +2,15 @@
 
 Planet openSUSE is a web feed aggregator that collects blog posts from people who contribute to openSUSE.
 
+## Switched to new repository
+
+In March 2020, we switched to a new repo and completely new software for planet.opensuse.org. Please see [planet-o-o](https://github.com/openSUSE/planet-o-o) for the new repo.
+
 ## Adding your feed
+
+This section describes the workflow for this - now unused - repo and is only kept for historical reasons.
+Please see [planet-o-o](https://github.com/openSUSE/planet-o-o) for instructions how to add your feed nowadays.
+
 If you want to get your blog added, we prefer pull requests via github. 
 
 * Fork this repository
